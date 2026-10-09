@@ -297,19 +297,23 @@
     layout();
   })();
 
-  /* Logomark breakdown (pattern from lokalapps.com) ----------------------
-     Lokal splits its logo into four SVG pieces and uses GSAP Flip to fly
-     each one from the hero into a slot in the next section. Same idea,
-     no library: each piece travels between two real layout positions,
-     the hero slot and its landing slot on a card, so where it lands is
-     always exactly where the card's marker sits. Pieces are staggered
-     and eased toward their target each frame, like Lokal's scrub. On
-     narrow screens and under reduced motion nothing flies; the static
-     logo and the static card markers simply show in place. ----------- */
+  /* Logomark intro and breakdown (pattern from lokalapps.com) ------------
+     Lokal opens on a curtain of brand-colour columns with its mark in the
+     centre; the columns lift, the mark settles into the page, and on
+     scroll the mark's four pieces fly into the next section (GSAP Flip).
+     Same idea, no library. Each piece is positioned from real layout
+     boxes: the intro spot (centre of the screen), the hero slot (the
+     headline's full stop) and its landing slot on an at-a-glance column,
+     so it always lands exactly on its marker. Pieces are drawn at their
+     largest size and only ever scaled down, so they stay sharp. The intro
+     runs once per visit; narrow screens and reduced motion get the
+     static logo and markers in place. --------------------------------- */
   (function () {
+    var root = document.documentElement;
     var starts = [].slice.call(document.querySelectorAll('.fly-slot[data-fly]'));
     var ends = [].slice.call(document.querySelectorAll('.fly-slot[data-fly-end]'));
-    if (starts.length !== 4 || ends.length !== 4) return;
+    var markBox = document.querySelector('.hero3-mark');
+    if (starts.length !== 4 || ends.length !== 4 || !markBox) { root.classList.remove('intro-pending'); return; }
     var layer = document.createElement('div');
     layer.className = 'fly-layer';
     layer.setAttribute('aria-hidden', 'true');
@@ -321,33 +325,40 @@
       layer.appendChild(el);
       return { el: el, start: s, end: ends[+s.dataset.fly], a: null, b: null, ys: 0, ye: 1, t: 0, p: 0 };
     });
-    var active = false;
+    var active = false, R = null, K = 1;
+    var I = 0;               // intro amount: 1 = at the centre of the screen, 0 = in the page
+    var introRunning = false;
 
     function pageRect(el) {
       var r = el.getBoundingClientRect();
       return { x: r.left + window.scrollX, y: r.top + window.scrollY, w: r.width };
     }
     function ease(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+    function introSize() { return Math.min(window.innerWidth * 0.34, window.innerHeight * 0.46); }
 
     function measure() {
       active = !reduced && window.innerWidth >= 900 && window.innerHeight >= 600;
-      document.documentElement.classList.toggle('fly-on', active);
+      root.classList.toggle('fly-on', active);
       layer.style.display = active ? '' : 'none';
-      if (!active) return;
+      if (!active) { finishIntro(); return; }
       var vh = window.innerHeight;
+      R = pageRect(markBox);
+      K = Math.max(1, introSize() / R.w);        // largest scale any piece reaches
       pieces.forEach(function (pc, i) {
         pc.el.style.transform = '';
         pc.a = pageRect(pc.start);
         pc.b = pageRect(pc.end);
-        pc.el.style.width = pc.el.style.height = pc.a.w + 'px';
-        pc.ys = i * 40;                                          // staggered departures
-        pc.ye = Math.max(pc.ys + 120, pc.b.y - vh * 0.6 + i * 40);   // lands as its card reaches 60% down the screen
+        pc.el.style.width = pc.el.style.height = (pc.a.w * K) + 'px';
+        pc.ys = i * 40;                                              // staggered departures
+        pc.ye = Math.max(pc.ys + 120, pc.b.y - vh * 0.6 + i * 40);   // lands as its column reaches 60% down the screen
       });
       update(true);
     }
 
     function update(snap) {
       var y = window.scrollY, moving = false;
+      var M = introSize(), k = M / R.w;
+      var cx = window.scrollX + (window.innerWidth - M) / 2, cy = y + (window.innerHeight - M) / 2;
       pieces.forEach(function (pc) {
         pc.t = Math.max(0, Math.min(1, (y - pc.ys) / (pc.ye - pc.ys)));
         pc.p = snap ? pc.t : pc.p + (pc.t - pc.p) * 0.18;
@@ -356,19 +367,60 @@
         var x = pc.a.x + (pc.b.x - pc.a.x) * e;
         var yy = pc.a.y + (pc.b.y - pc.a.y) * e;
         var s = 1 + (pc.b.w / pc.a.w - 1) * e;
-        pc.el.style.transform = 'translate3d(' + x.toFixed(2) + 'px,' + yy.toFixed(2) + 'px,0) scale(' + s.toFixed(4) + ')';
+        if (I > 0) {                               // blend towards the intro spot
+          x += (cx + (pc.a.x - R.x) * k - x) * I;
+          yy += (cy + (pc.a.y - R.y) * k - yy) * I;
+          s += (k - s) * I;
+        }
+        pc.el.style.transform = 'translate3d(' + x.toFixed(2) + 'px,' + yy.toFixed(2) + 'px,0) scale(' + (s / K).toFixed(4) + ')';
       });
       return moving;
     }
 
     var raf = null;
     function loop() { raf = update(false) ? requestAnimationFrame(loop) : null; }
-    window.addEventListener('scroll', function () { if (active && !raf) raf = requestAnimationFrame(loop); }, { passive: true });
+    window.addEventListener('scroll', function () { if (active && !raf && !introRunning) raf = requestAnimationFrame(loop); }, { passive: true });
     var rt;
     window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(measure, 150); });
     window.addEventListener('load', measure);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+
+    // Intro ------------------------------------------------------------------
+    var curtain = null;
+    function finishIntro() {
+      introRunning = false; I = 0;
+      root.classList.remove('intro-pending', 'intro-on', 'intro-white');
+      if (curtain) { curtain.remove(); curtain = null; }
+      if (active && R) update(true);
+    }
+    function runIntro() {
+      try { sessionStorage.setItem('sag-intro', '1'); } catch (e) {}
+      curtain = document.createElement('div');
+      curtain.className = 'intro';
+      curtain.setAttribute('aria-hidden', 'true');
+      curtain.innerHTML = '<span></span><span></span><span></span><span></span><span></span><span></span>';
+      document.body.appendChild(curtain);
+      root.classList.add('intro-on', 'intro-white');
+      root.classList.remove('intro-pending');
+      introRunning = true; I = 1;
+      update(true);
+      var t0 = performance.now(), MOVE_AT = 420, MOVE_FOR = 1050, LIFT_AT = 260, END = 1750;
+      setTimeout(function () { if (curtain) curtain.classList.add('is-lifting'); }, LIFT_AT);
+      (function tick() {
+        if (!introRunning) return;
+        var el = performance.now() - t0;
+        var q = Math.max(0, Math.min(1, (el - MOVE_AT) / MOVE_FOR));
+        I = 1 - ease(q);
+        if (q > 0.3) root.classList.remove('intro-white');   // pieces take their brand colours mid-flight
+        update(true);
+        if (el < END) requestAnimationFrame(tick); else finishIntro();
+      })();
+    }
+
     measure();
+    var wantIntro = root.classList.contains('intro-pending');
+    if (wantIntro && active && window.scrollY < window.innerHeight * 0.5) runIntro();
+    else finishIntro();
   })();
 
   /* Contact form: pre-fill the message when arriving from a funnel page. */

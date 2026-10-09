@@ -1391,3 +1391,78 @@ html.fly-on .fly-slot svg { visibility: hidden; }
 .svc { scroll-margin-top: 6rem; }
 .svc-list { max-width: 48rem; }
 .hs-bar { display: none; }
+
+/* ==========================================================================
+   Hero, editorial version (after lokalapps.com). Display type across the
+   full measure, the logomark set as the headline's full stop, a hairline
+   rule, then the lead and the two funnels. On load a curtain of brand
+   columns lifts while the mark travels from the centre of the screen into
+   the headline; on scroll its four pieces fly to the at-a-glance columns.
+   ========================================================================== */
+.hero3 { position: relative; padding: clamp(2.5rem, 5.5vw, 4.75rem) 0 clamp(3.5rem, 6vw, 5.5rem); }
+.hero3-h { font-size: clamp(3.1rem, 9.3vw, 9.25rem); line-height: .86; letter-spacing: -.012em;
+           max-width: none; margin: 0 0 clamp(2rem, 3.6vw, 3rem); }
+.hero3-l { display: block; }
+.hero3-mark { display: inline-block; width: .7em; margin-left: .12em; }
+.hero3-mark-g { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: calc(.7em * .0398); }
+.hero3-foot { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 5rem);
+              align-items: start; padding-top: clamp(1.5rem, 2.4vw, 2rem);
+              border-top: 1px solid color-mix(in srgb, var(--surface-chocolate-dark) 24%, transparent); }
+.hero3 .lead { margin: 0; max-width: 32rem; }
+.hero3 .funnels { max-width: none; }
+.hero3 .hero2-alt { margin-top: 1.15rem; }
+@media (max-width: 900px) {
+  .hero3-foot { grid-template-columns: 1fr; }
+}
+
+/* At a glance as editorial columns: hairline rules, no boxes. */
+.usp-grid { gap: 0; }
+.usp-card { background: none; border: 0; border-radius: 0; gap: .6rem;
+            padding: .25rem clamp(1.25rem, 2.2vw, 2rem) .5rem;
+            border-left: 1px solid rgba(240, 238, 233, .2); }
+.usp-card:first-child { border-left: 0; padding-left: 0; }
+.usp-card .fly-end { width: 3rem; margin-bottom: 1.75rem; }
+.usp-n { font-size: clamp(3.6rem, 6.2vw, 5.75rem); }
+@media (max-width: 960px) {
+  .usp-grid { row-gap: 2.75rem; }
+  .usp-card:nth-child(odd) { border-left: 0; padding-left: 0; }
+}
+@media (max-width: 560px) {
+  .usp-grid { row-gap: 0; }
+  .usp-card, .usp-card:nth-child(odd) { border-left: 0; padding: 1.75rem 0; border-top: 1px solid rgba(240, 238, 233, .2); }
+  .usp-card:first-child { border-top: 0; padding-top: 0; }
+}
+
+/* Intro curtain. The head script adds .intro-pending before first paint, so the
+   page never flashes; site.js swaps in real columns and lifts them. If the
+   script never runs, the failsafe hides the cover after four seconds. */
+html.intro-pending body::after {
+  content: ""; position: fixed; inset: 0; z-index: 150; pointer-events: none;
+  background: linear-gradient(90deg, var(--mint) 0 16.67%, var(--mint-7) 0 33.34%, var(--azure) 0 50%,
+              var(--azure-7) 0 66.67%, var(--azure-8) 0 83.34%, var(--surface-chocolate-dark) 0);
+  animation: intro-failsafe 0s linear 4s forwards;
+}
+@keyframes intro-failsafe { to { visibility: hidden; } }
+.intro { position: fixed; inset: 0; z-index: 150; display: grid; grid-template-columns: repeat(6, 1fr);
+         pointer-events: none; overflow: hidden; }
+.intro span { display: block; transition: transform .9s cubic-bezier(.72, 0, .24, 1); }
+.intro span:nth-child(1) { background: var(--mint); }
+.intro span:nth-child(2) { background: var(--mint-7);  transition-delay: .07s; }
+.intro span:nth-child(3) { background: var(--azure);   transition-delay: .14s; }
+.intro span:nth-child(4) { background: var(--azure-7); transition-delay: .21s; }
+.intro span:nth-child(5) { background: var(--azure-8); transition-delay: .28s; }
+.intro span:nth-child(6) { background: var(--surface-chocolate-dark); transition-delay: .35s; }
+.intro.is-lifting span { transform: translateY(-101%); }
+html.intro-on .fly-layer { z-index: 151; }
+.fly-piece path { transition: fill .7s ease; }
+html.intro-white .fly-piece path { fill: #fff; }
+/* Hero refinements: bigger display type; the mark's bottom edge sits on the
+   baseline (overflow makes an inline-block align by its bottom edge); a hairline
+   stroke in the fill colour hides the seam between each quadrant's two shapes. */
+.hero3-h { font-size: clamp(3.1rem, 11.2vw, 11rem); }
+.hero3-mark { overflow: hidden; vertical-align: baseline; }
+.fly-slot path, .fly-piece path { stroke-width: .6; stroke-linejoin: round; }
+.fly-slot path[fill="#0086F9"], .fly-piece path[fill="#0086F9"] { stroke: #0086F9; }
+.fly-slot path[fill="#00C19F"], .fly-piece path[fill="#00C19F"] { stroke: #00C19F; }
+.fly-piece path { transition: fill .7s ease, stroke .7s ease; }
+html.intro-white .fly-piece path { fill: #fff; stroke: #fff; transition: none; }

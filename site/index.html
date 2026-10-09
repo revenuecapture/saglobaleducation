@@ -33,6 +33,10 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Lexend+Deca:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/brand.css">
+<script>
+/* Homepage intro: once per visit, larger screens only, never under reduced motion. */
+(function(){try{var d=document.documentElement;if(innerWidth>=900&&innerHeight>=600&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('sag-intro')&&!location.hash){d.classList.add('intro-pending');}}catch(e){}})();
+</script>
 
 <script type="application/ld+json">{
  "@context":"https://schema.org",
@@ -88,12 +92,13 @@ window.SAG_CONSENT = {
  </div>
 </header>
 <main id="main">
-<section class="hero2" id="top">
- <div class="wrap hero2-grid">
-  <div class="hero2-copy">
-   <h1>Study at a leading university abroad</h1>
+<section class="hero3" id="top">
+ <div class="wrap">
+  <h1 class="hero3-h"><span class="hero3-l">Study at a leading</span> <span class="hero3-l"><span class="hl">university abroad</span><span class="hero3-mark" aria-hidden="true"><span class="hero3-mark-g"><span class="fly-slot" data-fly="0"><svg viewBox="0 0 82.95 82.95" aria-hidden="true" focusable="false"><path d="M82.9502 54.5508C82.9502 67.6276 67.6296 82.9489 54.5527 82.9492H41.4756V0H82.9502V54.5508ZM41.4746 82.9482H0V28.3975C7.89621e-05 15.3207 15.3206 0.000375479 28.3975 0H41.4746V82.9482Z" fill="#0086F9"/></svg></span><span class="fly-slot" data-fly="1"><svg viewBox="89.82 0 82.95 82.95" aria-hidden="true" focusable="false"><path d="M172.769 54.5508C172.769 67.6276 157.448 82.9489 144.371 82.9492H131.294V41.4746H131.293V82.9482H89.8184V28.3975C89.8184 15.3207 105.139 0.000352465 118.216 0H172.768L172.769 41.4746C172.769 41.4866 172.769 41.8758 172.769 54.5508Z" fill="#00C19F"/></svg></span><span class="fly-slot" data-fly="2"><svg viewBox="0 89.07 82.95 82.96" aria-hidden="true" focusable="false"><path d="M82.9502 172.027H41.4756V130.553H82.9502V172.027ZM41.4746 172.026C41.4673 172.026 41.1621 172.026 28.3975 172.026C15.3206 172.026 0 156.706 0 143.629V130.552H41.4746V172.026ZM54.5527 89.0732C67.6296 89.0735 82.9502 104.394 82.9502 117.471V130.548H0.000976562V89.0732H54.5527Z" fill="#0086F9"/></svg></span><span class="fly-slot" data-fly="3"><svg viewBox="89.82 89.07 82.95 82.96" aria-hidden="true" focusable="false"><path d="M131.293 172.027H89.8184V130.553H131.293V172.027ZM172.769 143.629C172.769 156.706 157.448 172.026 144.371 172.026H131.294V130.552H172.769C172.769 130.552 172.769 130.552 172.769 143.629ZM172.768 130.548H89.8184C89.8184 130.548 89.8184 130.548 89.8184 117.471C89.8184 104.394 105.139 89.0735 118.216 89.0732H172.768V130.548Z" fill="#0086F9"/></svg></span></span></span></span></h1>
+  <div class="hero3-foot">
    <p class="lead">SA Global Education guides students from Pakistan and the United Kingdom through university admissions, scholarships and student visas, with offices in Birmingham, Karachi and Multan.</p>
-   <div class="funnels">
+   <div class="hero3-act">
+    <div class="funnels">
     <a class="funnel funnel--course" href="/courses/">
      <span class="funnel-k">Find your course</span>
      <span class="funnel-d">Search programmes by subject, level and country</span><svg class="arrow" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg>
@@ -103,10 +108,8 @@ window.SAG_CONSENT = {
      <span class="funnel-d">See the funding you may be eligible for</span><svg class="arrow" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg>
     </a>
    </div>
-   <p class="hero2-alt">Would you rather speak to someone first? <a href="/contact/">Book a free consultation</a></p>
-  </div>
-  <div class="hero2-mark" role="img" aria-label="SA Global logomark">
-   <span class="fly-slot" data-fly="0"><svg viewBox="0 0 82.95 82.95" aria-hidden="true" focusable="false"><path d="M82.9502 54.5508C82.9502 67.6276 67.6296 82.9489 54.5527 82.9492H41.4756V0H82.9502V54.5508ZM41.4746 82.9482H0V28.3975C7.89621e-05 15.3207 15.3206 0.000375479 28.3975 0H41.4746V82.9482Z" fill="#0086F9"/></svg></span><span class="fly-slot" data-fly="1"><svg viewBox="89.82 0 82.95 82.95" aria-hidden="true" focusable="false"><path d="M172.769 54.5508C172.769 67.6276 157.448 82.9489 144.371 82.9492H131.294V41.4746H131.293V82.9482H89.8184V28.3975C89.8184 15.3207 105.139 0.000352465 118.216 0H172.768L172.769 41.4746C172.769 41.4866 172.769 41.8758 172.769 54.5508Z" fill="#00C19F"/></svg></span><span class="fly-slot" data-fly="2"><svg viewBox="0 89.07 82.95 82.96" aria-hidden="true" focusable="false"><path d="M82.9502 172.027H41.4756V130.553H82.9502V172.027ZM41.4746 172.026C41.4673 172.026 41.1621 172.026 28.3975 172.026C15.3206 172.026 0 156.706 0 143.629V130.552H41.4746V172.026ZM54.5527 89.0732C67.6296 89.0735 82.9502 104.394 82.9502 117.471V130.548H0.000976562V89.0732H54.5527Z" fill="#0086F9"/></svg></span><span class="fly-slot" data-fly="3"><svg viewBox="89.82 89.07 82.95 82.96" aria-hidden="true" focusable="false"><path d="M131.293 172.027H89.8184V130.553H131.293V172.027ZM172.769 143.629C172.769 156.706 157.448 172.026 144.371 172.026H131.294V130.552H172.769C172.769 130.552 172.769 130.552 172.769 143.629ZM172.768 130.548H89.8184C89.8184 130.548 89.8184 130.548 89.8184 117.471C89.8184 104.394 105.139 89.0735 118.216 89.0732H172.768V130.548Z" fill="#0086F9"/></svg></span>
+    <p class="hero2-alt">Would you rather speak to someone first? <a href="/contact/">Book a free consultation</a></p>
+   </div>
   </div>
  </div>
 </section>

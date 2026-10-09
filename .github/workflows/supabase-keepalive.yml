@@ -1,0 +1,30 @@
+# Keeps the free Supabase project active. Free projects pause after a week
+# without database activity; one small read a day counts as activity.
+# A failed run (for example, the project already paused) emails the repo owner.
+name: Supabase keep-alive
+
+on:
+  schedule:
+    - cron: '17 3 * * *'   # 03:17 UTC daily, off the busy top of the hour
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Read one row through the public API
+        env:
+          # Both values are public by design (they also ship in the website's
+          # JavaScript); row-level security decides what they can read.
+          SUPABASE_URL: https://kdndxzqxzgnusgvgcqsv.supabase.co
+          SUPABASE_ANON_KEY: sb_publishable_9xEt1H5eRtN4GSZGkxY5sQ_YHa7Nkm4
+        run: |
+          status=$(curl -s -o /dev/null -w "%{http_code}" \
+            "$SUPABASE_URL/rest/v1/destinations?select=code&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY")
+          echo "Supabase answered HTTP $status"
+          test "$status" = "200"

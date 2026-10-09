@@ -1,0 +1,41 @@
+{
+  "name": "SA Global Education",
+  "short_name": "SA Global",
+  "description": "International education consultancy, UK and Pakistan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F7F4",
+  "theme_color": "#7D4016",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "categories": [
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "/favicon.ico?v=3",
+      "sizes": "32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon-16x16.png?v=3",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png?v=3",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo192.png?v=3",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo512.png?v=3",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

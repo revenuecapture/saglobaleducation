@@ -1466,3 +1466,216 @@ html.intro-white .fly-piece path { fill: #fff; }
 .fly-slot path[fill="#00C19F"], .fly-piece path[fill="#00C19F"] { stroke: #00C19F; }
 .fly-piece path { transition: fill .7s ease, stroke .7s ease; }
 html.intro-white .fly-piece path { fill: #fff; stroke: #fff; transition: none; }
+
+/* ==========================================================================
+   Glass navigation. At the top of the page the header is the full-width bar.
+   Once the page scrolls it condenses into a floating pane of glass: frosted,
+   translucent, with a specular top edge and (in Chromium) a light refraction
+   of what passes underneath. The header keeps one fixed height in both
+   states so the page never jumps, and the glass sits on a pseudo-element so
+   the fixed mobile menu keeps working. Over dark sections the glass turns
+   smoky and the links turn light.
+   ========================================================================== */
+.site-header { height: 4.7rem; display: flex; align-items: center;
+               transition: background-color .4s ease, border-color .4s ease, backdrop-filter .4s ease; }
+.header-inner { position: relative; isolation: isolate; height: 4.7rem; padding: 0;
+                transition: width .6s cubic-bezier(.2, .8, .2, 1), height .6s cubic-bezier(.2, .8, .2, 1),
+                            padding .6s cubic-bezier(.2, .8, .2, 1); }
+.header-inner::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  border-radius: 999px; opacity: 0; transform: scale(.97);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0) 46%),
+    color-mix(in srgb, var(--surface-cloud-light) 64%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(1.7);
+  backdrop-filter: blur(16px) saturate(1.7);
+  border: 1px solid rgba(255, 255, 255, .7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .85), inset 0 -1px 0 rgba(62, 31, 11, .08),
+              0 14px 34px -16px rgba(62, 31, 11, .45), 0 2px 6px -2px rgba(62, 31, 11, .12);
+  transition: opacity .45s ease, transform .6s cubic-bezier(.2, .8, .2, 1), background .4s ease, border-color .4s ease;
+}
+html.glass-refract .header-inner::before {
+  -webkit-backdrop-filter: blur(16px) saturate(1.7);
+  backdrop-filter: url(#glass-refract) blur(10px) saturate(1.7);
+}
+.brand img { transition: height .6s cubic-bezier(.2, .8, .2, 1); }
+.nav a { transition: border-color .18s, color .3s; }
+
+html.nav-glass .site-header { background-color: transparent; border-bottom-color: transparent;
+                              -webkit-backdrop-filter: none; backdrop-filter: none; }
+html.nav-glass .header-inner { width: min(100% - 1.5rem, 64rem); height: 3.6rem; padding: 0 .9rem 0 1.5rem; }
+html.nav-glass .header-inner::before { opacity: 1; transform: none; }
+html.nav-glass .brand img { height: 1.8rem; }
+html.nav-glass .nav { gap: 1.6rem; }
+
+/* Over dark sections: smoky glass, light links. */
+html.nav-glass.nav-dark .header-inner::before {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .16), rgba(255, 255, 255, 0) 46%),
+    rgba(30, 15, 5, .5);
+  border-color: rgba(255, 255, 255, .22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 14px 34px -16px rgba(0, 0, 0, .6);
+}
+html.nav-glass.nav-dark .nav a, html.nav-glass.nav-dark .nav-toggle { color: var(--surface-cloud); }
+html.nav-glass.nav-dark .nav a[aria-current="page"] { color: var(--mint); border-color: var(--mint); }
+html.nav-glass.nav-dark .nav a:hover { border-color: var(--mint); }
+
+@media (max-width: 860px) {
+  html.nav-glass .header-inner { width: min(100% - 1rem, 64rem); }
+  .nav { top: 4.7rem; }
+  html.nav-glass .nav { top: 4.6rem; left: .5rem; right: .5rem; border-radius: 1.25rem; border: 1px solid var(--surface-cloud-dark);
+                        background: color-mix(in srgb, var(--surface-cloud-light) 94%, transparent); }
+  html.nav-glass.nav-dark .nav a { color: inherit; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-inner, .header-inner::before, .brand img { transition-duration: .01s; }
+}
+
+/* ==========================================================================
+   At a glance: flip cards. The front is the dark card the logo pieces land
+   on (all blue, all facing the same way). Hover, keyboard focus or a tap
+   turns the card over to its green side, the one green quarter of the logo,
+   with a green outline and a link onward.
+   ========================================================================== */
+.usp-grid { gap: clamp(1rem, 2vw, 1.5rem); row-gap: clamp(1rem, 2vw, 1.5rem); }
+.usp-card, .usp-card:first-child, .usp-card:nth-child(odd) {
+  padding: 0; border: 0; background: none; perspective: 1400px;
+  border-radius: 0 1.75rem 0 1.75rem;
+  outline: 2px solid transparent; outline-offset: 2px;
+  transition: outline-color .45s ease, outline-offset .45s cubic-bezier(.2, .8, .2, 1);
+}
+.usp-inner { display: grid; height: 100%; transform-style: preserve-3d;
+             transition: transform .8s cubic-bezier(.2, .75, .15, 1); }
+.usp-face { grid-area: 1 / 1; display: flex; flex-direction: column; gap: .55rem;
+            padding: clamp(1.5rem, 2.4vw, 2rem); border-radius: 0 1.75rem 0 1.75rem;
+            -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.usp-front { background: #4a2a16; border: 1px solid rgba(240, 238, 233, .16); }          /* cloud text 10.6:1 */
+.usp-back { transform: rotateY(180deg); background: var(--mint); color: var(--surface-chocolate-dark);  /* 6.5:1 */
+            border: 1px solid var(--mint-7); }
+.usp-card .fly-end { width: 3.5rem; margin-bottom: 1.1rem; }
+.usp-back-mark { display: block; width: 3.5rem; margin-bottom: 1.1rem; color: #fff; }
+.usp-back-mark svg { display: block; width: 100%; height: 100%; }
+.usp-back .usp-n { color: var(--surface-chocolate-dark); }
+.usp-back-h { margin: 0; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.4rem; line-height: 1.1; }
+.usp-link { margin-top: auto; padding-top: 1.25rem; align-self: flex-start; display: inline-flex; align-items: center; gap: .5rem;
+            font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.15rem; letter-spacing: .06em;
+            text-transform: uppercase; text-decoration: none; color: var(--surface-chocolate-dark);
+            border-bottom: 2px solid var(--surface-chocolate-dark); }
+.usp-go { width: 1.05rem; height: 1.05rem; transition: transform .18s; }
+.usp-link:hover .usp-go { transform: translateX(4px); }
+.usp-link:focus-visible { outline: 2px solid var(--surface-chocolate-dark); outline-offset: 4px; }
+
+.usp-card:hover .usp-inner, .usp-card:focus-within .usp-inner, .usp-card.is-flipped .usp-inner { transform: rotateY(180deg); }
+.usp-card:hover, .usp-card:focus-within, .usp-card.is-flipped { outline-color: var(--mint); outline-offset: 7px; }
+
+/* The flying pieces turn blue on the way down and hand over to the card's own
+   copy once they land, so the card can turn over with its piece on it. */
+.fly-piece.is-blue path { fill: #0086F9; stroke: #0086F9; }
+.fly-piece.is-landed { visibility: hidden; }
+html.fly-on .fly-slot.fly-end.is-shown svg { visibility: visible; }
+
+@media (max-width: 960px) {
+  .usp-card, .usp-card:nth-child(odd) { padding: 0; border: 0; }
+}
+@media (max-width: 560px) {
+  .usp-card, .usp-card:nth-child(odd), .usp-card:first-child { padding: 0; border: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .usp-inner, .usp-card:hover .usp-inner, .usp-card:focus-within .usp-inner, .usp-card.is-flipped .usp-inner { transform: none; }
+  .usp-back { transform: none; opacity: 0; transition: opacity .2s; }
+  .usp-card:hover .usp-back, .usp-card:focus-within .usp-back, .usp-card.is-flipped .usp-back { opacity: 1; }
+}
+.usp-card .usp-back-h { font-size: 1.4rem; color: var(--surface-chocolate-dark); }
+
+/* ==========================================================================
+   Services: hover card and zoom. On desktop a brand-coloured card glides
+   beside the row under the pointer; a click grows that card to fill the
+   screen with the service in full (the same move as the About finale).
+   On touch screens a tap grows the row itself. Without JavaScript the
+   rows stay a plain open-and-close list.
+   ========================================================================== */
+.svc-hero h1 { max-width: 15ch; }
+.svc-hero .lead { max-width: 40rem; }
+.svc-layout { position: relative; }
+.svc-layout .svc-list { position: relative; max-width: 48rem; }
+html.svc-hover .svc-layout { display: grid; grid-template-columns: minmax(0, 1fr) 21rem; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+html.svc-hover .svc-layout .svc-list { max-width: none; }
+html.svc-enhanced .svc summary:hover .svc-arrow { transform: translateX(4px); }
+html.svc-enhanced .svc[open] .svc-arrow { transform: none; }
+
+/* Brand tones per service (text contrast noted). */
+.tone-1 { --tone-bg: var(--azure-7); --tone-ink: #fff; }                                   /* 6.1:1 */
+.tone-2 { --tone-bg: var(--mint); --tone-ink: var(--surface-chocolate-dark); }            /* 6.5:1 */
+.tone-3 { --tone-bg: var(--surface-chocolate-dark); --tone-ink: var(--surface-cloud); }   /* 12.9:1 */
+.tone-4 { --tone-bg: var(--lilac); --tone-ink: var(--surface-chocolate-dark); }           /* 10.9:1 */
+.tone-5 { --tone-bg: var(--pumpkin); --tone-ink: var(--surface-chocolate-dark); }         /* 4.8:1 */
+.tone-6 { --tone-bg: var(--sage); --tone-ink: var(--surface-chocolate-dark); }            /* 11:1 */
+
+.svc-preview { position: relative; display: none; }
+html.svc-hover .svc-preview { display: block; align-self: stretch; }
+.svc-card {
+  position: absolute; left: 0; right: 0; top: 0; min-height: 21rem; overflow: hidden; cursor: pointer;
+  display: flex; flex-direction: column; padding: 2rem 2rem 1.75rem;
+  border-radius: 0 2.25rem 0 2.25rem; background: var(--tone-bg, var(--azure-7)); color: var(--tone-ink, #fff);
+  box-shadow: 0 30px 60px -36px rgba(62, 31, 11, .6);
+  opacity: 0; transform: translateY(var(--y, 0px)) scale(.94); transform-origin: 50% 50%;
+  transition: transform .6s cubic-bezier(.2, .8, .2, 1), opacity .3s ease, background-color .4s ease, color .4s ease;
+}
+.svc-card.is-on { opacity: 1; transform: translateY(var(--y, 0px)) scale(1); }
+.svc-card-mark { position: absolute; top: -2.25rem; right: -2.25rem; width: 10rem; opacity: .2; }
+.svc-card-mark svg { display: block; width: 100%; height: auto; }
+.svc-card-n { font-family: "Barlow Condensed", sans-serif; font-weight: 700; line-height: .82; font-size: 5.5rem; }
+.svc-card-t { margin-top: auto; font-family: "Barlow Condensed", sans-serif; font-weight: 700; line-height: 1; font-size: 1.95rem; }
+.svc-card-l { margin: .7rem 0 1.25rem; font-size: .95rem; line-height: 1.5; }
+.svc-card-go { display: inline-flex; align-items: center; gap: .5rem; font-family: "Barlow Condensed", sans-serif;
+               font-weight: 700; font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase; }
+.svc-card-go svg { width: 1rem; height: 1rem; transition: transform .18s; }
+.svc-card:hover .svc-card-go svg { transform: translateX(4px); }
+.svc-card > * { transition: opacity .25s ease; }
+.svc-card.is-swapping > :not(.svc-card-mark) { opacity: 0; }
+
+/* The zoomed view. */
+html.svc-zoom-open { overflow: hidden; }
+.svc-zoom {
+  position: fixed; inset: 0; z-index: 160; overflow-y: auto; overscroll-behavior: contain;
+  background: var(--tone-bg); color: var(--tone-ink);
+  clip-path: inset(0px 0px 0px 0px round 0px);
+  transition: clip-path .75s cubic-bezier(.7, 0, .2, 1);
+}
+.svc-zoom[hidden] { display: none; }
+.svc-zoom-inner { min-height: 100%; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+                  gap: clamp(2rem, 6vw, 6rem); align-content: center; padding: clamp(5.5rem, 12vh, 8rem) 0 clamp(3rem, 8vh, 5rem);
+                  opacity: 0; transform: translateY(1.5rem);
+                  transition: opacity .2s ease, transform .3s ease; }
+.svc-zoom.is-open .svc-zoom-inner { opacity: 1; transform: none;
+                                     transition: opacity .45s ease .4s, transform .7s cubic-bezier(.2, .8, .2, 1) .35s; }
+.svc-zoom-n { display: block; font-family: "Barlow Condensed", sans-serif; font-weight: 700; line-height: .8;
+              font-size: clamp(7rem, 17vw, 15rem); }
+.svc-zoom-t { margin: 1.25rem 0 0; color: inherit; font-size: clamp(2.6rem, 5vw, 4.75rem); line-height: .95; max-width: 12ch; }
+.svc-zoom-body { align-self: end; }
+.svc-zoom .svc-lead { font-size: clamp(1.2rem, 1.9vw, 1.5rem); max-width: 34rem; margin-bottom: 2rem; }
+.svc-zoom .svc-points { gap: .9rem 2rem; margin-bottom: 2.25rem; font-size: 1.05rem; }
+.svc-zoom .svc-points li { border-top: 1px solid color-mix(in srgb, currentColor 30%, transparent); padding-top: .9rem; }
+.svc-zoom .svc-points li::before { background: currentColor; }
+.svc-zoom .svc-link { color: inherit; border-bottom-color: currentColor; font-size: 1.25rem; }
+.svc-zoom-close { position: fixed; top: 1.25rem; right: 1.25rem; z-index: 2; width: 3.25rem; height: 3.25rem; border-radius: 50%;
+                  display: grid; place-items: center; cursor: pointer; color: inherit; background: transparent;
+                  border: 1.5px solid currentColor; opacity: 0; transition: opacity .3s ease, transform .3s ease; }
+.svc-zoom.is-open .svc-zoom-close { opacity: 1; transition-delay: .45s; }
+.svc-zoom-close:hover { transform: rotate(90deg); }
+.svc-zoom-close:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.svc-zoom-close svg { width: 1.2rem; height: 1.2rem; }
+@media (max-width: 860px) {
+  .svc-zoom-inner { grid-template-columns: 1fr; align-content: start; }
+  .svc-zoom .svc-points { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .svc-zoom { transition: opacity .2s ease; clip-path: none !important; opacity: 0; }
+  .svc-zoom.is-open { opacity: 1; }
+  .svc-card { transition: opacity .2s ease; }
+}
+.svc-hero h1 { max-width: 21ch; }
+.svc-card-mark { top: auto; bottom: -3.5rem; right: -3.5rem; width: 13rem; opacity: .13; }
+@media (max-width: 860px) {
+  html.nav-glass .nav { background: rgba(248, 247, 244, .9); -webkit-backdrop-filter: blur(20px) saturate(1.5); backdrop-filter: blur(20px) saturate(1.5); }
+}

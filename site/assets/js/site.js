@@ -95,6 +95,47 @@
     });
   }
 
+  /* Glass navigation --------------------------------------------------
+     Past the first few pixels of scroll the header condenses into a pane
+     of glass (CSS does the drawing). Chromium also gets a faint refraction
+     through an SVG displacement filter; other browsers keep the frosted
+     glass. The header checks what is under it and turns smoky over dark
+     sections so the links stay readable. ------------------------------ */
+  (function () {
+    var header = document.querySelector('.site-header');
+    if (!header) return;
+    var root = document.documentElement;
+    var brands = (navigator.userAgentData && navigator.userAgentData.brands) || [];
+    var chromium = brands.some(function (b) { return /Chromium/.test(b.brand); });
+    if (chromium && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var ns = 'http://www.w3.org/2000/svg';
+      var svg = document.createElementNS(ns, 'svg');
+      svg.setAttribute('width', '0'); svg.setAttribute('height', '0'); svg.setAttribute('aria-hidden', 'true');
+      svg.style.position = 'absolute';
+      svg.innerHTML = '<filter id="glass-refract" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">' +
+        '<feTurbulence type="fractalNoise" baseFrequency="0.004 0.018" numOctaves="2" seed="11" result="n"/>' +
+        '<feGaussianBlur in="n" stdDeviation="2.5" result="nb"/>' +
+        '<feDisplacementMap in="SourceGraphic" in2="nb" scale="26" xChannelSelector="R" yChannelSelector="G"/></filter>';
+      document.body.appendChild(svg);
+      root.classList.add('glass-refract');
+    }
+    var dark = '.band-chocolate, .band-azure-deep, .band-azure, .site-footer, .tl-fill.is-full';
+    var queued = false;
+    function check() {
+      queued = false;
+      var glass = window.scrollY > 24;
+      root.classList.toggle('nav-glass', glass);
+      if (!glass) { root.classList.remove('nav-dark'); return; }
+      var r = header.getBoundingClientRect();
+      var under = document.elementsFromPoint(window.innerWidth / 2, r.top + r.height / 2);
+      var isDark = under.some(function (el) { return !header.contains(el) && el.closest && el.closest(dark); });
+      root.classList.toggle('nav-dark', isDark);
+    }
+    window.addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(check); } }, { passive: true });
+    window.addEventListener('resize', check);
+    check();
+  })();
+
   /* Scroll reveal -------------------------------------------------------- */
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var targets = document.querySelectorAll('.reveal');
@@ -323,7 +364,11 @@
       el.className = 'fly-piece';
       el.innerHTML = s.innerHTML;
       layer.appendChild(el);
-      return { el: el, start: s, end: ends[+s.dataset.fly], a: null, b: null, ys: 0, ye: 1, t: 0, p: 0 };
+      // Each piece spins clockwise on the way down: one full turn, plus a quarter
+      // for the bottom-left piece, the only one drawn at a different angle, so all
+      // four land facing the same way.
+      return { el: el, start: s, end: ends[+s.dataset.fly], a: null, b: null, ys: 0, ye: 1, t: 0, p: 0,
+               spin: s.dataset.fly === '2' ? 450 : 360 };
     });
     var active = false, R = null, K = 1;
     var I = 0;               // intro amount: 1 = at the centre of the screen, 0 = in the page
@@ -367,12 +412,19 @@
         var x = pc.a.x + (pc.b.x - pc.a.x) * e;
         var yy = pc.a.y + (pc.b.y - pc.a.y) * e;
         var s = 1 + (pc.b.w / pc.a.w - 1) * e;
+        var rot = pc.spin * e;
         if (I > 0) {                               // blend towards the intro spot
           x += (cx + (pc.a.x - R.x) * k - x) * I;
           yy += (cy + (pc.a.y - R.y) * k - yy) * I;
           s += (k - s) * I;
         }
-        pc.el.style.transform = 'translate3d(' + x.toFixed(2) + 'px,' + yy.toFixed(2) + 'px,0) scale(' + (s / K).toFixed(4) + ')';
+        var half = pc.a.w * K / 2;
+        pc.el.style.transform = 'translate3d(' + x.toFixed(2) + 'px,' + yy.toFixed(2) + 'px,0) scale(' + (s / K).toFixed(4) + ')' +
+          ' translate(' + half + 'px,' + half + 'px) rotate(' + rot.toFixed(2) + 'deg) translate(' + (-half) + 'px,' + (-half) + 'px)';
+        pc.el.classList.toggle('is-blue', e > 0.45);
+        var landed = pc.p >= 0.999 && I === 0;
+        pc.el.classList.toggle('is-landed', landed);
+        pc.end.classList.toggle('is-shown', landed);
       });
       return moving;
     }
@@ -423,6 +475,21 @@
     else finishIntro();
   })();
 
+  /* At a glance: tapping a card on a touch screen turns it over (hover and
+     keyboard focus do the same on desktop, in CSS). */
+  (function () {
+    var cards = [].slice.call(document.querySelectorAll('.usp-card'));
+    cards.forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;
+        if (window.matchMedia('(hover: hover)').matches) return;
+        var on = !card.classList.contains('is-flipped');
+        cards.forEach(function (c) { c.classList.remove('is-flipped'); });
+        card.classList.toggle('is-flipped', on);
+      });
+    });
+  })();
+
   /* Contact form: pre-fill the message when arriving from a funnel page. */
   (function () {
     var q = document.getElementById('query');
@@ -433,15 +500,161 @@
     if (msg) q.value = msg;
   })();
 
-  /* Services list: open the row a link points at (/services/#visa-application-support). svc-hash */
+  /* Services: hover card and zoom -----------------------------------------
+     Each service row is a <details> element, so without JavaScript the list
+     simply opens and closes. Here, on a desktop pointer, hovering a row shows
+     a brand-coloured card beside it; clicking the row or the card grows the
+     card to fill the screen (a clip-path from the card's box to the whole
+     viewport) with the service in full. On touch screens the row itself
+     grows. Escape, the close button or the browser's Back button reverse it,
+     and /services/#<service> opens straight into that service. ---------- */
   (function () {
-    function openHash() {
-      var id = decodeURIComponent(location.hash.slice(1));
-      var el = id && document.getElementById(id);
-      if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView({ block: 'start' }); }
+    var rows = [].slice.call(document.querySelectorAll('details.svc'));
+    var layout = document.querySelector('.svc-layout');
+    if (!rows.length || !layout) return;
+    var root = document.documentElement;
+    var list = layout.querySelector('.svc-list');
+    var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var hoverMq = window.matchMedia('(hover: hover) and (min-width: 1000px)');
+    root.classList.add('svc-enhanced');
+    function syncHover() { root.classList.toggle('svc-hover', hoverMq.matches); }
+    syncHover();
+    if (hoverMq.addEventListener) hoverMq.addEventListener('change', syncHover);
+    var ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+    // Hover card --------------------------------------------------------------
+    var aside = document.createElement('aside');
+    aside.className = 'svc-preview';
+    aside.setAttribute('aria-hidden', 'true');
+    aside.innerHTML = '<div class="svc-card"><span class="svc-card-mark"><svg viewBox=\"0 0 172.769 172.027\" fill=\"currentColor\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M82.9502 54.5508C82.9502 67.6276 67.6296 82.9489 54.5527 82.9492H41.4756V0H82.9502V54.5508ZM41.4746 82.9482H0V28.3975C7.89621e-05 15.3207 15.3206 0.000375479 28.3975 0H41.4746V82.9482ZM172.769 54.5508C172.769 67.6276 157.448 82.9489 144.371 82.9492H131.294V41.4746H131.293V82.9482H89.8184V28.3975C89.8184 15.3207 105.139 0.000352465 118.216 0H172.768L172.769 41.4746C172.769 41.4866 172.769 41.8758 172.769 54.5508ZM82.9502 172.027H41.4756V130.553H82.9502V172.027ZM41.4746 172.026C41.4673 172.026 41.1621 172.026 28.3975 172.026C15.3206 172.026 0 156.706 0 143.629V130.552H41.4746V172.026ZM54.5527 89.0732C67.6296 89.0735 82.9502 104.394 82.9502 117.471V130.548H0.000976562V89.0732H54.5527ZM131.293 172.027H89.8184V130.553H131.293V172.027ZM172.769 143.629C172.769 156.706 157.448 172.026 144.371 172.026H131.294V130.552H172.769C172.769 130.552 172.769 130.552 172.769 143.629ZM172.768 130.548H89.8184C89.8184 130.548 89.8184 130.548 89.8184 117.471C89.8184 104.394 105.139 89.0735 118.216 89.0732H172.768V130.548Z\"/></svg></span>' +
+      '<span class="svc-card-n"></span><span class="svc-card-t"></span><span class="svc-card-l"></span>' +
+      '<span class="svc-card-go">View details ' + ARROW + '</span></div>';
+    layout.appendChild(aside);
+    var card = aside.firstChild, current = null, swapT;
+    function parts(row) {
+      return { n: row.querySelector('.svc-n').textContent, t: row.querySelector('.svc-t').textContent,
+               l: row.querySelector('.svc-lead').textContent, tone: row.getAttribute('data-tone') || '1' };
     }
-    openHash();
-    window.addEventListener('hashchange', openHash);
+    function place(row) {
+      var y = row.offsetTop + row.offsetHeight / 2 - card.offsetHeight / 2;
+      y = Math.max(0, Math.min(list.offsetHeight - card.offsetHeight, y));
+      card.style.setProperty('--y', y + 'px');
+    }
+    function show(row) {
+      if (!hoverMq.matches || current === row) return;
+      var d = parts(row), first = !card.classList.contains('is-on');
+      current = row;
+      function fill() {
+        card.querySelector('.svc-card-n').textContent = d.n;
+        card.querySelector('.svc-card-t').textContent = d.t;
+        card.querySelector('.svc-card-l').textContent = d.l;
+        card.className = 'svc-card is-on tone-' + d.tone;
+        place(row);
+      }
+      clearTimeout(swapT);
+      if (first) { fill(); return; }
+      card.classList.add('is-swapping');          // words fade out, colour and position glide
+      card.className = 'svc-card is-on is-swapping tone-' + d.tone;
+      place(row);
+      swapT = setTimeout(function () { fill(); }, 160);
+    }
+    function hide() { current = null; card.classList.remove('is-on'); }
+    rows.forEach(function (row) { row.addEventListener('mouseenter', function () { show(row); }); });
+    layout.addEventListener('mouseleave', hide);
+    card.addEventListener('click', function () { if (current) open(current, card); });
+
+    // Zoom ----------------------------------------------------------------------
+    var zoom = document.createElement('div');
+    zoom.className = 'svc-zoom';
+    zoom.hidden = true;
+    zoom.setAttribute('role', 'dialog');
+    zoom.setAttribute('aria-modal', 'true');
+    zoom.setAttribute('aria-labelledby', 'svcZoomTitle');
+    zoom.innerHTML = '<button class="svc-zoom-close" type="button" aria-label="Close">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>' +
+      '<div class="wrap svc-zoom-inner"><div class="svc-zoom-head"><span class="svc-zoom-n"></span>' +
+      '<h2 class="svc-zoom-t" id="svcZoomTitle"></h2></div><div class="svc-zoom-body"></div></div>';
+    document.body.appendChild(zoom);
+    var closeBtn = zoom.querySelector('.svc-zoom-close');
+    var openRow = null, pushed = false, endT;
+
+    function boxOf(el) {
+      var r = el.getBoundingClientRect(), vw = document.documentElement.clientWidth, vh = window.innerHeight;
+      var round = el === card ? ' round 0px 36px 0px 36px' : ' round 0px 0px 0px 0px';
+      return 'inset(' + Math.max(0, r.top) + 'px ' + Math.max(0, vw - r.right) + 'px ' +
+             Math.max(0, vh - r.bottom) + 'px ' + Math.max(0, r.left) + 'px' + round + ')';
+    }
+    function originFor(row) {
+      return (hoverMq.matches && current === row && card.classList.contains('is-on')) ? card : row.querySelector('summary');
+    }
+    function open(row, fromHash) {
+      if (openRow) return;
+      openRow = row;
+      var d = parts(row);
+      zoom.className = 'svc-zoom tone-' + d.tone;
+      zoom.querySelector('.svc-zoom-n').textContent = d.n;
+      zoom.querySelector('.svc-zoom-t').textContent = d.t;
+      zoom.querySelector('.svc-zoom-body').innerHTML = row.querySelector('.svc-body').innerHTML;
+      var from = originFor(row);
+      zoom.style.transition = 'none';
+      zoom.style.clipPath = still ? '' : boxOf(from);
+      zoom.hidden = false;
+      void zoom.offsetWidth;
+      zoom.style.transition = '';
+      root.classList.add('svc-zoom-open');
+      requestAnimationFrame(function () {
+        zoom.classList.add('is-open');
+        if (!still) zoom.style.clipPath = 'inset(0px 0px 0px 0px round 0px 0px 0px 0px)';
+      });
+      closeBtn.focus({ preventScroll: true });
+      if (fromHash === true) { pushed = false; }
+      else { try { history.pushState({ svc: row.id }, '', '#' + row.id); pushed = true; } catch (e) { pushed = false; } }
+    }
+    function finishClose() {
+      clearTimeout(endT);
+      zoom.hidden = true;
+      zoom.classList.remove('is-open');
+      root.classList.remove('svc-zoom-open');
+      var row = openRow; openRow = null;
+      if (row) row.querySelector('summary').focus({ preventScroll: true });
+    }
+    function close() {
+      if (!openRow) return;
+      if (hoverMq.matches) show(openRow);           // bring the card back so the view shrinks into it
+      zoom.classList.remove('is-open');
+      if (still) { finishClose(); return; }
+      zoom.style.clipPath = boxOf(originFor(openRow));
+      endT = setTimeout(finishClose, 800);
+    }
+    function requestClose() {
+      if (!openRow) return;
+      if (pushed) { history.back(); }               // popstate below does the closing
+      else { close(); try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} }
+    }
+    window.addEventListener('popstate', function () { if (openRow) { pushed = false; close(); } });
+    closeBtn.addEventListener('click', requestClose);
+    zoom.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { e.preventDefault(); requestClose(); return; }
+      if (e.key !== 'Tab') return;                  // keep focus inside the open view
+      var f = [].slice.call(zoom.querySelectorAll('a[href], button'));
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
+
+    rows.forEach(function (row) {
+      row.querySelector('summary').addEventListener('click', function (e) { e.preventDefault(); open(row); });
+    });
+    function openFromHash() {
+      var id = decodeURIComponent(location.hash.slice(1));
+      var row = id && document.getElementById(id);
+      if (row && row.tagName === 'DETAILS' && !openRow) {
+        row.scrollIntoView({ block: 'center' });
+        setTimeout(function () { open(row, true); }, 250);
+      }
+    }
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
   })();
 
   /* Enquiry form --------------------------------------------------------- */

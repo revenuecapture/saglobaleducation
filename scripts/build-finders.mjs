@@ -106,6 +106,19 @@ async function loadResearch() {
 // ---------------------------------------------------------------------------------------------
 // Shaping for the browser
 
+// Official university logos already used on the site (site/assets/img/<key>-logo.svg or .webp).
+// The key is the university's short name; exceptions are listed here.
+const LOGO_KEYS = { 'gb-university-of-east-anglia': 'uea', 'gb-queen-mary-university-of-london': 'queen-mary',
+  'gb-royal-holloway-university-of-london': 'royal-holloway' };
+function logoFor(slug) {
+  if (!slug) return null;
+  const key = LOGO_KEYS[slug] || slug.replace(/^[a-z]{2}-/, '').replace(/^university-of-/, '').replace(/-university$/, '');
+  for (const ext of ['svg', 'webp']) {
+    if (existsSync(path.join(SITE, 'assets', 'img', `${key}-logo.${ext}`))) return `/assets/img/${key}-logo.${ext}`;
+  }
+  return null;
+}
+
 function shape(db) {
   const uniById = new Map(db.universities.map(u => [u.id, u]));
   const uniSlug = row => row.university_slug || (uniById.get(row.university_id) || {}).slug || null;
@@ -115,7 +128,7 @@ function shape(db) {
   }));
   const universities = db.universities.map(u => ({
     slug: u.slug, name: u.name, city: u.city || null, dest: u.destination_code, web: u.website_url || null,
-    russell: u.is_russell_group === true && !!u.russell_group_source_url
+    russell: u.is_russell_group === true && !!u.russell_group_source_url, logo: logoFor(u.slug)
   }));
   const awards = db.scholarships
     .filter(s => !s.deadline_on || s.deadline_on >= TODAY)
@@ -242,6 +255,7 @@ function coursePage(c, data, shell) {
 ${crumbHtml(crumbs)}
 <section class="detail-hero">
  <div class="wrap">
+  ${u.logo ? `<img class="detail-logo" src="${esc(u.logo)}" alt="${esc(u.name)} logo" width="200" height="56">` : ''}
   <p class="detail-tags"><span class="tag tag-dest">${esc(d.tab || '')}</span><span class="tag">${esc(LEVEL[c.level] || '')}</span>${field ? `<span class="tag tag-quiet">${esc(field)}</span>` : ''}</p>
   <h1>${esc(name)}</h1>
   <p class="detail-uni">${esc(u.name || '')}${u.city ? `, ${esc(u.city)}` : ''}</p>
@@ -292,6 +306,7 @@ function awardPage(a, data, shell) {
 ${crumbHtml(crumbs)}
 <section class="detail-hero">
  <div class="wrap">
+  ${u && u.logo ? `<img class="detail-logo" src="${esc(u.logo)}" alt="${esc(u.name)} logo" width="200" height="56">` : ''}
   <p class="detail-tags">${destNames.map(n => `<span class="tag tag-dest">${esc(n)}</span>`).join('')}${a.levels.map(l => `<span class="tag">${esc(LEVEL[l] || l)}</span>`).join('')}</p>
   <h1>${esc(a.name)}</h1>
   <p class="detail-uni">${esc(a.provider)}</p>

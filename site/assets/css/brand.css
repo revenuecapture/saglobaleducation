@@ -572,7 +572,10 @@ section { position: relative; }
    on the site), so the zoom now rides that instead - universally
    supported, same mechanism as the proven .reveal fade-ups. ------------- */
 
-.why-figure { overflow: hidden; }
+.why-figure { overflow: hidden; aspect-ratio: 4/5; }
+/* Sticky only beside the text on wide screens; stacked on phones it would sit over the text. */
+@media (min-width: 861px) { .why-figure { position: sticky; top: 7rem; } }
+@media (max-width: 860px) { .why-figure { aspect-ratio: 4/3; } }
 .why-figure img {
   width: 100%; height: 100%;
   object-fit: cover;
@@ -1092,8 +1095,13 @@ section.band, section.band-tight, section.page-hero, section.hs { overflow: clip
 .office-link svg { width: 1rem; height: 1rem; transition: transform .18s; }
 .office-link:hover svg { transform: translateX(3px); }
 .office--soon .office-link { color: var(--mint); }
+/* Birmingham, the global headquarters, leads on a row of its own. */
+.office--hq { grid-column: 1 / -1; min-height: 13rem; }
+.office--hq ~ .office--pk { grid-column: span 3; }
+.office-hq { margin: -.15rem 0 .35rem; font-family: "Barlow Condensed", sans-serif; font-weight: 700;
+             font-size: clamp(1.35rem, 2vw, 1.7rem); line-height: 1.1; }
 @media (max-width: 960px) { .office, .office--soon { grid-column: span 3; } .office--uk { grid-column: 1 / -1; } }
-@media (max-width: 560px) { .office-grid { grid-template-columns: 1fr; } .office, .office--soon, .office--uk { grid-column: auto; } }
+@media (max-width: 560px) { .office-grid { grid-template-columns: 1fr; } .office, .office--soon, .office--uk, .office--hq ~ .office--pk { grid-column: auto; } }
 
 .footer-offices a { display: block; line-height: 1.55; }
 .footer-offices span { display: block; margin-bottom: .15rem; font-family: "Barlow Condensed", sans-serif;
@@ -1400,7 +1408,7 @@ html.fly-on .fly-slot svg { visibility: hidden; }
    the headline; on scroll its four pieces fly to the at-a-glance columns.
    ========================================================================== */
 .hero3 { position: relative; padding: clamp(2.5rem, 5.5vw, 4.75rem) 0 clamp(3.5rem, 6vw, 5.5rem); }
-.hero3-h { font-size: clamp(3.1rem, 9.3vw, 9.25rem); line-height: .86; letter-spacing: -.012em;
+.hero3-h { font-size: clamp(3.1rem, 9.3vw, 9.25rem); line-height: .97; letter-spacing: -.012em;
            max-width: none; margin: 0 0 clamp(2rem, 3.6vw, 3rem); }
 .hero3-l { display: block; }
 .hero3-mark { display: inline-block; width: .7em; margin-left: .12em; }
@@ -1598,8 +1606,8 @@ html.fly-on .fly-slot.fly-end.is-shown svg { visibility: visible; }
 .svc-hero .lead { max-width: 40rem; }
 .svc-layout { position: relative; }
 .svc-layout .svc-list { position: relative; max-width: 48rem; }
-html.svc-hover .svc-layout { display: grid; grid-template-columns: minmax(0, 1fr) 21rem; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
-html.svc-hover .svc-layout .svc-list { max-width: none; }
+html.svc-hover .svc-layout .svc-list { max-width: 64rem; }
+html.svc-hover .svc summary { cursor: pointer; }
 html.svc-enhanced .svc summary:hover .svc-arrow { transform: translateX(4px); }
 html.svc-enhanced .svc[open] .svc-arrow { transform: none; }
 
@@ -1611,23 +1619,25 @@ html.svc-enhanced .svc[open] .svc-arrow { transform: none; }
 .tone-5 { --tone-bg: var(--pumpkin); --tone-ink: var(--surface-chocolate-dark); }         /* 4.8:1 */
 .tone-6 { --tone-bg: var(--sage); --tone-ink: var(--surface-chocolate-dark); }            /* 11:1 */
 
-.svc-preview { position: relative; display: none; }
-html.svc-hover .svc-preview { display: block; align-self: stretch; }
+/* The preview card follows the cursor (positioned by site.js); clicks pass through to the row. */
+.svc-preview { position: fixed; left: 0; top: 0; z-index: 120; width: 19rem; display: none; pointer-events: none; will-change: transform; }
+html.svc-hover .svc-preview { display: block; }
 .svc-card {
-  position: absolute; left: 0; right: 0; top: 0; min-height: 21rem; overflow: hidden; cursor: pointer;
+  position: relative; min-height: 17.5rem; overflow: hidden;
   display: flex; flex-direction: column; padding: 2rem 2rem 1.75rem;
   border-radius: 0 2.25rem 0 2.25rem; background: var(--tone-bg, var(--azure-7)); color: var(--tone-ink, #fff);
   box-shadow: 0 30px 60px -36px rgba(62, 31, 11, .6);
-  opacity: 0; transform: translateY(var(--y, 0px)) scale(.94); transform-origin: 50% 50%;
-  transition: transform .6s cubic-bezier(.2, .8, .2, 1), opacity .3s ease, background-color .4s ease, color .4s ease;
+  opacity: 0; transform: scale(.82) rotate(-2deg); transform-origin: 0 50%;
+  transition: transform .45s cubic-bezier(.2, .8, .2, 1), opacity .25s ease, background-color .35s ease, color .35s ease;
 }
-.svc-card.is-on { opacity: 1; transform: translateY(var(--y, 0px)) scale(1); }
+.svc-card.is-left { transform-origin: 100% 50%; transform: scale(.82) rotate(2deg); }
+.svc-card.is-on { opacity: 1; transform: none; }
 .svc-card-mark { position: absolute; top: -2.25rem; right: -2.25rem; width: 10rem; opacity: .2; }
 .svc-card-mark svg { display: block; width: 100%; height: auto; }
-.svc-card-n { font-family: "Barlow Condensed", sans-serif; font-weight: 700; line-height: .82; font-size: 5.5rem; }
-.svc-card-t { margin-top: auto; font-family: "Barlow Condensed", sans-serif; font-weight: 700; line-height: 1; font-size: 1.95rem; }
+.svc-card-n { font-family: "Barlow Condensed", sans-serif; font-weight: 700; line-height: .82; font-size: 4.75rem; }
+.svc-card-t { margin-top: auto; font-family: "Barlow Condensed", sans-serif; font-weight: 700; line-height: 1; font-size: 1.75rem; }
 .svc-card-l { margin: .7rem 0 1.25rem; font-size: .95rem; line-height: 1.5; }
-.svc-card-go { display: inline-flex; align-items: center; gap: .5rem; font-family: "Barlow Condensed", sans-serif;
+.svc-card-go { white-space: nowrap; display: inline-flex; align-items: center; gap: .5rem; font-family: "Barlow Condensed", sans-serif;
                font-weight: 700; font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase; }
 .svc-card-go svg { width: 1rem; height: 1rem; transition: transform .18s; }
 .svc-card:hover .svc-card-go svg { transform: translateX(4px); }
@@ -1767,6 +1777,10 @@ html.nav-glass .nav { gap: 1.35rem; }
       background: #fff; border: 1px solid var(--surface-cloud-dark); transition: box-shadow .25s, transform .25s; }
 .fc:hover { box-shadow: 0 18px 40px -28px rgba(62, 31, 11, .55); transform: translateY(-2px); }
 .fc-top { display: flex; align-items: center; gap: .4rem; flex-wrap: wrap; }
+/* Official university logos (finder cards, quick view, detail pages). */
+.fc-logo { display: block; height: 3.25rem; width: auto; max-width: 11rem; object-fit: contain; object-position: left center; margin: .9rem 0 .2rem; }
+.qv-logo { display: block; height: 3rem; width: auto; max-width: 13rem; object-fit: contain; object-position: left center; margin: .25rem 0 .9rem; }
+.detail-logo { display: block; height: clamp(3rem, 5vw, 4rem); width: auto; max-width: 16rem; object-fit: contain; object-position: left center; margin: 0 0 1.25rem; }
 .tag { display: inline-flex; align-items: center; padding: .2rem .6rem; border-radius: 999px; background: var(--surface-cloud);
        font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: .88rem; letter-spacing: .05em; color: var(--surface-chocolate-dark); text-decoration: none; }
 .tag-dest { background: var(--surface-chocolate-dark); color: var(--surface-cloud); }

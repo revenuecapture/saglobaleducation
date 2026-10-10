@@ -292,12 +292,16 @@
     var name = IS_C ? it.name : it.name;
     return '<button type="button" class="fc-save" data-save="' + esc(it.slug) + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Remove ' : 'Save ') + esc(name) + (on ? ' from' : ' to') + ' your shortlist">' + ICON.save + '</button>';
   }
+  function logoImg(u, cls) {
+    return u && u.logo ? '<img class="' + cls + '" src="' + esc(u.logo) + '" alt="' + esc(u.name) + ' logo" width="200" height="56" loading="lazy" decoding="async">' : '';
+  }
   function courseCard(it) {
     var u = byUni[it.uni] || {};
     var fee = it.fee != null ? '<dd>' + money(it.fee, it.cur) + ' ' + (it.basis === 'total' ? 'in total' : 'a year') + '<small>Estimated international tuition, ' + esc(it.feeYear || '') + '</small></dd>' : '<dd>Ask a counsellor</dd>';
     var sch = it.sch && it.sch.length ? '<a class="tag tag-sch" href="/scholarships/?' + (it.uni ? 'uni=' + esc(it.uni) : 'destination=' + esc(it.dest)) + '&amp;level=' + esc(it.level === 'pg_diploma' ? 'postgraduate' : it.level) + '">Scholarships available</a>' : '';
     return '<article class="fc">' +
       '<div class="fc-top"><span class="tag tag-dest">' + esc(tabLabel(it.dest)) + '</span><span class="tag">' + esc(LEVEL[it.level] || '') + '</span>' + saveBtn(it) + '</div>' +
+      logoImg(u, 'fc-logo') +
       '<p class="fc-field">' + esc(fieldLabel[it.field] || '') + '</p>' +
       '<h3 class="fc-title"><a href="' + esc(it.page) + '">' + esc(it.name) + '</a></h3>' +
       '<p class="fc-uni">' + esc(u.name || '') + (u.city ? ', ' + esc(u.city) : '') + '</p>' +
@@ -313,6 +317,7 @@
     return '<article class="fc fc-award' + (FULL[it.valueType] ? ' fc-full' : '') + '">' +
       '<div class="fc-top">' + it.dests.slice(0, 2).map(function (d) { return '<span class="tag tag-dest">' + esc(tabLabel(d)) + '</span>'; }).join('') +
       (it.dests.length > 2 ? '<span class="tag tag-dest">+' + (it.dests.length - 2) + '</span>' : '') + saveBtn(it) + '</div>' +
+      logoImg(byUni[it.uni], 'fc-logo') +
       '<p class="fc-field">' + esc(TYPE[it.type] || '') + '</p>' +
       '<h3 class="fc-title"><a href="' + esc(it.page) + '">' + esc(it.name) + '</a></h3>' +
       '<p class="fc-uni">' + esc(it.provider) + '</p>' +
@@ -478,6 +483,7 @@
       var u = byUni[it.uni] || {}, d = data.destinations.find(function (x) { return x.code === it.dest; }) || {};
       var awards = (it.sch || []).map(function (s) { return (data.awards || []).find(function (a) { return a.slug === s; }); }).filter(Boolean);
       html = closeBtn() + '<p class="qv-tags"><span class="tag tag-dest">' + esc(d.tab) + '</span><span class="tag">' + esc(LEVEL[it.level]) + '</span><span class="tag tag-quiet">' + esc(fieldLabel[it.field] || '') + '</span></p>' +
+        logoImg(u, 'qv-logo') +
         '<h2 class="qv-title" id="qvTitle">' + esc(it.name) + '</h2>' +
         '<p class="qv-uni">' + esc(u.name || '') + (u.city ? ', ' + esc(u.city) : '') + '</p>' +
         factList([['Duration', esc(it.dur)], ['Study mode', esc(MODE[it.mode])],
@@ -498,6 +504,7 @@
       var qs = it.uni ? 'uni=' + it.uni : (it.dests.length === 1 ? 'destination=' + it.dests[0] : '');
       if (it.levels.length === 1) qs += (qs ? '&' : '') + 'level=' + it.levels[0];
       html = closeBtn() + '<p class="qv-tags">' + it.dests.map(function (d) { return '<span class="tag tag-dest">' + esc(tabLabel(d)) + '</span>'; }).join('') + '<span class="tag tag-quiet">' + esc(TYPE[it.type] || '') + '</span></p>' +
+        logoImg(byUni[it.uni], 'qv-logo') +
         '<h2 class="qv-title" id="qvTitle">' + esc(it.name) + '</h2><p class="qv-uni">' + esc(it.provider) + '</p>' +
         '<p class="qv-value">' + esc(it.valueText) + '</p>' +
         factList([['Level', esc(it.levels.map(function (l) { return LEVEL[l]; }).join(', '))], ['Open to', esc(who)],

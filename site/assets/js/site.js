@@ -528,17 +528,36 @@
     aside.setAttribute('aria-hidden', 'true');
     aside.innerHTML = '<div class="svc-card"><span class="svc-card-mark"><svg viewBox=\"0 0 172.769 172.027\" fill=\"currentColor\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M82.9502 54.5508C82.9502 67.6276 67.6296 82.9489 54.5527 82.9492H41.4756V0H82.9502V54.5508ZM41.4746 82.9482H0V28.3975C7.89621e-05 15.3207 15.3206 0.000375479 28.3975 0H41.4746V82.9482ZM172.769 54.5508C172.769 67.6276 157.448 82.9489 144.371 82.9492H131.294V41.4746H131.293V82.9482H89.8184V28.3975C89.8184 15.3207 105.139 0.000352465 118.216 0H172.768L172.769 41.4746C172.769 41.4866 172.769 41.8758 172.769 54.5508ZM82.9502 172.027H41.4756V130.553H82.9502V172.027ZM41.4746 172.026C41.4673 172.026 41.1621 172.026 28.3975 172.026C15.3206 172.026 0 156.706 0 143.629V130.552H41.4746V172.026ZM54.5527 89.0732C67.6296 89.0735 82.9502 104.394 82.9502 117.471V130.548H0.000976562V89.0732H54.5527ZM131.293 172.027H89.8184V130.553H131.293V172.027ZM172.769 143.629C172.769 156.706 157.448 172.026 144.371 172.026H131.294V130.552H172.769C172.769 130.552 172.769 130.552 172.769 143.629ZM172.768 130.548H89.8184C89.8184 130.548 89.8184 130.548 89.8184 117.471C89.8184 104.394 105.139 89.0735 118.216 89.0732H172.768V130.548Z\"/></svg></span>' +
       '<span class="svc-card-n"></span><span class="svc-card-t"></span><span class="svc-card-l"></span>' +
-      '<span class="svc-card-go">View details ' + ARROW + '</span></div>';
-    layout.appendChild(aside);
+      '<span class="svc-card-go">Click to view details ' + ARROW + '</span></div>';
+    document.body.appendChild(aside);              // fixed to the viewport, so no ancestor transform can shift it
     var card = aside.firstChild, current = null, swapT;
     function parts(row) {
       return { n: row.querySelector('.svc-n').textContent, t: row.querySelector('.svc-t').textContent,
                l: row.querySelector('.svc-lead').textContent, tone: row.getAttribute('data-tone') || '1' };
     }
-    function place(row) {
-      var y = row.offsetTop + row.offsetHeight / 2 - card.offsetHeight / 2;
-      y = Math.max(0, Math.min(list.offsetHeight - card.offsetHeight, y));
-      card.style.setProperty('--y', y + 'px');
+
+    // The card trails the cursor: it sits beside the pointer, eases after it, and flips to the
+    // left of the pointer near the right edge of the screen.
+    var GAP = 28, mx = 0, my = 0, x = null, y = null, raf = 0, flipped = false;
+    function target() {
+      var w = aside.offsetWidth, h = card.offsetHeight || aside.offsetHeight, vw = document.documentElement.clientWidth, vh = window.innerHeight;
+      var flip = mx + GAP + w > vw - 16;
+      if (flip !== flipped) { flipped = flip; card.classList.toggle('is-left', flip); }
+      var tx = flip ? mx - GAP - w : mx + GAP;
+      var ty = Math.max(16, Math.min(vh - h - 16, my - h / 2));
+      return [Math.max(16, tx), ty];
+    }
+    function paint() { aside.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,0)'; }
+    function tick() {
+      var t = target();
+      if (x === null || still) { x = t[0]; y = t[1]; }
+      else { x += (t[0] - x) * .2; y += (t[1] - y) * .2; }
+      paint();
+      raf = (Math.abs(t[0] - x) > .4 || Math.abs(t[1] - y) > .4) ? requestAnimationFrame(tick) : 0;
+    }
+    function follow(e) {
+      mx = e.clientX; my = e.clientY;
+      if (!raf) raf = requestAnimationFrame(tick);
     }
     function show(row) {
       if (!hoverMq.matches || current === row) return;
@@ -548,20 +567,19 @@
         card.querySelector('.svc-card-n').textContent = d.n;
         card.querySelector('.svc-card-t').textContent = d.t;
         card.querySelector('.svc-card-l').textContent = d.l;
-        card.className = 'svc-card is-on tone-' + d.tone;
-        place(row);
+        card.className = 'svc-card is-on tone-' + d.tone + (flipped ? ' is-left' : '');
       }
       clearTimeout(swapT);
-      if (first) { fill(); return; }
-      card.classList.add('is-swapping');          // words fade out, colour and position glide
-      card.className = 'svc-card is-on is-swapping tone-' + d.tone;
-      place(row);
-      swapT = setTimeout(function () { fill(); }, 160);
+      if (first) { cancelAnimationFrame(raf); raf = 0; x = null; fill(); tick(); return; }  // appear at the cursor, no glide in
+      card.className = 'svc-card is-on is-swapping tone-' + d.tone + (flipped ? ' is-left' : '');  // words fade, colour glides
+      swapT = setTimeout(fill, 140);
     }
     function hide() { current = null; card.classList.remove('is-on'); }
-    rows.forEach(function (row) { row.addEventListener('mouseenter', function () { show(row); }); });
-    layout.addEventListener('mouseleave', hide);
-    card.addEventListener('click', function () { if (current) open(current, card); });
+    list.addEventListener('mousemove', follow);
+    rows.forEach(function (row) {
+      row.addEventListener('mouseenter', function (e) { follow(e); show(row); });
+    });
+    list.addEventListener('mouseleave', function () { if (!openRow) hide(); });
 
     // Zoom ----------------------------------------------------------------------
     var zoom = document.createElement('div');

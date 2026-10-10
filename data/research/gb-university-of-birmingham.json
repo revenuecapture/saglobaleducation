@@ -1,0 +1,232 @@
+{
+  "university": {
+    "slug": "gb-university-of-birmingham",
+    "name": "University of Birmingham",
+    "destination_code": "GB",
+    "city": "Birmingham",
+    "region": null,
+    "website_url": "https://www.birmingham.ac.uk/",
+    "international_admissions_url": "https://www.birmingham.ac.uk/study/international/country/pakistan",
+    "scholarships_url": "https://www.birmingham.ac.uk/study/international/fees/scholarships",
+    "summary": "Public research university with its main campus at Edgbaston, Birmingham, and a second campus in Dubai. It offers undergraduate, postgraduate taught and research degrees, and international foundation pathways delivered with Kaplan through Birmingham International Academy. Pakistani applicants are covered by a dedicated country entry requirements page.",
+    "is_russell_group": true,
+    "russell_group_source_url": "https://russellgroup.ac.uk/about/our-universities/university-of-birmingham/",
+    "eligibility_note": "Licensed student sponsor: listed as University of Birmingham, Birmingham, Higher Education Institution, Student Sponsor (Track Record), Student route (gov.uk register dated 2026-10-05)",
+    "eligibility_source_url": "https://assets.publishing.service.gov.uk/media/6ac36a847f7c67dc11d8e48a/SP_-_Student_and_Child_Student_Web_Register_-_2026-10-05.csv",
+    "source_url": "https://www.birmingham.ac.uk/study/international/country/pakistan",
+    "verified_on": "2026-10-10",
+    "confidence": "medium"
+  },
+  "courses": [],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-birmingham-pg-high-fliers-january-2027",
+      "name": "Postgraduate High Fliers Scholarship for January 2027",
+      "provider_type": "university",
+      "provider_name": "University of Birmingham",
+      "destination_codes": [
+        "GB"
+      ],
+      "levels": [
+        "postgraduate"
+      ],
+      "field_slugs": [
+        "computer-technology",
+        "business-management",
+        "accounting-finance",
+        "media-communication",
+        "education-teaching",
+        "engineering-technology",
+        "humanities-social-sciences"
+      ],
+      "eligible_countries": [
+        "AR",
+        "BD",
+        "BO",
+        "CM",
+        "CL",
+        "CO",
+        "EC",
+        "EG",
+        "GH",
+        "IN",
+        "ID",
+        "IR",
+        "CI",
+        "JM",
+        "KE",
+        "MY",
+        "MU",
+        "MX",
+        "NG",
+        "PK",
+        "PE",
+        "SN",
+        "ZA",
+        "LK",
+        "TZ",
+        "TH",
+        "TT",
+        "TR",
+        "UG",
+        "AE",
+        "VN",
+        "ZM",
+        "ZW"
+      ],
+      "value_type": "fee_reduction",
+      "value_amount": 5000,
+      "value_percent": null,
+      "value_currency": "GBP",
+      "value_basis": "one_off",
+      "value_text": "GBP 5,000 automatic tuition fee discount",
+      "summary": "Automatic tuition fee discount for self-funded international fee payers domiciled in one of 33 listed countries, including Pakistan, who start one of 12 named full-time taught Masters programmes at the Edgbaston campus in January 2027.",
+      "criteria_text": "International fee payer, self-funded, domiciled in a listed country (Pakistan included, UK excluded), January 2027 start on an eligible full-time taught Masters at Edgbaston; unconditional offer accepted by 7 December 2026.",
+      "min_pk_percent": null,
+      "min_pk_cgpa": null,
+      "min_ielts_overall": null,
+      "need_based": false,
+      "application_route": "automatic",
+      "requires_offer": true,
+      "opens_on": null,
+      "deadline_on": "2026-12-07",
+      "deadline_note": "Unconditional offer must be accepted by 23:59 UK time on 7 December 2026 (all offer conditions met and deposit paid).",
+      "intake_label": "January 2027",
+      "official_url": "https://www.birmingham.ac.uk/study/scholarships-funding/postgraduate-high-fliers-scholarship-for-january",
+      "source_url": "https://www.birmingham.ac.uk/study/scholarships-funding/postgraduate-high-fliers-scholarship-for-january",
+      "verified_on": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Eligible programmes: Advanced Engineering Management MSc, Advanced Computer Science MSc, Computer Science MSc, Digital Media and Communications MA, Digital Media and Creative Industries MA, Education MA, Financial Management MSc, Human Resource Management MSc, International Business MSc, Marketing MSc, MPA, Public Management MSc. Page does not state whether the discount is one-off or per year; one_off recorded for one-year Masters. Not available to students with external tuition sponsorship. Cannot be combined with full-fee scholarships."
+    },
+    {
+      "slug": "gb-university-of-birmingham-bbs-masters-scholarship-2027",
+      "name": "Birmingham Business School Masters Scholarship",
+      "provider_type": "university",
+      "provider_name": "University of Birmingham (Birmingham Business School)",
+      "destination_codes": [
+        "GB"
+      ],
+      "levels": [
+        "postgraduate"
+      ],
+      "field_slugs": [
+        "business-management",
+        "accounting-finance",
+        "humanities-social-sciences"
+      ],
+      "eligible_countries": [
+        "PK",
+        "GB"
+      ],
+      "value_type": "fixed_amount",
+      "value_amount": 25000,
+      "value_percent": null,
+      "value_currency": "GBP",
+      "value_basis": "one_off",
+      "value_text": "Awards up to GBP 25,000",
+      "summary": "Competitive Business School awards in three categories (academic excellence, responsible business, outstanding talent) for offer holders on 18 named full-time MSc programmes starting September 2027. Applicants domiciled in China or India are directed to other schemes.",
+      "criteria_text": "Offer holder for an eligible full-time MSc at Edgbaston, September 2027 start, domiciled outside China and India (Pakistan and United Kingdom are on the listed domiciles); personal statement and responsible business essay.",
+      "min_pk_percent": null,
+      "min_pk_cgpa": null,
+      "min_ielts_overall": null,
+      "need_based": false,
+      "application_route": "separate_application",
+      "requires_offer": true,
+      "opens_on": null,
+      "deadline_on": "2027-03-01",
+      "deadline_note": "Application link is sent after the offer letter; assessed on a rolling basis; closes 1 March 2027.",
+      "intake_label": "September 2027",
+      "official_url": "https://www.birmingham.ac.uk/study/scholarships-funding/birmingham-business-school-masters-scholarship",
+      "source_url": "https://www.birmingham.ac.uk/study/scholarships-funding/birmingham-business-school-masters-scholarship",
+      "verified_on": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Page gives only a maximum (up to GBP 25,000); individual award amounts, number of awards, payment form (fee discount or cash) and basis are not stated, so fixed_amount and one_off are placeholders for the cap. Eligible MSc programmes include AI in Management, Accounting and Finance, Business Analytics, Economics, Financial Management, Financial Technology, Human Resource Management, International Business, Investments, Management, Marketing, Money Banking and Finance, Supply Chain Management and others (18 in total). Eligible domicile list covers many countries; only PK and GB recorded here."
+    },
+    {
+      "slug": "gb-university-of-birmingham-bia-progression-award-2027",
+      "name": "BIA Progression Award for Academic Excellence",
+      "provider_type": "university",
+      "provider_name": "University of Birmingham (Birmingham International Academy)",
+      "destination_codes": [
+        "GB"
+      ],
+      "levels": [
+        "undergraduate"
+      ],
+      "field_slugs": [],
+      "eligible_countries": [
+        "INTL"
+      ],
+      "value_type": "fee_reduction",
+      "value_amount": 5000,
+      "value_percent": null,
+      "value_currency": "GBP",
+      "value_basis": "one_off",
+      "value_text": "GBP 5,000 discount on first year undergraduate tuition",
+      "summary": "Competitive tuition discount for overseas fee paying students who complete a Birmingham International Academy Foundation Pathway in 2026/27 and progress to the first year of a Birmingham undergraduate degree in September 2027. Applies to the first year only and is not renewable.",
+      "criteria_text": "Overseas fee payer, self-funded (no full or partial third-party sponsorship), completed a BIA Foundation Pathway in 2026/27 with a final confirmed overall BIA grade of at least 90%, progressing to year one of a Birmingham undergraduate degree in September 2027.",
+      "min_pk_percent": null,
+      "min_pk_cgpa": null,
+      "min_ielts_overall": null,
+      "need_based": false,
+      "application_route": "automatic",
+      "requires_offer": true,
+      "opens_on": null,
+      "deadline_on": "2027-08-31",
+      "deadline_note": "No separate application; eligible students are considered once final BIA results are confirmed and only selected students are contacted. Page lists 31 August 2027 as the deadline.",
+      "intake_label": "September 2027",
+      "official_url": "https://www.birmingham.ac.uk/study/scholarships-funding/bia-progression-award-for-academic-excellence",
+      "source_url": "https://www.birmingham.ac.uk/study/scholarships-funding/bia-progression-award-for-academic-excellence",
+      "verified_on": "2026-10-10",
+      "confidence": "high",
+      "notes": "Terms and conditions (https://www.birmingham.ac.uk/study/international/fees/scholarships/bia-progression-award-for-academic-excellence-terms-and-conditions) set no nationality or domicile restriction beyond overseas fee status; awards are limited and competitive, number not stated; may normally be held with another University partial scholarship or discount, not with third-party sponsorship. Only relevant to students already on a BIA Foundation Pathway (admissions handled by Kaplan International Pathways)."
+    }
+  ],
+  "flags": {
+    "could_not_verify": [
+      "International tuition fees: every birmingham.ac.uk course page opened shows only 'Fees (UK/Ireland)' figures; the international fee sits behind a 'Fees information for: select a country' selector that WebFetch cannot render. Central fee pages (study/international/fees, PG taught fees, UG tuition, PGR fees, legacy international finance page) state that fees are on course pages or in the offer letter and publish no amounts.",
+      "Second pass on 2026-10-10 (fees only): no official page stating international fees in plain text was found. Checked and found no international amounts: study/international/fees, study/undergraduate/fees-funding/tuition, study/postgraduate/taught/fees-funding/taught-fees, study/postgraduate/research/fees, study/postgraduate/course-search (no fees in listings), study/international/country/pakistan (no fees), offer holder hub what-next, publication scheme and services-we-offer pages (no fee schedule), study/international/bia and foundation-pathways-bia (no fees; points to Kaplan), and course pages for Computer Science MSc (also via legacy URL), International Business MSc, Accounting and Finance MSc and Medicine and Surgery MBChB A100 (UK/Ireland fees only). No birmingham.ac.uk PDF fee schedule surfaced in searches; search results were dominated by third-party aggregators, which were not used.",
+      "UK/Ireland fees seen (not usable as international fees, recorded only for context): Computer Science MSc GBP 12,150 (January 2027) and GBP 12,780 (September 2027); International Business MSc GBP 17,460 (January 2027) and GBP 18,360 (September 2027); Accounting and Finance MSc GBP 19,890 (September 2027); MBChB GBP 10,050 (2027/28).",
+      "Russell Group status: russellgroup.ac.uk hosts a University of Birmingham profile under /about/our-universities/, but the fetched text of that page and of the members pages did not name Birmingham as a member in readable text (member list sits in navigation). Recorded true on the strength of the profile page; client should confirm.",
+      "Region not stated on any page opened, left null.",
+      "Duolingo English Test is not listed among accepted tests on the PG international entry requirements page or the course pages opened.",
+      "English requirements for the Kaplan foundation pathways were not stated on any page opened."
+    ],
+    "conflicting_sources": [
+      "Two University Pakistan pages: the current page (study/international/country/pakistan) gives PG taught 2:1 as GPA 2.8 to 3.0/4.0 or 65%, 2:2 as GPA 2.6/4.0 or 60%, and lists the Postgraduate Chancellor's Scholarship for Pakistan; the legacy page (International/students/country/pakistan/index.aspx) adds HSC/Intermediate grade B or 70% (with Maths B or 70% for the Engineering and Physical Sciences foundation pathway) and lists Santander and Aga Khan funding. The HSC requirement does not appear on the current page.",
+      "Kaplan foundation pathway fees: the courses page labels 'From GBP 24,480' and 'From GBP 26,400' as 2026/27, while the fees and dates page labels the same figures as 2025/26.",
+      "Alumni Scholarship page mixes 2025/26, 2026 entry (deadlines 30 April and 31 July 2026) and 'Applications open in October 2027'.",
+      "Postgraduate High Fliers Scholarship (September 2026) page shows 'Closed' while its FAQ gives a 31 July 2026 closing date (both now past)."
+    ],
+    "blocked_pages": [
+      "International fee panel (JavaScript country selector) on all birmingham.ac.uk course pages, e.g. https://www.birmingham.ac.uk/study/postgraduate/subjects/computer-science-and-data-science-courses/computer-science-msc, https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/international-business-msc, https://www.birmingham.ac.uk/study/undergraduate/subjects/law-courses/law-llb",
+      "https://downloads.kaplanpathways.com/downloads/university-of-birmingham-pathways-course-information-2026-27/ (robots.txt disallows fetching)",
+      "https://www.birmingham.ac.uk/study/fees-and-funding/international-fees and https://www.birmingham.ac.uk/study/postgraduate/fees-and-funding returned fetch errors (likely non-existent URLs)",
+      "https://admissions.bham.ac.uk/course-finder-landing-page/?code=COS069 (University course finder linked from course pages): robots.txt disallows fetching",
+      "https://intranet.birmingham.ac.uk/finance/accounting/Credit-Control/tuition-fees/index.aspx and https://www.birmingham.ac.uk/international/students/finance/fees.aspx: fetch errors",
+      "Contensis delivery endpoint for the course entry (https://www.birmingham.ac.uk/api/delivery/projects/website/entries/072405d2-893b-9016-fb4d-91c66c0f7db2): fetch error, so the country selector data could not be read"
+    ],
+    "excluded_and_why": [
+      "All courses excluded because no international fee could be read from an official page. Verified non-fee data, ready if fees are obtained: Computer Science MSc (https://www.birmingham.ac.uk/study/postgraduate/subjects/computer-science-and-data-science-courses/computer-science-msc): 1 year full time, January and September 2027 intakes, 2:1 in any subject other than computing, IELTS 6.5 with no band below 6.0, PTE 67 (64 per skill); International Business MSc (https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/international-business-msc): 1 year full time, January and September 2027, 2:1 honours or postgraduate diploma, IELTS 6.5/6.0, PTE 67/64; Law LLB, UCAS M100 (https://www.birmingham.ac.uk/study/undergraduate/subjects/law-courses/law-llb): 3 years (4 with year abroad), September 2027, AAA, IB 32 with 6,6,6, IELTS 6.5/6.0, PTE 67/64, UCAS deadline 13 January 2027 18:00.",
+      "Kaplan Foundation Pathways (five pathways): excluded because fees are 'from' figures with a conflicting academic year, English requirements are unpublished on the pages opened, and the Pakistan HSC requirement appears only on the legacy University page. The University's own foundation-pathways-bia page publishes no fee, start date or entry requirement and directs applicants to kaplanpathways.com, which is outside the sources permitted for this pass.",
+      "Additional verified course data (no international fee, so not added): Accounting and Finance MSc (https://www.birmingham.ac.uk/study/postgraduate/subjects/accounting-and-finance-courses/accounting-and-finance-msc): 1 year full time, September 2027, 2:1 honours or postgraduate diploma in Accounting or Finance related subjects, IELTS 6.5 with no band below 6.0, PTE 67 (64 per skill), TOEFL iBT (from January 2026) 4.5 overall; Medicine and Surgery MBChB, UCAS A100 (https://www.birmingham.ac.uk/study/undergraduate/subjects/medicine-courses/medicine-and-surgery-mbchb): 5 years, AAA including Chemistry and a second science, IB 32 with 6,6,6 at HL, IELTS 7.0 with 7.0 in every band, PTE 67 in all skills.",
+      "125th Anniversary Scholarships for International Students (GBP 5,000, GBP 7,000 for Computer Science MSc programmes): page covers September 2025 entry only and is closed.",
+      "LLB and LLB for Graduates Scholarships (GBP 3,000 per year, overseas fee payers): page covers September 2026 entry only, closed 30 April 2026; no 2027 terms.",
+      "Postgraduate Chancellor's Scholarship for Pakistan (GBP 10,000 off first year tuition): current page covers September 2026 entry only and is closed; no 2027 terms published.",
+      "Postgraduate High Fliers Scholarship (September intake, GBP 5,000): published for September 2026 only; no September 2027 terms yet.",
+      "Alumni Scholarship (GBP 2,000): terms on the page refer to 2026 entry with conflicting dates; no clear 2027 terms.",
+      "Commonwealth Shared Scholarship Scheme: 2026 round closed; page says it reopens November 2026 with no 2027 terms; also co-funded externally.",
+      "Birmingham Masters Scholarship (GBP 3,000, 2027 entry): Home fee payers only.",
+      "Santander and Aga Khan awards appear only on the legacy Pakistan page; current terms not found on University pages, Aga Khan is external.",
+      "Country awards for other nationalities (India, China, Bangladesh, Africa, MENA, Europe and others) and UG High Fliers schemes: not open to Pakistani or UK domiciled applicants.",
+      "PhD studentships: project specific and not listed as a standing international award on the scholarships page; not catalogued."
+    ],
+    "client_should_confirm": [
+      "Obtain the 2027/28 international tuition fees directly (for example through the University's South Asia office, southasia@contacts.bham.ac.uk, given the direct relationship) or by viewing course pages in a browser with a country selected; course rows can then be added from the verified data in excluded_and_why. A second automated pass confirmed that no plain-text official fee source is reachable without running the page's JavaScript, so a browser-rendered check (Pakistan selected) or written confirmation from the University is the only remaining route.",
+      "Whether the LLB and LLB for Graduates Scholarships (GBP 3,000 per year for overseas fee payers) will run for September 2027 entry.",
+      "Whether the Postgraduate Chancellor's Scholarship for Pakistan and the September High Fliers Scholarship will run for September 2027 entry.",
+      "The Pakistan Chancellor's Scholarship is applied for through named local representatives (ABN Overseas Education, Edvoy Pakistan, IDP Pakistan, Success Factor and others); SA Global Education is not on the University's Pakistan representative list, so confirm how its applicants access this route.",
+      "Russell Group membership wording before publishing, since membership was not stated in readable text on russellgroup.ac.uk."
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "slug": "gb-cardiff-university",
+  "courses": [
+    {
+      "slug": "gb-cardiff-university-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "academic_requirements: page also states GCSE Maths is not required with A level Maths; file omits this (completeness only, not an error)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-law-llb",
+      "verdict": "fail",
+      "issues": [
+        "overview: file calls it a 'qualifying law degree'; the course page does not use that term (it says core subjects are required by the Bar Standards Board and foundational for solicitor practice). Unsourced claim.",
+        "Fee GBP 25,450 per year for 2027 entry, A level AAA-ABB, IB 36-32 / 666-655, GCSE English B/6, IELTS 6.5 (6.0), TOEFL 90 (20 each), PTE 69 (62), UCAS M100, September 2027 intake all confirmed."
+      ],
+      "corrections": {
+        "overview": "Three-year law degree introducing the foundations of English law, including tort, criminal and public law, with optional modules on law and justice. UCAS code M100."
+      }
+    },
+    {
+      "slug": "gb-cardiff-university-business-management-bsc",
+      "verdict": "pass",
+      "issues": [
+        "academic_requirements: page also gives IB 34-31 overall or 665-555 in 3 HL subjects; file omits it (completeness only)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-mechanical-engineering-beng",
+      "verdict": "pass",
+      "issues": [],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-advanced-computer-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "pk_min_cgpa: Pakistan page states CGPA 'in the region of 2.5 or above' at admissions tutor discretion; 2.5 is a guideline, not a hard minimum (already noted in pakistan_entry_note)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-data-science-analytics-msc",
+      "verdict": "pass",
+      "issues": [],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-finance-msc",
+      "verdict": "pass",
+      "issues": [],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-international-journalism-ma",
+      "verdict": "pass",
+      "issues": [],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-international-commercial-law-llm",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms programme is under review and details are indicative; medium confidence is appropriate."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-international-foundation-year-engineering-science-computing",
+      "verdict": "fail",
+      "issues": [
+        "tuition_academic_year: fee page states GBP 24,500 is the 2026/27 fee (programmes starting on or after 26 August 2026); file lists the intake as September 2027, so the recorded fee does not apply to the stated intake. No 2027/28 fee is published.",
+        "tuition_basis: file says per_year; fee page does not say whether the figure is per year or for the full programme.",
+        "academic_requirements: 'Good high school graduation grades or equivalent' is copied verbatim from the ISC entry requirements page.",
+        "intake_labels: programme page lists September, November (Enhanced Induction) and January starts with no years; 'September 2027' is not stated on the page.",
+        "Pakistan requirements (Year 11 75% with 50% in Maths and Sciences and 4+ passes; HSC 60% overall, 50% min any subject), IELTS for UKVI 5.0 (5.0 writing, no skill below 4.0), age 17+ and two-semester duration confirmed."
+      ],
+      "corrections": {
+        "tuition_academic_year": "2026/27 (fee applies to programmes starting on or after 26 August 2026; 2027/28 fee not published)"
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-cardiff-university-vc-undergraduate-international",
+      "verdict": "pass",
+      "issues": [
+        "eligible_countries: page makes the scholarship available to all overseas fee-paying applicants at GBP 3,500, with GBP 5,000 for those domiciled in India, Kenya, Pakistan, Turkey, UAE or USA; listing only PK understates who is eligible (value for Pakistan is correct).",
+        "Terms confirmed for September 2027 entry; apply by 30 June 2027, conditions by 31 August 2027; automatic; per-year basis not stated."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-undergraduate-international-excellence",
+      "verdict": "pass",
+      "issues": [
+        "Page confirmed: nine GBP 10,000 awards for autumn 2027 entry, invited by email to a 300-word application, deadline 23:59 2 April 2027. One eligibility bullet still says autumn 2026, as the file already flags."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-isc-undergraduate-progression",
+      "verdict": "pass",
+      "issues": [
+        "Page also states the award cannot be combined with other scholarships or discounts and does not cover placement, study abroad or repeat years; file mentions repeat years only (completeness)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-vc-postgraduate-international",
+      "verdict": "pass",
+      "issues": [
+        "Page covers September 2026 and January 2027 entry only; September 2027 not mentioned. Applies to 2027 entry only via the January 2027 intake, and none of the file's postgraduate courses list a January 2027 start."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-cardiff-business-school-125th-anniversary",
+      "verdict": "fail",
+      "issues": [
+        "summary: says 'eligible full-time MSc'; page does not state that full-time study is required.",
+        "Page covers MSc programmes starting September 2026 and January 2027 only; January 2027 deadline 4 December 2026 confirmed. No September 2027 round."
+      ],
+      "corrections": {
+        "summary": "Award for international students joining an eligible MSc at Cardiff Business School, with automatic consideration."
+      }
+    },
+    {
+      "slug": "gb-cardiff-university-mba-public-value",
+      "verdict": "pass",
+      "issues": [
+        "intake_label: page names autumn semester entry but no year; 'September 2027' is not confirmed by the page.",
+        "Page also excludes self-funded students who receive external non-repayable funding (local government, charities, private organisations); file wording 'other funding of this kind' is vague but not wrong."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-university-alumni-discount",
+      "verdict": "fail",
+      "issues": [
+        "intake_label: page states students must commence studies in 2026/27 (meta description says 2025/26) and does not mention 2027/28 or September 2027; 'September 2027' is unsupported.",
+        "Page confirms 20% reduction for home, international and EU students, Cardiff graduates with a credit-bearing qualification progressing to a higher level, offer for an eligible course, self-funded (loans allowed), full-time or part-time taught master's, the listed exclusions, GBP 5,000 combined cap for international and EU students, automatic after enrolment, no deadline.",
+        "criteria_text: page also makes MRes Biosciences eligible and gives part-time students the full discount in year one; omitted (completeness only)."
+      ],
+      "corrections": {
+        "intake_label": "2026/27"
+      }
+    },
+    {
+      "slug": "gb-cardiff-university-ukri-international-studentships",
+      "verdict": "pass",
+      "issues": [
+        "Page does not list eligibility criteria or an application process; it directs to the PhD studentships search. Stipend amount not stated. File matches."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "gov.uk register CSV dated 2026-10-07 confirms 'Cardiff University, Cardiff, Higher Education Institution (HEI), Student Sponsor - Track Record, Student'.",
+      "Pakistan page (source_url) names Country Manager Tazmeen Sultan and links Pakistan entry requirements; it does not mention the International Study Centre, which is confirmed on other Cardiff pages.",
+      "is_russell_group true: the russellgroup.ac.uk profile sits under /about/our-universities/ but its text never says 'Russell Group' or 'member'; membership rests on the page's location on the Russell Group site.",
+      "summary: 'public research university' is not stated on any cited page (the Russell Group profile stresses research and says 'a thriving capital city'); 'public' is unsourced, consider dropping it. No ranking, superlative or dash in the summary."
+    ],
+    "corrections": {}
+  }
+}

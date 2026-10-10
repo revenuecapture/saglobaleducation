@@ -1,0 +1,167 @@
+{
+  "slug": "gb-university-of-nottingham",
+  "courses": [
+    {
+      "slug": "gb-university-of-nottingham-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "title, UCAS G400, 3 years full-time, September 2027, 2027 entry, A level AAA (AAB incl. A in computer science; ICT/IT excluded), IB 34 / 666 / 32 incl. HL6 CS, IELTS 6.5 (6.0) all confirmed on course page",
+        "tuition_amount: 2027/28 UG fee table and course page both show GBP 33,500 international per year; confirmed",
+        "min_pte: equivalencies page (https://www.nottingham.ac.uk/studywithus/international-applicants/english-language-equivalencies.aspx) gives PTE 71 (65 per component) for IELTS 6.5 (6.0); confirmed. Duolingo not listed; confirmed null",
+        "academic_requirements: omits the IB alternative of 665 in 3 HL including HL6 computer science, and the GCSE maths grade 5 (B) requirement; incomplete rather than wrong",
+        "notes: course page says the engineering and physical sciences foundation has a separate version for EU/international students; it does not name the Kaplan International College as the route, so that part of the note is the researcher's inference",
+        "pakistan_entry_note / pk_route: Pakistan page not fetched (tool limit); not independently verified"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-nottingham-law-llb",
+      "verdict": "fail",
+      "issues": [
+        "overview: says 'qualifying law degree'; the course page does not use that term and states only that the course 'is recognised by the Bar Standards Board'. Unsourced regulatory claim",
+        "title, UCAS M100, 3 years full-time, September 2027, 2027 entry, A level AAA, five GCSEs at 4 (C) incl. English, IB 34 / 666, IELTS 6.5 (6.5), no admissions test mentioned: all confirmed",
+        "tuition_amount: 2027/28 UG fee table shows GBP 27,600 international; confirmed",
+        "highlights: Law of Contract, Foundations of Tort, Public Law, Land Law all listed as core; confirmed",
+        "min_pte null: equivalencies page has no row for IELTS 6.5 (6.5); confirmed",
+        "pakistan_entry_note / pk_route: Pakistan page not fetched (tool limit); not independently verified"
+      ],
+      "corrections": {
+        "overview": "A three year law degree (UCAS M100), recognised by the Bar Standards Board, that starts with the foundations of English law, including contract, tort, public law and land law, alongside legal theory."
+      }
+    },
+    {
+      "slug": "gb-university-of-nottingham-mechanical-engineering-beng",
+      "verdict": "pass",
+      "issues": [
+        "title, UCAS H302, 3 years full-time, September 2027, 2027 entry, A level AAA with stated subject rule, IB 34 / 666, IELTS 6.0 (5.5) all confirmed",
+        "tuition_amount: 2027/28 UG fee table shows GBP 33,500 international; confirmed",
+        "min_pte: 65 (59 per component) for IELTS 6.0 (5.5) confirmed on equivalencies page",
+        "academic_requirements: omits GCSE English grade 4 (C) and the IB maths/physics HL6 or SL7 requirement; incomplete rather than wrong",
+        "notes: says the module list is not labelled by year; the page labels modules by year (the four highlights are year one core). Note is inaccurate but harmless",
+        "pakistan_entry_note / pk_route: Pakistan page not fetched (tool limit); not independently verified"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-nottingham-business-management-bsc",
+      "verdict": "pass",
+      "issues": [
+        "title, UCAS N200, 3 years full-time, September 2027, 2027 entry, A level AAA / A*AB / A*A*C, GCSE maths 6 (B) and English 4 (C), IB 34 / 666, IELTS 6.5 (6.0) all confirmed",
+        "tuition_amount: 2027/28 UG fee table shows GBP 26,200 international; confirmed",
+        "highlights and overview topics (marketing, entrepreneurship, research methods, employability) confirmed on page",
+        "min_pte 71 confirmed on equivalencies page",
+        "pakistan_entry_note / pk_route: Pakistan page not fetched (tool limit); not independently verified"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-nottingham-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 entry course page: title, 12 months full-time (no part-time), September 2027 start, 2:1 in any discipline excluding business and/or management, IELTS 6.5 (no less than 6.0 in each element), core modules Business Economics, Principles of Accounting, Principles of Marketing and Strategy and Leadership, dissertation or business project, and CMI accreditation with an additional Level 7 Diploma in Strategic Management and Leadership Practice",
+        "tuition_amount: GBP 34,800 international on the course page and the 2027/28 PGT fee table; confirmed",
+        "min_pte 71 for IELTS 6.5 (6.0) confirmed on equivalencies page (earlier run)",
+        "Pakistan page confirmed: 'a relevant Bachelor's degree from a recognised University in Pakistan'; 2:1 equivalent for a four year bachelor's is '70%+ OR 65%+*' and CGPA '3.01 - 3.74 OR 2.9*' (*depends on the university of study); two or three year bachelor's holders 'must also have a first division pass in a Master's degree'. pk_route bachelor_16, pk_min_percent 70 and pk_min_cgpa 3.01 match the standard figures",
+        "pakistan_entry_note: repeats the generic 'relevant Bachelor's degree' wording, but this course excludes business and/or management graduates; a Pakistani BBA holder could read the row as eligible. Add the exclusion",
+        "No application deadline on the page; application_deadline_note null is correct"
+      ],
+      "corrections": {
+        "pakistan_entry_note": "Pakistan page: a Bachelor's degree from a recognised Pakistani university equivalent to a UK 2:1, in any subject except business or management. For four year Bachelor's degrees the 2:1 equivalent is 70%+ or CGPA 3.01 to 3.74, or 65%+ or CGPA 2.9 depending on the university of study. Holders of two or three year Bachelor's degrees must also have a first division pass in a Master's degree."
+      }
+    },
+    {
+      "slug": "gb-university-of-nottingham-finance-investment-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 entry course page: title, 12 months full-time, September 2027 start, 2:1 with a minimum of two modules covering at least two of mathematics, statistics, quantitative methods, quantitative finance specialisms and econometrics, IELTS 6.5 (6.0 in each element), 60 credit dissertation or group business project (business project subject to availability and selection)",
+        "tuition_amount: GBP 37,600 international on the course page and the 2027/28 PGT fee table; confirmed",
+        "highlights: Capital Market Analysis, Corporate Finance, Financial Modelling and Data Analytics (semester one) and Fixed Interest Investment (semester two) are all listed as core; confirmed",
+        "Page inconsistency confirmed: Derivative Investment is core in the course text and pathway list but optional in the module list; the file's notes disclose this",
+        "Pakistan page confirmed: 'a relevant Bachelor's degree from a recognised University in Pakistan'; 2:1 equivalent for a four year bachelor's is '70%+ OR 65%+*' and CGPA '3.01 - 3.74 OR 2.9*' (*depends on the university of study); two or three year bachelor's holders 'must also have a first division pass in a Master's degree'. pk_route bachelor_16, pk_min_percent 70 and pk_min_cgpa 3.01 match the standard figures"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-nottingham-data-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 entry course page: title, 12 months full-time, September 2027 start, 2:1 with an affinity for programming and/or advanced statistics, other fields with strong maths/computer science background considered at 60% average, IELTS 6.5 (6.0 in each element), 'No computer programming experience is needed', 60 credit individual research project",
+        "tuition_amount: GBP 34,800 international on the course page and the 2027/28 PGT fee table; confirmed",
+        "highlights: only Research Project is core for all; Machine Learning and Advanced Algorithms and Data Structures are pathway A options, and Applied Statistics and Probability is required only for students without a mathematical sciences background. The file's notes disclose this",
+        "Pakistan page confirmed: 'a relevant Bachelor's degree from a recognised University in Pakistan'; 2:1 equivalent for a four year bachelor's is '70%+ OR 65%+*' and CGPA '3.01 - 3.74 OR 2.9*' (*depends on the university of study); two or three year bachelor's holders 'must also have a first division pass in a Master's degree'. pk_route bachelor_16, pk_min_percent 70 and pk_min_cgpa 3.01 match the standard figures"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-nottingham-public-health-mph",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 entry course page: course title on page is 'Master of Public Health MPH/PGDip/PGCert', up to 12 months full-time (up to 24 part-time), September 2027 start, standard requirement 2:1, 2:2 considered with work experience relevant to public health, global health or health research subject to a successful interview, IELTS 6.5 (6.0 in each element)",
+        "highlights: all four are compulsory modules (Public Health Research Project is MPH only); PGDip and PGCert exits confirmed",
+        "tuition_amount: GBP 28,700 international on the course page and the 2027/28 PGT fee table; confirmed",
+        "notes / conflicting sources: the course page fee table does list GBP 28,700 for MPH, PGDip and PGCert (full-time), so the researcher's note is accurate for that page, but the official 2027/28 PGT fee table (earlier run) gives PGDip GBP 19,133 and PGCert GBP 9,567. The note should disclose both rather than state one",
+        "Pakistan page confirmed: 'a relevant Bachelor's degree from a recognised University in Pakistan'; 2:1 equivalent for a four year bachelor's is '70%+ OR 65%+*' and CGPA '3.01 - 3.74 OR 2.9*' (*depends on the university of study); two or three year bachelor's holders 'must also have a first division pass in a Master's degree'. pk_route bachelor_16, pk_min_percent 70 and pk_min_cgpa 3.01 match the standard figures"
+      ],
+      "corrections": {
+        "notes": "International MPH fee GBP 28,700 from the official 2027/28 postgraduate taught fee table and the course page. Sources conflict for the exit awards: the course page fee table shows GBP 28,700 for MPH, PGDip and PGCert, while the official 2027/28 fee table shows PGDip GBP 19,133 and PGCert GBP 9,567. Confirm with the University before quoting PGDip or PGCert fees."
+      }
+    },
+    {
+      "slug": "gb-university-of-nottingham-advanced-civil-engineering-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 entry course page: title, 12 months full-time (no part-time), September 2027 start, 2:1 in a relevant subject having studied multiple courses in Structures, Geotechnics and Fluids, IELTS 6.0 (no element below 5.5), core modules Civil Engineering Project, Contextual Topics in Civil Engineering, Technical writing and project preparation",
+        "tuition_amount: GBP 34,000 international on the course page and the 2027/28 PGT fee table; confirmed",
+        "min_pte 65 for IELTS 6.0 (5.5) confirmed on equivalencies page (earlier run)",
+        "notes: the Commonwealth Shared Scholarship list claim is not on the course page or any page this row cites, and refers to 2026 entry; remove it or cite the scholarship page",
+        "Pakistan page confirmed: 'a relevant Bachelor's degree from a recognised University in Pakistan'; 2:1 equivalent for a four year bachelor's is '70%+ OR 65%+*' and CGPA '3.01 - 3.74 OR 2.9*' (*depends on the university of study); two or three year bachelor's holders 'must also have a first division pass in a Master's degree'. pk_route bachelor_16, pk_min_percent 70 and pk_min_cgpa 3.01 match the standard figures"
+      ],
+      "corrections": {
+        "notes": "International fee from the official 2027/28 postgraduate taught fee table; the course page shows the same amount."
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-nottingham-intl-pg-masters-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on official_url: GBP 3,000 deducted from the master's fee, for 'students starting their studies with us in 2027', international fee-paying, self-funded, year one of a full-time UK campus MA, MSc, MArch, MBA, LLM, MPA, MPH or MMedSci, awarded automatically, no deadline, first year fees only for two year master's",
+        "flag (pathway progression): students progressing from Kaplan (University of Nottingham International College or Digital Pathways) are excluded, as are sponsored students and holders of another University award. Pakistani students coming through a Kaplan pre-master's would not get it; the file's notes disclose this"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-nottingham-intl-ug-excellence-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on official_url: GBP 5,000 off first year fees, international fee-paying self-funded students starting year one of a full-time UK campus BA, BSc/MSci, BEng/MEng, LLB, BArch, MMath or MNutr, AAA or international equivalent assessed at admission, automatic, no deadline, excludes Veterinary Medicine and Surgery, Pharmacy, Medicine and Foundation Year",
+        "intake_label 'September 2027': the page states no entry year, so 2027 applicability is not confirmed (disclosed in notes, confidence medium). Present as current terms, not as a confirmed 2027 award",
+        "flag (pathway progression): Kaplan International College / Digital Pathways progression students are excluded. Since the Pakistan page says Intermediate/HSSC holders usually need the Kaplan foundation, most Pakistani school leavers cannot get this award; only A level/IB applicants at AAA can"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-nottingham-intl-sporting-excellence-award",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on official_url: GBP 1,000 to 7,000 towards full-time tuition fees, any study level, academy/national/international standard in any sport or strong evidence of future potential, must hold an offer for a full-time course at Nottingham UK, expression of interest form then sport scholarship application, opens each January, no closing date",
+        "flag (sporting status): requires sporting standing (academy, national or international level); not a general merit award and should be filtered or labelled accordingly",
+        "intake_label 'September 2027': the page states no entry year (disclosed in notes)",
+        "requires_offer true: the page says an offer is not needed to apply, but one must be held to qualify; acceptable"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Sponsor register CSV dated 2026-10-07 row: 'University of Nottingham,Nottingham, ,Higher Education Institution (HEI),Student Sponsor - Track Record,Student'; eligibility_note confirmed",
+      "Russell Group: the cited russellgroup.ac.uk profile page sits under 'Our universities' but its text does not mention membership, and the 'Our universities' page names no members. Membership independently confirmed on the Wikipedia Russell Group member list (24 members, Nottingham joined 1994). is_russell_group true is correct; a source that names the members would be stronger",
+      "international_admissions_url is live (heading 'International students'); the page carries QS and other ranking claims, none of which appear in the file's summary",
+      "summary: no ranking or superlative found",
+      "eligibility_note: 'Student Sponsor - Track Record' uses a spaced hyphen; it quotes the register's rating label, but rewrite without the dash if house style forbids it (e.g. 'rating: Student Sponsor, Track Record')"
+    ],
+    "corrections": {}
+  }
+}

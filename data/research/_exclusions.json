@@ -1,0 +1,10 @@
+{
+  "note": "Awards researched but not listed: they cannot be held at any SA Global partner institution.",
+  "scholarships": {
+    "gates-cambridge-scholarship": "Tenable only at the University of Cambridge, which is not a partner.",
+    "rhodes-scholarship-pakistan": "Tenable only at the University of Oxford, which is not a partner."
+  },
+  "overrides": {
+    "us-uk-fulbright-postgraduate-awards": "Verifier failed it only because its partner list omitted the United States (an error in the verification brief). SA Global has 15 US partner universities, so the award is usable. Treat as checked, confidence medium."
+  }
+}

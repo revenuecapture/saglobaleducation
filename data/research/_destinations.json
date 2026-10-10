@@ -1,0 +1,46 @@
+{
+  "destinations": [
+    {
+      "code": "GB",
+      "post_study_work_summary": "Bachelor's and master's graduates on a Student visa may apply in the UK for the Graduate visa: two years if applying by 31 December 2026, or 18 months if applying on or after 1 January 2027.",
+      "post_study_work_source_url": "https://www.gov.uk/graduate-visa",
+      "post_study_work_verified_on": "2026-10-10"
+    },
+    {
+      "code": "US",
+      "post_study_work_summary": "F-1 graduates may usually receive up to 12 months of post-completion Optional Practical Training per higher education level. Graduates with qualifying STEM degrees may apply for a further 24-month STEM OPT extension.",
+      "post_study_work_source_url": "https://studyinthestates.dhs.gov/2021/05/learn-about-the-types-of-practical-training-for-f-1-students",
+      "post_study_work_verified_on": "2026-10-10"
+    },
+    {
+      "code": "NZ",
+      "post_study_work_summary": "Degree graduates (Level 7 or above, 30 weeks' full-time study in New Zealand) may receive a Post-Study Work Visa of up to three years. From 16 November 2026, Level 7 graduate diploma holders with a bachelor's degree also qualify.",
+      "post_study_work_source_url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/post-study-work-visa",
+      "post_study_work_verified_on": "2026-10-10"
+    },
+    {
+      "code": "AU",
+      "post_study_work_summary": "The Temporary Graduate visa (subclass 485), Post-Higher Education Work stream, usually allows graduates to stay between two and three years depending on their qualification. Applicants must generally be aged 35 or under, with exceptions.",
+      "post_study_work_source_url": "https://studyaustralia.gov.au/en/plan-your-move/your-guide-to-visas/temporary-graduate-visa-subclass-485",
+      "post_study_work_verified_on": "2026-10-10"
+    },
+    {
+      "code": "CA",
+      "post_study_work_summary": "Eligible graduates may apply for a Post-Graduation Work Permit. Master's programmes of at least eight months, and other programmes of two years or more, may lead to a three-year permit. Most applicants have needed language results since 1 November 2024.",
+      "post_study_work_source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+      "post_study_work_verified_on": "2026-10-10"
+    },
+    {
+      "code": "DE",
+      "post_study_work_summary": "International graduates of German universities may receive a residence permit of up to 18 months to seek qualified employment, during which any type of work is permitted. The permit is not renewable.",
+      "post_study_work_source_url": "https://www.make-it-in-germany.com/en/study-training/study/prospects/employment",
+      "post_study_work_verified_on": "2026-10-10"
+    }
+  ],
+  "flags": [
+    "AU: Home Affairs subclass 485 pages did not render their content; summary taken from Study Australia (Australian Government), which links to Home Affairs. Exact durations by degree level not confirmed.",
+    "US: USCIS and ICE OPT pages failed to load; summary from DHS Study in the States. No announced OPT change was found on official pages opened, but proposed rule changes should be checked before publishing.",
+    "CA: PGWP field-of-study and language benchmark details are on a separate IRCC eligibility page not opened.",
+    "NZ: per-qualification durations are on a separate Immigration New Zealand page not opened; summary uses 'up to three years'."
+  ]
+}

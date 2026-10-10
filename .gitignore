@@ -4,3 +4,7 @@
 node_modules/
 .DS_Store
 .wrangler/
+# Written by scripts/build-finders.mjs during the Cloudflare Pages build
+site/data/
+site/courses/*/
+site/scholarships/*/

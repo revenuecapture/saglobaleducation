@@ -1,0 +1,129 @@
+{
+  "slug": "gb-university-of-east-anglia",
+  "verification_note": "Re-run 2026-10-10 completed the items the first pass could not fetch; every course, scholarship and the university entry has now been checked against its cited pages. Static checks across the whole file found no dash punctuation, no superlatives or rankings in summaries/overviews and no copied university sentences.",
+  "courses": [
+    {
+      "slug": "gb-university-of-east-anglia-msc-artificial-intelligence",
+      "verdict": "pass",
+      "issues": [],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-msc-business-management",
+      "verdict": "pass",
+      "issues": [
+        "overview: says 'at Norwich Business School' but the course page does not name the school anywhere. This is factually plausible but has no source on the cited page. Either cite a page that names the school or remove the phrase.",
+        "mode: the page confirms 'one-year full-time course' and three semesters, which matches the file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-llm-international-commercial-business-law",
+      "verdict": "pass",
+      "issues": [
+        "overview: 'at UEA Law School'. The page only says 'Law school academic staff' and 'UEA Law Clinic', so this is a minor naming liberty, not a factual error.",
+        "overview: closely paraphrases the page ('the legal framework that governs ... international trade, commercial business transactions, and dispute resolution') but no sentence is copied verbatim."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-msc-climate-change-net-zero-solutions",
+      "verdict": "pass",
+      "issues": [],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-msc-climate-change-global-development",
+      "verdict": "pass",
+      "issues": [
+        "mode: the page does not state full time or part time. full_time is an assumption, which the file already discloses."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-msc-accounting-finance",
+      "verdict": "pass",
+      "issues": [
+        "mode: the page does not state full time or part time. full_time is an assumption, which the file already discloses.",
+        "overview: 'research-led master's' repeats the page's own wording. This is a description, not a ranking."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-bsc-computing-science",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms BSc, three years, September 2027 start, GBP 29,300 for 2027/28, A level ABB with the listed subject options, IB 32 with HL5 in Mathematics, Computing Science, Chemistry, Physics or Economics, GCSE English 4/C and Maths 5/B, IELTS 6.0 (5.5 each, within two years).",
+        "tuition_basis: page gives GBP 29,300 'for the 2027/28 academic year' and does not say 'per year'; per_year is a reasonable reading but not stated.",
+        "overview: 'School of Computing Sciences' and 'data handling' are not stated on this page; later-year options (AI, cyber security, secure software development, games and app development, computer vision) are confirmed.",
+        "mode: not stated on the page; full_time is an assumption the file discloses."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-ba-international-business-management",
+      "verdict": "pass",
+      "issues": [
+        "Duration conflict confirmed: the page header says 'starting September 2027 for 3 years' while the overview calls it a 'one-year (final-year entry)' BA. File records 3 years, which matches the header; the client should ask UEA to correct the page.",
+        "Page confirms Norwich Business School, GBP 24,250 for 2027/28, A level ABB, IB 32, BTEC DDM (Public Services, Uniformed Services and Business Administration excluded), GCSE English and Maths 4/C, IELTS 6.0 (5.5 each), September 2027 start, common first year, strategic analysis, advanced international business cases and a language option.",
+        "tuition_basis: page does not state 'per year'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-llb-law",
+      "verdict": "pass",
+      "issues": [
+        "URL without '/sep' resolves to the September 2027 page (shows September 2027 start and 2027/28 fees).",
+        "Page confirms LLB, 3 years, GBP 24,250 for 2027/28, A level AAB, IB 33, IELTS 6.0 (5.5 each, within two years), UEA Law School 'Housed in historic Earlham Hall', Competition Law and Animal Welfare Law as example options.",
+        "academic_requirements: page also requires GCSE English Language and Mathematics at grade 4/C; file omits this (completeness only).",
+        "tuition_basis: page does not state 'per year'. mode: not stated; full_time assumed as disclosed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-bsc-computing-science-foundation-year",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms 4 years (foundation year plus three-year BSc), September 2027 start, GBP 29,300 for 2027/28 with no separate foundation-year fee shown, international A level CCC or IB 28, GCSE English and Maths 4/C, IELTS 6.0 (5.5 each), foundation content in computing, programming and essential mathematics.",
+        "tuition_basis: page does not say whether GBP 29,300 is per year or for the whole course, so 'per year across all 4 years' remains unconfirmed; the client should confirm with UEA.",
+        "overview: 'for applicants without the grades or subjects for direct entry' is not the page's wording (it says the year builds technical skills and academic confidence); the lower CCC entry supports it, but consider rewording to the page's framing."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-east-anglia-international-pg-merit-a",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms GBP 6,000 (UK 2:2 equivalent) or GBP 7,000 (UK 2:1 or above), deducted from fees, first year only on two-year programmes; nationals of or domiciled in Bangladesh, India or Pakistan; international fees; on-campus master's or PGCE; listed exclusions; automatic after offer; can be combined only with International Early Payment Awards.",
+        "2027 entry: page covers September 2026 and January 2027 starts only. It does NOT cover September 2027, the intake of every course in this file; do not present it as available for September 2027 entry.",
+        "summary: 'self-funded' is slightly stronger than the page, which excludes only students whose fees are fully paid by an outside body (repayable loans allowed).",
+        "value_amount 6000 records only the lower tier; GBP 7,000 is in value_text."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-east-anglia-alumni-10-percent-discount",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms 10% reduction, UEA alumni including Study Abroad and Exchange alumni, self-funded, PGT, PGR and PGCE, the listed exclusions, no combination with other UEA scholarships, automatic, unlimited awards.",
+        "2027 entry: page lists January 2026, September 2026 and January 2027 starts only; September 2027 not listed.",
+        "value_basis and requires_offer: page does not state either; file correctly leaves them null.",
+        "Relevance: open only to UEA alumni, so of little use to new Pakistani applicants."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "gov.uk register CSV dated 2026-10-07 confirms 'University of East Anglia, Norwich, Higher Education Institution (HEI), Student Sponsor - Track Record, Student'. No INTO University of East Anglia row was found.",
+      "summary: the INTO UEA page describes 'a partnership between INTO and the University of East Anglia' with an 'on-campus centre'; it does not use the name 'UEA International Study Centre', though that name appears on the foundation-year course page.",
+      "summary: school names and research programmes are not on the cited source_url; they are supported by the course and scholarship pages in this file (Norwich Business School, UEA Law School, School of Computing, PGR level on the alumni page).",
+      "is_russell_group null: russellgroup.ac.uk/about/our-universities/ states 24 members but names none in its text, so membership could not be confirmed either way; null is correct. No ranking, superlative or dash in the summary."
+    ],
+    "corrections": {}
+  }
+}

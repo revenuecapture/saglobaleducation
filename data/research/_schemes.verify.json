@@ -1,0 +1,170 @@
+{
+  "slug": "_schemes",
+  "status": "Re-run 2026-10-10 checked every scholarship the first pass could not fetch. Gates Cambridge and Rhodes were not rechecked because both are excluded from the finder (_exclusions.json). Tenability was checked against the partner list given for this run: UK partners (Leicester, Cardiff, UEA, Nottingham, Sussex, Birmingham) and Australian, Canadian, New Zealand and German universities; the US was not on that list.",
+  "courses": [],
+  "scholarships": [
+    {
+      "slug": "chevening-scholarships",
+      "verdict": "pass",
+      "issues": [
+        "value_text: neither cited page (Pakistan page, application timeline) nor chevening.org/scholarships or the applicant FAQs itemise coverage; the scholarships page says only 'fully-funded'. Coverage rests on the T&C PDF named in notes, which is not cited in official_url or source_url.",
+        "criteria_text: confirmed on chevening.org/resource-hub/guidance/eligibility/ (citizenship, 2 years / 2,800 hours work, three course choices, return for at least two years), not on the cited pages.",
+        "deadline_note: timeline confirms opened August 2026, closed October 2026 with 11:00 UTC time, unconditional offer by 8 July 2027 (17:00 BST); Pakistan page states 'Applications for 2027-2028 Chevening Scholarships are now closed'. No exact closing day published, as the file says."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "commonwealth-masters-scholarships",
+      "verdict": "pass",
+      "issues": [
+        "deadline_on: page says '16:00 BST on Tuesday 20 October' with no year; 20 October 2026 is a Tuesday and the page's timeline (nominations December 2026, outcomes July 2027, start September 2027) supports 2026.",
+        "deadline_note: 'in Pakistan the nominator is HEC' is not stated on the cited page.",
+        "criteria_text: page also allows refugee status or British Protected Person and excludes anyone who has already completed UK Master's study or held a Commonwealth Master's scholarship; omitted from file (not wrong).",
+        "value_text: page also lists a child allowance for single parents; omitted (not wrong)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "commonwealth-phd-scholarships",
+      "verdict": "fail",
+      "issues": [
+        "need_based: page states applicants must 'Be unable to afford to study in the UK without this scholarship'; file has null.",
+        "criteria_text: omits the permanent residence requirement and the financial need requirement stated on the page.",
+        "deadline_note: 'in Pakistan the nominator is HEC' is not stated on the cited page.",
+        "deadline_on: same year inference as the Master's page (Tuesday 20 October, timeline implies 2026); acceptable."
+      ],
+      "corrections": {
+        "need_based": true,
+        "criteria_text": "Citizen of (or refugee in) and permanently resident in an eligible Commonwealth country; first degree of at least 2:1 standard, or 2:2 plus a relevant postgraduate qualification (usually a master's), by September 2027; unable to afford UK study without the scholarship; available to start by September 2027."
+      }
+    },
+    {
+      "slug": "fulbright-pakistan-degree",
+      "verdict": "pass",
+      "issues": [
+        "deadline_note / intake_label: page shows deadline 1 April 2026 and status Closed but does not name the program year in text; '2027' is inferred from the flyer filename (Fulbright2027Flyer.jpg) and the July departure timing.",
+        "criteria_text: page says the HEC bond binds PhD scholars 'to return to Pakistan immediately after their program'; file adds 'and serve', which the page does not say."
+      ],
+      "corrections": {
+        "criteria_text": "Master's: 16 years of formal education; PhD: 18 years (Master's or MPhil). Minimum GRE score of 145 in each section; selected candidates take the TOEFL. PhD scholars sign an HEC bond to return to Pakistan immediately after their US program."
+      }
+    },
+    {
+      "slug": "us-uk-fulbright-postgraduate-awards",
+      "verdict": "fail",
+      "issues": [
+        "Tenability: the award is held only at US universities ('any accredited US university'; partner awards tied to named US institutions). The US is not on this run's partner list (UK, Australia, Canada, New Zealand, Germany), so it cannot be held at any listed partner. Note the verify brief and _destinations.json do include the US; the client should decide which list governs.",
+        "eligible_countries: GB only; Pakistani nationals are not eligible, so it does not belong in a Pakistan-facing finder.",
+        "Page confirms UK citizenship (non-citizens with settled or pre-settled status or ILR considered only in limited cases), no Student visa holders, no dual US-UK citizens, Green Card holders or US residents, 2:1 expected (2:2 exceptionally), master's and PhD, IIE or independent placement, 2027/28 opened February 2026 and closed 5 May 2026 at 5 PM BST, departures from August 2027.",
+        "value_type: page publishes no amounts and says 'Generous financial packages and fully funded awards'; full_funding applies only to some awards."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "australia-awards-pakistan",
+      "verdict": "pass",
+      "issues": [
+        "Country profile PDF confirms opens 1 February 2026 (09:00 AEDT), closes 30 April 2026 (14:00 AEST); age 45 or under at application; 16 years of education; five years of relevant work experience in Pakistan; the five priority fields; master's only, commencing 2027; full tuition, return air travel, establishment allowance, living contribution and OSHC; return to Pakistan for at least two years.",
+        "English: IELTS Academic 6.5 (no band below 6.0), TOEFL iBT 84 (21 each) or PTE 58 (50 each) confirmed on the how-to-apply page.",
+        "Tenability: held at Australian universities; confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gates-cambridge-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "NOT CHECKED: excluded from the finder (_exclusions.json: tenable only at Cambridge, not a partner), so not rechecked in this run.",
+        "value_text and notes: coverage taken from gatescambridge.org/programme/the-scholarship/, which is not the cited official_url or source_url."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "rhodes-scholarship-pakistan",
+      "verdict": "unverifiable",
+      "issues": [
+        "NOT CHECKED: excluded from the finder (_exclusions.json: tenable only at Oxford, not a partner), so not rechecked in this run.",
+        "criteria_text: file admits Pakistan constituency criteria were not opened; eligibility (age, citizenship, grades) is unsourced.",
+        "applies to 2027 entry: file says the 2027/28 window closed 5 August 2026; value_text stipend is the 2025-26 rate."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "daad-epos-development-related-postgraduate-courses",
+      "verdict": "fail",
+      "issues": [
+        "eligible_countries: neither cited page nor daad.de/epos-info lists eligible countries or names Pakistan; they only link to a 'list of eligible countries'. PK is unsourced.",
+        "value: official EPOS page states EUR 934 a month for graduates and EUR 1,300 for doctoral candidates, plus insurance, travel allowance, rent subsidy and family allowance, for 12 to 42 months; file leaves the amount out.",
+        "levels: page says doctoral degrees are possible only 'in exceptional cases'.",
+        "intake: the deadlines PDF is headed 'Application Deadlines for Intake 2027/2028' (status 06/2026) with every deadline 'see website of the course', but also contains 'Intake every two years - next intake 2028', so some listed courses may not take a 2027 intake.",
+        "Page confirms criteria (four-year bachelor's, upper third, usually not more than six years old, two years' related experience, IELTS 6 or TOEFL iBT 80), direct application to courses and up to three choices.",
+        "Tenability: held at German universities; confirmed."
+      ],
+      "corrections": {
+        "value_text": "EUR 934 a month for graduates or EUR 1,300 a month for doctoral candidates, plus health, accident and liability insurance, travel allowance, monthly rent subsidy and family allowance where applicable; 12 to 42 months depending on the course"
+      }
+    },
+    {
+      "slug": "erasmus-mundus-joint-masters",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms students worldwide may apply; bachelor's degree, final-year bachelor's or recognised equivalent learning; 1 to 2 years (60, 90 or 120 ECTS); full scholarships cover participation costs and contribute to travel, visa and living costs; apply directly to each programme; usually October to January for the following year. No allowance amount is published.",
+        "Tenability: the EACEA catalogue (218 projects) lists Germany as a country filter and German universities such as Technische Universitaet Muenchen and Universitaet Hamburg, so it can be held at German universities; the catalogue does not show which programmes include them. Catalogue also confirms some programmes no longer offer scholarships.",
+        "value_type full_funding: page says full scholarships go to the best-ranked students; most applicants will not receive one."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "canada-graduate-research-scholarship-doctoral",
+      "verdict": "fail",
+      "issues": [
+        "summary: 'replaced the Vanier Canada Graduate Scholarships' is not stated on the cited page, which mentions Vanier only as a prior award that makes applicants ineligible. Unsourced claim.",
+        "name: ' - ' used as punctuation; house style bans dashes as punctuation.",
+        "Page confirms CAD 40,000 a year for 36 months, up to 15% of awards for international applicants, who must be registered in a doctoral programme at an eligible Canadian institution by the deadline; apply through the institution if it holds a quota, otherwise directly; agency deadline 17 October 8:00 pm ET and results 30 April, with no year stated.",
+        "criteria_text: page also limits applicants to no more than 36 months of full-time-equivalent doctoral study by 31 December of the application year; omitted.",
+        "Tenability: held at Canadian universities; confirmed, but only for students already registered in a Canadian PhD."
+      ],
+      "corrections": {
+        "name": "Canada Graduate Research Scholarship, Doctoral (CGRS-D)",
+        "summary": "Federal doctoral scholarship from Canada's research granting agencies. Up to 15% of awards are available to international applicants registered in a doctoral programme at an eligible Canadian institution."
+      }
+    },
+    {
+      "slug": "australia-research-training-program",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms block grants to Australian higher education providers for domestic and overseas students in research doctorates and research master's; support may include a tuition fee offset, a living-cost stipend and allowances; each provider runs its own application and selection; no deadlines listed. Stipend rate table did not render.",
+        "value_type full_funding may overstate awards whose components vary by provider (file's own note).",
+        "Tenability: held at Australian universities; confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "deutschlandstipendium",
+      "verdict": "fail",
+      "issues": [
+        "levels: the cited page does not state undergraduate or postgraduate; it says only 'First- and higher-semester students of all nationalities can apply directly to their university'. Levels are unsourced.",
+        "value_text: 'Monthly' is not stated on the cited page; it confirms only that the federal government and private sponsors fund it jointly. Amount and duration remain unconfirmed and the subpage could not be fetched.",
+        "criteria_text: page refers to public and state-recognised universities and outstanding achievement; 'participating German university' is a fair paraphrase.",
+        "Tenability: held at German universities; confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "aga-khan-foundation-international-scholarship",
+      "verdict": "fail",
+      "issues": [
+        "value_type / value_text / notes: page states the award covers tuition and student living expenses (master's: full degree; PhD: first two years) and excludes international travel, clothing, furniture and family living costs. The file's note that the page does not say which costs are covered is wrong, and partial_tuition with value_percent 50 misdescribes a half grant, half loan award.",
+        "summary: 'outstanding students from selected developing countries' closely echoes the page ('outstanding students from developing countries', 'outstanding scholars from selected countries'); evaluative and near-copied wording.",
+        "summary: page says not available for study in the UK or Russia; file mentions the UK only.",
+        "Page confirms Pakistan among eligible countries, master's priority with PhD considered, excellent record, financial need, multi-source funding plan, first-year only, preference under 30, guarantor and service charge, 2026-2027 cycle closed and next cycle opens early 2027.",
+        "Tenability: page excludes only UK and Russia study, so it can be held at Australian, Canadian, New Zealand or German universities; destination_codes remain inferred."
+      ],
+      "corrections": {
+        "value_text": "Covers tuition and living expenses (full master's degree, or the first two years of a PhD) as half grant, half loan; the loan half is repayable with a service charge and needs a guarantor. International travel and family living costs are not covered.",
+        "summary": "Need-based postgraduate awards for students from selected developing countries, including Pakistan, with priority for master's study. Not available for study in the United Kingdom or Russia."
+      }
+    }
+  ],
+  "university": null
+}

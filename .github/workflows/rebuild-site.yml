@@ -1,0 +1,26 @@
+# Rebuilds the live site on Cloudflare Pages so the finders pick up newly published rows,
+# and so scholarships whose deadlines have passed drop off. Runs weekly and by hand
+# (Actions > Rebuild site > Run workflow) after a reviewer publishes in Supabase.
+name: Rebuild site
+
+on:
+  schedule:
+    - cron: '41 2 * * 1'   # Mondays 02:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Call the Cloudflare Pages deploy hook
+        env:
+          HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "CF_DEPLOY_HOOK secret is not set yet."; exit 1; fi
+          status=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$HOOK")
+          echo "Cloudflare answered HTTP $status"
+          test "$status" -ge 200 -a "$status" -lt 300

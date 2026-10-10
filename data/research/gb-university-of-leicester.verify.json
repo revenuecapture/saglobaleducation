@@ -1,0 +1,211 @@
+{
+  "slug": "gb-university-of-leicester",
+  "courses": [
+    {
+      "slug": "gb-university-of-leicester-msc-advanced-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "All core facts confirmed on official_url: 2:1 in a relevant subject with substantial Computing, IELTS 6.0, GBP 24,250 for September 2026 starters (PGDip GBP 19,400, PGCert GBP 9,700), January and September starts, January 2027 apply by 20 November 2026, MSc 12 to 16 months, with Industry 24 to 28 months.",
+        "highlights: 'Optional industry placement (With Industry route)' is a course feature, not a module or topic name. 'Personal and Group Skills' and the individual project are confirmed.",
+        "english_requirements: min_* numbers match Leicester's equivalency page (https://le.ac.uk/study/international-students/english-language-requirements/equivalent: IELTS 6.0 = 5.5 each, PTE 59, TOEFL iBT 80, Duolingo 105) but that page is not cited in the file. min_toefl 80 is the old TOEFL scale; for tests taken after 21/1/2026 the page requires 4.0 overall, 4.0 each.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-msc-finance",
+      "verdict": "fail",
+      "issues": [
+        "highlights: 'CFA Programme Partner Institution status' and 'Covers over 70% of the CFA Candidate Body of Knowledge' are claims (status and a percentage), not module or topic names. Both are stated on the page, but they belong in career_notes, not highlights. Only 'Dissertation in Semester 3' is a topic.",
+        "highlights: the second item copies the university's wording ('covers over 70% of the CFA Candidate Body of Knowledge').",
+        "Confirmed on official_url: 1 year full time, GBP 24,250 for September 2026 entry, September start only, 'good second class honours degree or equivalent from a recognised university', IELTS 6.5. No module names are listed by name on the page, so there are no module highlights to substitute.",
+        "english_requirements: min_* numbers match the equivalency page (IELTS 6.5 = 5.5 each, PTE 61, TOEFL 90, Duolingo 120), which is not cited. min_toefl 90 is old scale; new-scale tests (after 21/1/2026) need 4.5 overall.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {
+        "highlights": ["Dissertation in Semester 3"]
+      }
+    },
+    {
+      "slug": "gb-university-of-leicester-llm-international-commercial-law",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 1 year full time, GBP 19,400 starting September 2026, September start, 'good second class degree or an equivalent degree in an appropriate discipline', post-graduation experience given due credit, IELTS 6.5, eight option modules with at least six from the ICL lists, all four named highlight modules, annual Law Fair, and the application system unavailable notice.",
+        "overview omits that the course also includes a dissertation in International Commercial Law (minor).",
+        "experience_requirements copies the university's sentence almost word for word ('Relevant post-graduation experience is given due credit').",
+        "min_toefl 90 is old TOEFL scale; new-scale tests need 4.5 overall. Equivalency source not cited.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-msc-advanced-mechanical-engineering",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 12 to 16 months (24 to 28 with placement), GBP 24,250 for September 2026 starters, extra fee if a placement is secured, January and September starts, January 2027 apply by 20 November 2026 and deposit by 27 November 2026, 'Good second class honours degree (or equivalent) in a relevant subject such as Mechanical Engineering', IELTS 6.0, IET and IMechE accreditation, 9 to 11 month normally paid placement.",
+        "highlights: 'Optional 9 to 11 month industry placement, normally paid' is a feature, not a module or topic. The page names topics (fluid dynamics, solid mechanics, advanced and conventional materials, control systems) that could be used instead.",
+        "min_toefl 80 is old TOEFL scale; new-scale tests need 4.0 overall. Equivalency source not cited.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {
+        "highlights": ["Fluid dynamics", "Solid mechanics", "Advanced and conventional materials", "Control systems", "Individual Project"]
+      }
+    },
+    {
+      "slug": "gb-university-of-leicester-mpharm-pharmacy",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on /2026 page and undated official_url (both show 2026 entry): UCAS B230, 4 years, GBP 26,550 per year starting 2026, A-levels ABB with the stated science rules, IB 30 with HL 6,6,5, IELTS 7.0, Certificate of Good Standing no more than 6 months old, highlight themes, provisional GPhC accreditation, Graduate route visa note, UCAS deadlines.",
+        "experience_requirements: selection is two stages, an online situational judgement test then an online interview (group activity and panel). The file mentions only the interview.",
+        "academic_requirements omits GCSE requirements on the page (English Language and Maths 6/B, sciences 6/B).",
+        "english_requirements: course page gives no component bands. Equivalency page confirms IELTS 7.0 = 5.5 each, PTE 68, TOEFL 100, Duolingo 130 (note the separate research-degree IELTS 7.0 page uses 6.0 each and PTE 67, so confirm with admissions for this course). min_toefl 100 is old scale; new-scale tests need 5.0.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: G400 3 years, G401 and G402 4 years, G991 Foundation Year listed as a related course, GBP 25,100 per year starting 2026, ABB or BBB plus EPQ at B, IB 30 with Maths conditions if GCSE Maths 5/B not held, IELTS 6.0, all four highlight modules, second-year group project for a real client, BCS accreditation for CITP (full) and CEng (partial).",
+        "min_toefl 80 is old TOEFL scale; new-scale tests need 4.0. Equivalency source not cited.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-llb-law",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on fees_source_url (/2026): M100, 3 years, 4 with Year Abroad, GBP 20,200 per year starting 2026, AAB with General Studies accepted, IB 33 with English A 4 or English B 5 unless GCSE English 4/C, IELTS 6.5 with 6.0 in writing, 100 hours work-related learning, solicitor and barrister training statement, SSAH Foundation Year.",
+        "official_url (undated https://le.ac.uk/courses/law-llb) shows GBP 18,950 with no year and lists 2025 and 2026 starts. Linking users there will show a different, older fee; consider using the /2026 page as official_url until a 2027 page opens.",
+        "highlights: 'Statutory interpretation' is the file's wording; the page says 'approaches to interpreting law' (acceptable paraphrase). '100 hours of work-related learning' is a feature, not a module.",
+        "career_notes closely copies the university's sentence.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-ba-business-and-management",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on 2027 page: title Business and Management BA, N200, 3 years (4 with Year Abroad or Year in Industry), 2027/28 international fees yet to be confirmed and GBP 20,200 for 2026/27, ABB all subjects, IB 30 with Maths and English conditions, IELTS 6.5, the four highlight modules, shared first year with switch option, 100 hours work-related learning.",
+        "career_notes copies the university's sentence almost word for word ('prepares graduates for roles in management, consultancy, marketing and entrepreneurship').",
+        "min_toefl 90 is old TOEFL scale; new-scale tests need 4.5. Equivalency source not cited.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-beng-engineering-with-foundation-year",
+      "verdict": "fail",
+      "issues": [
+        "pk_route / pakistan_entry_note: the Pakistan page's HSC grade C plus 85% Maths and Science rule is stated for the 'STEM International Foundation Year', which Leicester treats as a separate programme from this integrated Engineering with Foundation Year (H991) (scholarship pages list 'STEM International Foundation' as its own excluded course). Neither the course page nor the Pakistan page states a Pakistan route for H991, so pk_route 'intermediate' is not supported by a page that states it.",
+        "tuition: GBP 20,750 per_year is the foundation year fee only; years 2 onwards for 2026 starters are GBP 25,100 per year. The notes say so, but a per_year basis with 20,750 will understate the cost in the finder.",
+        "notes: 'Foundation courses are excluded from the undergraduate merit scholarship and fee waiver' overgeneralises. The pages exclude STEM International Foundation, Biological Sciences International Foundation and International Year 1; the fee waiver also excludes programmes longer than three years, which does exclude this 4-year course, but integrated foundation years are not named in the merit exclusion.",
+        "Confirmed: H991, 4 years (5 with Year Abroad or Industry), BCC including Maths or Physics, IB 26, IELTS 6.0, all four highlight modules, automatic progression to any Leicester BEng or MEng.",
+        "Fee rule satisfied: notes say 'Target year fee not yet published'."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-leicester-pgt-merit-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 5,000 discount for a maximum of one year, international fee status, UK first class equivalent, full-time campus Master's or PGCE, excludes India and Thailand domiciled, automatic, intakes September 2026, January 2027 and April 2027 (September 2027 not listed), one University scholarship only.",
+        "Applies to 2026/27 applications only; September 2027 entry not yet covered."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-global-excellence-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 7,000, 10 awards, first class equivalent, full-time campus Master's excluding PGCE, PGCert and PGDip, India excluded, video of up to two minutes answering three questions, January and April 2027 deadline 6 November 2026, winners 25 November 2026, April only for College of Business PGT, no stacking.",
+        "Page also requires deposit payment by the stated deadline and proof of funds; not in criteria_text.",
+        "summary says the video is submitted 'after receiving an offer'; the page requires being an offer holder but does not state the timing explicitly.",
+        "Only 2026/27 cycle; not confirmed for September 2027 entry."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-ulsb-international-deans-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 8,000 discount (basis not stated), up to 10 a year (5 UG, 5 PG), the eight named nationalities including Pakistan, overseas fee status, 3.3 GPA (scale not stated) UG or 2:1 PG, full-time School of Business programmes, invitation to a scholarship form after offer, rolling with selections by early August, subject to annual review.",
+        "Terms state programmes commencing September 2026; not confirmed for 2027 entry."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-ug-merit-scholarship",
+      "verdict": "fail",
+      "issues": [
+        "name: the cited page (https://le.ac.uk/study/international-students/scholarships) lists 'International Merit Scholarship' covering both UG and PGT, not 'International Undergraduate Merit Scholarship'.",
+        "criteria_text: the 'two grades above the standard A-level requirement (AAA where ABB is required)' threshold and the Medicine, LLB Maitrise, STEM International Foundation and IY1 exclusions do not appear for this award on the cited page. The UG detail page (https://le.ac.uk/study/undergraduates/scholarships-bursaries-discounts/international-merit-scholarship) failed to load. These criteria appear on the fee waiver page and may have been carried across.",
+        "CONDITIONAL: one eligibility branch requires progression from a specific pathway (Leicester IFY or IY1 students progressing to UG in 2026/27 with 70% or above). The finder should treat that branch as conditional.",
+        "Confirmed: GBP 5,000 per year, international fee-paying, automatic, notified when final results are submitted.",
+        "intake_label September 2026: the page refers to 2026/27 progression; 2027 entry not confirmed."
+      ],
+      "corrections": {
+        "name": "International Merit Scholarship"
+      }
+    },
+    {
+      "slug": "gb-university-of-leicester-ug-tuition-fee-waiver",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: full tuition waiver for up to three years, 30 for September 2026 within 150 over five years, two grades above standard A-level requirement, full-time UK campus course of no more than three years, all listed exclusions, Leicester as firm choice by 30 June 2026, two-minute video answering three questions, window 18 November 2025 to 30 June 2026 (closed), living and accommodation not covered, no stacking.",
+        "Only September 2026 terms published; not applicable to 2027 entry until a new round is announced. Programmes over three years (for example MPharm, foundation-year degrees) are excluded."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-chancellors-international-scholarship",
+      "verdict": "fail",
+      "issues": [
+        "criteria_text: the cited page applies the India-domiciled exclusion to the postgraduate version only, and the Medicine and LLB Maitrise exclusion to the undergraduate version only. The file's wording implies the India exclusion applies to both.",
+        "Confirmed: GBP 3,000 per year, UG and PGT versions, all international fee-paying students meeting entry requirements, automatic, notified with offer.",
+        "intake_label September 2026: the cited page states no intake; the notes say the PG detail page still shows September 2025 to April 2026. Not confirmed for 2027 entry."
+      ],
+      "corrections": {
+        "criteria_text": "International fee status; meet course entry requirements. Undergraduate version excludes Medicine and LLB Maitrise. Postgraduate version not available to applicants domiciled in India."
+      }
+    },
+    {
+      "slug": "gb-university-of-leicester-alumni-discount",
+      "verdict": "pass",
+      "issues": [
+        "CONDITIONAL: requires being a former Leicester student (completed Leicester UG degree or PGCE, Study Abroad or Erasmus placement, or Leicester Master's). Not available to new Pakistani applicants; the finder should treat it as conditional.",
+        "Confirmed: 20% of the new course fee, self-financing (sponsored may qualify), taught MA, MSc, MRes, LLM and research PhD, MPhil, campus and distance, full and part time, excludes PGCE and MSci, MPhys, MMath, automatic, no stacking except the Distance Learning instalment incentive, not with Family Loyalty for international students.",
+        "notes: 'Page states no intake restriction' overstates it; the page simply does not mention intake years."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leicester-family-loyalty-discount",
+      "verdict": "unverifiable",
+      "issues": [
+        "CONDITIONAL: requires a sibling, spouse or parent who is studying on, or graduated from, a full-time Leicester course. The finder should treat it as conditional.",
+        "application_route 'separate_application' is not stated on the cited page; it is a guess.",
+        "levels (UG and PG) and intake_label September 2027 are not stated on the cited page.",
+        "Confirmed: 10% off tuition for each year of the course and the family-member eligibility. International fee status and full-time course requirement not shown in the fetched text of the cited page. Detail terms page not cited or opened."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Sponsor licence confirmed on the gov.uk register dated 2026-10-07: University of Leicester, Leicester, HEI, Student Sponsor - Track Record, Student route, no compliance note.",
+      "Pakistan page and named recruitment contact (Global Recruitment Officer, pakistan@leicester.ac.uk) confirmed.",
+      "is_russell_group: russellgroup.ac.uk/about/our-universities again did not list members. Leicester is not generally known as a Russell Group member; keep null or false and never display it as a member until confirmed.",
+      "summary: 'Most taught Master's courses last one year' is an unsourced generalisation (Advanced Computer Science and Advanced Mechanical Engineering are 12 to 16 months).",
+      "region 'East Midlands' not taken from an opened official page (already flagged by researcher).",
+      "No dashes used as punctuation found in the file."
+    ],
+    "corrections": {}
+  }
+}

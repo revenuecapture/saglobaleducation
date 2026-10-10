@@ -1,0 +1,31 @@
+# Loads research files from data/research into Supabase as unpublished drafts.
+# Run it by hand from the Actions tab after a research batch is committed.
+# Nothing is published: a reviewer approves rows in Supabase, then the site rebuilds.
+name: Import research drafts
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Optional: one research file slug, e.g. gb-university-of-leicester (blank = all)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Import drafts
+        env:
+          SUPABASE_URL: https://kdndxzqxzgnusgvgcqsv.supabase.co
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ONLY: ${{ inputs.only }}
+        run: node scripts/import-drafts.mjs "$ONLY"

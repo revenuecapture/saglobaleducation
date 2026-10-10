@@ -1,0 +1,162 @@
+{
+  "slug": "gb-university-of-sussex",
+  "courses": [
+    {
+      "slug": "gb-university-of-sussex-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Checked against the 2027 course page: title, BSc (Hons), 3 years full time, September 2027 start, UCAS G400, international GBP 28,100 per year (home GBP 10,050), ABB-BBB, GCSE Maths grade 6 (B), IELTS 6.0 with 5.5 in each component and the Pakistan text all match. The fee section has no year label; the page notes fees may rise annually and that 2027/28 scholarships are not yet set, so 2027/28 is an inference that the file's notes disclose.",
+        "highlights: Databases and Applied Machine Learning are Year 2 modules, not Year 1 (acceptable as highlights, not stated as Year 1 in the file).",
+        "flag (copied text): pakistan_entry_note reproduces university sentences verbatim, e.g. 'You can apply for direct entry to Year 1 if you are completing at least two years of Bachelor degree studies.' It is labelled 'as published', so this is intentional, but paraphrase it before publishing if copied text is not allowed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-sussex-law-llb",
+      "verdict": "fail",
+      "issues": [
+        "overview: the file calls this a 'qualifying law degree'. The page never uses that phrase. It says the course 'satisfies the academic component for BSB purposes' and separately for SRA purposes, subject to minimum pass marks and number of attempts. This is an unsourced status claim (and an outdated term since the SQE replaced the QLD route for solicitors).",
+        "overview: 'with optional modules in later years' was not confirmed in the fetch (minor).",
+        "pakistan_entry_note: the page also says Intermediate/HSC holders normally need a Foundation year first (for example the International Foundation Year at the ISC). The file leaves this out, unlike the other UG rows, so a Pakistani FSc student could read the row as allowing direct entry.",
+        "Confirmed: title, 3 years full time, September 2027, UCAS M100, AAB-ABB, GCSE wording, IELTS 6.0 with 5.5 in each component, Year 1 core modules Contract Law, Tort Law, English Legal System and Public Law, international GBP 24,200 per year, home GBP 10,050. Fee year is not labelled on the page (disclosed in notes).",
+        "flag (copied text): pakistan_entry_note copies the university's direct entry sentence verbatim."
+      ],
+      "corrections": {
+        "overview": "Three year law degree covering contract, tort, public law and the English legal system. Sussex states the degree satisfies the academic component of training for both the Bar Standards Board and the SRA, subject to minimum pass marks. UCAS code M100.",
+        "pakistan_entry_note": "Pakistan (as published): You can apply for direct entry to Year 1 if you are completing at least two years of Bachelor degree studies. Applicants with the Intermediate Certificate or HSC normally need a Foundation year first, for example the International Foundation Year at the International Study Centre. Entry requirements are guidelines and applications are assessed case by case."
+      }
+    },
+    {
+      "slug": "gb-university-of-sussex-mechanical-engineering-beng",
+      "verdict": "pass",
+      "issues": [
+        "Checked against the 2027 course page: title, 3 years full time, September 2027, UCAS H300, ABB-BBB with A-level Mathematics at grade B, IELTS 6.0 with 5.5 in each component, Year 1 modules (Engineering Maths 1, Global Design Challenge, Programming for Engineers, Electrical Circuits and Devices), placement and MEng variants, international GBP 28,100 per year all match. Fee year not labelled on the page (disclosed in notes).",
+        "pakistan_entry_note omits the page's line that Intermediate/HSC holders normally need a Foundation year first (minor; the CS row includes it).",
+        "flag (copied text): academic_requirements ('A-levels must include Mathematics, with at least grade B.') and pakistan_entry_note ('Evidence of existing academic ability at a high level in Mathematics is essential.') are verbatim university sentences."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-sussex-psychology-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Checked against the 2027 course page: title, 3 years full time, September 2027, UCAS C800, AAB, GCSE Maths grade 4 (C) and broad GCSEs 9-4, IELTS 6.0 with 5.5 in each component, Year 1 core modules, placement year variant, international GBP 28,100 per year all match. Fee year not labelled on the page (disclosed in notes). The page notes modules listed are those planned for 2026/27.",
+        "pakistan_entry_note omits the page's line that Intermediate/HSC holders normally need a Foundation year first (minor).",
+        "flag (copied text): pakistan_entry_note copies university sentences verbatim ('You must have a good level of Mathematics.')."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-sussex-international-foundation-year",
+      "verdict": "pass",
+      "issues": [
+        "Entry requirements page now fetched: 'Good High school graduation grades or equivalent', age rule (turn 18 by 1 September of the year the ISC course is completed), IELTS for UKVI 5.0 (min 5.0 in writing), Medicine route 6.0 (min 6 in writing, 5.5 in others), PTE Academic UKVI and LanguageCert Academic SELT accepted with no minimum scores published (min_pte null correct)",
+        "Pakistan text confirmed verbatim: Year 12 (HSC / Intermediate Part I and II) or Polytechnic Diploma 50% overall with passes in min 4 subjects; Year 11 (Intermediate Part I) 60%; 50% in relevant subjects. pk_route intermediate and pk_min_percent 50 confirmed (the Year 11 route needs 60%)",
+        "academic_requirements: omits the pathway subject rules (Computer Science and Psychology need a maths/numerate subject; Engineering, Maths and Physics need maths and physics; Life Sciences need maths plus biology or chemistry). Incomplete rather than wrong",
+        "Confirmed on the programme page (earlier run): two semesters; September, November and January intakes with no years given; the four highlighted pathways exist; 'Maintained by Study Group'",
+        "Confirmed on the fees page (earlier run): GBP 21,500 for Business, Humanities, Science and Engineering for 2026/27, programmes starting on or after 26 August 2026; GBP 1,000 security deposit, GBP 260 admin fee, GBP 6,000 advance before CAS. No 2027/28 fee published",
+        "2026/27 fee against a September 2027 intake: tuition_academic_year correctly says 2026/27 and the notes disclose it, but the ISC pages do not state a September 2027 intake. Do not display GBP 21,500 as the 2027 entry fee",
+        "notes: calls the GBP 1,000 a 'confirmation payment deposit'; the fees page calls it a security deposit (minor)",
+        "flag (copied text): academic_requirements copies the age sentence near verbatim and pakistan_entry_note reproduces university text (labelled 'as published')"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-sussex-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 course page: title, 1 year full time, on campus, September 2027 start (January 2027 also listed), deadlines 1 August 2027 international and 1 September 2027 UK, international GBP 25,700 per year, 2.2 in any subject with professional qualifications or equivalent experience considered",
+        "English confirmed: IELTS 6.0 (5.5 each), PTE 59 (59 in all four skills), TOEFL iBT new scale 4 (4 each) and old scale 80 (17/18/20/17), Duolingo 110 (no component below 105); min_pte 59 and min_duolingo 110 correct, min_toefl null justified",
+        "Pakistan text confirmed on the page: four-year Bachelors at 60%-65% or CGPA 2.4 - 2.6 depending on university, or Masters after a 3-year Bachelors at the same range; pk_route bachelor_16 and null pk_min_* are reasonable",
+        "highlights: Organisational Behaviour, Leadership and Change, Global Business Environment and Business Analysis and Consulting are core; Consultancy Project is a summer option (labelled as such). Page says modules shown are for 2026/27 and 2027/28 modules are confirmed in January 2027",
+        "Fee year not labelled on the page; 2027/28 is inferred from the September 2027 entry page (disclosed)",
+        "notes: says the page 'states fees may be subject to an annual increase'; the PG page makes no such statement about tuition (only about additional costs). Drop that clause",
+        "flag (dash): pakistan_entry_note uses 'CGPA 2.4 - 2.6' with a spaced hyphen; write as '2.4 to 2.6' (correction given)"
+      ],
+      "corrections": {
+        "pakistan_entry_note": "Pakistan (as published): Four-year Bachelors degree with an overall mark of at least 60% to 65% or CGPA 2.4 to 2.6 depending on your university; or Masters degree following a 3-year Bachelors degree with the same mark range. CGPA scale not stated, so not converted."
+      }
+    },
+    {
+      "slug": "gb-university-of-sussex-artificial-intelligence-adaptive-systems-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 course page: title, 1 year full time, September 2027, deadlines 1 August 2027 international and 1 September 2027 UK, international GBP 28,100 per year, 2.1 in a scientific or technical subject or other discipline (including computing and cognitive subjects)",
+        "academic_requirements: omits the page's qualifier 'demonstrating either numeracy or computer literacy' (incomplete rather than wrong)",
+        "English confirmed: IELTS 6.0 (5.5 each), PTE 59 (59 in all four skills), TOEFL iBT new scale 4 (4 each) and old scale 80 (17/18/20/17), Duolingo 110 (no component below 105); min_pte 59 and min_duolingo 110 correct, min_toefl null justified",
+        "Pakistan text confirmed on the page: four-year Bachelors at 60%-65% or CGPA 2.4 - 2.6 depending on university, or Masters after a 3-year Bachelors at the same range; pk_route bachelor_16 and null pk_min_* are reasonable",
+        "highlights: Algorithmic Approaches to Mathematics, Adaptive Systems, Machine Learning and MSc Individual Project are all core; page labels the module list as 2026 entry with 2027/28 list from January 2027",
+        "notes: says the page 'states fees may be subject to an annual increase'; the PG page makes no such statement about tuition (only about additional costs). Drop that clause",
+        "flag (dash): pakistan_entry_note uses 'CGPA 2.4 - 2.6' with a spaced hyphen; write as '2.4 to 2.6' (correction given)"
+      ],
+      "corrections": {
+        "pakistan_entry_note": "Pakistan (as published): Four-year Bachelors degree with an overall mark of at least 60% to 65% or CGPA 2.4 to 2.6 depending on your university; or Masters degree following a 3-year Bachelors degree with the same mark range. CGPA scale not stated, so not converted."
+      }
+    },
+    {
+      "slug": "gb-university-of-sussex-accounting-and-finance-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the September 2027 course page: title, 1 year full time, September 2027 (January 2027 also listed), deadlines 1 August 2027 international and 1 September 2027 UK, international GBP 25,700 per year, 2.2 in a subject with basic coverage of accounting and finance",
+        "academic_requirements: omits 'including an average mark of at least 57%' and that economics, business or management graduates are considered case by case (correction given)",
+        "English confirmed: IELTS 6.0 (5.5 each), PTE 59 (59 in all four skills), TOEFL iBT new scale 4 (4 each) and old scale 80 (17/18/20/17), Duolingo 110 (no component below 105); min_pte 59 and min_duolingo 110 correct, min_toefl null justified",
+        "Pakistan text confirmed on the page: four-year Bachelors at 60%-65% or CGPA 2.4 - 2.6 depending on university, or Masters after a 3-year Bachelors at the same range; pk_route bachelor_16 and null pk_min_* are reasonable",
+        "highlights: Issues in Financial Reporting, Corporate Finance with AI Applications, Institutions in the Global Financial Market and Research Dissertation are all core; confirmed",
+        "notes: says the page 'states fees may be subject to an annual increase'; the PG page makes no such statement about tuition (only about additional costs). Drop that clause",
+        "flag (dash): pakistan_entry_note uses 'CGPA 2.4 - 2.6' with a spaced hyphen; write as '2.4 to 2.6' (correction given)"
+      ],
+      "corrections": {
+        "academic_requirements": "Lower second-class (2.2) undergraduate honours degree or above, including an average mark of at least 57%, in a subject with basic coverage of accounting and finance. Economics, business or management graduates are considered case by case.",
+        "pakistan_entry_note": "Pakistan (as published): Four-year Bachelors degree with an overall mark of at least 60% to 65% or CGPA 2.4 to 2.6 depending on your university; or Masters degree following a 3-year Bachelors degree with the same mark range. CGPA scale not stated, so not converted. Subject must have basic coverage of accounting and finance; applications assessed case by case."
+      }
+    },
+    {
+      "slug": "gb-university-of-sussex-international-relations-ma",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the September 2027 course page: title, 1 year full time (part time also offered), September 2027, deadlines 1 August 2027 international and 1 September 2027 UK, international GBP 24,200 per year, normally 2.1 preferably in social sciences or humanities",
+        "academic_requirements: omits that 2.2 applicants are considered case by case (incomplete rather than wrong)",
+        "English confirmed: IELTS 6.0 (5.5 each), PTE 59 (59 in all four skills), TOEFL iBT new scale 4 (4 each) and old scale 80 (17/18/20/17), Duolingo 110 (no component below 105); min_pte 59 and min_duolingo 110 correct, min_toefl null justified",
+        "Pakistan text confirmed on the page: four-year Bachelors at 60%-65% or CGPA 2.4 - 2.6 depending on university, or Masters after a 3-year Bachelors at the same range; pk_route bachelor_16 and null pk_min_* are reasonable",
+        "highlights: Foundations of World Politics, International Relations Theory, Research Methods and Professional Skills (IR) and Dissertation are all core; confirmed",
+        "notes: says the page 'states fees may be subject to an annual increase'; the PG page makes no such statement about tuition (only about additional costs). Drop that clause",
+        "flag (dash): pakistan_entry_note uses 'CGPA 2.4 - 2.6' with a spaced hyphen; write as '2.4 to 2.6' (correction given)"
+      ],
+      "corrections": {
+        "pakistan_entry_note": "Pakistan (as published): Four-year Bachelors degree with an overall mark of at least 60% to 65% or CGPA 2.4 to 2.6 depending on your university; or Masters degree following a 3-year Bachelors degree with the same mark range. CGPA scale not stated, so not converted."
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-sussex-mba-impact-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on official_url: 'MBA Impact Scholarship (2026)', GBP 2,500 to 5,000 tuition fee reduction, offer for the Sussex MBA starting September 2026 or January 2027, management experience assessed on demonstration of impact, apply after accepting an offer, deadline 31 December 2026 23:59, rolling allocation, not marked expired. Pakistan and the UK are in the eligible country list; fee status and number of awards not stated",
+        "2027 applicability: only the January 2027 MBA intake; nothing covers September 2027, and the MBA is not among the researched courses. Do not present it as a 2027/28 offer or attach it to any listed course"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-sussex-pakistan-scholarship-masters",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on official_url: GBP 4,000 off first year full-time fees, Pakistani nationals, overseas fee status, self-financing, full-time Masters starting September 2026 or January 2027, applied automatically and shown on the CAS, unlimited awards; excludes certificates/diplomas incl. PGCE, BSMS, six named MA development programmes, online, Schools Direct and research council funded Masters",
+        "2027 applicability: the page states the 1 September 2026 deadline 'has now expired' and has no 2027/28 version. It does not apply to September 2027 entry and must not be listed as open (the file's notes say this, confidence low)",
+        "application_route automatic with a deadline: this is how the page itself presents it, not a researcher error"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Sponsor register CSV dated 2026-10-07 row: 'University of Sussex,Brighton, ,Higher Education Institution (HEI),Student Sponsor - Track Record,Student'; eligibility_note confirmed",
+      "Campus: international page footer gives 'Sussex House, Falmer, Brighton, BN1 9RH'; ISC 'Maintained by Study Group' confirmed on the ISC site (earlier run); international_admissions_url is live",
+      "Russell Group: the cited russellgroup.ac.uk 'Our universities' page names no members, so it does not evidence is_russell_group false. The Wikipedia member list (24 members) does not include Sussex, so false is correct; cite a source that names the members",
+      "summary: no ranking or superlative found (the international page itself carries QS and THE claims, not used in the file). Only unsourced claim found across the file remains 'qualifying law degree' in the Law LLB overview",
+      "eligibility_note: 'Student Sponsor - Track Record' uses a spaced hyphen quoting the register label; rewrite without the dash if house style forbids it"
+    ],
+    "corrections": {}
+  }
+}

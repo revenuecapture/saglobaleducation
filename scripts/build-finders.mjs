@@ -16,6 +16,7 @@ import { readFile, writeFile, mkdir, rm, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = Object.fromEntries(process.argv.slice(2).reduce((acc, a, i, all) => {
@@ -392,8 +393,37 @@ async function main() {
   if (extra) sm = sm.replace('</urlset>', `${extra}\n</urlset>`);
   await writeFile(smPath, sm);
 
+  // Version every page's links to the shared styles and scripts with a short content hash,
+  // so browsers and Cloudflare's 4-hour browser cache always pick up a new build at once.
+  await stampAssets();
+
   console.log(`Built from ${SOURCE}: ${out.courses.items.length} courses, ${out.scholarships.items.length} open scholarships, ` +
               `${out.courses.universities.length} universities.`);
+}
+
+async function stampAssets() {
+  const assets = ['assets/css/brand.css', 'assets/js/site.js', 'assets/js/finder.js'];
+  const ver = {};
+  for (const a of assets) {
+    const p = path.join(SITE, a);
+    if (existsSync(p)) ver[a] = createHash('sha256').update(await readFile(p)).digest('hex').slice(0, 10);
+  }
+  let pages = 0;
+  async function walk(dir) {
+    for (const e of await readdir(dir, { withFileTypes: true })) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) { if (e.name !== 'data' && e.name !== 'assets') await walk(p); continue; }
+      if (!e.name.endsWith('.html')) continue;
+      let html = await readFile(p, 'utf8'), before = html;
+      for (const [a, v] of Object.entries(ver)) {
+        const re = new RegExp('(["\'])/' + a.replace(/[.]/g, '\\.') + '(?:\\?v=[a-z0-9]+)?(["\'])', 'g');
+        html = html.replace(re, `$1/${a}?v=${v}$2`);
+      }
+      if (html !== before) { await writeFile(p, html); pages++; }
+    }
+  }
+  await walk(SITE);
+  console.log(`Stamped asset versions on ${pages} pages.`);
 }
 
 main().catch(e => { console.error(e.message || e); process.exit(1); });

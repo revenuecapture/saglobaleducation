@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   backup:
@@ -21,10 +22,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Get a GitHub identity token for Supabase
+        id: oidc
+        run: |
+          t=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sa-global-ops" | jq -r .value)
+          echo "::add-mask::$t"
+          echo "token=$t" >> "$GITHUB_OUTPUT"
       - name: Export tables
         env:
           SUPABASE_URL: https://kdndxzqxzgnusgvgcqsv.supabase.co
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          OPS_TOKEN: ${{ steps.oidc.outputs.token }}
         run: node scripts/backup.mjs
       - name: Commit if anything changed
         run: |

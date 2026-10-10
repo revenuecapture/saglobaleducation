@@ -1,10 +1,11 @@
 // Exports the catalogue tables from Supabase to backups/<table>.json.
-// Runs in GitHub Actions with the service role key held as a repo secret.
+// Runs in GitHub Actions through the "ops" Edge Function (no secret in GitHub), or by hand with a service role key.
 import { mkdir, writeFile } from 'node:fs/promises';
 
-const url = process.env.SUPABASE_URL;
+const url = process.env.SUPABASE_URL || 'https://kdndxzqxzgnusgvgcqsv.supabase.co';
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-if (!url || !key) { console.error('SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required.'); process.exit(1); }
+const opsToken = process.env.OPS_TOKEN;   // GitHub Actions OpenID Connect token for the "ops" Edge Function
+if (!key && !opsToken) { console.error('Set OPS_TOKEN (GitHub Actions) or SUPABASE_SERVICE_ROLE_KEY.'); process.exit(1); }
 
 const tables = {
   fields: 'slug', destinations: 'code', universities: 'slug',
@@ -14,6 +15,17 @@ const PAGE = 1000;
 
 await mkdir('backups', { recursive: true });
 for (const [table, order] of Object.entries(tables)) {
+  if (opsToken) {
+    const res = await fetch(`${url}/functions/v1/ops`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${opsToken}` },
+      body: JSON.stringify({ op: 'export', table })
+    });
+    if (!res.ok) { console.error(`${table}: HTTP ${res.status} ${await res.text()}`); process.exit(1); }
+    const { rows } = await res.json();
+    await writeFile(`backups/${table}.json`, JSON.stringify(rows, null, 2) + '\n');
+    console.log(`${table}: ${rows.length} rows`);
+    continue;
+  }
   const rows = [];
   for (let from = 0; ; from += PAGE) {
     const headers = { apikey: key, Range: `${from}-${from + PAGE - 1}` };

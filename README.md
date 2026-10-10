@@ -23,20 +23,21 @@ Everything runs on free plans.
 
 ## One-time setup
 
-1. **GitHub secret.** Settings > Secrets and variables > Actions > New repository secret.
-   Name `SUPABASE_SERVICE_ROLE_KEY`, value from Supabase > Project Settings > API Keys
-   (the secret key). Never paste this key anywhere else.
-2. **Run both workflows once** from the Actions tab (Run workflow) to confirm they pass.
-3. **Cloudflare Pages.** Workers & Pages > Create > Pages > Connect to Git > this repo.
+No secrets are stored in GitHub. Jobs that need the database (import, backup, rebuild) prove who
+they are with GitHub's own short-lived identity token, which the `ops` Edge Function in Supabase
+checks before doing anything (only this repository's `main` branch is accepted).
+
+1. **Cloudflare Pages.** Workers & Pages > Create > Pages > Connect to Git > this repo.
    Project name `saglobaleducation`, production branch `main`, framework preset None,
    build command `node scripts/build-finders.mjs`, build output directory `site`.
    The build reads only published rows, using the public key built into the script.
-   Then Settings > Builds > Deploy hooks > Add (name it "rebuild"), and save the URL as a
-   GitHub secret named `CF_DEPLOY_HOOK`.
-4. **Domain.** Add saglobal.org to Cloudflare (free plan). Before switching nameservers,
-   check that every existing DNS record was imported, especially the email
-   records (MX, SPF, DKIM, DMARC). Then add saglobal.org and www.saglobal.org as
-   custom domains on the Pages project.
+2. **Deploy hook.** In the Pages project: Settings > Builds > Deploy hooks > Add (name it
+   "rebuild", branch `main`). Its URL is stored as the `CF_DEPLOY_HOOK` secret of the Supabase
+   Edge Functions, not in GitHub.
+3. **Domain.** Add saglobal.org to Cloudflare (free plan). Before switching nameservers,
+   check that every existing DNS record was imported, especially the email records
+   (MX, SPF, DKIM, DMARC). Then add saglobal.org and www.saglobal.org as custom domains
+   on the Pages project.
 
 ## Keeping it free
 
@@ -52,8 +53,9 @@ Everything runs on free plans.
 
 1. Research for each institution lands in `data/research/<slug>.json`, with an independent
    check in `<slug>.verify.json`.
-2. Actions > **Import research drafts** > Run workflow loads them into Supabase as unpublished
-   drafts. The checker's verdict and issues are in each row's `review_notes`.
+2. Pushing them runs **Import research drafts**, which loads them into Supabase as unpublished
+   drafts (it can also be run by hand from the Actions tab). The checker's verdict and issues are
+   in each row's `review_notes`.
 3. The reviewer opens Supabase > Table Editor > `courses` / `scholarships`, filters
    `is_published = false`, reads `review_notes`, fixes anything flagged, and ticks
    `is_published` for approved rows (and for the row's university in `universities`).

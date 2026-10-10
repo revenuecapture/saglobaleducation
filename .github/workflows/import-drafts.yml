@@ -1,9 +1,14 @@
 # Loads research files from data/research into Supabase as unpublished drafts.
-# Run it by hand from the Actions tab after a research batch is committed.
+# Runs on every push that changes research files, or by hand from the Actions tab.
 # Nothing is published: a reviewer approves rows in Supabase, then the site rebuilds.
+# No secret is stored in GitHub: the job proves who it is with GitHub's identity token,
+# which the "ops" Edge Function in Supabase checks.
 name: Import research drafts
 
 on:
+  push:
+    branches: [main]
+    paths: ['data/research/**']
   workflow_dispatch:
     inputs:
       only:
@@ -13,6 +18,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   import:
@@ -23,9 +29,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Get a GitHub identity token for Supabase
+        id: oidc
+        run: |
+          t=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sa-global-ops" | jq -r .value)
+          echo "::add-mask::$t"
+          echo "token=$t" >> "$GITHUB_OUTPUT"
       - name: Import drafts
         env:
           SUPABASE_URL: https://kdndxzqxzgnusgvgcqsv.supabase.co
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          OPS_TOKEN: ${{ steps.oidc.outputs.token }}
           ONLY: ${{ inputs.only }}
         run: node scripts/import-drafts.mjs "$ONLY"

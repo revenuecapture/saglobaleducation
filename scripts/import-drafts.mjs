@@ -17,8 +17,11 @@ const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dir = path.join(repo, 'data', 'research');
 const URL_ = process.env.SUPABASE_URL || 'https://kdndxzqxzgnusgvgcqsv.supabase.co';
 const DRY = process.env.DRY === '1';
-const KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || (DRY ? 'dry' : '');
-if (!KEY) { console.error('SUPABASE_SERVICE_ROLE_KEY is required.'); process.exit(1); }
+// Preferred: OPS_TOKEN, the GitHub Actions OpenID Connect token, sent to the "ops" Edge Function
+// (no secret in GitHub). Fallback: a service role key, for running by hand.
+const OPS_TOKEN = process.env.OPS_TOKEN || '';
+const KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || (DRY || OPS_TOKEN ? 'unused' : '');
+if (!KEY) { console.error('Set OPS_TOKEN (GitHub Actions) or SUPABASE_SERVICE_ROLE_KEY.'); process.exit(1); }
 const headers = { apikey: KEY, 'Content-Type': 'application/json', ...(KEY.startsWith('eyJ') ? { Authorization: `Bearer ${KEY}` } : {}) };
 
 const COURSE = ['slug', 'title', 'award', 'level', 'field_slug', 'mode', 'duration_text', 'duration_months', 'tuition_amount',
@@ -90,6 +93,7 @@ function pick(row, cols) {
 }
 
 async function api(method, pathQs, body, prefer) {
+  if (OPS_TOKEN && !DRY) return viaOps(method, pathQs, body);
   if (DRY) {                         // offline check of the mapping: pretend every row exists unpublished
     if (method === 'PATCH' && pathQs.startsWith('universities')) return [{ id: '00000000-0000-4000-8000-000000000000' }];
     if (method === 'GET') return [];
@@ -101,6 +105,34 @@ async function api(method, pathQs, body, prefer) {
   });
   if (!res.ok) throw new Error(`${method} ${pathQs}: HTTP ${res.status} ${await res.text()}`);
   return res.status === 204 ? null : res.json();
+}
+
+async function ops(payload) {
+  const res = await fetch(`${URL_}/functions/v1/ops`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${OPS_TOKEN}` }, body: JSON.stringify(payload)
+  });
+  const out = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(`ops ${payload.op}: HTTP ${res.status} ${JSON.stringify(out)}`);
+  return out;
+}
+// Translates the importer's four kinds of database call into the ops function's operations.
+async function viaOps(method, pathQs, body) {
+  let m;
+  if (method === 'PATCH' && (m = pathQs.match(/^universities\?slug=eq\.(.+)$/))) {
+    const r = await ops({ op: 'patch_university', slug: decodeURIComponent(m[1]), values: body });
+    return r.id ? [{ id: r.id }] : [];
+  }
+  if (method === 'PATCH' && (m = pathQs.match(/^destinations\?code=eq\.([A-Z]{2})$/))) return ops({ op: 'patch_destination', code: m[1], values: body });
+  if (method === 'GET' && (m = pathQs.match(/^(courses|scholarships)\?select=slug,is_published&slug=in\.\((.*)\)$/))) {
+    const slugs = m[2].split(',').map(x => x.replace(/^"|"$/g, ''));
+    const r = await ops({ op: 'published', table: m[1], slugs });
+    return r.published.map(slug => ({ slug, is_published: true }));
+  }
+  if (method === 'POST' && (m = pathQs.match(/^(courses|scholarships)\?on_conflict=slug$/))) {
+    for (let i = 0; i < body.length; i += 100) await ops({ op: 'upsert_drafts', table: m[1], rows: body.slice(i, i + 100) });
+    return null;
+  }
+  throw new Error('No ops route for ' + method + ' ' + pathQs);
 }
 
 async function importFile(file, excl) {

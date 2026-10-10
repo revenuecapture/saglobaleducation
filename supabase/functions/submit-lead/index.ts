@@ -51,6 +51,16 @@ async function sha256(text: string) {
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
+// Prefer the new secret API key (SUPABASE_SECRET_KEYS, named "default"); fall back to the legacy
+// service role key until the legacy keys are switched off in the dashboard.
+function serviceKey(): string {
+  try {
+    const k = JSON.parse(Deno.env.get("SUPABASE_SECRET_KEYS") || "{}");
+    if (k && typeof k.default === "string") return k.default;
+  } catch { /* not set yet */ }
+  return Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+}
+
 Deno.serve(async (req) => {
   const origin = req.headers.get("origin");
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors(origin) });
@@ -78,12 +88,12 @@ Deno.serve(async (req) => {
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return reply(422, { ok: false }, origin);
   if (whatsapp && !/^[+0-9 ()-]{6,30}$/.test(whatsapp)) return reply(422, { ok: false }, origin);
 
-  const db = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, {
+  const db = createClient(Deno.env.get("SUPABASE_URL")!, serviceKey(), {
     auth: { persistSession: false },
   });
 
   const ip = (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() || "unknown";
-  const ip_hash = await sha256(ip + "|" + (Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || ""));
+  const ip_hash = await sha256(ip + "|" + (Deno.env.get("LEAD_HASH_SALT") || serviceKey()));
   const hourAgo = new Date(Date.now() - 3600_000).toISOString();
   const { count } = await db.from("lead_attempts").select("id", { count: "exact", head: true })
     .eq("ip_hash", ip_hash).gte("created_at", hourAgo);

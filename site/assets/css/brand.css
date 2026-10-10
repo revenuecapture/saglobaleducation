@@ -1936,3 +1936,14 @@ html.nav-glass .nav { gap: 1.35rem; }
   html.nav-glass.nav-dark .nav a[aria-current="page"] { color: var(--azure-7); border-color: var(--surface-cloud-dark); }
   html.nav-glass .header-inner { width: min(100% - 1rem, 64rem); }
 }
+
+/* At a glance, back of the card: the dark card again, with the logo's green quarter.
+   The flip mirrors the blue landing shape into the green one, as in the logo. */
+.usp-back { background: #4a2a16; color: var(--surface-cloud); border: 2px solid var(--mint); }   /* cloud text 10.6:1 */
+.usp-back .usp-n { color: var(--surface-cloud); }
+.usp-card .usp-back-h { color: var(--mint); }                                                     /* 6.5:1 */
+.usp-link { color: var(--mint); border-bottom-color: var(--mint); }
+.usp-link:focus-visible { outline-color: var(--mint); }
+.usp-back-mark { color: inherit; }
+.usp-back-mark path { stroke: #00C19F; stroke-width: .6; stroke-linejoin: round; }
+.usp-card:hover, .usp-card:focus-within, .usp-card.is-flipped { outline-color: transparent; }

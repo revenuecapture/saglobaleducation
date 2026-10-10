@@ -1,6 +1,7 @@
 # Rebuilds the live site on Cloudflare Pages so the finders pick up newly published rows,
 # and so scholarships whose deadlines have passed drop off. Runs weekly and by hand
 # (Actions > Rebuild site > Run workflow) after a reviewer publishes in Supabase.
+# The Cloudflare deploy hook is stored in Supabase, not GitHub; the "ops" Edge Function calls it.
 name: Rebuild site
 
 on:
@@ -10,17 +11,24 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   rebuild:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
-      - name: Call the Cloudflare Pages deploy hook
-        env:
-          HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+      - name: Get a GitHub identity token for Supabase
+        id: oidc
         run: |
-          if [ -z "$HOOK" ]; then echo "CF_DEPLOY_HOOK secret is not set yet."; exit 1; fi
-          status=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$HOOK")
-          echo "Cloudflare answered HTTP $status"
-          test "$status" -ge 200 -a "$status" -lt 300
+          t=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sa-global-ops" | jq -r .value)
+          echo "::add-mask::$t"
+          echo "token=$t" >> "$GITHUB_OUTPUT"
+      - name: Ask Supabase to trigger the Cloudflare rebuild
+        env:
+          OPS_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          out=$(curl -sS -w "\n%{http_code}" -X POST https://kdndxzqxzgnusgvgcqsv.supabase.co/functions/v1/ops \
+            -H "Authorization: Bearer $OPS_TOKEN" -H "Content-Type: application/json" -d '{"op":"rebuild"}')
+          echo "$out"
+          test "$(echo "$out" | tail -1)" = "200"

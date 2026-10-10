@@ -364,11 +364,11 @@
       el.className = 'fly-piece';
       el.innerHTML = s.innerHTML;
       layer.appendChild(el);
-      // Each piece spins clockwise on the way down: one full turn, plus a quarter
-      // for the bottom-left piece, the only one drawn at a different angle, so all
-      // four land facing the same way.
+      // Each piece spins clockwise on the way down and lands in the orientation of the
+      // logo's bottom-left quarter (rounded top right and bottom left). That piece makes
+      // one full turn; the other three, drawn a quarter turn apart, make one and a quarter.
       return { el: el, start: s, end: ends[+s.dataset.fly], a: null, b: null, ys: 0, ye: 1, t: 0, p: 0,
-               spin: s.dataset.fly === '2' ? 450 : 360 };
+               spin: s.dataset.fly === '2' ? 360 : 450 };
     });
     var active = false, R = null, K = 1;
     var I = 0;               // intro amount: 1 = at the centre of the screen, 0 = in the page

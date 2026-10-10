@@ -2028,3 +2028,104 @@ html.nav-glass .nav { gap: 1.35rem; }
 .net-card:hover .net-go { opacity: 1; transform: translateX(3px); }
 @media (max-width: 960px) { .reach .net-strip, .net-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 420px) { .net-plate { height: 4.25rem; } }
+
+/* --- Floating contact button ------------------------------------------------------------ */
+.contact-fab { position: fixed; right: clamp(.9rem, 2.5vw, 1.75rem); bottom: calc(clamp(.9rem, 2.5vw, 1.75rem) + var(--cf-lift, 0px));
+               z-index: 110; display: flex; flex-direction: column; align-items: flex-end; gap: .75rem; transition: bottom .3s ease; }
+.cf-btn { width: 3.75rem; height: 3.75rem; border-radius: 50%; border: 0; cursor: pointer; display: grid; place-items: center;
+          background: var(--azure-7); color: #fff; box-shadow: 0 16px 34px -14px rgba(14, 40, 90, .65); transition: transform .2s, background .2s; }
+.cf-btn:hover { transform: translateY(-2px); background: var(--azure-8); }
+.cf-btn:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+.cf-ico { grid-area: 1 / 1; display: grid; place-items: center; transition: opacity .2s, transform .25s; }
+.cf-ico svg { width: 1.6rem; height: 1.6rem; }
+.cf-ico-close { opacity: 0; transform: rotate(-90deg); }
+.contact-fab.is-open .cf-ico-open { opacity: 0; transform: rotate(90deg); }
+.contact-fab.is-open .cf-ico-close { opacity: 1; transform: none; }
+.cf-panel { width: min(19rem, calc(100vw - 2rem)); padding: .6rem; border-radius: 0 1.4rem 0 1.4rem;
+            background: var(--surface-chocolate-dark); color: var(--surface-cloud); box-shadow: 0 26px 50px -24px rgba(0, 0, 0, .6);
+            animation: cf-in .25s cubic-bezier(.2, .8, .3, 1); }
+.cf-panel[hidden] { display: none; }
+@keyframes cf-in { from { opacity: 0; transform: translateY(8px) scale(.97); } to { opacity: 1; transform: none; } }
+.cf-h { margin: .35rem .6rem .5rem; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--mint); }
+.cf-item { display: flex; align-items: center; gap: .8rem; padding: .65rem .7rem; border-radius: 0 .8rem 0 .8rem;
+           color: var(--surface-cloud); text-decoration: none; font-size: .95rem; line-height: 1.25; transition: background .15s; }
+.cf-item:hover, .cf-item:focus-visible { background: rgba(240, 238, 233, .1); outline: none; }
+.cf-item svg { width: 1.25rem; height: 1.25rem; flex: none; color: var(--mint); }
+.cf-item small { display: block; font-size: .8rem; opacity: .75; }
+.cf-book { margin-top: .25rem; background: var(--mint); color: var(--surface-chocolate-dark); }
+.cf-book svg { color: var(--surface-chocolate-dark); }
+.cf-book:hover, .cf-book:focus-visible { background: var(--mint-4); }
+@media print { .contact-fab { display: none; } }
+@media (prefers-reduced-motion: reduce) { .cf-panel { animation: none; } .cf-ico { transition: none; } }
+
+/* Service 07 and the Casita partner note */
+.tone-7 { --tone-bg: var(--azure-8); --tone-ink: #fff; }                                   /* 9.6:1 */
+.svc-partner { margin: 0 0 1.25rem; max-width: 46rem; font-size: .98rem; line-height: 1.55; }
+.svc-actions { display: flex; flex-wrap: wrap; gap: .75rem 2rem; align-items: center; }
+
+/* Networks: five across, with taller logo panels so every logo shows in full */
+.reach .net-strip, .net-strip { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.net-plate { height: 6.75rem; padding: .7rem .8rem; }
+.net-plate--bare { padding-inline: .25rem; }
+@media (max-width: 1180px) { .reach .net-strip, .net-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .reach .net-strip, .net-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } .net-plate { height: 5.5rem; } }
+.uni-tile-link { display: contents; color: inherit; text-decoration: none; }
+.uni-tile:has(.uni-tile-link):hover .uni-tile-name { text-decoration: underline; }
+
+/* --- Home hero: Russell Group badge and destination flags ------------------------------- */
+.hero-badges { margin-top: 1.5rem; display: flex; flex-direction: column; gap: .7rem; }
+.hero-badges-k { margin: 0; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.05rem;
+                 letter-spacing: .08em; text-transform: uppercase; color: var(--surface-chocolate-dark); }
+.hero-badges-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.hb { display: inline-flex; align-items: center; padding: .45rem .9rem; border-radius: 0 .7rem 0 .7rem;
+      font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.05rem; letter-spacing: .05em; text-transform: uppercase;
+      text-decoration: none; transition: transform .2s; }
+.hb:hover { transform: translateY(-2px); }
+.hb-rg { background: var(--azure-7); color: #fff; }                                       /* 6.1:1 */
+.hb-us { background: var(--surface-chocolate-dark); color: var(--surface-cloud); }
+.hero-flags { list-style: none; margin: .2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .45rem; }
+.hero-flags img { display: block; width: 2.5rem; height: 1.6rem; object-fit: cover; border-radius: 0 .35rem 0 .35rem;
+                  box-shadow: 0 0 0 1px rgba(62, 31, 11, .15); }
+
+/* --- Universities we recommend: each card carries its university's colour --------------- */
+.uni-card { border-top: 6px solid var(--u, var(--azure)); }
+.uni-card .uni-logo { padding: .9rem; border-radius: 0 1rem 0 1rem; background: color-mix(in srgb, var(--u, var(--azure)) 7%, #fff); height: 7rem; }
+.uni-card h3 { color: color-mix(in srgb, var(--u, var(--surface-chocolate-dark)) 72%, var(--surface-chocolate-dark)); }
+.uni-card .card-meta { color: var(--u, inherit); font-weight: 600; }
+@media (max-width: 700px) { .uni-card .uni-logo { height: 5.5rem; } }
+
+/* --- Logo slider: two rows drifting in opposite directions, paused on hover ------------- */
+.logo-slider { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.logo-marquee { position: relative; display: flex; overflow: hidden; gap: 1rem; padding: .5rem 0;
+                -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+                mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.lm-track { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; flex: none; min-width: max-content;
+            animation: lm-scroll 70s linear infinite; }
+.logo-marquee--rev .lm-track { animation-direction: reverse; animation-duration: 80s; }
+.logo-marquee:hover .lm-track, .logo-marquee:focus-within .lm-track { animation-play-state: paused; }
+.lm-track li { flex: none; width: 10.5rem; height: 5.25rem; padding: .7rem .9rem; display: flex; align-items: center; justify-content: center;
+               background: #fff; border-radius: 0 1rem 0 1rem; }
+.lm-track img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+@keyframes lm-scroll { from { transform: translateX(0); } to { transform: translateX(calc(-100% - 1rem)); } }
+.logo-slider-more { margin: 1.25rem 0 0; }
+.logo-slider-more a { color: var(--mint); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) {
+  .lm-track { animation: none; }
+  .logo-marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .lm-track[aria-hidden="true"] { display: none; }
+}
+@media (max-width: 560px) { .lm-track li { width: 8.5rem; height: 4.5rem; } }
+
+/* --- Finders: bigger, readable logos; search on its own row above the filters ------------ */
+.fc-logo { height: 4rem; max-width: 13rem; margin: 1rem 0 .3rem; }
+.qv-logo { height: 4rem; max-width: 15rem; }
+.finder-bar { grid-template-columns: 1fr; }
+.fb-selects { grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); }
+
+/* Universities page search */
+.uni-search { margin: 0 0 1.5rem; max-width: 34rem; }
+.uni-search .fb-search { position: relative; }
+.uni-search input { width: 100%; }
+.uni-search-n { margin: .6rem 0 0; font-size: .95rem; color: var(--surface-chocolate-dark); min-height: 1.4em; }
+details.country[hidden] { display: none; }
+@media (max-width: 760px) { .net-card .net-name { font-size: 1rem; overflow-wrap: anywhere; } .net-kind { font-size: .78rem; } }

@@ -729,6 +729,89 @@
     update();
   })();
 
+  /* Universities page: search across every country's logo grid. -------------------------- */
+  (function () {
+    var countries = [].slice.call(document.querySelectorAll('details.country'));
+    if (!countries.length || !document.querySelector('.uni-grid')) return;
+    var box = document.createElement('div');
+    box.className = 'uni-search';
+    box.innerHTML = '<label class="fb fb-search"><span>Search universities</span>' +
+      '<input type="search" placeholder="Type a university, college or city" autocomplete="off">' +
+      '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg></label>' +
+      '<p class="uni-search-n" aria-live="polite"></p>';
+    countries[0].parentNode.insertBefore(box, countries[0]);
+    var input = box.querySelector('input'), note = box.querySelector('.uni-search-n');
+    var wasOpen = countries.map(function (d) { return d.open; });
+    var norm = function (t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' '); };
+    var t;
+    input.addEventListener('input', function () {
+      clearTimeout(t);
+      t = setTimeout(function () {
+        var q = norm(input.value).trim(), total = 0;
+        countries.forEach(function (d, i) {
+          var n = 0;
+          d.querySelectorAll('.uni-tile').forEach(function (li) {
+            var hit = !q || norm(li.textContent).indexOf(q) > -1;
+            li.hidden = !hit; if (hit) n++;
+          });
+          d.querySelectorAll('.list-head').forEach(function (h) {
+            var g = h.nextElementSibling; if (!g || !g.classList.contains('uni-grid')) return;
+            var any = [].some.call(g.children, function (li) { return !li.hidden; });
+            h.hidden = !any; g.hidden = !any;
+          });
+          d.hidden = q && !n;
+          d.open = q ? n > 0 : wasOpen[i];
+          total += n;
+        });
+        note.textContent = q ? (total ? total + (total === 1 ? ' match' : ' matches') : 'No matches. Try a shorter name, or ask a counsellor.') : '';
+      }, 120);
+    });
+  })();
+
+  /* Floating contact button: WhatsApp (UK and Pakistan), call, or book an appointment. ---- */
+  (function () {
+    if (document.querySelector('.contact-fab')) return;
+    var IC = {
+      chat: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.3 1.1 4.4 2.9 5.9L5 21l4.3-2.1c.9.2 1.8.3 2.7.3 5.1 0 9-3.6 9-8.2S17.1 3 12 3Zm-4 9.3a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Z"/></svg>',
+      phone: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>',
+      cal: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2Zm12 8H5v9h14v-9ZM7 12h4v4H7v-4Z"/></svg>',
+      close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>'
+    };
+    var wrap = document.createElement('div');
+    wrap.className = 'contact-fab';
+    wrap.innerHTML =
+      '<div class="cf-panel" id="cfPanel" hidden>' +
+        '<p class="cf-h">Talk to a counsellor</p>' +
+        '<a class="cf-item" href="https://wa.me/447444761202" target="_blank" rel="noopener">' + IC.chat + '<span>WhatsApp, United Kingdom<small>+44 7444 761202</small></span></a>' +
+        '<a class="cf-item" href="https://wa.me/923324111224" target="_blank" rel="noopener">' + IC.chat + '<span>WhatsApp, Pakistan<small>+92 332 4111224</small></span></a>' +
+        '<a class="cf-item" href="tel:+447444761202">' + IC.phone + '<span>Call the UK office<small>+44 7444 761202</small></span></a>' +
+        '<a class="cf-item" href="tel:+923324111224">' + IC.phone + '<span>Call the Pakistan office<small>+92 332 4111224</small></span></a>' +
+        '<a class="cf-item cf-book" href="/contact/#enquiry">' + IC.cal + '<span>Book an appointment<small>Free first consultation</small></span></a>' +
+      '</div>' +
+      '<button type="button" class="cf-btn" aria-expanded="false" aria-controls="cfPanel" aria-label="Contact a counsellor">' +
+        '<span class="cf-ico cf-ico-open">' + IC.chat + '</span><span class="cf-ico cf-ico-close">' + IC.close + '</span></button>';
+    document.body.appendChild(wrap);
+    var btn = wrap.querySelector('.cf-btn'), panel = wrap.querySelector('.cf-panel');
+    function set(open) {
+      panel.hidden = !open; btn.setAttribute('aria-expanded', String(open)); wrap.classList.toggle('is-open', open);
+      if (open) { var first = panel.querySelector('a'); if (first) first.focus({ preventScroll: true }); }
+    }
+    btn.addEventListener('click', function () { set(panel.hidden); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) { set(false); btn.focus(); } });
+    document.addEventListener('click', function (e) { if (!panel.hidden && !wrap.contains(e.target)) set(false); });
+    panel.addEventListener('click', function (e) {
+      var a = e.target.closest('a'); if (!a) return;
+      try { if (window.gtag) window.gtag('event', 'contact_fab', { link: a.getAttribute('href').split('?')[0] }); } catch (err) {}
+      if (a.classList.contains('cf-book') && location.pathname.indexOf('/contact') === 0) set(false);
+    });
+    // Sit above the cookie banner while it is showing.
+    var bar = document.getElementById('cookieBar');
+    function lift() { wrap.style.setProperty('--cf-lift', bar && !bar.hidden ? bar.offsetHeight + 'px' : '0px'); }
+    lift();
+    if (bar && window.MutationObserver) new MutationObserver(lift).observe(bar, { attributes: true, attributeFilter: ['hidden'] });
+    window.addEventListener('resize', lift);
+  })();
+
   /* Enquiry form --------------------------------------------------------- */
   var form = document.getElementById('enquiry');
   if (!form) return;

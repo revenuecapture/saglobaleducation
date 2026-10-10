@@ -25,7 +25,7 @@
   // Vocabulary
 
   var LEVELS = [['foundation_pathway', 'Foundation & Pathway'], ['undergraduate', 'Undergraduate'],
-                ['postgraduate', 'Postgraduate'], ['pg_diploma', 'Postgraduate Diploma'], ['doctoral', 'Doctoral / PhD']];
+                ['postgraduate', 'Postgraduate'], ['pg_diploma', 'Postgraduate Diploma'], ['doctoral', 'Research (PhD / MPhil)']];
   var LEVEL = toMap(LEVELS);
   var QUALS = [['intermediate', 'Intermediate (HSSC: FSc, FA, ICS, ICom)'], ['alevels', 'A levels'],
                ['bachelor_14', "Two-year bachelor's (14 years of education)"],
@@ -71,8 +71,8 @@
   var profile = load('sag-profile', null);
   var SHORT_KEY = 'sag-shortlist-' + KIND;
   var shortlist = load(SHORT_KEY, []);
-  var state = { dest: '', q: '', field: '', level: '', uni: '', type: '', funding: '', sort: IS_C ? 'featured' : 'deadline', likely: false, shown: PAGE };
-  var KEYS = IS_C ? ['dest', 'q', 'field', 'level', 'uni', 'sort', 'likely'] : ['dest', 'q', 'level', 'type', 'funding', 'uni', 'sort', 'likely'];
+  var state = { dest: '', q: '', field: '', level: '', uni: '', intake: '', year: '', type: '', funding: '', sort: IS_C ? 'featured' : 'deadline', likely: false, shown: PAGE };
+  var KEYS = IS_C ? ['dest', 'q', 'field', 'level', 'intake', 'year', 'uni', 'sort', 'likely'] : ['dest', 'q', 'level', 'type', 'funding', 'uni', 'sort', 'likely'];
   var PARAM = { dest: 'destination' };
 
   function readURL() {
@@ -251,6 +251,8 @@
     if (skip !== 'dest' && state.dest && itemDests(it).indexOf(state.dest) < 0) return false;
     if (state.level && (IS_C ? it.level !== state.level : it.levels.indexOf(state.level) < 0)) return false;
     if (IS_C && state.field && it.field !== state.field) return false;
+    if (IS_C && state.intake && !(it.intakes || []).some(function (x) { return intakeMonth(x) === state.intake; })) return false;
+    if (IS_C && state.year && !(it.intakes || []).some(function (x) { return intakeYear(x) === state.year; })) return false;
     if (state.uni && it.uni !== state.uni) return false;
     if (!IS_C && state.type && it.type !== state.type) return false;
     if (!IS_C && state.funding && (state.funding === 'full') !== !!FULL[it.valueType]) return false;
@@ -342,6 +344,9 @@
     q('[data-tabs]').innerHTML = html;
   }
 
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  function intakeMonth(label) { var m = String(label || '').match(/[A-Za-z]+/); var w = m ? m[0].charAt(0).toUpperCase() + m[0].slice(1).toLowerCase() : ''; return MONTHS.indexOf(w) > -1 ? w : ''; }
+  function intakeYear(label) { var m = String(label || '').match(/(20\d\d)/); return m ? m[1] : ''; }
   function option(v, label, cur) { return '<option value="' + esc(v) + '"' + (v === cur ? ' selected' : '') + '>' + esc(label) + '</option>'; }
   function renderSelects() {
     var html = '';
@@ -355,13 +360,19 @@
       return '<optgroup label="' + esc(d.tab) + '">' + list.map(function (u) { return option(u.slug, u.name, state.uni); }).join('') + '</optgroup>';
     }).join('');
     var levelsPresent = LEVELS.filter(function (l) {
-      return data.items.some(function (it) { return IS_C ? it.level === l[0] : it.levels.indexOf(l[0]) > -1; });
+      return (IS_C && l[0] === 'doctoral') || data.items.some(function (it) { return IS_C ? it.level === l[0] : it.levels.indexOf(l[0]) > -1; });
     });
+    var allIntakes = [];
+    if (IS_C) data.items.forEach(function (it) { (it.intakes || []).forEach(function (x) { allIntakes.push(x); }); });
+    var months = MONTHS.filter(function (m) { return allIntakes.some(function (x) { return intakeMonth(x) === m; }); });
+    var years = allIntakes.map(intakeYear).filter(function (y, i, a) { return y && a.indexOf(y) === i; }).sort();
     if (IS_C) {
       sel('field', 'Subject', option('', 'All subjects', state.field) + data.fields.filter(function (f) {
         return data.items.some(function (it) { return it.field === f.slug; });
       }).map(function (f) { return option(f.slug, f.label, state.field); }).join(''));
       sel('level', 'Level', option('', 'All levels', state.level) + levelsPresent.map(function (l) { return option(l[0], l[1], state.level); }).join(''));
+      sel('intake', 'Intake', option('', 'Any intake', state.intake) + months.map(function (m) { return option(m, m, state.intake); }).join(''));
+      sel('year', 'Year', option('', 'Any year', state.year) + years.map(function (y) { return option(y, y, state.year); }).join(''));
       sel('uni', 'University', uniOpts);
       sel('sort', 'Sort', option('featured', 'Recommended', state.sort) + option('name', 'Name, A to Z', state.sort) +
         option('uni', 'University', state.sort) + (state.dest ? option('fee', 'Tuition, low to high', state.sort) : ''));
@@ -384,6 +395,8 @@
     if (state.dest) chips.push(['dest', tabLabel(state.dest)]);
     if (state.field) chips.push(['field', fieldLabel[state.field]]);
     if (state.level) chips.push(['level', LEVEL[state.level]]);
+    if (state.intake) chips.push(['intake', state.intake + ' intake']);
+    if (state.year) chips.push(['year', state.year]);
     if (state.uni) chips.push(['uni', (byUni[state.uni] || {}).name || state.uni]);
     if (state.type) chips.push(['type', TYPE[state.type]]);
     if (state.funding) chips.push(['funding', state.funding === 'full' ? 'Full funding' : 'Partial funding']);
@@ -427,7 +440,9 @@
     q('[data-showing]').textContent = list.length ? 'Showing ' + Math.min(state.shown, list.length) + ' of ' + list.length + ' ' + noun : '';
     empty.hidden = list.length > 0 || !data.items.length;
     if (!list.length && data.items.length) {
-      empty.innerHTML = '<p class="finder-empty-h">No ' + (IS_C ? 'programmes' : 'scholarships') + ' match these filters.</p>' +
+      empty.innerHTML = (IS_C && state.level === 'doctoral'
+        ? '<p class="finder-empty-h">Research programmes are being added.</p><p>PhD and MPhil options at our partner universities are on their way to the finder. A counsellor can talk you through research routes now.</p>'
+        : '<p class="finder-empty-h">No ' + (IS_C ? 'programmes' : 'scholarships') + ' match these filters.</p>') +
         '<div class="btn-row"><button type="button" class="btn btn-ghost" data-reset><span>Reset filters</span></button>' +
         '<a class="btn btn-primary" href="/contact/?topic=' + KIND + '"><span>Ask a counsellor</span>' + ICON.arrow + '</a></div>';
     }

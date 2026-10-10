@@ -768,6 +768,46 @@
     });
   })();
 
+  /* Documents checklist: ticks saved on this device, progress, print. ------------------- */
+  (function () {
+    var boxes = [].slice.call(document.querySelectorAll('input[data-dc]'));
+    if (!boxes.length) return;
+    var KEY = 'sag-doc-checklist', saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
+    var done = document.querySelector('[data-dc-done]'), meter = document.querySelector('[data-dc-meter]');
+    function update() {
+      var n = 0, by = {};
+      boxes.forEach(function (b) {
+        var g = b.getAttribute('data-dc').replace(/-\d+$/, '');
+        by[g] = by[g] || [0, 0]; by[g][1]++;
+        if (b.checked) { n++; by[g][0]++; }
+        b.closest('.dc-item').classList.toggle('is-done', b.checked);
+      });
+      if (done) done.textContent = n;
+      if (meter) meter.style.width = (100 * n / boxes.length).toFixed(1) + '%';
+      Object.keys(by).forEach(function (g) {
+        var el = document.querySelector('[data-dc-count="' + g + '"]');
+        if (el) el.textContent = by[g][0] + ' of ' + by[g][1];
+      });
+    }
+    boxes.forEach(function (b) {
+      b.checked = !!saved[b.getAttribute('data-dc')];
+      b.addEventListener('change', function () {
+        saved[b.getAttribute('data-dc')] = b.checked;
+        try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+        update();
+      });
+    });
+    var printBtn = document.querySelector('[data-dc-print]'), reset = document.querySelector('[data-dc-reset]');
+    if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+    if (reset) reset.addEventListener('click', function () {
+      saved = {}; boxes.forEach(function (b) { b.checked = false; });
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      update();
+    });
+    update();
+  })();
+
   /* Floating contact button: WhatsApp (UK and Pakistan), call, or book an appointment. ---- */
   (function () {
     if (document.querySelector('.contact-fab')) return;

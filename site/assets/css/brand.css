@@ -1961,3 +1961,31 @@ html.nav-glass .nav { gap: 1.35rem; }
 .usp-back-mark { color: inherit; }
 .usp-back-mark path { stroke: #00C19F; stroke-width: .6; stroke-linejoin: round; }
 .usp-card:hover, .usp-card:focus-within, .usp-card.is-flipped { outline-color: transparent; }
+
+/* --- At a glance: labels blue until hovered; the flipped box takes the green mark's shape --- */
+.usp-front h3, .usp-card .usp-front h3 { color: var(--azure-5); }                          /* 4.75:1 on #4a2a16 */
+.usp-back { border-radius: 1.75rem 0 1.75rem 0; }
+
+/* --- Universities we recommend: cards stack over one another on scroll ------------------
+   Each card sticks a little lower than the one before, so a sliver of every earlier card
+   stays visible; site.js eases each covered card back slightly as the next slides over it. */
+.uni-stack { max-width: 62rem; margin-inline: auto; }
+.uni-card {
+  position: sticky; top: calc(var(--header-h, 5.5rem) + 1.25rem + var(--i, 0) * 1.1rem);
+  display: grid; grid-template-columns: 14rem minmax(0, 1fr); align-items: center; gap: clamp(1.5rem, 4vw, 3.5rem);
+  min-height: clamp(15rem, 30vh, 19rem); margin-bottom: 10vh;
+  background: #fff; border: 1px solid var(--surface-cloud-dark);
+  box-shadow: 0 -22px 48px -36px rgba(62, 31, 11, .55);
+  transform-origin: 50% 0; will-change: transform;
+}
+.uni-card:last-child { margin-bottom: 0; }
+.uni-card:hover { transform: none; }
+.uni-card .uni-logo { margin: 0; height: 5.5rem; }
+.uni-card .uni-logo img { max-width: 100%; }
+.uni-card-body { display: flex; flex-direction: column; gap: .9rem; }
+.uni-card h3 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); margin: 0; }
+@media (max-width: 700px) {
+  .uni-card { grid-template-columns: 1fr; align-items: start; gap: 1.1rem; min-height: 0; margin-bottom: 7vh;
+              top: calc(var(--header-h, 5rem) + .75rem + var(--i, 0) * .7rem); }
+  .uni-card .uni-logo { height: 4rem; }
+}

@@ -557,6 +557,10 @@
     }
     function follow(e) {
       mx = e.clientX; my = e.clientY;
+      if (!current && !openRow) {                   // pointer already over a row (after closing, or a scroll)
+        var row = e.target && e.target.closest ? e.target.closest('details.svc') : null;
+        if (row) show(row);
+      }
       if (!raf) raf = requestAnimationFrame(tick);
     }
     function show(row) {
@@ -580,6 +584,34 @@
       row.addEventListener('mouseenter', function (e) { follow(e); show(row); });
     });
     list.addEventListener('mouseleave', function () { if (!openRow) hide(); });
+
+    // Never leave the card on screen when the pointer is not over a service. mouseleave alone
+    // misses two cases: the page scrolling under a still pointer, and the full-screen view
+    // closing (it brings the card back to shrink into) while the pointer is elsewhere.
+    function rowAtPointer() {
+      var el = document.elementFromPoint(mx, my);
+      var row = el && el.closest ? el.closest('details.svc') : null;
+      return row && list.contains(row) ? row : null;
+    }
+    function recheck() {
+      if (openRow || !card.classList.contains('is-on')) return;
+      var row = rowAtPointer();
+      if (!row) hide(); else if (row !== current) show(row);
+    }
+    var scrollT;
+    window.addEventListener('scroll', function () {
+      if (!card.classList.contains('is-on')) return;
+      clearTimeout(scrollT); scrollT = setTimeout(recheck, 60);
+    }, { passive: true });
+    document.addEventListener('mousemove', function (e) {
+      if (openRow || !card.classList.contains('is-on')) return;
+      mx = e.clientX; my = e.clientY;
+      var r = list.getBoundingClientRect();
+      if (mx < r.left || mx > r.right || my < r.top || my > r.bottom) hide();
+    }, { passive: true });
+    document.documentElement.addEventListener('mouseleave', function () { if (!openRow) hide(); });
+    window.addEventListener('blur', function () { if (!openRow) hide(); });
+    document.addEventListener('visibilitychange', function () { if (document.hidden && !openRow) hide(); });
 
     // Zoom ----------------------------------------------------------------------
     var zoom = document.createElement('div');
@@ -635,6 +667,7 @@
       root.classList.remove('svc-zoom-open');
       var row = openRow; openRow = null;
       if (row) row.querySelector('summary').focus({ preventScroll: true });
+      hide();                                        // it returns on the next pointer move over a service
     }
     function close() {
       if (!openRow) return;
@@ -673,6 +706,27 @@
     }
     openFromHash();
     window.addEventListener('hashchange', openFromHash);
+  })();
+
+  /* Universities we recommend: as each card slides over the one before, the covered card
+     eases back a touch, so the stack reads as layered cards rather than a list. -------- */
+  (function () {
+    var cards = [].slice.call(document.querySelectorAll('.uni-card'));
+    if (cards.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var raf = 0;
+    function update() {
+      raf = 0;
+      for (var i = 0; i < cards.length - 1; i++) {
+        var a = cards[i].getBoundingClientRect(), b = cards[i + 1].getBoundingClientRect();
+        var h = cards[i].offsetHeight, p = Math.max(0, Math.min(1, (a.top + h - b.top) / Math.max(1, h)));
+        cards[i].style.transform = p ? 'scale(' + (1 - .05 * p).toFixed(4) + ')' : '';
+        cards[i].style.filter = p ? 'brightness(' + (1 - .06 * p).toFixed(4) + ')' : '';
+      }
+    }
+    function queue() { if (!raf) raf = requestAnimationFrame(update); }
+    window.addEventListener('scroll', queue, { passive: true });
+    window.addEventListener('resize', queue);
+    update();
   })();
 
   /* Enquiry form --------------------------------------------------------- */

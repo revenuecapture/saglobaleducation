@@ -187,13 +187,6 @@
     start();
   }
 
-  /* Open the country accordion matching the URL hash --------------------- */
-  if (location.hash) {
-    try {
-      var el = document.querySelector('details.country' + location.hash);
-      if (el) { el.open = true; setTimeout(function () { el.scrollIntoView({ block: 'start' }); }, 60); }
-    } catch (e) { /* invalid selector, ignore */ }
-  }
 
   /* Horizontal scroll sections (pattern from hokaido.webflow.io) -----------
      Each [data-hs] section pins a 100vh "camera" while vertical scroll
@@ -494,9 +487,12 @@
   (function () {
     var q = document.getElementById('query');
     if (!q || q.value) return;
-    var topic = new URLSearchParams(window.location.search).get('topic');
+    var qs = new URLSearchParams(window.location.search), topic = qs.get('topic'), about = qs.get('about');
     var msg = { courses: 'I would like help finding a course.',
-                scholarships: 'I would like to know which scholarships I may be eligible for.' }[topic];
+                scholarships: 'I would like to know which scholarships I may be eligible for.',
+                'ivy-league': 'I would like help applying to Ivy League universities.',
+                'russell-group': 'I would like help applying to Russell Group universities.' }[topic];
+    if (about) msg = 'I would like to know more about ' + about.slice(0, 120) + '.';
     if (msg) q.value = msg;
   })();
 
@@ -731,7 +727,7 @@
 
   /* Universities page: search across every country's logo grid. -------------------------- */
   (function () {
-    var countries = [].slice.call(document.querySelectorAll('details.country'));
+    var countries = [].slice.call(document.querySelectorAll('section.country'));
     if (!countries.length || !document.querySelector('.uni-grid')) return;
     var box = document.createElement('div');
     box.className = 'uni-search';
@@ -739,9 +735,9 @@
       '<input type="search" placeholder="Type a university, college or city" autocomplete="off">' +
       '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg></label>' +
       '<p class="uni-search-n" aria-live="polite"></p>';
-    countries[0].parentNode.insertBefore(box, countries[0]);
+    var jumpBar = document.querySelector('.country-jump');
+    (jumpBar || countries[0]).parentNode.insertBefore(box, jumpBar || countries[0]);
     var input = box.querySelector('input'), note = box.querySelector('.uni-search-n');
-    var wasOpen = countries.map(function (d) { return d.open; });
     var norm = function (t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' '); };
     var t;
     input.addEventListener('input', function () {
@@ -760,7 +756,6 @@
             h.hidden = !any; g.hidden = !any;
           });
           d.hidden = q && !n;
-          d.open = q ? n > 0 : wasOpen[i];
           total += n;
         });
         note.textContent = q ? (total ? total + (total === 1 ? ' match' : ' matches') : 'No matches. Try a shorter name, or ask a counsellor.') : '';
@@ -852,6 +847,116 @@
     lift();
     if (bar && window.MutationObserver) new MutationObserver(lift).observe(bar, { attributes: true, attributeFilter: ['hidden'] });
     window.addEventListener('resize', lift);
+  })();
+
+  /* Paper plane that trails the pointer, banks with scrolling and takes a colour that reads on
+     whatever it is flying over. Fine pointers only; off for reduced motion. ------------------- */
+  (function () {
+    if (!window.matchMedia || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var el = document.createElement('div');
+    el.className = 'plane-cursor';
+    el.setAttribute('aria-hidden', 'true');
+    el.innerHTML = '<svg viewBox="0 0 24 24" focusable="false"><path d="M2.6 10.9 21 3.2c.6-.2 1.1.3.9.9l-7.7 18.4c-.3.6-1.1.6-1.4 0l-2.6-6.2-6.2-2.6c-.6-.3-.6-1.1 0-1.4Z" fill="currentColor"/><path d="m10.2 13.8 5.3-5.3" stroke="rgba(0,0,0,.18)" stroke-width="1.4" stroke-linecap="round" fill="none"/></svg>';
+    document.body.appendChild(el);
+    var PAL = { azure: [48, 127, 226], mint: [0, 193, 159], choc: [62, 31, 11], cream: [248, 247, 244] };
+    function lum(c) { return c.map(function (v) { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); })
+                              .reduce(function (a, v, i) { return a + v * [.2126, .7152, .0722][i]; }, 0); }
+    function ratio(a, b) { var x = lum(a), y = lum(b); return (Math.max(x, y) + .05) / (Math.min(x, y) + .05); }
+    function bgAt(x, y) {
+      var stack = document.elementsFromPoint(x, y);
+      for (var i = 0; i < stack.length; i++) {
+        var n = stack[i];
+        if (n === el || el.contains(n)) continue;
+        if (n.tagName === 'IMG' || n.tagName === 'VIDEO' || n.tagName === 'PICTURE') return null;
+        var m = /rgba?\(([^)]+)\)/.exec(getComputedStyle(n).backgroundColor);
+        if (!m) continue;
+        var v = m[1].split(',').map(parseFloat);
+        if (v.length === 4 && v[3] < .5) continue;
+        return v.slice(0, 3);
+      }
+      return PAL.cream;
+    }
+    function pick(bg) {
+      var a = ratio(PAL.azure, bg), m = ratio(PAL.mint, bg);
+      if (Math.max(a, m) >= 2.6) return a >= m ? 'azure' : 'mint';
+      return ratio(PAL.choc, bg) >= ratio(PAL.cream, bg) ? 'choc' : 'cream';
+    }
+    var mx = -100, my = -100, x = -100, y = -100, ang = 0, tilt = 0, shown = false, last = 0, tone = '';
+    var sy = window.scrollY, sv = 0;
+    addEventListener('pointermove', function (e) {
+      if (e.pointerType && e.pointerType !== 'mouse') return;
+      mx = e.clientX; my = e.clientY;
+      if (!shown) { x = mx; y = my; shown = true; el.classList.add('is-on'); }
+    }, { passive: true });
+    document.addEventListener('pointerleave', function () { shown = false; el.classList.remove('is-on'); });
+    addEventListener('blur', function () { shown = false; el.classList.remove('is-on'); });
+    addEventListener('scroll', function () { var n = window.scrollY; sv += n - sy; sy = n; }, { passive: true });
+    function frame(t) {
+      requestAnimationFrame(frame);
+      if (!shown) return;
+      var tx = mx + 18, ty = my + 20, dx = tx - x, dy = ty - y;
+      x += dx * .14; y += dy * .14;
+      var speed = Math.hypot(dx, dy);
+      if (speed > 1.5) {
+        var target = Math.atan2(dy, dx) * 180 / Math.PI;   /* the drawn plane points to -45deg */
+        var diff = ((target + 45 - ang) % 360 + 540) % 360 - 180;
+        ang += diff * .12;
+      }
+      sv *= .86;                                            /* scroll gives a short bank and lift */
+      tilt += (Math.max(-28, Math.min(28, sv * .6)) - tilt) * .2;
+      el.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + (y - Math.abs(tilt) * .25).toFixed(1) + 'px,0) rotate(' + (ang + tilt).toFixed(1) + 'deg)';
+      if (t - last > 140) {
+        last = t;
+        var bg = bgAt(Math.round(x), Math.round(y));
+        if (bg) { var nt = pick(bg); if (nt !== tone) { el.classList.remove('pc-' + tone); el.classList.add('pc-' + nt); tone = nt; } }
+      }
+    }
+    requestAnimationFrame(frame);
+  })();
+
+  /* Ask about a university or network: WhatsApp first, enquiry form second. ------------------ */
+  (function () {
+    var sel = '.uni-tile, .net-card, .league-card, [data-ask]';
+    if (!document.querySelector(sel)) return;
+    var WA = { pk: '923324111224', uk: '447444761202' };
+    var dlg = null;
+    function nameOf(el) {
+      var n = el.getAttribute('data-ask') || ((el.querySelector('.uni-tile-name, .net-name, h3') || {}).textContent || '');
+      return n.replace(/\s+/g, ' ').trim();
+    }
+    function open(el) {
+      var name = nameOf(el); if (!name) return;
+      var isNet = el.classList.contains('net-card');
+      var subject = isNet ? 'universities through ' + name : name;
+      var text = encodeURIComponent('Hello SA Global, I would like to know more about ' + subject + '.');
+      var img = el.querySelector('img');
+      if (!dlg) { dlg = document.createElement('dialog'); dlg.className = 'ask'; document.body.appendChild(dlg);
+        dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); }); }
+      dlg.innerHTML = '<div class="ask-card"><button type="button" class="ask-x" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>' +
+        (img && img.getAttribute('src') ? '<div class="ask-logo' + (isNet ? ' ask-logo--plate' : '') + '"' + (isNet ? ' style="background:' + (getComputedStyle(el).getPropertyValue('--b') || '#1b1b1b').trim() + '"' : '') + '><img src="' + img.getAttribute('src') + '" alt=""></div>' : '') +
+        '<h2 class="ask-h" id="askH">Ask about ' + name.replace(/[<>&"]/g, '') + '</h2>' +
+        '<p class="ask-p">Chat to a counsellor on WhatsApp, or send us your details and we will reply within one working day.</p>' +
+        '<div class="ask-actions"><a class="btn btn-primary" data-wa="pk" href="https://wa.me/' + WA.pk + '?text=' + text + '" target="_blank" rel="noopener"><span>WhatsApp Pakistan</span><small>+92 332 4111224</small></a>' +
+        '<a class="btn btn-ghost" data-wa="uk" href="https://wa.me/' + WA.uk + '?text=' + text + '" target="_blank" rel="noopener"><span>WhatsApp United Kingdom</span><small>+44 7444 761202</small></a></div>' +
+        '<a class="link-arrow ask-form" href="/contact/?about=' + encodeURIComponent(subject) + '#enquiry">Send an enquiry instead <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></div>';
+      dlg.setAttribute('aria-labelledby', 'askH');
+      dlg.querySelector('.ask-x').addEventListener('click', function () { dlg.close(); });
+      dlg.querySelectorAll('[data-wa]').forEach(function (a) { a.addEventListener('click', function () {
+        try { if (typeof window.gtag === 'function') window.gtag('event', 'whatsapp_click', { item: name, line: a.getAttribute('data-wa') }); } catch (e2) {}
+      }); });
+      if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+    }
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest(sel);
+      if (!el || e.target.closest('.ask')) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault(); open(el);
+    });
+    document.querySelectorAll('.uni-tile, .league-card').forEach(function (el) {
+      el.setAttribute('tabindex', '0'); el.setAttribute('role', 'button');
+      el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el); } });
+    });
   })();
 
   /* Enquiry form --------------------------------------------------------- */

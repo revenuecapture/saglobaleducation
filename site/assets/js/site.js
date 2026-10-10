@@ -1082,6 +1082,22 @@
     });
   })();
 
+  /* Offer letters: open the full, blurred letter in a viewer. ------------------------------- */
+  (function () {
+    var btns = document.querySelectorAll('[data-offer]');
+    if (!btns.length) return;
+    var d = document.createElement('dialog'); d.className = 'offer-view';
+    d.innerHTML = '<button type="button" class="ask-x" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><img alt="">';
+    document.body.appendChild(d);
+    var img = d.querySelector('img');
+    d.querySelector('.ask-x').addEventListener('click', function () { d.close(); });
+    d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    btns.forEach(function (b) { b.addEventListener('click', function () {
+      img.src = b.getAttribute('data-offer'); img.alt = b.getAttribute('aria-label').replace(/^View the /, '') + ', with personal details blurred';
+      if (d.showModal) d.showModal(); else d.setAttribute('open', '');
+    }); });
+  })();
+
   /* Enquiry form --------------------------------------------------------- */
   var form = document.getElementById('enquiry');
   if (!form) return;

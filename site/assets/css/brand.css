@@ -2355,3 +2355,44 @@ dialog.ask::backdrop { background: rgba(30, 15, 5, .55); -webkit-backdrop-filter
 .moi-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--surface-cloud-dark); }
 .moi-list b { font-weight: 500; }
 .moi-list span { font-size: .9rem; opacity: .75; text-align: right; }
+
+/* --- Home: recent offers ---------------------------------------------------------------- */
+.offers-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.offer-card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--surface-cloud-dark); border-radius: 0 1.75rem 0 1.75rem; overflow: hidden; }
+.offer-thumb { position: relative; display: block; border: 0; padding: 0; margin: 0; cursor: zoom-in; background: var(--surface-cloud); aspect-ratio: 25 / 16; overflow: hidden; }
+.offer-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .4s cubic-bezier(.2,.8,.3,1); }
+.offer-thumb::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(to bottom, rgba(255,255,255,0), #fff); }
+.offer-thumb span { position: absolute; z-index: 1; left: 1.25rem; bottom: .9rem; padding: .35rem .7rem; background: var(--azure-7); color: #fff !important; border-radius: 0 .6rem 0 .6rem; font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: .95rem;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--azure-7); }
+.offer-thumb:hover img { transform: scale(1.04); }
+.offer-thumb:focus-visible { outline: 3px solid var(--azure-7); outline-offset: -3px; }
+.offer-body { padding: 1rem 1.25rem 1.4rem; display: flex; flex-direction: column; gap: .3rem; }
+.offer-logo { height: 3.25rem; display: flex; align-items: center; margin-bottom: .5rem; }
+.offer-logo img { max-height: 100%; max-width: 12rem; width: auto; object-fit: contain; }
+.offer-logo--dark { background: #003478; padding: .45rem .7rem; border-radius: 0 .7rem 0 .7rem; align-self: flex-start; }
+.offer-award { margin: 0; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: clamp(1.7rem, 2.6vw, 2.2rem); line-height: 1; color: var(--azure-7); }
+.offer-card h3 { font-size: 1.25rem; margin: .2rem 0 0; }
+.offer-course { margin: 0; font-size: .93rem; }
+.offer-intake { margin: auto 0 0; padding-top: .5rem; font-size: .85rem; opacity: .7; }
+@media (max-width: 1000px) { .offers-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .offers-grid { grid-template-columns: 1fr; } }
+dialog.offer-view { border: 0; padding: 0; background: #fff; max-width: min(100% - 1.5rem, 52rem); max-height: calc(100% - 1.5rem); border-radius: 0 1.5rem 0 1.5rem; overflow: auto; }
+dialog.offer-view::backdrop { background: rgba(30, 15, 5, .65); }
+dialog.offer-view img { display: block; width: 100%; height: auto; }
+dialog.offer-view .ask-x { position: sticky; top: .75rem; float: right; margin: .75rem .75rem -3rem 0; z-index: 2; box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+
+/* --- Scholarships page: UK awards and public universities in Europe ------------------------ */
+.sch-list b { font-weight: 600; white-space: nowrap; color: var(--azure-7); }
+.sch-svc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.sch-svc li { padding: 1.25rem 1.25rem 1.4rem; background: #fff; border: 1px solid var(--surface-cloud-dark); border-radius: 0 1.25rem 0 1.25rem; }
+.sch-svc h3 { font-size: 1.3rem; margin: 0 0 .35rem; }
+.sch-svc p { margin: 0; font-size: .95rem; }
+.sch-cta { margin-top: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem 2rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem); background: var(--surface-chocolate-dark); color: var(--surface-cloud); border-radius: 0 2rem 0 2rem; }
+.sch-cta h3 { color: inherit; font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 .3rem; }
+.sch-cta p { margin: 0; opacity: .85; }
+.sch-cta .btn-ghost:hover { color: var(--surface-chocolate-dark); }
+.sch-cta .btn-ghost:hover span { color: inherit; }
+@media (max-width: 900px) { .sch-svc { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .sch-svc { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .group-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } .group-logos span { height: 3.75rem; } }

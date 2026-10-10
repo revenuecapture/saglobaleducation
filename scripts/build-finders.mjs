@@ -106,15 +106,17 @@ async function loadResearch() {
 // ---------------------------------------------------------------------------------------------
 // Shaping for the browser
 
-// Official university logos already used on the site (site/assets/img/<key>-logo.svg or .webp).
+// Official university logos, full colour (site/assets/img/logos/<key>.svg or .webp).
 // The key is the university's short name; exceptions are listed here.
-const LOGO_KEYS = { 'gb-university-of-east-anglia': 'uea', 'gb-queen-mary-university-of-london': 'queen-mary',
-  'gb-royal-holloway-university-of-london': 'royal-holloway' };
+const LOGO_KEYS = { 'gb-university-of-east-anglia': 'uea', 'gb-queen-mary-university-of-london': 'qmul',
+  'gb-royal-holloway-university-of-london': 'royal-holloway', 'gb-kings-college-london': 'kcl',
+  'gb-university-college-london': 'ucl', 'gb-london-school-of-economics-and-political-science': 'lse',
+  'gb-imperial-college-london': 'imperial', 'gb-queens-university-belfast': 'qub' };
 function logoFor(slug) {
   if (!slug) return null;
   const key = LOGO_KEYS[slug] || slug.replace(/^[a-z]{2}-/, '').replace(/^university-of-/, '').replace(/-university$/, '');
   for (const ext of ['svg', 'webp']) {
-    if (existsSync(path.join(SITE, 'assets', 'img', `${key}-logo.${ext}`))) return `/assets/img/${key}-logo.${ext}`;
+    if (existsSync(path.join(SITE, 'assets', 'img', 'logos', `${key}.${ext}`))) return `/assets/img/logos/${key}.${ext}`;
   }
   return null;
 }

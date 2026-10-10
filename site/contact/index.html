@@ -45,8 +45,9 @@
  "foundingDate":"2010",
  "address":[
   {"@type":"PostalAddress","streetAddress":"Bowater Avenue","addressLocality":"Birmingham","addressRegion":"England","addressCountry":"GB"},
-  {"@type":"PostalAddress","streetAddress":"Gulshan-e-Iqbal","addressLocality":"Karachi","addressCountry":"PK"},
-  {"@type":"PostalAddress","streetAddress":"Business City Plaza, Main Bosan Road","addressLocality":"Multan","addressRegion":"Punjab","addressCountry":"PK"}
+  {"@type":"PostalAddress","streetAddress":"Office B7, Eastern Plaza, Block 6, Gulshan-e-Iqbal","addressLocality":"Karachi","addressRegion":"Sindh","addressCountry":"PK"},
+  {"@type":"PostalAddress","streetAddress":"Business City Plaza, Main Bosan Road","addressLocality":"Multan","addressRegion":"Punjab","addressCountry":"PK"},
+  {"@type":"PostalAddress","streetAddress":"Office 8, Ground Floor, Pakland City Center, I-8","addressLocality":"Islamabad","addressRegion":"Islamabad Capital Territory","addressCountry":"PK"}
  ],
  "contactPoint":[
   {"@type":"ContactPoint","telephone":"+44-7444-761202","contactType":"customer service","areaServed":"GB","availableLanguage":["English","Urdu"]},
@@ -97,7 +98,9 @@ window.SAG_CONSENT = {
  <div class="wrap split" style="align-items:start;gap:clamp(2.5rem,5vw,5rem)">
 
   <div>
-   <h2 style="margin-bottom:2rem">Enquiry form</h2>
+   <h2 style="margin-bottom:1.5rem">Send us an enquiry</h2>
+   <div class="form-tabs" role="tablist" aria-label="Type of enquiry"><button type="button" role="tab" id="tabGeneral" aria-controls="generalPane" aria-selected="true">General enquiry</button><button type="button" role="tab" id="tabResearch" aria-controls="researchPane" aria-selected="false" tabindex="-1">Research proposal writing</button></div>
+   <div id="generalPane" role="tabpanel" aria-labelledby="tabGeneral">
    <div class="form-status ok" id="formOk" role="status">
     <strong>Enquiry received.</strong> Thank you. A counsellor will be in touch
     within one working day. A confirmation has been sent to the email address you gave.
@@ -147,6 +150,28 @@ window.SAG_CONSENT = {
       <a href="/privacy-policy/" style="color:var(--pumpkin)">privacy policy</a>.</p>
     </div>
    </form>
+   </div>
+   <div id="researchPane" role="tabpanel" aria-labelledby="tabResearch" hidden>
+    <div class="rp-intro">
+     <p>We write research proposals for PhD, MPhil and research master's applications, built from your research idea and each university's guidelines. You will be able to discuss and defend every part of it at interview.</p>
+     <ul class="rp-prices"><li><b>£30</b><span>1,000 words</span></li><li><b>£40</b><span>1,500 words</span></li><li><b>Quote</b><span>Other word counts, priced by length</span></li></ul>
+    </div>
+    <div class="form-status ok" id="rpOk" role="status"><strong>Request received.</strong> Thank you. A member of our research team will contact you within one working day to confirm the details and price.</div>
+    <div class="form-status bad" id="rpBad" role="alert"><strong>That didn't send.</strong> Please check your details and try again, or email us at <a href="mailto:info@saglobal.org">info@saglobal.org</a>.</div>
+    <form id="rpForm" class="form-grid" novalidate style="margin-top:1.5rem">
+     <div class="field"><label for="rpName">Full name *</label><input id="rpName" name="name" type="text" autocomplete="name" required></div>
+     <div class="field"><label for="rpEmail">Email address *</label><input id="rpEmail" name="email" type="email" autocomplete="email" required></div>
+     <div class="field"><label for="rpPhone">WhatsApp or phone number *</label><input id="rpPhone" name="phoneNumber" type="tel" autocomplete="tel" required></div>
+     <div class="field"><label for="rpCount">Number of research proposals *</label><select id="rpCount" name="count" required><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+     <div class="rp-list full" id="rpList"></div>
+     <div class="field full"><label for="rpExtra">Additional requirements (optional)</label><textarea id="rpExtra" name="extra" rows="4" placeholder="Deadlines, university guidelines, referencing style, or anything else we should know"></textarea></div>
+     <div class="rp-total full" aria-live="polite"><span>Estimated price</span><b id="rpTotal">£30</b><small id="rpTotalNote"></small></div>
+     <div class="field full">
+      <button class="btn btn-primary" type="submit" id="rpSubmit"><span>Submit enquiry</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></button>
+      <p class="form-note muted" style="margin-top:1rem">By submitting this form you consent to SA Global Education contacting you about your request. We do not sell or share your details. See our <a href="/privacy-policy/" style="color:var(--pumpkin)">privacy policy</a>.</p>
+     </div>
+    </form>
+   </div>
   </div>
 
   <aside>
@@ -170,6 +195,10 @@ window.SAG_CONSENT = {
     <div class="icon icon-mint"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6-4.3 2.5-.9-1.6 3.4-2V6h1.8v6.6Z"/></svg></div>
     <div><h3>Opening hours</h3><p>Monday to Friday, 9am to 6pm · Saturday, 10am to 4pm</p></div>
    </div>
+   <div class="contact-card">
+    <div class="icon icon-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/><path d="m8.5 11 1.8 1.8 3.4-3.4"/></svg></div>
+    <div><h3>Check your counsellor</h3><p>The British Council publishes a database of counsellors who have passed its UK knowledge training and agreed to the UK's code of ethical practice for education agents. You can search it by country, city or agency.</p><p><a href="https://www.britishcouncil.org/education/agents-counsellors/database" target="_blank" rel="noopener">Search the British Council database</a></p></div>
+   </div>
    <div class="contact-card contact-card--dc">
     <div class="icon icon-azure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7l-4-4Z"/><path d="m8.5 13.5 2.2 2.2 4.8-4.8"/></svg></div>
     <div><h3>Before your consultation</h3><p>Gathering your documents early makes your first meeting far more useful. Use our checklist to see what you will need.</p><p><a href="/documents-checklist/">Open the documents checklist</a></p></div>
@@ -183,7 +212,8 @@ window.SAG_CONSENT = {
    <h2>Find us in the <span class="hl">UK and Pakistan</span></h2>
    <p class="lead">Book an appointment with a counsellor at your nearest office, or call us to arrange a visit.</p>
   </div>
-  <div class="office-grid"><article class="office office--uk office--hq reveal"><h3 class="office-city">Birmingham</h3><p class="office-hq">Our global headquarters</p><address>Bowater Avenue, Birmingham, England</address><a class="office-link" href="https://www.google.com/maps/search/?api=1&query=Bowater+Avenue%2C+Birmingham%2C+England" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article><article class="office office--pk reveal"><h3 class="office-city">Karachi</h3><address>Gulshan-e-Iqbal, Karachi, Pakistan</address><a class="office-link" href="https://www.google.com/maps/search/?api=1&query=Gulshan-e-Iqbal%2C+Karachi%2C+Pakistan" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article><article class="office office--pk reveal"><h3 class="office-city">Multan</h3><address>Business City Plaza, Main Bosan Road, Multan, Pakistan</address><a class="office-link" href="https://www.google.com/maps/search/?api=1&query=Business+City+Plaza%2C+Main+Bosan+Road%2C+Multan%2C+Pakistan" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article><article class="office office--soon reveal"><h3 class="office-city">Lahore</h3><p class="office-soon">Full address coming soon. Call us to arrange a meeting in the meantime.</p><a class="office-link" href="tel:+923324111224">+92 332 4111224 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article><article class="office office--soon reveal"><h3 class="office-city">Islamabad</h3><p class="office-soon">Full address coming soon. Call us to arrange a meeting in the meantime.</p><a class="office-link" href="tel:+923324111224">+92 332 4111224 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article></div>
+  <div class="office-grid"><article class="office office--uk office--hq reveal"><h3 class="office-city">Birmingham</h3><p class="office-hq">Our global headquarters</p><address>Bowater Avenue, Birmingham, England</address><a class="office-link" href="https://www.google.com/maps/search/?api=1&query=Bowater+Avenue%2C+Birmingham%2C+England" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article><article class="office office--pk reveal"><h3 class="office-city">Karachi</h3><address>Office B7, Eastern Plaza, Block 6, Gulshan-e-Iqbal, Karachi, Pakistan</address><a class="office-link" href="https://www.google.com/maps/search/?api=1&query=Office+B7%2C+Eastern+Plaza%2C+Block+6%2C+Gulshan-e-Iqbal%2C+Karachi%2C+Pakistan" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article><article class="office office--pk reveal"><h3 class="office-city">Multan</h3><address>Business City Plaza, Main Bosan Road, Multan, Pakistan</address><a class="office-link" href="https://www.google.com/maps/search/?api=1&query=Business+City+Plaza%2C+Main+Bosan+Road%2C+Multan%2C+Pakistan" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article><article class="office office--pk reveal"><h3 class="office-city">Islamabad</h3><address>Office 8, Ground Floor, Pakland City Center, I-8, Islamabad, Pakistan</address><a class="office-link" href="https://www.google.com/maps/search/?api=1&query=Office+8%2C+Ground+Floor%2C+Pakland+City+Center%2C+I-8%2C+Islamabad%2C+Pakistan" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article>
+<article class="office office--soon reveal"><h3 class="office-city">Lahore</h3><p class="office-soon">Full address coming soon. Call us to arrange a meeting in the meantime.</p><a class="office-link" href="tel:+923324111224">+92 332 4111224 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></article></div>
  </div>
 </section></main>
 <footer class="site-footer">

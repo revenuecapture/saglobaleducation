@@ -765,9 +765,26 @@
 
   /* Documents checklist: ticks saved on this device, progress, print. ------------------- */
   (function () {
-    var boxes = [].slice.call(document.querySelectorAll('input[data-dc]'));
-    if (!boxes.length) return;
+    var all = [].slice.call(document.querySelectorAll('input[data-dc]'));
+    if (!all.length) return;
+    var boxes = all;
     var KEY = 'sag-doc-checklist', saved = {};
+    var LKEY = 'sag-doc-level', level = 'ug';
+    try { level = localStorage.getItem(LKEY) === 'pg' ? 'pg' : 'ug'; } catch (e) {}
+    var totalEl = document.querySelector('[data-dc-total]');
+    function setLevel(l) {
+      level = l;
+      document.querySelectorAll('.dc-group[data-level]').forEach(function (g) {
+        var v = g.getAttribute('data-level'); g.hidden = v !== 'all' && v !== l;
+      });
+      document.querySelectorAll('[data-dc-level]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-dc-level') === l ? 'true' : 'false'); });
+      boxes = all.filter(function (b) { return !b.closest('.dc-group').hidden; });
+      try { localStorage.setItem(LKEY, l); } catch (e) {}
+    }
+    document.querySelectorAll('[data-dc-level]').forEach(function (b) {
+      b.addEventListener('click', function () { setLevel(b.getAttribute('data-dc-level')); update(); });
+    });
+    setLevel(level);
     try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
     var done = document.querySelector('[data-dc-done]'), meter = document.querySelector('[data-dc-meter]');
     function update() {
@@ -779,13 +796,14 @@
         b.closest('.dc-item').classList.toggle('is-done', b.checked);
       });
       if (done) done.textContent = n;
+      if (totalEl) totalEl.textContent = boxes.length;
       if (meter) meter.style.width = (100 * n / boxes.length).toFixed(1) + '%';
       Object.keys(by).forEach(function (g) {
         var el = document.querySelector('[data-dc-count="' + g + '"]');
         if (el) el.textContent = by[g][0] + ' of ' + by[g][1];
       });
     }
-    boxes.forEach(function (b) {
+    all.forEach(function (b) {
       b.checked = !!saved[b.getAttribute('data-dc')];
       b.addEventListener('change', function () {
         saved[b.getAttribute('data-dc')] = b.checked;
@@ -796,7 +814,7 @@
     var printBtn = document.querySelector('[data-dc-print]'), reset = document.querySelector('[data-dc-reset]');
     if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
     if (reset) reset.addEventListener('click', function () {
-      saved = {}; boxes.forEach(function (b) { b.checked = false; });
+      saved = {}; all.forEach(function (b) { b.checked = false; });
       try { localStorage.removeItem(KEY); } catch (e) {}
       update();
     });
@@ -822,6 +840,7 @@
         '<a class="cf-item" href="https://wa.me/923324111224" target="_blank" rel="noopener">' + IC.chat + '<span>WhatsApp, Pakistan<small>+92 332 4111224</small></span></a>' +
         '<a class="cf-item" href="tel:+447444761202">' + IC.phone + '<span>Call the UK office<small>+44 7444 761202</small></span></a>' +
         '<a class="cf-item" href="tel:+923324111224">' + IC.phone + '<span>Call the Pakistan office<small>+92 332 4111224</small></span></a>' +
+        '<a class="cf-item" href="/contact/?form=research#enquiry">' + IC.doc + '<span>Research proposal writing<small>From £30 for 1,000 words</small></span></a>' +
         (location.pathname.indexOf('/documents-checklist') === 0 ? '' : '<a class="cf-item" href="/documents-checklist/">' + IC.doc + '<span>Documents checklist<small>What to prepare before you apply</small></span></a>') +
         '<a class="cf-item cf-book" href="/contact/#enquiry">' + IC.cal + '<span>Book an appointment<small>Free first consultation</small></span></a>' +
       '</div>' +
@@ -956,6 +975,110 @@
     document.querySelectorAll('.uni-tile, .league-card').forEach(function (el) {
       el.setAttribute('tabindex', '0'); el.setAttribute('role', 'button');
       el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el); } });
+    });
+  })();
+
+  /* Contact page: enquiry tabs and the research proposal request form. ------------------------- */
+  (function () {
+    var tG = document.getElementById('tabGeneral'), tR = document.getElementById('tabResearch');
+    if (!tG || !tR) return;
+    var pG = document.getElementById('generalPane'), pR = document.getElementById('researchPane');
+    function show(research, focus) {
+      tG.setAttribute('aria-selected', research ? 'false' : 'true'); tR.setAttribute('aria-selected', research ? 'true' : 'false');
+      tG.tabIndex = research ? -1 : 0; tR.tabIndex = research ? 0 : -1;
+      pG.hidden = research; pR.hidden = !research;
+      if (focus) (research ? tR : tG).focus();
+    }
+    tG.addEventListener('click', function () { show(false); });
+    tR.addEventListener('click', function () { show(true); });
+    [tG, tR].forEach(function (t) { t.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); show(t === tG, true); }
+    }); });
+    if (new URLSearchParams(location.search).get('form') === 'research') {
+      show(true);
+      setTimeout(function () { tR.closest('div').scrollIntoView({ block: 'start' }); }, 80);
+    }
+
+    var form = document.getElementById('rpForm'), list = document.getElementById('rpList');
+    var count = document.getElementById('rpCount'), total = document.getElementById('rpTotal'), note = document.getElementById('rpTotalNote');
+    var PRICE = { '1000': 30, '1500': 40 };
+    var esc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    function block(i, v) {
+      v = v || {};
+      return '<fieldset class="rp-item" data-i="' + i + '"><legend>Proposal ' + (i + 1) + '</legend>' +
+        '<div class="field"><label for="rpCourse' + i + '">Name of the course *</label><input id="rpCourse' + i + '" data-k="course" type="text" required value="' + esc(v.course || '') + '" placeholder="e.g. PhD in Computer Science"></div>' +
+        '<div class="field"><label for="rpWords' + i + '">Required word count *</label><select id="rpWords' + i + '" data-k="words" required>' +
+          ['1000|1,000 words (£30)', '1500|1,500 words (£40)', 'other|Other word count'].map(function (o) { var a = o.split('|'); return '<option value="' + a[0] + '"' + ((v.words || '1000') === a[0] ? ' selected' : '') + '>' + a[1] + '</option>'; }).join('') +
+        '</select></div>' +
+        '<div class="field full"><label for="rpTopic' + i + '">Research topic or proposed title *</label><input id="rpTopic' + i + '" data-k="topic" type="text" required value="' + esc(v.topic || '') + '"></div>' +
+        '<div class="field rp-other"' + ((v.words || '1000') === 'other' ? '' : ' hidden') + '><label for="rpOther' + i + '">How many words? *</label><input id="rpOther' + i + '" data-k="other" type="number" min="300" max="20000" step="50" inputmode="numeric" value="' + esc(v.other || '') + '"></div>' +
+        '</fieldset>';
+    }
+    function read() {
+      return [].map.call(list.querySelectorAll('.rp-item'), function (f) {
+        var o = {}; f.querySelectorAll('[data-k]').forEach(function (el) { o[el.getAttribute('data-k')] = el.value.trim(); }); return o;
+      });
+    }
+    function render() {
+      var keep = read(), n = parseInt(count.value, 10) || 1, h = '';
+      for (var i = 0; i < n; i++) h += block(i, keep[i]);
+      list.innerHTML = h; price();
+    }
+    function price() {
+      var items = read(), sum = 0, quote = 0;
+      items.forEach(function (it, i) {
+        var f = list.querySelector('.rp-item[data-i="' + i + '"]'), other = f.querySelector('.rp-other');
+        other.hidden = it.words !== 'other'; other.querySelector('input').required = it.words === 'other';
+        if (PRICE[it.words]) sum += PRICE[it.words]; else quote++;
+      });
+      total.textContent = sum ? '£' + sum : 'On quote';
+      note.textContent = quote ? (sum ? ' plus a quote for ' : 'We will quote for ') + quote + (quote === 1 ? ' proposal' : ' proposals') + ' with other word counts' : '';
+    }
+    count.addEventListener('change', render);
+    list.addEventListener('change', price);
+    render();
+
+    var ok = document.getElementById('rpOk'), bad = document.getElementById('rpBad'), btn = document.getElementById('rpSubmit'), lab = btn.querySelector('span');
+    function err(el, m) {
+      var w = el.closest('.field'); if (!w) return; var n = w.querySelector('.err');
+      if (m) { if (!n) { n = document.createElement('span'); n.className = 'err'; w.appendChild(n); } n.textContent = m; el.setAttribute('aria-invalid', 'true'); }
+      else { if (n) n.remove(); el.removeAttribute('aria-invalid'); }
+    }
+    form.addEventListener('input', function (e) { if (e.target.hasAttribute('aria-invalid')) err(e.target, null); });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); ok.classList.remove('show'); bad.classList.remove('show');
+      var first = null;
+      form.querySelectorAll('[required]').forEach(function (el) {
+        var v = (el.value || '').trim(), m = null;
+        if (!v) m = 'This field is required.';
+        else if (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) m = 'Enter a valid email address.';
+        err(el, m); if (m && !first) first = el;
+      });
+      if (first) { first.focus(); return; }
+      var items = read(), lines = items.map(function (it, i) {
+        var wc = it.words === 'other' ? (it.other || '?') + ' words (quote)' : (it.words === '1000' ? '1,000 words (£30)' : '1,500 words (£40)');
+        return 'Proposal ' + (i + 1) + ': ' + it.course + ' | Topic: ' + it.topic + ' | ' + wc;
+      });
+      var extra = document.getElementById('rpExtra').value.trim();
+      var data = {
+        enquiry_type: 'Research proposal writing',
+        name: document.getElementById('rpName').value.trim(), email: document.getElementById('rpEmail').value.trim(),
+        phoneNumber: document.getElementById('rpPhone').value.trim(),
+        dob: 'Not asked', city: 'Not asked', nationality: 'Not asked', qualification: 'Not asked', gradeCgpaPercentage: 'Not asked', englishLanguageTest: 'Not asked',
+        countryPreference: 'Research proposal writing', preferredCourse: items.map(function (it) { return it.course; }).join('; '),
+        query: 'RESEARCH PROPOSAL WRITING REQUEST\n' + items.length + ' proposal(s), estimated ' + total.textContent + (note.textContent ? ' ' + note.textContent : '') + '\n\n' + lines.join('\n') + (extra ? '\n\nAdditional requirements: ' + extra : ''),
+        page_url: location.href
+      };
+      var CFG = { key: 'J6sCZb4-rkfiZHR04', service: 'service_6iaqh1h', template: 'template_wgpnprz' };
+      if (!(window.emailjs && typeof window.emailjs.send === 'function')) { bad.classList.add('show'); return; }
+      try { window.emailjs.init({ publicKey: CFG.key }); } catch (e1) {}
+      btn.disabled = true; lab.textContent = 'Sending…';
+      window.emailjs.send(CFG.service, CFG.template, data).then(function () {
+        form.reset(); render(); ok.classList.add('show'); ok.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        if (window.gtag) window.gtag('event', 'generate_lead', { form: 'research_proposal', proposals: items.length });
+        if (window.fbq) window.fbq('track', 'Lead');
+      }).catch(function () { bad.classList.add('show'); bad.scrollIntoView({ block: 'center', behavior: 'smooth' }); })
+        .then(function () { btn.disabled = false; lab.textContent = 'Submit enquiry'; });
     });
   })();
 

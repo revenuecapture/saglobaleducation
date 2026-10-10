@@ -248,7 +248,7 @@
   }
   function itemDests(it) { return IS_C ? [it.dest] : it.dests; }
   function passes(it, skip) {
-    if (skip !== 'dest' && state.dest && itemDests(it).indexOf(state.dest) < 0) return false;
+    if (skip !== 'dest' && state.dest && !inTab(it, state.dest)) return false;
     if (state.level && (IS_C ? it.level !== state.level : it.levels.indexOf(state.level) < 0)) return false;
     if (IS_C && state.field && it.field !== state.field) return false;
     if (IS_C && state.intake && !(it.intakes || []).some(function (x) { return intakeMonth(x) === state.intake; })) return false;
@@ -279,6 +279,13 @@
   // ------------------------------------------------------------------------------------------
   // Rendering
 
+  /* Destinations that share a tab label (Germany, France: "Europe") form one tab. */
+  function tabCodes(code) {
+    var d = data.destinations.find(function (x) { return x.code === code; });
+    if (!d) return [code];
+    return data.destinations.filter(function (x) { return x.tab === d.tab; }).map(function (x) { return x.code; });
+  }
+  function inTab(it, code) { var g = tabCodes(code), ds = itemDests(it); return ds.some(function (c) { return g.indexOf(c) > -1; }); }
   function tabLabel(code) { var d = data.destinations.find(function (x) { return x.code === code; }); return d ? d.tab : code; }
   function badge(v) {
     if (v.status === 'likely') return '<span class="badge badge-likely">' + ICON.tick + 'Likely eligible</span>';
@@ -335,11 +342,14 @@
   function renderTabs() {
     var base = data.items.filter(function (it) { return passes(it, 'dest'); });
     var html = '<button type="button" role="tab" data-tab="" aria-selected="' + !state.dest + '">All destinations <b>' + base.length + '</b></button>';
+    var seenTab = {};
     data.destinations.forEach(function (d) {
-      var n = base.filter(function (it) { return itemDests(it).indexOf(d.code) > -1; }).length;
-      var total = data.items.filter(function (it) { return itemDests(it).indexOf(d.code) > -1; }).length;
+      if (seenTab[d.tab]) return;
+      seenTab[d.tab] = 1;
+      var n = base.filter(function (it) { return inTab(it, d.code); }).length;
+      var total = data.items.filter(function (it) { return inTab(it, d.code); }).length;
       if (!total) return;
-      html += '<button type="button" role="tab" data-tab="' + d.code + '" aria-selected="' + (state.dest === d.code) + '">' + esc(d.tab) + ' <b>' + n + '</b></button>';
+      html += '<button type="button" role="tab" data-tab="' + d.code + '" aria-selected="' + (state.dest && tabCodes(state.dest).indexOf(d.code) > -1) + '">' + esc(d.tab) + ' <b>' + n + '</b></button>';
     });
     q('[data-tabs]').innerHTML = html;
   }
@@ -762,7 +772,7 @@
       if (t.hasAttribute('data-tab')) {
         state.dest = t.getAttribute('data-tab'); state.shown = PAGE;
         if (state.sort === 'fee' && !state.dest) state.sort = IS_C ? 'featured' : 'deadline';
-        if (state.uni && byUni[state.uni] && state.dest && byUni[state.uni].dest !== state.dest) state.uni = '';
+        if (state.uni && byUni[state.uni] && state.dest && tabCodes(state.dest).indexOf(byUni[state.uni].dest) < 0) state.uni = '';
         render(true); return;
       }
       if (t.hasAttribute('data-chip')) {

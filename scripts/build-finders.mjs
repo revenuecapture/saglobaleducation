@@ -284,6 +284,7 @@ ${crumbHtml(crumbs)}
               ['Intakes', esc((c.intakes || []).join(', '))], ['Application deadline', esc(c.deadline)]])}
    <a class="link-arrow" href="${esc(c.url)}" rel="noopener" target="_blank">Official course page ${ARROW}</a>
    <p class="muted small">Fees and requirements are published by the university and can change. Checked on ${longDate(c.verified)}. Please confirm with an adviser before applying.</p>
+   <div class="side-dc"><p class="side-dc-h">Getting ready to apply?</p><p>See every document you will need for your application and visa, and tick them off as you go.</p><a class="link-arrow" href="/documents-checklist/">Documents checklist ${ARROW}</a></div>
   </aside>
  </div>
 </section>
@@ -333,6 +334,7 @@ ${crumbHtml(crumbs)}
               ['Deadline', a.deadline ? esc(longDate(a.deadline)) : esc(a.deadlineNote)], ['Intake', esc(a.intake)]])}
    <a class="link-arrow" href="${esc(a.url)}" rel="noopener" target="_blank">Official scholarship page ${ARROW}</a>
    <p class="muted small">Award terms are set by the provider and can change. Checked on ${longDate(a.verified)}. Please confirm with an adviser before applying.</p>
+   <div class="side-dc"><p class="side-dc-h">Getting ready to apply?</p><p>See every document you will need for your application and visa, and tick them off as you go.</p><a class="link-arrow" href="/documents-checklist/">Documents checklist ${ARROW}</a></div>
   </aside>
  </div>
 </section>

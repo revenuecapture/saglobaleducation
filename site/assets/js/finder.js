@@ -637,7 +637,7 @@
           var name = IS_C ? it.name : it.name;
           var sub = IS_C ? (byUni[it.uni] || {}).name : it.valueText;
           return '<li><a href="' + esc(it.page) + '">' + esc(name) + '</a><span>' + esc(sub || '') + '</span><button type="button" class="link-quiet" data-unsave="' + esc(it.slug) + '">Remove</button></li>';
-        }).join('') + '</ul><div class="qv-actions"><button type="button" class="btn btn-primary" data-enquire-all><span>Enquire about my shortlist</span>' + ICON.arrow + '</button></div>'
+        }).join('') + '</ul><div class="qv-actions"><button type="button" class="btn btn-primary" data-enquire-all><span>Enquire about my shortlist</span>' + ICON.arrow + '</button><a class="btn btn-ghost" href="/documents-checklist/"><span>Documents checklist</span>' + ICON.arrow + '</a></div>'
       : '<p class="fd-lead">Nothing saved yet. Use the bookmark on any ' + (IS_C ? 'course' : 'scholarship') + ' to keep it here.</p>');
     var d = dialog('fd-short', html);
     d.setAttribute('aria-labelledby', 'slTitle');
@@ -719,8 +719,8 @@
         .then(function () {
           track('generate_lead', { finder: KIND, items: slugs.length });
           try { if (typeof window.fbq === 'function') window.fbq('track', 'Lead'); } catch (e2) {}
-          d.querySelector('.fd-inner').innerHTML = closeBtn() + '<h2 class="fd-title">Thank you.</h2><p class="fd-lead">Your enquiry has been received. A member of our team will contact you shortly.</p>' +
-            '<div class="qv-actions"><button type="button" class="btn btn-ghost" data-close><span>Back to the ' + (IS_C ? 'course' : 'scholarship') + ' finder</span></button></div>';
+          d.querySelector('.fd-inner').innerHTML = closeBtn() + '<h2 class="fd-title">Thank you.</h2><p class="fd-lead">Your enquiry has been received. A member of our team will contact you shortly. In the meantime, you can start gathering your papers.</p>' +
+            '<div class="qv-actions"><a class="btn btn-primary" href="/documents-checklist/"><span>Open the documents checklist</span>' + ICON.arrow + '</a><button type="button" class="btn btn-ghost" data-close><span>Back to the ' + (IS_C ? 'course' : 'scholarship') + ' finder</span></button></div>';
           d.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { d.close(); }); });
         })
         .catch(function () {

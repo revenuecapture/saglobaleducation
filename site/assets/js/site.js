@@ -815,6 +815,7 @@
       chat: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.3 1.1 4.4 2.9 5.9L5 21l4.3-2.1c.9.2 1.8.3 2.7.3 5.1 0 9-3.6 9-8.2S17.1 3 12 3Zm-4 9.3a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Zm4 0a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Z"/></svg>',
       phone: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>',
       cal: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2Zm12 8H5v9h14v-9ZM7 12h4v4H7v-4Z"/></svg>',
+      doc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7l-4-4Z"/><path d="m8.5 13.5 2.2 2.2 4.8-4.8"/></svg>',
       close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>'
     };
     var wrap = document.createElement('div');
@@ -826,6 +827,7 @@
         '<a class="cf-item" href="https://wa.me/923324111224" target="_blank" rel="noopener">' + IC.chat + '<span>WhatsApp, Pakistan<small>+92 332 4111224</small></span></a>' +
         '<a class="cf-item" href="tel:+447444761202">' + IC.phone + '<span>Call the UK office<small>+44 7444 761202</small></span></a>' +
         '<a class="cf-item" href="tel:+923324111224">' + IC.phone + '<span>Call the Pakistan office<small>+92 332 4111224</small></span></a>' +
+        (location.pathname.indexOf('/documents-checklist') === 0 ? '' : '<a class="cf-item" href="/documents-checklist/">' + IC.doc + '<span>Documents checklist<small>What to prepare before you apply</small></span></a>') +
         '<a class="cf-item cf-book" href="/contact/#enquiry">' + IC.cal + '<span>Book an appointment<small>Free first consultation</small></span></a>' +
       '</div>' +
       '<button type="button" class="cf-btn" aria-expanded="false" aria-controls="cfPanel" aria-label="Contact a counsellor">' +

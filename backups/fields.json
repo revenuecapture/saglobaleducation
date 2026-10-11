@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "accounting-finance",
+    "label": "Accounting & Finance",
+    "sort_order": 13
+  },
+  {
+    "slug": "agriculture-environmental-studies",
+    "label": "Agriculture & Environmental Studies",
+    "sort_order": 14
+  },
+  {
+    "slug": "architecture-built-environment",
+    "label": "Architecture & Built Environment",
+    "sort_order": 9
+  },
+  {
+    "slug": "business-management",
+    "label": "Business & Management",
+    "sort_order": 2
+  },
+  {
+    "slug": "computer-technology",
+    "label": "Computer & Technology",
+    "sort_order": 3
+  },
+  {
+    "slug": "design-creative-arts",
+    "label": "Design & Creative Arts",
+    "sort_order": 11
+  },
+  {
+    "slug": "education-teaching",
+    "label": "Education & Teaching",
+    "sort_order": 8
+  },
+  {
+    "slug": "engineering-technology",
+    "label": "Engineering & Technology",
+    "sort_order": 4
+  },
+  {
+    "slug": "hospitality-tourism",
+    "label": "Hospitality & Tourism",
+    "sort_order": 12
+  },
+  {
+    "slug": "humanities-social-sciences",
+    "label": "Humanities & Social Sciences",
+    "sort_order": 7
+  },
+  {
+    "slug": "law-legal-studies",
+    "label": "Law & Legal Studies",
+    "sort_order": 1
+  },
+  {
+    "slug": "media-communication",
+    "label": "Media & Communication",
+    "sort_order": 10
+  },
+  {
+    "slug": "medicine-health-sciences",
+    "label": "Medicine & Health Sciences",
+    "sort_order": 5
+  },
+  {
+    "slug": "science-mathematics",
+    "label": "Science & Mathematics",
+    "sort_order": 6
+  },
+  {
+    "slug": "sports-exercise-sciences",
+    "label": "Sports & Exercise Sciences",
+    "sort_order": 15
+  }
+]

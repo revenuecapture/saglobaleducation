@@ -13,7 +13,7 @@
 // site folder, so unreviewed data can never be deployed.
 
 import { readFile, writeFile, mkdir, rm, readdir } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -113,8 +113,14 @@ const LOGO_KEYS = { 'gb-university-of-east-anglia': 'uea', 'gb-queen-mary-univer
   'gb-royal-holloway-university-of-london': 'royal-holloway', 'gb-kings-college-london': 'kcl',
   'gb-university-college-london': 'ucl', 'gb-london-school-of-economics-and-political-science': 'lse',
   'gb-imperial-college-london': 'imperial', 'gb-queens-university-belfast': 'qub' };
-function logoFor(slug) {
+// The Countries page logo for each target institution, from data/research/_targets.json.
+let TARGET_LOGOS = {};
+try {
+  for (const t of JSON.parse(readFileSync(path.join(repo, 'data', 'research', '_targets.json'), 'utf8'))) if (t.logo_path) TARGET_LOGOS[t.slug] = t.logo_path;
+} catch { /* no target list */ }
+function logoFor(slug, stored) {
   if (!slug) return null;
+  for (const p of [stored, TARGET_LOGOS[slug]]) if (p && existsSync(path.join(SITE, p.replace(/^\//, '')))) return p;
   const key = LOGO_KEYS[slug] || slug.replace(/^[a-z]{2}-/, '').replace(/^university-of-/, '').replace(/-university$/, '');
   for (const ext of ['svg', 'webp']) {
     if (existsSync(path.join(SITE, 'assets', 'img', 'logos', `${key}.${ext}`))) return `/assets/img/logos/${key}.${ext}`;
@@ -131,7 +137,7 @@ function shape(db) {
   }));
   const universities = db.universities.map(u => ({
     slug: u.slug, name: u.name, city: u.city || null, dest: u.destination_code, web: u.website_url || null,
-    russell: u.is_russell_group === true && !!u.russell_group_source_url, logo: logoFor(u.slug)
+    russell: u.is_russell_group === true && !!u.russell_group_source_url, logo: logoFor(u.slug, u.logo_path)
   }));
   const awards = db.scholarships
     .filter(s => !s.deadline_on || s.deadline_on >= TODAY)

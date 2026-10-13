@@ -242,6 +242,8 @@ function factRows(rows) {
   return `<dl class="facts">${rows.filter(r => r[1]).map(r => `<div><dt>${esc(r[0])}</dt><dd>${r[1]}</dd></div>`).join('')}</dl>`;
 }
 
+const DLICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
+
 function coursePage(c, data, shell) {
   const u = data.universities.find(x => x.slug === c.uni) || {};
   const d = data.destinations.find(x => x.code === c.dest) || {};
@@ -284,7 +286,7 @@ ${crumbHtml(crumbs)}
               ['Intakes', esc((c.intakes || []).join(', '))], ['Application deadline', esc(c.deadline)]])}
    <a class="link-arrow" href="${esc(c.url)}" rel="noopener" target="_blank">Official course page ${ARROW}</a>
    <p class="muted small">Fees and requirements are published by the university and can change. Checked on ${longDate(c.verified)}. Please confirm with an adviser before applying.</p>
-   <div class="side-dc"><p class="side-dc-h">Getting ready to apply?</p><p>See every document you will need for your application and visa, and tick them off as you go.</p><a class="link-arrow" href="/documents-checklist/">Documents checklist ${ARROW}</a></div>
+   <a class="dc-download" href="/assets/docs/sa-global-documents-checklist.pdf" download>${DLICON}<span>Download the documents checklist<small>PDF, what to prepare for your application and visa</small></span></a>
   </aside>
  </div>
 </section>
@@ -334,7 +336,7 @@ ${crumbHtml(crumbs)}
               ['Deadline', a.deadline ? esc(longDate(a.deadline)) : esc(a.deadlineNote)], ['Intake', esc(a.intake)]])}
    <a class="link-arrow" href="${esc(a.url)}" rel="noopener" target="_blank">Official scholarship page ${ARROW}</a>
    <p class="muted small">Award terms are set by the provider and can change. Checked on ${longDate(a.verified)}. Please confirm with an adviser before applying.</p>
-   <div class="side-dc"><p class="side-dc-h">Getting ready to apply?</p><p>See every document you will need for your application and visa, and tick them off as you go.</p><a class="link-arrow" href="/documents-checklist/">Documents checklist ${ARROW}</a></div>
+   <a class="dc-download" href="/assets/docs/sa-global-documents-checklist.pdf" download>${DLICON}<span>Download the documents checklist<small>PDF, what to prepare for your application and visa</small></span></a>
   </aside>
  </div>
 </section>

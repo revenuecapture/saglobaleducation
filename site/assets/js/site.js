@@ -727,7 +727,7 @@
 
   /* Universities page: search across every country's logo grid. -------------------------- */
   (function () {
-    var countries = [].slice.call(document.querySelectorAll('section.country'));
+    var countries = [].slice.call(document.querySelectorAll('details.country'));
     if (!countries.length || !document.querySelector('.uni-grid')) return;
     var box = document.createElement('div');
     box.className = 'uni-search';
@@ -738,6 +738,18 @@
     var jumpBar = document.querySelector('.country-jump');
     (jumpBar || countries[0]).parentNode.insertBefore(box, jumpBar || countries[0]);
     var input = box.querySelector('input'), note = box.querySelector('.uni-search-n');
+    var wasOpen = countries.map(function (d) { return d.open; });
+    /* A country link or a #hash opens that country's grid. */
+    function openHash(h) {
+      if (!h || h.length < 2) return;
+      var el = document.getElementById(h.slice(1));
+      if (el && el.tagName === 'DETAILS') { el.open = true; setTimeout(function () { el.scrollIntoView({ block: 'start' }); }, 40); }
+    }
+    openHash(location.hash);
+    window.addEventListener('hashchange', function () { openHash(location.hash); });
+    document.querySelectorAll('.country-jump a').forEach(function (a) {
+      a.addEventListener('click', function () { openHash(a.getAttribute('href')); });
+    });
     var norm = function (t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' '); };
     var t;
     input.addEventListener('input', function () {
@@ -756,6 +768,7 @@
             h.hidden = !any; g.hidden = !any;
           });
           d.hidden = q && !n;
+          d.open = q ? n > 0 : wasOpen[i];
           total += n;
         });
         note.textContent = q ? (total ? total + (total === 1 ? ' match' : ' matches') : 'No matches. Try a shorter name, or ask a counsellor.') : '';
@@ -840,9 +853,7 @@
         '<a class="cf-item" href="https://wa.me/923324111224" target="_blank" rel="noopener">' + IC.chat + '<span>WhatsApp, Pakistan<small>+92 332 4111224</small></span></a>' +
         '<a class="cf-item" href="tel:+447444761202">' + IC.phone + '<span>Call the UK office<small>+44 7444 761202</small></span></a>' +
         '<a class="cf-item" href="tel:+923324111224">' + IC.phone + '<span>Call the Pakistan office<small>+92 332 4111224</small></span></a>' +
-        '<a class="cf-item" href="/contact/?form=research#enquiry">' + IC.doc + '<span>Research proposal writing<small>For PhD, MPhil and research degrees</small></span></a>' +
-        (location.pathname.indexOf('/documents-checklist') === 0 ? '' : '<a class="cf-item" href="/documents-checklist/">' + IC.doc + '<span>Documents checklist<small>What to prepare before you apply</small></span></a>') +
-        '<a class="cf-item cf-book" href="/contact/#enquiry">' + IC.cal + '<span>Book an appointment<small>Free first consultation</small></span></a>' +
+        '<a class="cf-item cf-book" href="/contact/#enquiry">' + IC.cal + '<span>Book an appointment<small>Free for students</small></span></a>' +
       '</div>' +
       '<button type="button" class="cf-btn" aria-expanded="false" aria-controls="cfPanel" aria-label="Contact a counsellor">' +
         '<span class="cf-ico cf-ico-open">' + IC.chat + '</span><span class="cf-ico cf-ico-close">' + IC.close + '</span></button>';
@@ -940,9 +951,16 @@
     if (!document.querySelector(sel)) return;
     var WA = { pk: '923324111224', uk: '447444761202' };
     var dlg = null;
+    var DL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
     function nameOf(el) {
       var n = el.getAttribute('data-ask') || ((el.querySelector('.uni-tile-name, .net-name, h3') || {}).textContent || '');
       return n.replace(/\s+/g, ' ').trim();
+    }
+    /* A network logo sits on the same plate it has on its card: white for most, the brand colour for a bare logo. */
+    function plateBg(el) {
+      var plate = el.querySelector('.net-plate'), bg = plate ? getComputedStyle(plate).backgroundColor : '';
+      if (!bg || bg === 'transparent' || /rgba\([^)]*,\s*0\)$/.test(bg)) bg = (getComputedStyle(el).getPropertyValue('--b') || '#1b1b1b').trim();
+      return bg;
     }
     function open(el) {
       var name = nameOf(el); if (!name) return;
@@ -953,12 +971,13 @@
       if (!dlg) { dlg = document.createElement('dialog'); dlg.className = 'ask'; document.body.appendChild(dlg);
         dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); }); }
       dlg.innerHTML = '<div class="ask-card"><button type="button" class="ask-x" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>' +
-        (img && img.getAttribute('src') ? '<div class="ask-logo' + (isNet ? ' ask-logo--plate' : '') + '"' + (isNet ? ' style="background:' + (getComputedStyle(el).getPropertyValue('--b') || '#1b1b1b').trim() + '"' : '') + '><img src="' + img.getAttribute('src') + '" alt=""></div>' : '') +
+        (img && img.getAttribute('src') ? '<div class="ask-logo' + (isNet ? ' ask-logo--plate' : '') + '"' + (isNet ? ' style="background:' + plateBg(el) + '"' : '') + '><img src="' + img.getAttribute('src') + '" alt=""></div>' : '') +
         '<h2 class="ask-h" id="askH">Ask about ' + name.replace(/[<>&"]/g, '') + '</h2>' +
         '<p class="ask-p">Chat to a counsellor on WhatsApp, or send us your details and we will reply within one working day.</p>' +
         '<div class="ask-actions"><a class="btn btn-primary" data-wa="pk" href="https://wa.me/' + WA.pk + '?text=' + text + '" target="_blank" rel="noopener"><span>WhatsApp Pakistan</span><small>+92 332 4111224</small></a>' +
         '<a class="btn btn-ghost" data-wa="uk" href="https://wa.me/' + WA.uk + '?text=' + text + '" target="_blank" rel="noopener"><span>WhatsApp United Kingdom</span><small>+44 7444 761202</small></a></div>' +
-        '<a class="link-arrow ask-form" href="/contact/?about=' + encodeURIComponent(subject) + '#enquiry">Send an enquiry instead <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a></div>';
+        '<a class="link-arrow ask-form" href="/contact/?about=' + encodeURIComponent(subject) + '#enquiry">Send an enquiry instead <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg></a>' +
+        (isNet ? '' : '<a class="dc-download" href="/assets/docs/sa-global-documents-checklist.pdf" download>' + DL + '<span>Download the documents checklist<small>PDF, what to prepare for your application and visa</small></span></a>') + '</div>';
       dlg.setAttribute('aria-labelledby', 'askH');
       dlg.querySelector('.ask-x').addEventListener('click', function () { dlg.close(); });
       dlg.querySelectorAll('[data-wa]').forEach(function (a) { a.addEventListener('click', function () {
@@ -975,109 +994,6 @@
     document.querySelectorAll('.uni-tile, .league-card').forEach(function (el) {
       el.setAttribute('tabindex', '0'); el.setAttribute('role', 'button');
       el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(el); } });
-    });
-  })();
-
-  /* Contact page: enquiry tabs and the research proposal request form. ------------------------- */
-  (function () {
-    var tG = document.getElementById('tabGeneral'), tR = document.getElementById('tabResearch');
-    if (!tG || !tR) return;
-    var pG = document.getElementById('generalPane'), pR = document.getElementById('researchPane');
-    function show(research, focus) {
-      tG.setAttribute('aria-selected', research ? 'false' : 'true'); tR.setAttribute('aria-selected', research ? 'true' : 'false');
-      tG.tabIndex = research ? -1 : 0; tR.tabIndex = research ? 0 : -1;
-      pG.hidden = research; pR.hidden = !research;
-      if (focus) (research ? tR : tG).focus();
-    }
-    tG.addEventListener('click', function () { show(false); });
-    tR.addEventListener('click', function () { show(true); });
-    [tG, tR].forEach(function (t) { t.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); show(t === tG, true); }
-    }); });
-    if (new URLSearchParams(location.search).get('form') === 'research') {
-      show(true);
-      setTimeout(function () { tR.closest('div').scrollIntoView({ block: 'start' }); }, 80);
-    }
-
-    var form = document.getElementById('rpForm'), list = document.getElementById('rpList');
-    var count = document.getElementById('rpCount'), total = document.getElementById('rpTotal'), note = document.getElementById('rpTotalNote');
-    var PRICE = { '1000': 30, '1500': 40 };
-    var esc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
-    function block(i, v) {
-      v = v || {};
-      return '<fieldset class="rp-item" data-i="' + i + '"><legend>Proposal ' + (i + 1) + '</legend>' +
-        '<div class="field"><label for="rpCourse' + i + '">Name of the course *</label><input id="rpCourse' + i + '" data-k="course" type="text" required value="' + esc(v.course || '') + '" placeholder="e.g. PhD in Computer Science"></div>' +
-        '<div class="field"><label for="rpWords' + i + '">Required word count *</label><select id="rpWords' + i + '" data-k="words" required>' +
-          ['1000|1,000 words', '1500|1,500 words', 'other|Other word count'].map(function (o) { var a = o.split('|'); return '<option value="' + a[0] + '"' + ((v.words || '1000') === a[0] ? ' selected' : '') + '>' + a[1] + '</option>'; }).join('') +
-        '</select></div>' +
-        '<div class="field full"><label for="rpTopic' + i + '">Research topic or proposed title *</label><input id="rpTopic' + i + '" data-k="topic" type="text" required value="' + esc(v.topic || '') + '"></div>' +
-        '<div class="field rp-other"' + ((v.words || '1000') === 'other' ? '' : ' hidden') + '><label for="rpOther' + i + '">How many words? *</label><input id="rpOther' + i + '" data-k="other" type="number" min="300" max="20000" step="50" inputmode="numeric" value="' + esc(v.other || '') + '"></div>' +
-        '</fieldset>';
-    }
-    function read() {
-      return [].map.call(list.querySelectorAll('.rp-item'), function (f) {
-        var o = {}; f.querySelectorAll('[data-k]').forEach(function (el) { o[el.getAttribute('data-k')] = el.value.trim(); }); return o;
-      });
-    }
-    function render() {
-      var keep = read(), n = parseInt(count.value, 10) || 1, h = '';
-      for (var i = 0; i < n; i++) h += block(i, keep[i]);
-      list.innerHTML = h; price();
-    }
-    function price() {
-      var items = read(), sum = 0, quote = 0;
-      items.forEach(function (it, i) {
-        var f = list.querySelector('.rp-item[data-i="' + i + '"]'), other = f.querySelector('.rp-other');
-        other.hidden = it.words !== 'other'; other.querySelector('input').required = it.words === 'other';
-        if (PRICE[it.words]) sum += PRICE[it.words]; else quote++;
-      });
-      if (total) total.textContent = sum ? '£' + sum : 'On quote';
-    }
-    count.addEventListener('change', render);
-    list.addEventListener('change', price);
-    render();
-
-    var ok = document.getElementById('rpOk'), bad = document.getElementById('rpBad'), btn = document.getElementById('rpSubmit'), lab = btn.querySelector('span');
-    function err(el, m) {
-      var w = el.closest('.field'); if (!w) return; var n = w.querySelector('.err');
-      if (m) { if (!n) { n = document.createElement('span'); n.className = 'err'; w.appendChild(n); } n.textContent = m; el.setAttribute('aria-invalid', 'true'); }
-      else { if (n) n.remove(); el.removeAttribute('aria-invalid'); }
-    }
-    form.addEventListener('input', function (e) { if (e.target.hasAttribute('aria-invalid')) err(e.target, null); });
-    form.addEventListener('submit', function (e) {
-      e.preventDefault(); ok.classList.remove('show'); bad.classList.remove('show');
-      var first = null;
-      form.querySelectorAll('[required]').forEach(function (el) {
-        var v = (el.value || '').trim(), m = null;
-        if (!v) m = 'This field is required.';
-        else if (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) m = 'Enter a valid email address.';
-        err(el, m); if (m && !first) first = el;
-      });
-      if (first) { first.focus(); return; }
-      var items = read(), lines = items.map(function (it, i) {
-        var wc = it.words === 'other' ? (it.other || '?') + ' words' : (it.words === '1000' ? '1,000 words' : '1,500 words');
-        return 'Proposal ' + (i + 1) + ': ' + it.course + ' | Topic: ' + it.topic + ' | ' + wc;
-      });
-      var extra = document.getElementById('rpExtra').value.trim();
-      var data = {
-        enquiry_type: 'Research proposal writing',
-        name: document.getElementById('rpName').value.trim(), email: document.getElementById('rpEmail').value.trim(),
-        phoneNumber: document.getElementById('rpPhone').value.trim(),
-        dob: 'Not asked', city: 'Not asked', nationality: 'Not asked', qualification: 'Not asked', gradeCgpaPercentage: 'Not asked', englishLanguageTest: 'Not asked',
-        countryPreference: 'Research proposal writing', preferredCourse: items.map(function (it) { return it.course; }).join('; '),
-        query: 'RESEARCH PROPOSAL WRITING REQUEST\n' + items.length + ' proposal(s)\n\n' + lines.join('\n') + (extra ? '\n\nAdditional requirements: ' + extra : ''),
-        page_url: location.href
-      };
-      var CFG = { key: 'J6sCZb4-rkfiZHR04', service: 'service_6iaqh1h', template: 'template_wgpnprz' };
-      if (!(window.emailjs && typeof window.emailjs.send === 'function')) { bad.classList.add('show'); return; }
-      try { window.emailjs.init({ publicKey: CFG.key }); } catch (e1) {}
-      btn.disabled = true; lab.textContent = 'Sending…';
-      window.emailjs.send(CFG.service, CFG.template, data).then(function () {
-        form.reset(); render(); ok.classList.add('show'); ok.scrollIntoView({ block: 'center', behavior: 'smooth' });
-        if (window.gtag) window.gtag('event', 'generate_lead', { form: 'research_proposal', proposals: items.length });
-        if (window.fbq) window.fbq('track', 'Lead');
-      }).catch(function () { bad.classList.add('show'); bad.scrollIntoView({ block: 'center', behavior: 'smooth' }); })
-        .then(function () { btn.disabled = false; lab.textContent = 'Submit enquiry'; });
     });
   })();
 

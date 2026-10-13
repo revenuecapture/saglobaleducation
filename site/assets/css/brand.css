@@ -1928,10 +1928,10 @@ html.nav-glass .nav { gap: 1.35rem; }
 @media (prefers-reduced-motion: reduce) { .fd[open] { animation: none; } .fc { transition: none; } }
 .elig-note { margin-top: .5rem !important; font-size: .9rem; }
 
-/* With nine items the full navigation needs about 1160px; below that the menu button takes over. */
+/* With eight items the full navigation needs about 1080px; below that the menu button takes over. */
 .brand { flex: none; }
 .nav a { white-space: nowrap; }
-@media (max-width: 1160px) {
+@media (max-width: 1080px) {
   .nav {
     position: fixed; inset: 0 0 auto; top: 4.7rem;
     flex-direction: column; align-items: stretch; gap: 0;
@@ -2275,8 +2275,7 @@ details.country[hidden], section.country[hidden] { display: none; }
 @media (max-width: 860px) { .groups-grid { grid-template-columns: 1fr; } }
 
 /* --- Countries page: open grids, jump bar, Malaysia fees ---------------------------------- */
-section.country { scroll-margin-top: 6.5rem; margin-bottom: 1.5rem; }
-section.country .country-head { cursor: default; }
+.country { scroll-margin-top: 6.5rem; }
 .country-jump { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 2rem; }
 .country-jump a { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .8rem; border-radius: 0 .8rem 0 .8rem;
   background: #fff; border: 1px solid var(--surface-cloud-dark); color: var(--surface-chocolate-dark); text-decoration: none;
@@ -2314,31 +2313,6 @@ dialog.ask::backdrop { background: rgba(30, 15, 5, .55); -webkit-backdrop-filter
 .ask-actions .btn small { white-space: nowrap;  font-family: "Lexend Deca", sans-serif; font-weight: 400; letter-spacing: 0; text-transform: none; font-size: .85rem; opacity: .85; }
 
 @media (max-width: 480px) { .ask-actions .btn { flex-direction: column; align-items: flex-start; gap: .15rem; } }
-
-/* --- Contact: enquiry tabs and research proposal form ----------------------------------- */
-.form-tabs { display: inline-flex; flex-wrap: wrap; gap: .35rem; padding: .35rem; margin-bottom: 1.25rem; background: var(--surface-cloud); border-radius: 0 1.1rem 0 1.1rem; }
-.form-tabs button { border: 0; background: transparent; padding: .7rem 1.1rem; border-radius: 0 .8rem 0 .8rem; cursor: pointer; color: var(--surface-chocolate-dark);
-  font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; }
-.form-tabs button[aria-selected="true"] { background: var(--surface-chocolate-dark); color: var(--surface-cloud); }
-.form-tabs button:focus-visible { outline: 3px solid var(--azure-7); outline-offset: 2px; }
-.rp-intro p { margin: 0 0 1rem; }
-.rp-prices { list-style: none; margin: 0 0 .5rem; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; }
-.rp-prices li { padding: .9rem 1rem; background: var(--mint); color: var(--surface-chocolate-dark); border-radius: 0 1rem 0 1rem; display: grid; gap: .1rem; }
-.rp-prices li:last-child { background: var(--surface-cloud); }
-.rp-prices b { font-family: "Barlow Condensed", sans-serif; font-size: 1.8rem; line-height: 1; }
-.rp-prices span { font-size: .88rem; }
-.rp-list { display: grid; gap: 1rem; grid-column: 1 / -1; }
-.rp-item { margin: 0; padding: 1.25rem; border: 1px solid var(--surface-cloud-dark); border-radius: 0 1.25rem 0 1.25rem; background: #fff;
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.rp-item legend { padding: 0 .4rem; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.15rem; }
-.rp-item .field.full { grid-column: 1 / -1; }
-.rp-total { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem .9rem; padding: 1rem 1.25rem; background: var(--surface-chocolate-dark); color: var(--surface-cloud); border-radius: 0 1.25rem 0 1.25rem; }
-.rp-total span { font-size: .95rem; opacity: .85; }
-.rp-total b { font-family: "Barlow Condensed", sans-serif; font-size: 2rem; line-height: 1; color: var(--mint); }
-.rp-total small { flex-basis: 100%; font-size: .88rem; opacity: .85; }
-.rp-total small:empty { display: none; }
-@media (max-width: 640px) { .rp-item { grid-template-columns: 1fr; } .rp-prices { grid-template-columns: 1fr 1fr; } .rp-prices li:last-child { grid-column: 1 / -1; } }
-.rp-item .field[hidden], #researchPane[hidden], #generalPane[hidden] { display: none; }
 
 /* --- Checklist: level switch and SOP note ----------------------------------------------- */
 .dc-group[hidden] { display: none; }
@@ -2396,3 +2370,24 @@ dialog.offer-view .ask-x { position: sticky; top: .75rem; float: right; margin: 
 @media (max-width: 900px) { .sch-svc { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .sch-svc { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .group-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } .group-logos span { height: 3.75rem; } }
+
+/* --- Documents checklist download (course, university and scholarship views) ---------------- */
+.dc-download { display: flex; align-items: center; gap: .8rem; margin-top: 1rem; padding: .85rem 1rem; text-decoration: none; color: var(--surface-chocolate-dark);
+  border: 1px solid var(--surface-cloud-dark); border-radius: 0 1rem 0 1rem; background: #fff; transition: border-color .18s; }
+.dc-download:hover { border-color: var(--azure); }
+.dc-download svg { width: 1.4rem; height: 1.4rem; flex: none; color: var(--azure-7); }
+.dc-download span { font-weight: 500; font-size: .95rem; }
+.dc-download small { display: block; font-weight: 400; font-size: .82rem; opacity: .75; }
+.ask-logo--plate { box-shadow: 0 0 0 1px var(--surface-cloud-dark); }
+.dc-print-head img { display: block; height: 2rem; width: auto; margin-bottom: .6rem; }
+
+/* --- Countries: living costs ---------------------------------------------------------------- */
+.living { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--surface-cloud-dark); }
+.living-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1rem; max-width: 40rem; }
+.living-card { padding: 1rem 1.25rem; background: #fff; border: 1px solid var(--surface-cloud-dark); border-radius: 0 1.25rem 0 1.25rem; }
+.living-k { margin: 0; font-size: .9rem; opacity: .75; }
+.living-v { margin: .2rem 0 0; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.9rem; line-height: 1.05; color: var(--azure-7); }
+.living-s { margin: .1rem 0 0; font-size: .88rem; }
+.living-intro { max-width: 46rem; margin: 0 0 1rem; }
+.living-rules { max-width: 52rem; }
+@media (max-width: 560px) { .living-grid { grid-template-columns: 1fr; } }

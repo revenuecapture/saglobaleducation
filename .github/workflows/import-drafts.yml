@@ -1,6 +1,6 @@
-# Loads research files from data/research into Supabase as unpublished drafts.
-# Runs on every push that changes research files, or by hand from the Actions tab.
-# Nothing is published: a reviewer approves rows in Supabase, then the site rebuilds.
+# Loads research files from data/research into Supabase as unpublished drafts, then publishes
+# whatever the approvals files in data/approvals list, then rebuilds the site.
+# Runs on every push that changes research or approvals files, or by hand from the Actions tab.
 # No secret is stored in GitHub: the job proves who it is with GitHub's identity token,
 # which the "ops" Edge Function in Supabase checks.
 name: Import research drafts
@@ -8,7 +8,7 @@ name: Import research drafts
 on:
   push:
     branches: [main]
-    paths: ['data/research/**']
+    paths: ['data/research/**', 'data/approvals/**']
   workflow_dispatch:
     inputs:
       only:
@@ -16,19 +16,40 @@ on:
         required: false
         default: ""
 
+concurrency:
+  group: catalogue
+  cancel-in-progress: false
+
 permissions:
-  contents: read
+  contents: write
   id-token: write
 
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Work out what changed
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            base="${{ github.event.before }}"
+            research=$(git diff --name-only "$base" "${{ github.sha }}" -- data/research | grep -E '\.json$' | grep -vE '^data/research/_' | sed -E 's#data/research/##; s#\.verify\.json$##; s#\.json$##' | sort -u | tr '\n' ' ')
+            approvals=$(git diff --name-only --diff-filter=AM "$base" "${{ github.sha }}" -- data/approvals | grep -E '\.json$' | tr '\n' ' ')
+            meta=$(git diff --name-only "$base" "${{ github.sha }}" -- data/research | grep -E '^data/research/_' | head -1)
+          else
+            research="${{ inputs.only }}"; approvals=""; meta="manual"
+          fi
+          echo "research=$research" >> "$GITHUB_OUTPUT"
+          echo "approvals=$approvals" >> "$GITHUB_OUTPUT"
+          echo "meta=$meta" >> "$GITHUB_OUTPUT"
+          echo "research: $research"; echo "approvals: $approvals"; echo "meta: $meta"
       - name: Get a GitHub identity token for Supabase
         id: oidc
         run: |
@@ -36,8 +57,31 @@ jobs:
           echo "::add-mask::$t"
           echo "token=$t" >> "$GITHUB_OUTPUT"
       - name: Import drafts
+        if: steps.changed.outputs.research != '' || steps.changed.outputs.meta != ''
         env:
           SUPABASE_URL: https://kdndxzqxzgnusgvgcqsv.supabase.co
           OPS_TOKEN: ${{ steps.oidc.outputs.token }}
-          ONLY: ${{ inputs.only }}
-        run: node scripts/import-drafts.mjs "$ONLY"
+        run: node scripts/import-drafts.mjs ${{ steps.changed.outputs.research }}
+      - name: Publish approved rows
+        if: steps.changed.outputs.approvals != ''
+        env:
+          SUPABASE_URL: https://kdndxzqxzgnusgvgcqsv.supabase.co
+          OPS_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: node scripts/publish-approved.mjs ${{ steps.changed.outputs.approvals }}
+      - name: Rebuild the site
+        if: steps.changed.outputs.approvals != ''
+        env:
+          OPS_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          code=$(curl -sS -o /dev/null -w "%{http_code}" -X POST https://kdndxzqxzgnusgvgcqsv.supabase.co/functions/v1/ops \
+            -H "Authorization: Bearer $OPS_TOKEN" -H "Content-Type: application/json" -d '{"op":"rebuild"}')
+          echo "deploy hook: $code"
+          if [ "$code" != "200" ]; then
+            # No deploy hook in Supabase: a small commit to the site makes Cloudflare Pages rebuild.
+            date -u +"%Y-%m-%dT%H:%M:%SZ" > site/assets/catalogue-stamp.txt
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add site/assets/catalogue-stamp.txt
+            git commit -m "Rebuild after publishing approved rows"
+            git push
+          fi

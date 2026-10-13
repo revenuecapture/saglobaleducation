@@ -10,6 +10,10 @@
 //                                                  rows a reviewer already published are skipped
 //   patch_university  { slug, values }          -> researched fields of one university
 //   patch_destination { code, values }          -> post-study work text of one destination
+//   ensure_university { row }                   -> creates the university row if it is missing
+//                                                  (unpublished); an existing row is left as it is
+//   publish           { table, slugs }          -> marks approved rows published (universities,
+//                                                  courses, scholarships); listed in data/approvals
 //   export            { table }                 -> catalogue tables only, for backups (no leads)
 //   rebuild           {}                        -> calls the Cloudflare Pages deploy hook
 import { createClient } from "jsr:@supabase/supabase-js@2";
@@ -28,6 +32,9 @@ const UNI_COLS = new Set(["name", "city", "region", "website_url", "internationa
   "review_notes"]);
 const DEST_COLS = new Set(["post_study_work_summary", "post_study_work_source_url", "post_study_work_verified_on"]);
 const SLUG = /^[a-z0-9-]{1,120}$/;
+const NEW_UNI_COLS = new Set(["slug", "name", "presentation_name", "destination_code", "city", "region", "website_url", "logo_path",
+  "tier", "research_batch"]);
+const PUBLISH_TABLES = new Set(["universities", "courses", "scholarships"]);
 
 function json(status: number, body: unknown) {
   return new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json" } });
@@ -94,6 +101,21 @@ Deno.serve(async (req) => {
       if (!/^[A-Z]{2}$/.test(body.code || "")) return json(400, { error: "code" });
       const { error } = await db.from("destinations").update(only(body.values, DEST_COLS)).eq("code", body.code);
       return error ? json(500, { error: error.message }) : json(200, { ok: true });
+    }
+    case "ensure_university": {
+      const row = only(body.row, NEW_UNI_COLS) as Record<string, any>;
+      if (!SLUG.test(row.slug || "") || !row.name || !/^[A-Z]{2}$/.test(row.destination_code || "")) return json(400, { error: "row" });
+      const { data: have } = await db.from("universities").select("id").eq("slug", row.slug).maybeSingle();
+      if (have) return json(200, { id: have.id, created: false });
+      const { data, error } = await db.from("universities").insert({ ...row, is_published: false }).select("id").single();
+      return error ? json(500, { error: error.message }) : json(200, { id: data.id, created: true });
+    }
+    case "publish": {
+      if (!PUBLISH_TABLES.has(body.table)) return json(400, { error: "table" });
+      const slugs = (body.slugs || []).filter((s: string) => SLUG.test(s)).slice(0, 500);
+      if (!slugs.length) return json(200, { published: 0 });
+      const { data, error } = await db.from(body.table).update({ is_published: true }).in("slug", slugs).select("slug");
+      return error ? json(500, { error: error.message }) : json(200, { published: (data || []).length, missing: slugs.filter((s: string) => !(data || []).some((r: any) => r.slug === s)) });
     }
     case "export": {
       const order = EXPORT_TABLES[body.table];

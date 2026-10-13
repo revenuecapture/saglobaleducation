@@ -1,0 +1,2744 @@
+[
+ {
+  "slug": "gb-university-of-birmingham",
+  "name": "University of Birmingham",
+  "presentation_name": "University of Birmingham",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/birmingham.svg",
+  "batch": 0,
+  "live": true
+ },
+ {
+  "slug": "gb-university-of-bristol",
+  "name": "University of Bristol",
+  "presentation_name": "University of Bristol",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/bristol.svg",
+  "batch": 1
+ },
+ {
+  "slug": "gb-cardiff-university",
+  "name": "Cardiff University",
+  "presentation_name": "Cardiff University",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/cardiff.svg",
+  "batch": 0,
+  "live": true
+ },
+ {
+  "slug": "gb-durham-university",
+  "name": "Durham University",
+  "presentation_name": "Durham University",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/durham.svg",
+  "batch": 1
+ },
+ {
+  "slug": "gb-university-of-edinburgh",
+  "name": "University of Edinburgh",
+  "presentation_name": "University of Edinburgh",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/edinburgh.svg",
+  "batch": 1
+ },
+ {
+  "slug": "gb-university-of-exeter",
+  "name": "University of Exeter",
+  "presentation_name": "University of Exeter",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/exeter.webp",
+  "batch": 2
+ },
+ {
+  "slug": "gb-university-of-glasgow",
+  "name": "University of Glasgow",
+  "presentation_name": "University of Glasgow",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/glasgow.svg",
+  "batch": 2
+ },
+ {
+  "slug": "gb-imperial-college-london",
+  "name": "Imperial College London",
+  "presentation_name": "Imperial College London",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/imperial.webp",
+  "batch": 2
+ },
+ {
+  "slug": "gb-kings-college-london",
+  "name": "King's College London",
+  "presentation_name": "King's College London",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/kcl.svg",
+  "batch": 3
+ },
+ {
+  "slug": "gb-university-of-leeds",
+  "name": "University of Leeds",
+  "presentation_name": "University of Leeds",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/leeds.svg",
+  "batch": 3
+ },
+ {
+  "slug": "gb-university-of-liverpool",
+  "name": "University of Liverpool",
+  "presentation_name": "University of Liverpool",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/liverpool.svg",
+  "batch": 3
+ },
+ {
+  "slug": "gb-london-school-of-economics-and-political-science",
+  "name": "London School of Economics and Political Science",
+  "presentation_name": "London School of Economics and Political Science (LSE)",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/lse.svg",
+  "batch": 4
+ },
+ {
+  "slug": "gb-newcastle-university",
+  "name": "Newcastle University",
+  "presentation_name": "Newcastle University",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/newcastle.svg",
+  "batch": 4
+ },
+ {
+  "slug": "gb-university-of-nottingham",
+  "name": "University of Nottingham",
+  "presentation_name": "University of Nottingham",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/nottingham.svg",
+  "batch": 0,
+  "live": true
+ },
+ {
+  "slug": "gb-queens-university-belfast",
+  "name": "Queen's University Belfast",
+  "presentation_name": "Queen's University Belfast",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/qub.svg",
+  "batch": 4
+ },
+ {
+  "slug": "gb-queen-mary-university-of-london",
+  "name": "Queen Mary University of London",
+  "presentation_name": "Queen Mary University of London",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/qmul.svg",
+  "batch": 5
+ },
+ {
+  "slug": "gb-university-of-sheffield",
+  "name": "University of Sheffield",
+  "presentation_name": "University of Sheffield",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/sheffield.svg",
+  "batch": 5
+ },
+ {
+  "slug": "gb-university-of-southampton",
+  "name": "University of Southampton",
+  "presentation_name": "University of Southampton",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/southampton.webp",
+  "batch": 5
+ },
+ {
+  "slug": "gb-university-college-london",
+  "name": "University College London",
+  "presentation_name": "University College London (UCL)",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/ucl.svg",
+  "batch": 6
+ },
+ {
+  "slug": "gb-university-of-warwick",
+  "name": "University of Warwick",
+  "presentation_name": "University of Warwick",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/warwick.svg",
+  "batch": 6
+ },
+ {
+  "slug": "gb-university-of-york",
+  "name": "University of York",
+  "presentation_name": "University of York",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/york.webp",
+  "batch": 6
+ },
+ {
+  "slug": "gb-anglia-ruskin-university",
+  "name": "Anglia Ruskin University",
+  "presentation_name": "Anglia Ruskin University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/anglia-ruskin-university.svg",
+  "batch": 7
+ },
+ {
+  "slug": "gb-aston-university",
+  "name": "Aston University",
+  "presentation_name": "Aston University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/aston.webp",
+  "batch": 7
+ },
+ {
+  "slug": "gb-bangor-university",
+  "name": "Bangor University",
+  "presentation_name": "Bangor University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/bangor-university.svg",
+  "batch": 7
+ },
+ {
+  "slug": "gb-birmingham-city-university",
+  "name": "Birmingham City University",
+  "presentation_name": "Birmingham City University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/birmingham-city-university.webp",
+  "batch": 7
+ },
+ {
+  "slug": "gb-brunel-university-of-london",
+  "name": "Brunel University of London",
+  "presentation_name": "Brunel University of London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/brunel-university-of-london.webp",
+  "batch": 7
+ },
+ {
+  "slug": "gb-buckinghamshire-new-university",
+  "name": "Buckinghamshire New University",
+  "presentation_name": "Buckinghamshire New University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/buckinghamshire-new-university.webp",
+  "batch": 8
+ },
+ {
+  "slug": "gb-cardiff-metropolitan-university",
+  "name": "Cardiff Metropolitan University",
+  "presentation_name": "Cardiff Metropolitan University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-cardiffmet.webp",
+  "batch": 8
+ },
+ {
+  "slug": "gb-city-st-georges-university-of-london",
+  "name": "City St George's, University of London",
+  "presentation_name": "City St George's, University of London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/city-st-georges.webp",
+  "batch": 8
+ },
+ {
+  "slug": "gb-coventry-university",
+  "name": "Coventry University",
+  "presentation_name": "Coventry University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/coventry-university.webp",
+  "batch": 8
+ },
+ {
+  "slug": "gb-cranfield-university",
+  "name": "Cranfield University",
+  "presentation_name": "Cranfield University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-cranfield.svg",
+  "batch": 8
+ },
+ {
+  "slug": "gb-de-montfort-university",
+  "name": "De Montfort University",
+  "presentation_name": "De Montfort University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/de-montfort-university.svg",
+  "batch": 9
+ },
+ {
+  "slug": "gb-glasgow-caledonian-university",
+  "name": "Glasgow Caledonian University",
+  "presentation_name": "Glasgow Caledonian University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/glasgow-caledonian-university.webp",
+  "batch": 9
+ },
+ {
+  "slug": "gb-goldsmiths-university-of-london",
+  "name": "Goldsmiths, University of London",
+  "presentation_name": "Goldsmiths, University of London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/goldsmiths-university-of-london.svg",
+  "batch": 9
+ },
+ {
+  "slug": "gb-heriot-watt-university",
+  "name": "Heriot-Watt University",
+  "presentation_name": "Heriot-Watt University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/heriot-watt-university.svg",
+  "batch": 9
+ },
+ {
+  "slug": "gb-keele-university",
+  "name": "Keele University",
+  "presentation_name": "Keele University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/keele-university.webp",
+  "batch": 9
+ },
+ {
+  "slug": "gb-kingston-university",
+  "name": "Kingston University",
+  "presentation_name": "Kingston University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/kingston-university.webp",
+  "batch": 10
+ },
+ {
+  "slug": "gb-lancaster-university",
+  "name": "Lancaster University",
+  "presentation_name": "Lancaster University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/lancaster.svg",
+  "batch": 10
+ },
+ {
+  "slug": "gb-leeds-trinity-university",
+  "name": "Leeds Trinity University",
+  "presentation_name": "Leeds Trinity University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/leeds-trinity-university.webp",
+  "batch": 10
+ },
+ {
+  "slug": "gb-liverpool-john-moores-university",
+  "name": "Liverpool John Moores University",
+  "presentation_name": "Liverpool John Moores University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/liverpool-john-moores-university.webp",
+  "batch": 10
+ },
+ {
+  "slug": "gb-london-metropolitan-university",
+  "name": "London Metropolitan University",
+  "presentation_name": "London Metropolitan University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/london-metropolitan-university.webp",
+  "batch": 10
+ },
+ {
+  "slug": "gb-london-south-bank-university",
+  "name": "London South Bank University",
+  "presentation_name": "London South Bank University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-lsbu.webp",
+  "batch": 11
+ },
+ {
+  "slug": "gb-loughborough-university",
+  "name": "Loughborough University",
+  "presentation_name": "Loughborough University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/loughborough.webp",
+  "batch": 11
+ },
+ {
+  "slug": "gb-manchester-metropolitan-university",
+  "name": "Manchester Metropolitan University",
+  "presentation_name": "Manchester Metropolitan University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-mmu.svg",
+  "batch": 11
+ },
+ {
+  "slug": "gb-middlesex-university",
+  "name": "Middlesex University",
+  "presentation_name": "Middlesex University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/middlesex-university.svg",
+  "batch": 11
+ },
+ {
+  "slug": "gb-nottingham-trent-university",
+  "name": "Nottingham Trent University",
+  "presentation_name": "Nottingham Trent University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/nottingham-trent-university.webp",
+  "batch": 11
+ },
+ {
+  "slug": "gb-oxford-brookes-university",
+  "name": "Oxford Brookes University",
+  "presentation_name": "Oxford Brookes University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/oxford-brookes-university.svg",
+  "batch": 12
+ },
+ {
+  "slug": "gb-ravensbourne-university-london",
+  "name": "Ravensbourne University London",
+  "presentation_name": "Ravensbourne University London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/ravensbourne-university-london.webp",
+  "batch": 12
+ },
+ {
+  "slug": "gb-regent-s-university-london",
+  "name": "Regent's University London",
+  "presentation_name": "Regent's University London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/regent-s-university-london.svg",
+  "batch": 12
+ },
+ {
+  "slug": "gb-robert-gordon-university",
+  "name": "Robert Gordon University",
+  "presentation_name": "Robert Gordon University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/robert-gordon-university.svg",
+  "batch": 12
+ },
+ {
+  "slug": "gb-royal-holloway-university-of-london",
+  "name": "Royal Holloway, University of London",
+  "presentation_name": "Royal Holloway, University of London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/royal-holloway.webp",
+  "batch": 12
+ },
+ {
+  "slug": "gb-soas-university-of-london",
+  "name": "SOAS University of London",
+  "presentation_name": "SOAS University of London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/soas.webp",
+  "batch": 13
+ },
+ {
+  "slug": "gb-st-mary-s-university-twickenham",
+  "name": "St Mary's University, Twickenham",
+  "presentation_name": "St Mary's University, Twickenham",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/st-mary-s-university-twickenham.webp",
+  "batch": 13
+ },
+ {
+  "slug": "gb-teesside-university",
+  "name": "Teesside University",
+  "presentation_name": "Teesside University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-teesside.webp",
+  "batch": 13
+ },
+ {
+  "slug": "gb-ulster-university",
+  "name": "Ulster University",
+  "presentation_name": "Ulster University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/ulster-university.webp",
+  "batch": 13
+ },
+ {
+  "slug": "gb-university-college-birmingham",
+  "name": "University College Birmingham",
+  "presentation_name": "University College Birmingham",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-college-birmingham.webp",
+  "batch": 13
+ },
+ {
+  "slug": "gb-university-for-the-creative-arts",
+  "name": "University for the Creative Arts",
+  "presentation_name": "University for the Creative Arts",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-for-the-creative-arts.webp",
+  "batch": 14
+ },
+ {
+  "slug": "gb-university-of-aberdeen",
+  "name": "University of Aberdeen",
+  "presentation_name": "University of Aberdeen",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-aberdeen.svg",
+  "batch": 14
+ },
+ {
+  "slug": "gb-university-of-bedfordshire",
+  "name": "University of Bedfordshire",
+  "presentation_name": "University of Bedfordshire",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-bedfordshire.webp",
+  "batch": 14
+ },
+ {
+  "slug": "gb-university-of-brighton",
+  "name": "University of Brighton",
+  "presentation_name": "University of Brighton",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-brighton.webp",
+  "batch": 14
+ },
+ {
+  "slug": "gb-university-of-central-lancashire",
+  "name": "University of Central Lancashire",
+  "presentation_name": "University of Central Lancashire",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-central-lancashire.svg",
+  "batch": 14
+ },
+ {
+  "slug": "gb-university-of-derby",
+  "name": "University of Derby",
+  "presentation_name": "University of Derby",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-derby.svg",
+  "batch": 15
+ },
+ {
+  "slug": "gb-university-of-dundee",
+  "name": "University of Dundee",
+  "presentation_name": "University of Dundee",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-dundee.svg",
+  "batch": 15
+ },
+ {
+  "slug": "gb-university-of-east-anglia",
+  "name": "University of East Anglia",
+  "presentation_name": "University of East Anglia (UEA)",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/uea.webp",
+  "batch": 0,
+  "live": true
+ },
+ {
+  "slug": "gb-university-of-east-london",
+  "name": "University of East London",
+  "presentation_name": "University of East London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-uel.webp",
+  "batch": 15
+ },
+ {
+  "slug": "gb-university-of-essex",
+  "name": "University of Essex",
+  "presentation_name": "University of Essex",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/essex.svg",
+  "batch": 15
+ },
+ {
+  "slug": "gb-university-of-gloucestershire",
+  "name": "University of Gloucestershire",
+  "presentation_name": "University of Gloucestershire",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-gloucestershire.webp",
+  "batch": 15
+ },
+ {
+  "slug": "gb-university-of-greenwich",
+  "name": "University of Greenwich",
+  "presentation_name": "University of Greenwich",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-greenwich.webp",
+  "batch": 16
+ },
+ {
+  "slug": "gb-university-of-hertfordshire",
+  "name": "University of Hertfordshire",
+  "presentation_name": "University of Hertfordshire",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-hertfordshire.svg",
+  "batch": 16
+ },
+ {
+  "slug": "gb-university-of-huddersfield",
+  "name": "University of Huddersfield",
+  "presentation_name": "University of Huddersfield",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-huddersfield.svg",
+  "batch": 16
+ },
+ {
+  "slug": "gb-university-of-hull",
+  "name": "University of Hull",
+  "presentation_name": "University of Hull",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-hull.svg",
+  "batch": 16
+ },
+ {
+  "slug": "gb-university-of-kent",
+  "name": "University of Kent",
+  "presentation_name": "University of Kent",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/kent.svg",
+  "batch": 16
+ },
+ {
+  "slug": "gb-university-of-law",
+  "name": "University of Law",
+  "presentation_name": "University of Law",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-law.webp",
+  "batch": 17
+ },
+ {
+  "slug": "gb-university-of-leicester",
+  "name": "University of Leicester",
+  "presentation_name": "University of Leicester",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/leicester.svg",
+  "batch": 0,
+  "live": true
+ },
+ {
+  "slug": "gb-university-of-lincoln",
+  "name": "University of Lincoln",
+  "presentation_name": "University of Lincoln",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-lincoln.webp",
+  "batch": 17
+ },
+ {
+  "slug": "gb-university-of-reading",
+  "name": "University of Reading",
+  "presentation_name": "University of Reading",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/reading.svg",
+  "batch": 17
+ },
+ {
+  "slug": "gb-university-of-roehampton",
+  "name": "University of Roehampton",
+  "presentation_name": "University of Roehampton",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-roehampton.webp",
+  "batch": 17
+ },
+ {
+  "slug": "gb-university-of-salford",
+  "name": "University of Salford",
+  "presentation_name": "University of Salford",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-salford.webp",
+  "batch": 17
+ },
+ {
+  "slug": "gb-university-of-staffordshire",
+  "name": "University of Staffordshire",
+  "presentation_name": "University of Staffordshire",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uk-staffs.webp",
+  "batch": 18
+ },
+ {
+  "slug": "gb-university-of-stirling",
+  "name": "University of Stirling",
+  "presentation_name": "University of Stirling",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-stirling.svg",
+  "batch": 18
+ },
+ {
+  "slug": "gb-university-of-strathclyde",
+  "name": "University of Strathclyde",
+  "presentation_name": "University of Strathclyde",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-strathclyde.webp",
+  "batch": 18
+ },
+ {
+  "slug": "gb-university-of-surrey",
+  "name": "University of Surrey",
+  "presentation_name": "University of Surrey",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/surrey.webp",
+  "batch": 18
+ },
+ {
+  "slug": "gb-university-of-sussex",
+  "name": "University of Sussex",
+  "presentation_name": "University of Sussex",
+  "destination_code": "GB",
+  "tier": 1,
+  "logo_path": "/assets/img/logos/sussex.svg",
+  "batch": 0,
+  "live": true
+ },
+ {
+  "slug": "gb-university-of-the-west-of-england",
+  "name": "University of the West of England",
+  "presentation_name": "University of the West of England (UWE Bristol)",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-the-west-of-england-uwe-bristol.svg",
+  "batch": 18
+ },
+ {
+  "slug": "gb-university-of-wales-trinity-saint-david",
+  "name": "University of Wales Trinity Saint David",
+  "presentation_name": "University of Wales Trinity Saint David",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-wales-trinity-saint-david.webp",
+  "batch": 19
+ },
+ {
+  "slug": "gb-university-of-west-london",
+  "name": "University of West London",
+  "presentation_name": "University of West London",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-west-london.svg",
+  "batch": 19
+ },
+ {
+  "slug": "gb-university-of-worcester",
+  "name": "University of Worcester",
+  "presentation_name": "University of Worcester",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-worcester.webp",
+  "batch": 19
+ },
+ {
+  "slug": "gb-wrexham-university",
+  "name": "Wrexham University",
+  "presentation_name": "Wrexham University",
+  "destination_code": "GB",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/wrexham-university.svg",
+  "batch": 19
+ },
+ {
+  "slug": "us-adelphi-university",
+  "name": "Adelphi University",
+  "presentation_name": "Adelphi University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/adelphi-university.svg",
+  "batch": 19
+ },
+ {
+  "slug": "us-alliant-international-university",
+  "name": "Alliant International University",
+  "presentation_name": "Alliant International University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/alliant-international-university.webp",
+  "batch": 20
+ },
+ {
+  "slug": "us-amda-college-and-conservatory-of-the-performing-arts",
+  "name": "AMDA College and Conservatory of the Performing Arts",
+  "presentation_name": "AMDA College and Conservatory of the Performing Arts",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/amda-college-and-conservatory-of-the-performing-arts.webp",
+  "batch": 20
+ },
+ {
+  "slug": "us-american-collegiate-live",
+  "name": "American Collegiate Live",
+  "presentation_name": "American Collegiate Live",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/american-collegiate-washington-dc.svg",
+  "batch": 20
+ },
+ {
+  "slug": "us-american-collegiate-washington-dc",
+  "name": "American Collegiate, Washington, DC",
+  "presentation_name": "American Collegiate, Washington, DC",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/american-collegiate-washington-dc.svg",
+  "batch": 20
+ },
+ {
+  "slug": "us-american-university",
+  "name": "American University",
+  "presentation_name": "American University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/american-university.svg",
+  "batch": 20
+ },
+ {
+  "slug": "us-arkansas-state-university-jonesboro",
+  "name": "Arkansas State University, Jonesboro",
+  "presentation_name": "Arkansas State University, Jonesboro",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/arkansas-state.webp",
+  "batch": 21
+ },
+ {
+  "slug": "us-auburn-university",
+  "name": "Auburn University",
+  "presentation_name": "Auburn University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/auburn-university.svg",
+  "batch": 21
+ },
+ {
+  "slug": "us-auburn-university-at-montgomery",
+  "name": "Auburn University at Montgomery",
+  "presentation_name": "Auburn University at Montgomery",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/auburn-university-at-montgomery.webp",
+  "batch": 21
+ },
+ {
+  "slug": "us-austin-college",
+  "name": "Austin College",
+  "presentation_name": "Austin College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/austin-college.svg",
+  "batch": 21
+ },
+ {
+  "slug": "us-avila-university",
+  "name": "Avila University",
+  "presentation_name": "Avila University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/avila-university.svg",
+  "batch": 21
+ },
+ {
+  "slug": "us-barton-college",
+  "name": "Barton College",
+  "presentation_name": "Barton College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/barton-college.svg",
+  "batch": 22
+ },
+ {
+  "slug": "us-batten-university",
+  "name": "Batten University",
+  "presentation_name": "Batten University (formerly Virginia Wesleyan University)",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/virginia-wesleyan-university.webp",
+  "batch": 22
+ },
+ {
+  "slug": "us-bellarmine-university",
+  "name": "Bellarmine University",
+  "presentation_name": "Bellarmine University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/bellarmine-university.webp",
+  "batch": 22
+ },
+ {
+  "slug": "us-belmont-university",
+  "name": "Belmont University",
+  "presentation_name": "Belmont University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/belmont-university.webp",
+  "batch": 22
+ },
+ {
+  "slug": "us-berkeley-college",
+  "name": "Berkeley College",
+  "presentation_name": "Berkeley College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/berkeley-college.webp",
+  "batch": 22
+ },
+ {
+  "slug": "us-bethel-college",
+  "name": "Bethel College",
+  "presentation_name": "Bethel College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-bethel.webp",
+  "batch": 23
+ },
+ {
+  "slug": "us-blackburn-college",
+  "name": "Blackburn College",
+  "presentation_name": "Blackburn College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/blackburn-college.webp",
+  "batch": 23
+ },
+ {
+  "slug": "us-brandeis-university",
+  "name": "Brandeis University International Business School",
+  "presentation_name": "Brandeis University: School of Business and Economics",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/brandeis-ibs.webp",
+  "batch": 23
+ },
+ {
+  "slug": "us-bridgewater-college",
+  "name": "Bridgewater College",
+  "presentation_name": "Bridgewater College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/bridgewater-college.webp",
+  "batch": 23
+ },
+ {
+  "slug": "us-california-lutheran-university",
+  "name": "California Lutheran University",
+  "presentation_name": "California Lutheran University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/california-lutheran-university.webp",
+  "batch": 23
+ },
+ {
+  "slug": "us-california-state-university-east-bay",
+  "name": "California State University East Bay",
+  "presentation_name": "California State University East Bay",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/california-state-university-east-bay.svg",
+  "batch": 24
+ },
+ {
+  "slug": "us-california-state-university-long-beach",
+  "name": "California State University Long Beach",
+  "presentation_name": "California State University Long Beach",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/california-state-university-long-beach.svg",
+  "batch": 24
+ },
+ {
+  "slug": "us-california-state-university-sacramento",
+  "name": "California State University Sacramento",
+  "presentation_name": "California State University Sacramento",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/california-state-university-sacramento.svg",
+  "batch": 24
+ },
+ {
+  "slug": "us-california-state-university-san-bernardino",
+  "name": "California State University San Bernardino",
+  "presentation_name": "California State University San Bernardino",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/california-state-university-san-bernardino.svg",
+  "batch": 24
+ },
+ {
+  "slug": "us-california-state-university-san-marcos",
+  "name": "California State University San Marcos",
+  "presentation_name": "California State University San Marcos",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/california-state-university-san-marcos.svg",
+  "batch": 24
+ },
+ {
+  "slug": "us-carolina-university",
+  "name": "Carolina University",
+  "presentation_name": "Carolina University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/carolina-university.webp",
+  "batch": 25
+ },
+ {
+  "slug": "us-the-catholic-university-of-america",
+  "name": "The Catholic University of America",
+  "presentation_name": "The Catholic University of America",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/the-catholic-university-of-america.webp",
+  "batch": 25
+ },
+ {
+  "slug": "us-central-methodist-university",
+  "name": "Central Methodist University",
+  "presentation_name": "Central Methodist University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/central-methodist-university.webp",
+  "batch": 25
+ },
+ {
+  "slug": "us-charleston-southern-university",
+  "name": "Charleston Southern University",
+  "presentation_name": "Charleston Southern University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/charleston-southern-university.svg",
+  "batch": 25
+ },
+ {
+  "slug": "us-cleveland-state-university",
+  "name": "Cleveland State University",
+  "presentation_name": "Cleveland State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/cleveland-state-university.webp",
+  "batch": 25
+ },
+ {
+  "slug": "us-colby-sawyer-college",
+  "name": "Colby-Sawyer College",
+  "presentation_name": "Colby-Sawyer College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/colby-sawyer-college.webp",
+  "batch": 26
+ },
+ {
+  "slug": "us-college-of-san-mateo",
+  "name": "College of San Mateo",
+  "presentation_name": "College of San Mateo",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/college-of-san-mateo.svg",
+  "batch": 26
+ },
+ {
+  "slug": "us-colorado-mesa-university",
+  "name": "Colorado Mesa University",
+  "presentation_name": "Colorado Mesa University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/colorado-mesa-university.svg",
+  "batch": 26
+ },
+ {
+  "slug": "us-colorado-state-university",
+  "name": "Colorado State University",
+  "presentation_name": "Colorado State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/colorado-state-university.svg",
+  "batch": 26
+ },
+ {
+  "slug": "us-concordia-university-chicago",
+  "name": "Concordia University, Chicago",
+  "presentation_name": "Concordia University, Chicago",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/concordia-university-chicago.webp",
+  "batch": 26
+ },
+ {
+  "slug": "us-cornish-college-of-the-arts",
+  "name": "Cornish College of the Arts",
+  "presentation_name": "Cornish College of the Arts",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/cornish-college-of-the-arts.svg",
+  "batch": 27
+ },
+ {
+  "slug": "us-dakota-wesleyan-university",
+  "name": "Dakota Wesleyan University",
+  "presentation_name": "Dakota Wesleyan University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-dwu.svg",
+  "batch": 27
+ },
+ {
+  "slug": "us-dean-college",
+  "name": "Dean College",
+  "presentation_name": "Dean College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/dean-college.webp",
+  "batch": 27
+ },
+ {
+  "slug": "us-depaul-university",
+  "name": "DePaul University",
+  "presentation_name": "DePaul University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/depaul-university.svg",
+  "batch": 27
+ },
+ {
+  "slug": "us-devry-university",
+  "name": "DeVry University",
+  "presentation_name": "DeVry University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/devry-university.svg",
+  "batch": 27
+ },
+ {
+  "slug": "us-drew-university",
+  "name": "Drew University",
+  "presentation_name": "Drew University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/drew-university.svg",
+  "batch": 28
+ },
+ {
+  "slug": "us-duke-university",
+  "name": "Duke University: Public Policy",
+  "presentation_name": "Duke University: Public Policy",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/duke-sanford.svg",
+  "batch": 28
+ },
+ {
+  "slug": "us-duquesne-university",
+  "name": "Duquesne University",
+  "presentation_name": "Duquesne University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/duquesne.webp",
+  "batch": 28
+ },
+ {
+  "slug": "us-eckerd-college",
+  "name": "Eckerd College",
+  "presentation_name": "Eckerd College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/eckerd.webp",
+  "batch": 28
+ },
+ {
+  "slug": "us-edgewood-university",
+  "name": "Edgewood University",
+  "presentation_name": "Edgewood University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/edgewood-college.svg",
+  "batch": 28
+ },
+ {
+  "slug": "us-eureka-college",
+  "name": "Eureka College",
+  "presentation_name": "Eureka College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/eureka-college.svg",
+  "batch": 29
+ },
+ {
+  "slug": "us-fairfield-university",
+  "name": "Fairfield University",
+  "presentation_name": "Fairfield University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/fairfield-university.svg",
+  "batch": 29
+ },
+ {
+  "slug": "us-fairleigh-dickinson-university",
+  "name": "Fairleigh Dickinson University",
+  "presentation_name": "Fairleigh Dickinson University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/fairleigh-dickinson-university.svg",
+  "batch": 29
+ },
+ {
+  "slug": "us-felician-university",
+  "name": "Felician University",
+  "presentation_name": "Felician University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/felician-university.webp",
+  "batch": 29
+ },
+ {
+  "slug": "us-fisher-college",
+  "name": "Fisher College",
+  "presentation_name": "Fisher College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/fisher-college.webp",
+  "batch": 29
+ },
+ {
+  "slug": "us-florida-atlantic-university",
+  "name": "Florida Atlantic University",
+  "presentation_name": "Florida Atlantic University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/florida-atlantic-university.svg",
+  "batch": 30
+ },
+ {
+  "slug": "us-florida-international-university",
+  "name": "Florida International University",
+  "presentation_name": "Florida International University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/florida-international-university.svg",
+  "batch": 30
+ },
+ {
+  "slug": "us-gannon-university",
+  "name": "Gannon University",
+  "presentation_name": "Gannon University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/gannon-university.webp",
+  "batch": 30
+ },
+ {
+  "slug": "us-gonzaga-university",
+  "name": "Gonzaga University",
+  "presentation_name": "Gonzaga University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/gonzaga-university.svg",
+  "batch": 30
+ },
+ {
+  "slug": "us-hanover-college",
+  "name": "Hanover College",
+  "presentation_name": "Hanover College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/hanover-college.svg",
+  "batch": 30
+ },
+ {
+  "slug": "us-hartwick-college",
+  "name": "Hartwick College",
+  "presentation_name": "Hartwick College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/hartwick-college.webp",
+  "batch": 31
+ },
+ {
+  "slug": "us-herzing-university",
+  "name": "Herzing University",
+  "presentation_name": "Herzing University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-herzing.webp",
+  "batch": 31
+ },
+ {
+  "slug": "us-hiram-college",
+  "name": "Hiram College",
+  "presentation_name": "Hiram College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/hiram-college.webp",
+  "batch": 31
+ },
+ {
+  "slug": "us-hofstra-university",
+  "name": "Hofstra University",
+  "presentation_name": "Hofstra University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/hofstra-university.svg",
+  "batch": 31
+ },
+ {
+  "slug": "us-holy-cross-college",
+  "name": "Holy Cross College",
+  "presentation_name": "Holy Cross College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-holycross.webp",
+  "batch": 31
+ },
+ {
+  "slug": "us-illinois-state-university",
+  "name": "Illinois State University",
+  "presentation_name": "Illinois State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/illinois-state-university.svg",
+  "batch": 32
+ },
+ {
+  "slug": "us-illinois-wesleyan-university",
+  "name": "Illinois Wesleyan University",
+  "presentation_name": "Illinois Wesleyan University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/illinois-wesleyan-university.webp",
+  "batch": 32
+ },
+ {
+  "slug": "us-istituto-marangoni-miami",
+  "name": "Istituto Marangoni Miami",
+  "presentation_name": "Istituto Marangoni Miami",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/istituto-marangoni-miami.webp",
+  "batch": 32
+ },
+ {
+  "slug": "us-jacksonville-state-university",
+  "name": "Jacksonville State University",
+  "presentation_name": "Jacksonville State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/jacksonville-state-university.webp",
+  "batch": 32
+ },
+ {
+  "slug": "us-james-madison-university",
+  "name": "James Madison University",
+  "presentation_name": "James Madison University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/james-madison-university.svg",
+  "batch": 32
+ },
+ {
+  "slug": "us-jessup-university",
+  "name": "Jessup University",
+  "presentation_name": "Jessup University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/jessup-university.webp",
+  "batch": 33
+ },
+ {
+  "slug": "us-johns-hopkins-university",
+  "name": "Johns Hopkins University",
+  "presentation_name": "Johns Hopkins University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/johns-hopkins-university.svg",
+  "batch": 33
+ },
+ {
+  "slug": "us-kent-state-university",
+  "name": "Kent State University",
+  "presentation_name": "Kent State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/kent-state-university.svg",
+  "batch": 33
+ },
+ {
+  "slug": "us-lakeland-university",
+  "name": "Lakeland University",
+  "presentation_name": "Lakeland University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/lakeland-university.webp",
+  "batch": 33
+ },
+ {
+  "slug": "us-lawrence-technological-university",
+  "name": "Lawrence Technological University",
+  "presentation_name": "Lawrence Technological University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/lawrence-technological-university.svg",
+  "batch": 33
+ },
+ {
+  "slug": "us-lewis-university",
+  "name": "Lewis University",
+  "presentation_name": "Lewis University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/lewis-university.webp",
+  "batch": 34
+ },
+ {
+  "slug": "us-lim-college",
+  "name": "LIM College",
+  "presentation_name": "LIM College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-lim.webp",
+  "batch": 34
+ },
+ {
+  "slug": "us-lipscomb-university",
+  "name": "Lipscomb University",
+  "presentation_name": "Lipscomb University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/lipscomb-university.svg",
+  "batch": 34
+ },
+ {
+  "slug": "us-long-island-university-brooklyn",
+  "name": "Long Island University (Brooklyn)",
+  "presentation_name": "Long Island University (Brooklyn)",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-liu.webp",
+  "batch": 34
+ },
+ {
+  "slug": "us-long-island-university-post",
+  "name": "Long Island University (Post)",
+  "presentation_name": "Long Island University (Post)",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-liu.webp",
+  "batch": 34
+ },
+ {
+  "slug": "us-louisiana-state-university",
+  "name": "Louisiana State University",
+  "presentation_name": "Louisiana State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/louisiana-state-university.svg",
+  "batch": 35
+ },
+ {
+  "slug": "us-lycoming-college",
+  "name": "Lycoming College",
+  "presentation_name": "Lycoming College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/lycoming-college.webp",
+  "batch": 35
+ },
+ {
+  "slug": "us-lynn-university",
+  "name": "Lynn University",
+  "presentation_name": "Lynn University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/lynn-university.webp",
+  "batch": 35
+ },
+ {
+  "slug": "us-marist-college",
+  "name": "Marist College",
+  "presentation_name": "Marist College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/marist-college.svg",
+  "batch": 35
+ },
+ {
+  "slug": "us-marquette-university",
+  "name": "Marquette University",
+  "presentation_name": "Marquette University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/marquette.svg",
+  "batch": 35
+ },
+ {
+  "slug": "us-marshall-university",
+  "name": "Marshall University",
+  "presentation_name": "Marshall University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/marshall-university.svg",
+  "batch": 36
+ },
+ {
+  "slug": "us-marywood-university",
+  "name": "Marywood University",
+  "presentation_name": "Marywood University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/marywood-university.webp",
+  "batch": 36
+ },
+ {
+  "slug": "us-mcmurry-university",
+  "name": "McMurry University",
+  "presentation_name": "McMurry University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/mcmurry-university.webp",
+  "batch": 36
+ },
+ {
+  "slug": "us-mercy-university",
+  "name": "Mercy University",
+  "presentation_name": "Mercy University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/mercy-college.webp",
+  "batch": 36
+ },
+ {
+  "slug": "us-miami-university",
+  "name": "Miami University",
+  "presentation_name": "Miami University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/miami-university.svg",
+  "batch": 36
+ },
+ {
+  "slug": "us-minnesota-state-university-mankato",
+  "name": "Minnesota State University, Mankato",
+  "presentation_name": "Minnesota State University, Mankato",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/mankato.webp",
+  "batch": 37
+ },
+ {
+  "slug": "us-mississippi-state-university",
+  "name": "Mississippi State University",
+  "presentation_name": "Mississippi State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/mississippi-state-university.svg",
+  "batch": 37
+ },
+ {
+  "slug": "us-missouri-university-of-science-and-technology",
+  "name": "Missouri University of Science and Technology",
+  "presentation_name": "Missouri University of Science and Technology",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/missouri-university-of-science-and-technology.webp",
+  "batch": 37
+ },
+ {
+  "slug": "us-montana-state-university-billings",
+  "name": "Montana State University Billings",
+  "presentation_name": "Montana State University Billings",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/montana-state-university-billings.svg",
+  "batch": 37
+ },
+ {
+  "slug": "us-montclair-state-university",
+  "name": "Montclair State University",
+  "presentation_name": "Montclair State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/montclair-state-university.svg",
+  "batch": 37
+ },
+ {
+  "slug": "us-moravian-university",
+  "name": "Moravian University",
+  "presentation_name": "Moravian University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/moravian-university.svg",
+  "batch": 38
+ },
+ {
+  "slug": "us-mount-st-mary-s-university",
+  "name": "Mount St. Mary's University",
+  "presentation_name": "Mount St. Mary's University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/mount-st-mary-s-university.svg",
+  "batch": 38
+ },
+ {
+  "slug": "us-murray-state-university",
+  "name": "Murray State University",
+  "presentation_name": "Murray State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/murray-state-university.svg",
+  "batch": 38
+ },
+ {
+  "slug": "us-new-england-college",
+  "name": "New England College",
+  "presentation_name": "New England College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/new-england-college.webp",
+  "batch": 38
+ },
+ {
+  "slug": "us-new-jersey-institute-of-technology",
+  "name": "New Jersey Institute of Technology",
+  "presentation_name": "New Jersey Institute of Technology",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/new-jersey-institute-of-technology.svg",
+  "batch": 38
+ },
+ {
+  "slug": "us-the-new-school",
+  "name": "The New School",
+  "presentation_name": "The New School",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/the-new-school.svg",
+  "batch": 39
+ },
+ {
+  "slug": "us-niagara-university",
+  "name": "Niagara University",
+  "presentation_name": "Niagara University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/niagara-university.svg",
+  "batch": 39
+ },
+ {
+  "slug": "us-northeastern-illinois-university",
+  "name": "Northeastern Illinois University",
+  "presentation_name": "Northeastern Illinois University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/northeastern-illinois-university.webp",
+  "batch": 39
+ },
+ {
+  "slug": "us-northwest-missouri-state-university",
+  "name": "Northwest Missouri State University",
+  "presentation_name": "Northwest Missouri State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/northwest-missouri-state-university.svg",
+  "batch": 39
+ },
+ {
+  "slug": "us-northwood-university",
+  "name": "Northwood University",
+  "presentation_name": "Northwood University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/northwood-university.webp",
+  "batch": 39
+ },
+ {
+  "slug": "us-nova-southeastern-university",
+  "name": "Nova Southeastern University",
+  "presentation_name": "Nova Southeastern University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/nova-southeastern-university.svg",
+  "batch": 40
+ },
+ {
+  "slug": "us-ohio-wesleyan-university",
+  "name": "Ohio Wesleyan University",
+  "presentation_name": "Ohio Wesleyan University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/ohio-wesleyan-university.webp",
+  "batch": 40
+ },
+ {
+  "slug": "us-oklahoma-city-university",
+  "name": "Oklahoma City University",
+  "presentation_name": "Oklahoma City University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/oklahoma-city-university.svg",
+  "batch": 40
+ },
+ {
+  "slug": "us-oregon-state-university",
+  "name": "Oregon State University",
+  "presentation_name": "Oregon State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/oregon-state-university.svg",
+  "batch": 40
+ },
+ {
+  "slug": "us-palm-beach-atlantic-university",
+  "name": "Palm Beach Atlantic University",
+  "presentation_name": "Palm Beach Atlantic University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/palm-beach-atlantic-university.webp",
+  "batch": 40
+ },
+ {
+  "slug": "us-post-university",
+  "name": "Post University",
+  "presentation_name": "Post University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/post-university.webp",
+  "batch": 41
+ },
+ {
+  "slug": "us-purdue-university-northwest",
+  "name": "Purdue University Northwest",
+  "presentation_name": "Purdue University Northwest",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/purdue-university-northwest.webp",
+  "batch": 41
+ },
+ {
+  "slug": "us-randolph-college",
+  "name": "Randolph College",
+  "presentation_name": "Randolph College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/randolph-college.webp",
+  "batch": 41
+ },
+ {
+  "slug": "us-rensselaer-polytechnic-institute",
+  "name": "Rensselaer Polytechnic Institute",
+  "presentation_name": "Rensselaer Polytechnic Institute",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/rensselaer-polytechnic-institute.webp",
+  "batch": 41
+ },
+ {
+  "slug": "us-rivier-university",
+  "name": "Rivier University",
+  "presentation_name": "Rivier University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/rivier-university.webp",
+  "batch": 41
+ },
+ {
+  "slug": "us-robert-morris-university",
+  "name": "Robert Morris University",
+  "presentation_name": "Robert Morris University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/robert-morris-university.svg",
+  "batch": 42
+ },
+ {
+  "slug": "us-rochester-institute-of-technology",
+  "name": "Rochester Institute of Technology",
+  "presentation_name": "Rochester Institute of Technology (RIT)",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/rit.svg",
+  "batch": 42
+ },
+ {
+  "slug": "us-roger-williams-university",
+  "name": "Roger Williams University",
+  "presentation_name": "Roger Williams University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/roger-williams-university.webp",
+  "batch": 42
+ },
+ {
+  "slug": "us-rose-hulman-institute-of-technology",
+  "name": "Rose-Hulman Institute of Technology",
+  "presentation_name": "Rose-Hulman Institute of Technology",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/rose-hulman.svg",
+  "batch": 42
+ },
+ {
+  "slug": "us-rowan-university",
+  "name": "Rowan University",
+  "presentation_name": "Rowan University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/rowan.svg",
+  "batch": 42
+ },
+ {
+  "slug": "us-rutgers-university",
+  "name": "Rutgers University",
+  "presentation_name": "Rutgers University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/rutgers-university.webp",
+  "batch": 43
+ },
+ {
+  "slug": "us-saginaw-valley-state-university",
+  "name": "Saginaw Valley State University",
+  "presentation_name": "Saginaw Valley State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/saginaw-valley-state-university.svg",
+  "batch": 43
+ },
+ {
+  "slug": "us-saint-louis-university",
+  "name": "Saint Louis University",
+  "presentation_name": "Saint Louis University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/saint-louis-university.svg",
+  "batch": 43
+ },
+ {
+  "slug": "us-saint-mary-s-university-of-minnesota",
+  "name": "Saint Mary's University of Minnesota",
+  "presentation_name": "Saint Mary's University of Minnesota",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/saint-mary-s-university-of-minnesota.webp",
+  "batch": 43
+ },
+ {
+  "slug": "us-saint-peter-s-university",
+  "name": "Saint Peter's University",
+  "presentation_name": "Saint Peter's University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/saint-peter-s-university.svg",
+  "batch": 43
+ },
+ {
+  "slug": "us-salve-regina-university",
+  "name": "Salve Regina University",
+  "presentation_name": "Salve Regina University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/salve-regina-university.webp",
+  "batch": 44
+ },
+ {
+  "slug": "us-san-jose-state-university",
+  "name": "San Jose State University",
+  "presentation_name": "San Jose State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/san-jose-state-university.svg",
+  "batch": 44
+ },
+ {
+  "slug": "us-schiller-university",
+  "name": "Schiller University",
+  "presentation_name": "Schiller University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/schiller-university.webp",
+  "batch": 44
+ },
+ {
+  "slug": "us-schreiner-university",
+  "name": "Schreiner University",
+  "presentation_name": "Schreiner University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/schreiner-university.webp",
+  "batch": 44
+ },
+ {
+  "slug": "us-seattle-pacific-university",
+  "name": "Seattle Pacific University",
+  "presentation_name": "Seattle Pacific University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/seattle-pacific.webp",
+  "batch": 44
+ },
+ {
+  "slug": "us-seattle-university",
+  "name": "Seattle University",
+  "presentation_name": "Seattle University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/seattle-university.svg",
+  "batch": 45
+ },
+ {
+  "slug": "us-shenandoah-university",
+  "name": "Shenandoah University",
+  "presentation_name": "Shenandoah University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/shenandoah-university.svg",
+  "batch": 45
+ },
+ {
+  "slug": "us-sonoma-state-university",
+  "name": "Sonoma State University",
+  "presentation_name": "Sonoma State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/sonoma-state-university.svg",
+  "batch": 45
+ },
+ {
+  "slug": "us-southeast-missouri-state-university",
+  "name": "Southeast Missouri State University",
+  "presentation_name": "Southeast Missouri State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/southeast-missouri-state-university.svg",
+  "batch": 45
+ },
+ {
+  "slug": "us-southern-utah-university",
+  "name": "Southern Utah University",
+  "presentation_name": "Southern Utah University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/southern-utah-university.webp",
+  "batch": 45
+ },
+ {
+  "slug": "us-southwestern-university",
+  "name": "Southwestern University",
+  "presentation_name": "Southwestern University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/southwestern-university.webp",
+  "batch": 46
+ },
+ {
+  "slug": "us-st-bonaventure-university",
+  "name": "St. Bonaventure University",
+  "presentation_name": "St. Bonaventure University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/st-bonaventure-university.webp",
+  "batch": 46
+ },
+ {
+  "slug": "us-st-catherine-university",
+  "name": "St. Catherine University",
+  "presentation_name": "St. Catherine University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/st-catherine-university.webp",
+  "batch": 46
+ },
+ {
+  "slug": "us-st-thomas-aquinas-college",
+  "name": "St. Thomas Aquinas College",
+  "presentation_name": "St. Thomas Aquinas College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/st-thomas-aquinas-college.webp",
+  "batch": 46
+ },
+ {
+  "slug": "us-stevens-institute-of-technology",
+  "name": "Stevens Institute of Technology",
+  "presentation_name": "Stevens Institute of Technology",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/stevens.webp",
+  "batch": 46
+ },
+ {
+  "slug": "us-stony-brook-university",
+  "name": "Stony Brook University",
+  "presentation_name": "Stony Brook University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/stony-brook-university.svg",
+  "batch": 47
+ },
+ {
+  "slug": "us-suffolk-university",
+  "name": "Suffolk University",
+  "presentation_name": "Suffolk University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/suffolk-university.svg",
+  "batch": 47
+ },
+ {
+  "slug": "us-suny-albany",
+  "name": "SUNY Albany",
+  "presentation_name": "SUNY Albany",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/suny-albany.webp",
+  "batch": 47
+ },
+ {
+  "slug": "us-suny-new-paltz",
+  "name": "SUNY New Paltz",
+  "presentation_name": "SUNY New Paltz",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/suny-new-paltz.svg",
+  "batch": 47
+ },
+ {
+  "slug": "us-suny-polytechnic-institute",
+  "name": "SUNY Polytechnic Institute",
+  "presentation_name": "SUNY Polytechnic Institute",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/suny-polytechnic-institute.svg",
+  "batch": 47
+ },
+ {
+  "slug": "us-tennessee-tech-university",
+  "name": "Tennessee Tech University",
+  "presentation_name": "Tennessee Tech University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/tennessee-tech-university.svg",
+  "batch": 48
+ },
+ {
+  "slug": "us-texas-a-m-university-corpus-christi",
+  "name": "Texas A&M University-Corpus Christi",
+  "presentation_name": "Texas A&M University-Corpus Christi",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/texas-aandm-university-corpus-christi.svg",
+  "batch": 48
+ },
+ {
+  "slug": "us-texas-state-university",
+  "name": "Texas State University",
+  "presentation_name": "Texas State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/texas-state-university.svg",
+  "batch": 48
+ },
+ {
+  "slug": "us-thomas-jefferson-university",
+  "name": "Thomas Jefferson University",
+  "presentation_name": "Thomas Jefferson University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/thomas-jefferson-university.svg",
+  "batch": 48
+ },
+ {
+  "slug": "us-tiffin-university",
+  "name": "Tiffin University",
+  "presentation_name": "Tiffin University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/tiffin-university.svg",
+  "batch": 48
+ },
+ {
+  "slug": "us-towson-university",
+  "name": "Towson University",
+  "presentation_name": "Towson University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/towson-university.webp",
+  "batch": 49
+ },
+ {
+  "slug": "us-trine-university",
+  "name": "Trine University",
+  "presentation_name": "Trine University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/trine-university.webp",
+  "batch": 49
+ },
+ {
+  "slug": "us-trinity-christian-college",
+  "name": "Trinity Christian College",
+  "presentation_name": "Trinity Christian College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/trinity-christian-college.webp",
+  "batch": 49
+ },
+ {
+  "slug": "us-tulane-university",
+  "name": "Tulane University",
+  "presentation_name": "Tulane University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/tulane-university.svg",
+  "batch": 49
+ },
+ {
+  "slug": "us-university-at-buffalo",
+  "name": "University at Buffalo",
+  "presentation_name": "University at Buffalo",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-at-buffalo.svg",
+  "batch": 49
+ },
+ {
+  "slug": "us-university-of-alabama",
+  "name": "University of Alabama",
+  "presentation_name": "University of Alabama",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-alabama.svg",
+  "batch": 50
+ },
+ {
+  "slug": "us-university-of-alabama-at-birmingham",
+  "name": "University of Alabama at Birmingham",
+  "presentation_name": "University of Alabama at Birmingham",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-alabama-at-birmingham.svg",
+  "batch": 50
+ },
+ {
+  "slug": "us-university-of-alaska-fairbanks",
+  "name": "University of Alaska Fairbanks",
+  "presentation_name": "University of Alaska Fairbanks",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-alaska-fairbanks.svg",
+  "batch": 50
+ },
+ {
+  "slug": "us-university-of-arizona",
+  "name": "University of Arizona",
+  "presentation_name": "University of Arizona",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-arizona.svg",
+  "batch": 50
+ },
+ {
+  "slug": "us-university-of-bridgeport",
+  "name": "University of Bridgeport",
+  "presentation_name": "University of Bridgeport",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-bridgeport.webp",
+  "batch": 50
+ },
+ {
+  "slug": "us-university-of-central-florida",
+  "name": "University of Central Florida",
+  "presentation_name": "University of Central Florida",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-central-florida.svg",
+  "batch": 51
+ },
+ {
+  "slug": "us-university-of-charleston",
+  "name": "University of Charleston",
+  "presentation_name": "University of Charleston",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-charleston.webp",
+  "batch": 51
+ },
+ {
+  "slug": "us-university-of-colorado-denver",
+  "name": "University of Colorado Denver",
+  "presentation_name": "University of Colorado Denver",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-colorado-denver.svg",
+  "batch": 51
+ },
+ {
+  "slug": "us-university-of-dayton",
+  "name": "University of Dayton",
+  "presentation_name": "University of Dayton",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-dayton.webp",
+  "batch": 51
+ },
+ {
+  "slug": "us-university-of-dubuque",
+  "name": "University of Dubuque",
+  "presentation_name": "University of Dubuque",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-dubuque.webp",
+  "batch": 51
+ },
+ {
+  "slug": "us-university-of-hartford",
+  "name": "University of Hartford",
+  "presentation_name": "University of Hartford",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-hartford.svg",
+  "batch": 52
+ },
+ {
+  "slug": "us-university-of-illinois-chicago",
+  "name": "University of Illinois Chicago",
+  "presentation_name": "University of Illinois Chicago",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-illinois-chicago.webp",
+  "batch": 52
+ },
+ {
+  "slug": "us-university-of-illinois-springfield",
+  "name": "University of Illinois Springfield",
+  "presentation_name": "University of Illinois Springfield",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-illinois-springfield.webp",
+  "batch": 52
+ },
+ {
+  "slug": "us-university-of-kansas",
+  "name": "University of Kansas",
+  "presentation_name": "University of Kansas",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-kansas.svg",
+  "batch": 52
+ },
+ {
+  "slug": "us-university-of-mary-hardin-baylor",
+  "name": "University of Mary Hardin-Baylor",
+  "presentation_name": "University of Mary Hardin-Baylor",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-mary-hardin-baylor.webp",
+  "batch": 52
+ },
+ {
+  "slug": "us-university-of-maryland-baltimore-county",
+  "name": "University of Maryland, Baltimore County",
+  "presentation_name": "University of Maryland, Baltimore County (UMBC)",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/umbc.svg",
+  "batch": 53
+ },
+ {
+  "slug": "us-university-of-massachusetts-amherst",
+  "name": "University of Massachusetts Amherst",
+  "presentation_name": "University of Massachusetts Amherst",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-massachusetts-amherst.webp",
+  "batch": 53
+ },
+ {
+  "slug": "us-university-of-massachusetts-boston",
+  "name": "University of Massachusetts Boston",
+  "presentation_name": "University of Massachusetts Boston",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-massachusetts-boston.webp",
+  "batch": 53
+ },
+ {
+  "slug": "us-university-of-nebraska-omaha",
+  "name": "University of Nebraska Omaha",
+  "presentation_name": "University of Nebraska Omaha",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-nebraska-omaha.svg",
+  "batch": 53
+ },
+ {
+  "slug": "us-university-of-nevada-reno",
+  "name": "University of Nevada, Reno",
+  "presentation_name": "University of Nevada, Reno",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-nevada-reno.svg",
+  "batch": 53
+ },
+ {
+  "slug": "us-university-of-new-england",
+  "name": "University of New England",
+  "presentation_name": "University of New England (Maine)",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-new-england-maine.webp",
+  "batch": 54
+ },
+ {
+  "slug": "us-university-of-new-hampshire",
+  "name": "University of New Hampshire",
+  "presentation_name": "University of New Hampshire",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-new-hampshire.svg",
+  "batch": 54
+ },
+ {
+  "slug": "us-university-of-new-haven",
+  "name": "University of New Haven",
+  "presentation_name": "University of New Haven",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-new-haven.webp",
+  "batch": 54
+ },
+ {
+  "slug": "us-university-of-new-mexico",
+  "name": "University of New Mexico",
+  "presentation_name": "University of New Mexico",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-new-mexico.svg",
+  "batch": 54
+ },
+ {
+  "slug": "us-university-of-north-texas",
+  "name": "University of North Texas",
+  "presentation_name": "University of North Texas",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-north-texas.svg",
+  "batch": 54
+ },
+ {
+  "slug": "us-university-of-oklahoma",
+  "name": "University of Oklahoma",
+  "presentation_name": "University of Oklahoma",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-oklahoma.svg",
+  "batch": 55
+ },
+ {
+  "slug": "us-university-of-portland",
+  "name": "University of Portland",
+  "presentation_name": "University of Portland",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-portland.svg",
+  "batch": 55
+ },
+ {
+  "slug": "us-university-of-potomac",
+  "name": "University of Potomac",
+  "presentation_name": "University of Potomac",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-potomac.webp",
+  "batch": 55
+ },
+ {
+  "slug": "us-university-of-redlands",
+  "name": "University of Redlands",
+  "presentation_name": "University of Redlands",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-redlands.svg",
+  "batch": 55
+ },
+ {
+  "slug": "us-university-of-saint-mary",
+  "name": "University of Saint Mary",
+  "presentation_name": "University of Saint Mary",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-saint-mary.svg",
+  "batch": 55
+ },
+ {
+  "slug": "us-university-of-south-alabama",
+  "name": "University of South Alabama",
+  "presentation_name": "University of South Alabama",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-south-alabama.svg",
+  "batch": 56
+ },
+ {
+  "slug": "us-university-of-south-carolina",
+  "name": "University of South Carolina",
+  "presentation_name": "University of South Carolina",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-south-carolina.svg",
+  "batch": 56
+ },
+ {
+  "slug": "us-the-university-of-southern-mississippi",
+  "name": "The University of Southern Mississippi",
+  "presentation_name": "The University of Southern Mississippi",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/the-university-of-southern-mississippi.svg",
+  "batch": 56
+ },
+ {
+  "slug": "us-university-of-st-thomas",
+  "name": "University of St. Thomas",
+  "presentation_name": "University of St. Thomas",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-st-thomas.webp",
+  "batch": 56
+ },
+ {
+  "slug": "us-university-of-tennessee-at-martin",
+  "name": "University of Tennessee at Martin",
+  "presentation_name": "University of Tennessee at Martin",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-tennessee-at-martin.webp",
+  "batch": 56
+ },
+ {
+  "slug": "us-the-university-of-tennessee-health-science-center",
+  "name": "The University of Tennessee Health Science Center",
+  "presentation_name": "The University of Tennessee Health Science Center",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/the-university-of-tennessee-health-science-center.svg",
+  "batch": 57
+ },
+ {
+  "slug": "us-university-of-texas-at-san-antonio",
+  "name": "University of Texas at San Antonio",
+  "presentation_name": "University of Texas at San Antonio",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-texas-at-san-antonio.svg",
+  "batch": 57
+ },
+ {
+  "slug": "us-university-of-the-pacific",
+  "name": "University of the Pacific",
+  "presentation_name": "University of the Pacific",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-pacific.webp",
+  "batch": 57
+ },
+ {
+  "slug": "us-university-of-utah",
+  "name": "University of Utah",
+  "presentation_name": "University of Utah",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-utah.svg",
+  "batch": 57
+ },
+ {
+  "slug": "us-university-of-washington",
+  "name": "University of Washington",
+  "presentation_name": "University of Washington",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-washington.svg",
+  "batch": 57
+ },
+ {
+  "slug": "us-university-of-west-florida",
+  "name": "University of West Florida",
+  "presentation_name": "University of West Florida (UWF)",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/uwf.svg",
+  "batch": 58
+ },
+ {
+  "slug": "us-university-of-wisconsin-eau-claire",
+  "name": "University of Wisconsin-Eau Claire",
+  "presentation_name": "University of Wisconsin-Eau Claire",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-wisconsin-eau-claire.webp",
+  "batch": 58
+ },
+ {
+  "slug": "us-university-of-wisconsin-platteville",
+  "name": "University of Wisconsin-Platteville",
+  "presentation_name": "University of Wisconsin-Platteville",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-wisconsin-platteville.webp",
+  "batch": 58
+ },
+ {
+  "slug": "us-university-of-wisconsin-river-falls",
+  "name": "University of Wisconsin-River Falls",
+  "presentation_name": "University of Wisconsin-River Falls",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-wisconsin-river-falls.webp",
+  "batch": 58
+ },
+ {
+  "slug": "us-university-of-wisconsin-stout",
+  "name": "University of Wisconsin-Stout",
+  "presentation_name": "University of Wisconsin-Stout",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-wisconsin-stout.svg",
+  "batch": 58
+ },
+ {
+  "slug": "us-university-of-wisconsin-superior",
+  "name": "University of Wisconsin-Superior",
+  "presentation_name": "University of Wisconsin-Superior",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-wisconsin-superior.svg",
+  "batch": 59
+ },
+ {
+  "slug": "us-university-of-wyoming",
+  "name": "University of Wyoming",
+  "presentation_name": "University of Wyoming",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/university-of-wyoming.svg",
+  "batch": 59
+ },
+ {
+  "slug": "us-utah-tech-university",
+  "name": "Utah Tech University",
+  "presentation_name": "Utah Tech University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/utah-tech-university.svg",
+  "batch": 59
+ },
+ {
+  "slug": "us-washington-and-jefferson-college",
+  "name": "Washington and Jefferson College",
+  "presentation_name": "Washington and Jefferson College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/washington-and-jefferson-college.webp",
+  "batch": 59
+ },
+ {
+  "slug": "us-washington-state-university",
+  "name": "Washington State University",
+  "presentation_name": "Washington State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/washington-state-university.svg",
+  "batch": 59
+ },
+ {
+  "slug": "us-webster-university",
+  "name": "Webster University",
+  "presentation_name": "Webster University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/webster-university.svg",
+  "batch": 60
+ },
+ {
+  "slug": "us-wentworth-institute-of-technology",
+  "name": "Wentworth Institute of Technology",
+  "presentation_name": "Wentworth Institute of Technology",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/wentworth-institute-of-technology.webp",
+  "batch": 60
+ },
+ {
+  "slug": "us-western-illinois-university",
+  "name": "Western Illinois University",
+  "presentation_name": "Western Illinois University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/western-illinois-university.webp",
+  "batch": 60
+ },
+ {
+  "slug": "us-western-new-england-university",
+  "name": "Western New England University",
+  "presentation_name": "Western New England University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/western-new-england-university.svg",
+  "batch": 60
+ },
+ {
+  "slug": "us-western-oregon-university",
+  "name": "Western Oregon University",
+  "presentation_name": "Western Oregon University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/western-oregon-university.webp",
+  "batch": 60
+ },
+ {
+  "slug": "us-western-washington-university",
+  "name": "Western Washington University",
+  "presentation_name": "Western Washington University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/western-washington-university.svg",
+  "batch": 61
+ },
+ {
+  "slug": "us-whittier-college",
+  "name": "Whittier College",
+  "presentation_name": "Whittier College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/whittier-college.svg",
+  "batch": 61
+ },
+ {
+  "slug": "us-wichita-state-university",
+  "name": "Wichita State University",
+  "presentation_name": "Wichita State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/wichita-state-university.svg",
+  "batch": 61
+ },
+ {
+  "slug": "us-widener-university",
+  "name": "Widener University",
+  "presentation_name": "Widener University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/widener-university.webp",
+  "batch": 61
+ },
+ {
+  "slug": "us-william-paterson-university",
+  "name": "William Paterson University",
+  "presentation_name": "William Paterson University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/william-paterson-university.webp",
+  "batch": 61
+ },
+ {
+  "slug": "us-wilson-college",
+  "name": "Wilson College",
+  "presentation_name": "Wilson College",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/us-wilson.webp",
+  "batch": 62
+ },
+ {
+  "slug": "us-wright-state-university",
+  "name": "Wright State University",
+  "presentation_name": "Wright State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/wright-state-university.svg",
+  "batch": 62
+ },
+ {
+  "slug": "us-yeshiva-university",
+  "name": "Yeshiva University",
+  "presentation_name": "Yeshiva University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/yeshiva-university.webp",
+  "batch": 62
+ },
+ {
+  "slug": "us-york-college-of-pennsylvania",
+  "name": "York College of Pennsylvania",
+  "presentation_name": "York College of Pennsylvania",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/york-college-of-pennsylvania.webp",
+  "batch": 62
+ },
+ {
+  "slug": "us-youngstown-state-university",
+  "name": "Youngstown State University",
+  "presentation_name": "Youngstown State University",
+  "destination_code": "US",
+  "tier": 2,
+  "logo_path": "/assets/img/logos/youngstown-state-university.svg",
+  "batch": 62
+ }
+]

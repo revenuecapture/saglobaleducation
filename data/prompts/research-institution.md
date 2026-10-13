@@ -7,7 +7,7 @@ that damages the client's credibility, so accuracy matters more than coverage. I
 value on an official page, leave it null and say so in `flags`. Never fill a gap with a plausible guess,
 never use memory for a value, never reuse a fact from another institution.
 
-Today is 2026-10-10. Target entry: the next intake for international students (normally September 2027,
+Today is 2026-10-13. Target entry: the next intake for international students (normally September 2027,
 2027/28). If the 2027/28 fee is not published yet, record the latest published international fee, set
 `tuition_academic_year` to the year it actually applies to, and note "target year fee not yet published".
 
@@ -17,19 +17,25 @@ Today is 2026-10-10. Target entry: the next intake for international students (n
    requirements pages, its Pakistan country page if one exists, and its scholarships pages. For the
    UK sponsor licence, the gov.uk register of licensed student sponsors. For Russell Group status,
    russellgroup.ac.uk.
+   For a US institution, there is no sponsor register or Russell Group: set `is_russell_group` false,
+   leave the Russell Group URL null, and fill `eligibility_note` only if the institution's own page says
+   it issues I-20s to international students (cite that page). Tuition is in USD; record the
+   international undergraduate or graduate tuition the institution publishes (per year, or per credit
+   only if that is all it publishes, in which case set `tuition_basis` "per_year" only when the page gives
+   an annual figure, otherwise leave `tuition_amount` null and explain in `notes`).
 2. Third-party sites (aggregators, rival consultancies, forums, rankings) may help you find an official
    page, never supply a value.
 3. Open pages one at a time with WebFetch. Do not crawl. If a page blocks access, record it in `flags`
    and move on.
 4. Every course and scholarship records `source_url` (the page the facts came from) and
-   `verified_on` = "2026-10-10". Fees also record `fees_source_url`.
+   `verified_on` = "2026-10-13". Fees also record `fees_source_url`.
 5. Do not copy marketing copy. `overview` and `summary` are your own factual words, British English,
    formal, no superlatives, no rankings, no claims. Short facts (grades, scores, fees) may be exact.
 6. No em dashes or en dashes anywhere in your text. Use commas, colons or "to".
 
 ## Scope
 
-- Courses: tier 1 institution = 8 to 10 courses; tier 2 = 3 to 5. Choose flagship, high-demand
+- Courses: tier 1 institution = 6 to 8 courses; tier 2 = 3 to 4. Choose flagship, high-demand
   programmes clearly open to international applicants, spread across at least four fields for tier 1,
   mixing undergraduate and postgraduate taught (add a foundation or pathway route if the university or
   its pathway partner offers one for international students). Exclude anything whose international fee
@@ -66,7 +72,7 @@ itself gives the conversion; otherwise leave null and quote it in `pakistan_entr
 
 ## Output
 
-Write exactly one file, `data/research/<slug>.json`, with this shape (UTF-8, valid JSON):
+Write exactly one file per institution, `/home/claude/saglobaleducation/data/research/<slug>.json` (use the slug you are given), with this shape (UTF-8, valid JSON):
 
 ```json
 {
@@ -76,7 +82,7 @@ Write exactly one file, `data/research/<slug>.json`, with this shape (UTF-8, val
     "summary": "max 60 words, own words, factual",
     "is_russell_group": true, "russell_group_source_url": "",
     "eligibility_note": "e.g. Licensed student sponsor (gov.uk register)", "eligibility_source_url": "",
-    "source_url": "", "verified_on": "2026-10-10", "confidence": "high"
+    "source_url": "", "verified_on": "2026-10-13", "confidence": "high"
   },
   "courses": [
     {
@@ -91,7 +97,7 @@ Write exactly one file, `data/research/<slug>.json`, with this shape (UTF-8, val
       "min_ielts_overall": 6.5, "min_ielts_band": 6.0, "min_pte": null, "min_toefl": null, "min_duolingo": null,
       "pk_route": null, "pk_min_percent": null, "pk_min_cgpa": null, "uk_min_alevels": null, "uk_min_degree_class": "2:1",
       "official_url": "", "intake_labels": ["September 2027"], "application_deadline_note": null,
-      "featured": false, "source_url": "", "verified_on": "2026-10-10", "confidence": "high", "notes": null
+      "featured": false, "source_url": "", "verified_on": "2026-10-13", "confidence": "high", "notes": null
     }
   ],
   "scholarships": [
@@ -105,7 +111,7 @@ Write exactly one file, `data/research/<slug>.json`, with this shape (UTF-8, val
       "min_pk_percent": null, "min_pk_cgpa": null, "min_ielts_overall": null, "need_based": false,
       "application_route": "automatic", "requires_offer": true,
       "opens_on": null, "deadline_on": null, "deadline_note": null, "intake_label": "September 2027",
-      "official_url": "", "source_url": "", "verified_on": "2026-10-10", "confidence": "high", "notes": null
+      "official_url": "", "source_url": "", "verified_on": "2026-10-13", "confidence": "high", "notes": null
     }
   ],
   "flags": {

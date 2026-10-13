@@ -143,6 +143,15 @@ async function importFile(file, excl) {
   const report = { file: path.basename(file), courses: 0, scholarships: 0, skipped: [] };
 
   let uniId = null;
+  if (data.university && OPS_TOKEN && !DRY) {
+    // New institutions are created first (unpublished), using the target list for logo and tier.
+    const t = TARGETS[data.university.slug] || {};
+    await ops({ op: 'ensure_university', row: {
+      slug: data.university.slug, name: t.name || data.university.name, presentation_name: t.presentation_name || data.university.name,
+      destination_code: data.university.destination_code || t.destination_code, city: data.university.city || null,
+      region: data.university.region || null, website_url: data.university.website_url || null,
+      logo_path: t.logo_path || null, tier: t.tier || 2, research_batch: t.batch || null } });
+  }
   if (data.university) {
     const uv = ver.university && typeof ver.university === 'object' ? ver.university : null;
     const u = applyCorrections(data.university, uv);
@@ -186,12 +195,14 @@ async function importDestinations() {
   console.log(`destinations: ${(d.destinations || []).length} post-study work summaries updated`);
 }
 
+let TARGETS = {};
 async function main() {
+  try { for (const t of JSON.parse(await readFile(path.join(dir, '_targets.json'), 'utf8'))) TARGETS[t.slug] = t; } catch {}
   const excl = { scholarships: {}, overrides: {} };
   try { Object.assign(excl, JSON.parse(await readFile(path.join(dir, '_exclusions.json'), 'utf8'))); } catch {}
   const wanted = process.argv.slice(2).filter(Boolean);
   const files = (await readdir(dir))
-    .filter(f => f.endsWith('.json') && !f.endsWith('.verify.json') && !['_exclusions.json', '_destinations.json'].includes(f))
+    .filter(f => f.endsWith('.json') && !f.endsWith('.verify.json') && !['_exclusions.json', '_destinations.json', '_targets.json'].includes(f))
     .filter(f => !wanted.length || wanted.some(w => f === w || f === `${w}.json` || f.startsWith(w)))
     .sort();
   for (const f of files) {
@@ -200,7 +211,7 @@ async function main() {
   }
   if (!wanted.length) await importDestinations();
   if (DRY) console.log(`dry run: ${DRYROWS.length} rows prepared, ${DRYROWS.filter(r => r.is_published !== false).length} not marked unpublished, ${DRYROWS.filter(r => /[\u2013\u2014]/.test(JSON.stringify(r))).length} with dashes`);
-  console.log('Nothing was published. Review the drafts in Supabase, then publish the approved rows.');
+  console.log('Nothing was published here. Rows listed in data/approvals are published by scripts/publish-approved.mjs.');
 }
 
 main().catch(e => { console.error(e.message || e); process.exit(1); });

@@ -1,0 +1,45 @@
+{
+  "university": {
+    "slug": "gb-buckinghamshire-new-university",
+    "name": "Buckinghamshire New University",
+    "destination_code": "GB",
+    "city": null,
+    "region": null,
+    "website_url": "https://www.bnu.ac.uk",
+    "international_admissions_url": null,
+    "scholarships_url": null,
+    "summary": "University in Buckinghamshire, England. It does not appear on the gov.uk register of licensed student sponsors dated 7 October 2026, so it cannot currently be presented as able to sponsor Student visas for applicants from Pakistan. No course or award data was recorded.",
+    "is_russell_group": false,
+    "russell_group_source_url": "https://russellgroup.ac.uk/about/our-universities",
+    "eligibility_note": "Not listed on the gov.uk Student and Child Student register of licensed sponsors dated 2026-10-07 (latest attachment on the gov.uk publication page). Not a licensed student sponsor at that date.",
+    "eligibility_source_url": "https://assets.publishing.service.gov.uk/media/6ac60a7435adbc27761df953/SP_-_Student_and_Child_Student_Web_Register_-_2026-10-07.csv",
+    "source_url": "https://assets.publishing.service.gov.uk/media/6ac60a7435adbc27761df953/SP_-_Student_and_Child_Student_Web_Register_-_2026-10-07.csv",
+    "verified_on": "2026-10-13",
+    "confidence": "low"
+  },
+  "courses": [],
+  "scholarships": [],
+  "flags": {
+    "could_not_verify": [
+      "No course, fee, entry requirement or scholarship could be verified: the university's international and fees pages are blocked to the fetcher (robots disallowed or server error).",
+      "City and region left null because no official page that states them could be opened.",
+      "Russell Group: russellgroup.ac.uk 'Our universities' page did not render its member list for the fetcher, and Buckinghamshire New University was not named on any russellgroup.ac.uk page opened. is_russell_group set false on that basis; confirm."
+    ],
+    "conflicting_sources": [],
+    "blocked_pages": [
+      "https://www.bnu.ac.uk/international (robots disallowed)",
+      "https://www.bnu.ac.uk/study/fees-and-funding (robots disallowed)",
+      "https://www.bucks.ac.uk/international (server error)",
+      "https://www.bucks.ac.uk/international-students (client error)",
+      "https://www.bucks.ac.uk/applying-to-bucks/international-applicants (server error)",
+      "https://www.bnu.ac.uk/ and https://www.bucks.ac.uk/news returned no usable content"
+    ],
+    "excluded_and_why": [
+      "All courses and scholarships excluded: Buckinghamshire New University is absent from the gov.uk register of licensed student sponsors dated 2026-10-07 (searched for 'Buckinghamshire', 'Buckingham', 'New University' and High Wycombe rows), so its courses are not currently open to applicants who need a Student visa. Third-party press (Times Higher Education, 30 September 2026) reports the Home Office suspended its student sponsor licence; this is context only and not used as a value."
+    ],
+    "client_should_confirm": [
+      "Do not list Buckinghamshire New University for Pakistani applicants until it reappears on the gov.uk register of licensed student sponsors. Recheck the register before any future research run.",
+      "Remove or pause any existing SA Global marketing that names Buckinghamshire New University as a Student visa option."
+    ]
+  }
+}

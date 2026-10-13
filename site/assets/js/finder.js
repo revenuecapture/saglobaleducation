@@ -451,7 +451,7 @@
     empty.hidden = list.length > 0 || !data.items.length;
     if (!list.length && data.items.length) {
       empty.innerHTML = (IS_C && state.level === 'doctoral'
-        ? '<p class="finder-empty-h">Research programmes are being added.</p><p>PhD and MPhil options at our partner universities are on their way to the finder. A counsellor can talk you through research routes now.</p>'
+        ? '<p class="finder-empty-h">Research programmes are being added.</p><p>PhD and MPhil options at universities we work with are on their way to the finder. A counsellor can talk you through research routes now.</p>'
         : '<p class="finder-empty-h">No ' + (IS_C ? 'programmes' : 'scholarships') + ' match these filters.</p>') +
         '<div class="btn-row"><button type="button" class="btn btn-ghost" data-reset><span>Reset filters</span></button>' +
         '<a class="btn btn-primary" href="/contact/?topic=' + KIND + '"><span>Ask a counsellor</span>' + ICON.arrow + '</a></div>';

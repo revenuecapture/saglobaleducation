@@ -1013,6 +1013,42 @@
     }); });
   })();
 
+  /* First-visit awareness notice ---------------------------------------- */
+  (function () {
+    var KEY = 'sag-aware';
+    var seen = null;
+    try { seen = localStorage.getItem(KEY); } catch (e) { return; }
+    if (seen || /^\/student-rights\//.test(location.pathname)) return;
+    var cookie = document.getElementById('cookieBar');
+    var note;
+    function close() {
+      try { localStorage.setItem(KEY, '1'); } catch (e) {}
+      if (!note) return;
+      note.classList.remove('is-in');
+      setTimeout(function () { if (note && note.parentNode) note.parentNode.removeChild(note); }, 400);
+    }
+    function show() {
+      if (note) return;
+      note = document.createElement('aside');
+      note.className = 'aware-note';
+      note.setAttribute('aria-label', 'Our commitment to students');
+      note.innerHTML = '<button class="aware-x" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>' +
+        '<h2>Our commitment to students</h2>' +
+        '<p>SA Global Education is committed to raising awareness of student rights and compliance in the education industry. We stand against all fraud and deception. We never take cash, and we do not charge students fees.</p>' +
+        '<div class="aware-actions"><a class="btn btn-mint" href="/student-rights/"><span>Learn more</span></a><button class="btn btn-ghost" type="button" data-aware-ok><span>Got it</span></button></div>';
+      document.body.appendChild(note);
+      note.querySelector('.aware-x').addEventListener('click', close);
+      note.querySelector('[data-aware-ok]').addEventListener('click', close);
+      note.querySelector('a').addEventListener('click', function () { try { localStorage.setItem(KEY, '1'); } catch (e) {} });
+      requestAnimationFrame(function () { requestAnimationFrame(function () { note.classList.add('is-in'); }); });
+    }
+    function whenReady() { setTimeout(show, 1200); }
+    if (cookie && !cookie.hidden && 'MutationObserver' in window) {
+      var mo = new MutationObserver(function () { if (cookie.hidden) { mo.disconnect(); whenReady(); } });
+      mo.observe(cookie, { attributes: true, attributeFilter: ['hidden'] });
+    } else { whenReady(); }
+  })();
+
   /* Enquiry form --------------------------------------------------------- */
   var form = document.getElementById('enquiry');
   if (!form) return;

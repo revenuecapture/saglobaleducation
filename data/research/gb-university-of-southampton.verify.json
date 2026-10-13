@@ -1,0 +1,106 @@
+{
+  "slug": "gb-university-of-southampton",
+  "courses": [
+    {
+      "slug": "gb-university-of-southampton-msc-data-science",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: the fees page labels the figure 2026 entry; the course page gives no fee year and the intake is September 2027. 2026/27 matches the fees page and the notes disclose it, so no change needed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-southampton-msc-finance",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: fee is the 2026 entry figure (GBP 38,100) for a September 2027 intake; disclosed in notes."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-southampton-msc-management",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: fee is the 2026 entry figure (GBP 37,000) for a September 2027 intake; disclosed in notes."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-southampton-llm-international-commercial-corporate-law",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: fees page lists Law (LLM) full-time GBP 30,200 for 2026 entry; course page gives no fee year. Part-time duration is 2 or more years on the page, correctly not used for duration_months.",
+        "highlights: modules are labelled for entry 2026 to 2027 on the page, as the file states."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-southampton-mph-public-health",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: fee is the 2026 entry figure (GBP 34,700) for a September 2027 intake; disclosed in notes."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-southampton-bsc-computer-science",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_amount: GBP 33,000 is on the course page but the page gives no fee year, and the undergraduate fees page shows no course figures and notes overseas fees rise for students starting from 1 August 2026. Whether 33,000 applies to 2027 entry cannot be confirmed.",
+        "intake_labels: page header says starting September 2023 while entry requirements are labelled 2027/28, so an empty intake is reasonable.",
+        "Title, award, G400, 3 years, IELTS 6.5/6.0, AAB incl maths, EPQ, IB 34/17 and GCSE 4/C all match the page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-southampton-beng-mechanical-engineering",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_amount: GBP 33,500 is on the course page but with no fee year, and no undergraduate fees page figure exists to confirm it applies to 2027/28 entry.",
+        "intake_labels: page header says starting September 2023 while entry is labelled 2027/28; empty intake is reasonable.",
+        "Title, award, H300, 3 years, campuses, IELTS 6.5/6.0, AAA incl maths and physics, IB 36/18 and GCSE 4/C all match the page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-southampton-75th-global-pg-excellence",
+      "verdict": "pass",
+      "issues": [
+        "Entry year and first-year-only basis are not stated on the page (file already notes this). Value GBP 7,000, Pakistan eligible, automatic route, Business School excluded, 31 July 2027 deposit date all confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-southampton-75th-pakistan-business-school-excellence",
+      "verdict": "fail",
+      "issues": [
+        "name: the scholarship page and the postgraduate scholarships listing both read '75th Anniversary Pakistan Postgraduate University of Southampton Business School Excellence Scholarship'; the file omits 'University of'.",
+        "Value GBP 7,000, Pakistan residents, automatic route and 31 July 2027 deposit date all match."
+      ],
+      "corrections": {
+        "name": "75th Anniversary Pakistan Postgraduate University of Southampton Business School Excellence Scholarship"
+      }
+    },
+    {
+      "slug": "gb-university-of-southampton-feps-global-talent-award",
+      "verdict": "pass",
+      "issues": [
+        "Entry year is not stated on the page (file already notes this). Value GBP 10,000, up to 5 awards, Pakistan eligible, separate application, opens October 2026, deadline 30 April 2027 5pm UK, 250 word statement all confirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "fail",
+    "issues": [
+      "summary: 'A research-intensive university' is an unsourced descriptor; the contact page does not use it.",
+      "is_russell_group: the contact page shows the Russell Group logo with 'Part of the', consistent with true. russellgroup.ac.uk list page not opened, per instruction.",
+      "Name, city and scholarships_url confirmed; region null and international_admissions_url null are acceptable."
+    ],
+    "corrections": {
+      "summary": "A university whose main teaching campus is Highfield. It offers undergraduate and postgraduate taught degrees across computing, engineering, law, business, finance and health, and publishes automatic fee reductions for postgraduate applicants resident in Pakistan."
+    }
+  }
+}

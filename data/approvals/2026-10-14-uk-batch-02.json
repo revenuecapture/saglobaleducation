@@ -1,0 +1,127 @@
+{
+ "approved_by": "Claude for Badr (SA Global consultant), per the finder plan",
+ "date": "2026-10-14",
+ "basis": "checker verdict pass, confidence high or medium, international fee for 2026/27 or 2027/28",
+ "universities": [
+  "gb-bangor-university",
+  "gb-university-of-sheffield",
+  "gb-university-of-warwick",
+  "gb-university-of-southampton",
+  "gb-university-college-london",
+  "gb-university-of-york",
+  "gb-aston-university",
+  "gb-birmingham-city-university",
+  "gb-brunel-university-of-london",
+  "gb-cardiff-metropolitan-university",
+  "gb-city-st-georges-university-of-london"
+ ],
+ "courses": [
+  "gb-bangor-university-banking-and-finance-msc",
+  "gb-bangor-university-international-business-mba",
+  "gb-bangor-university-law-llm",
+  "gb-bangor-university-advanced-computer-science-msc",
+  "gb-university-of-warwick-computer-science-bsc",
+  "gb-university-of-warwick-economics-bsc",
+  "gb-university-of-warwick-law-llb",
+  "gb-university-of-warwick-mechanical-engineering-beng",
+  "gb-university-of-warwick-management-msc",
+  "gb-university-of-warwick-international-commercial-law-llm",
+  "gb-university-of-warwick-cyber-security-engineering-msc",
+  "gb-university-of-southampton-msc-data-science",
+  "gb-university-of-southampton-msc-finance",
+  "gb-university-of-southampton-msc-management",
+  "gb-university-of-southampton-llm-international-commercial-corporate-law",
+  "gb-university-of-southampton-mph-public-health",
+  "gb-university-college-london-msc-data-science",
+  "gb-university-college-london-msc-management",
+  "gb-university-college-london-msc-financial-technology",
+  "gb-university-college-london-llm-law",
+  "gb-university-college-london-bsc-computer-science",
+  "gb-university-college-london-beng-mechanical-engineering",
+  "gb-university-of-york-bsc-computer-science",
+  "gb-university-of-york-llb-law",
+  "gb-university-of-york-bsc-mathematics",
+  "gb-university-of-york-msc-data-science",
+  "gb-university-of-york-llm-law",
+  "gb-university-of-york-msc-finance-management",
+  "gb-university-of-york-mpp-global-public-health-policy",
+  "gb-aston-university-bsc-computer-science",
+  "gb-aston-university-beng-mechanical-engineering",
+  "gb-aston-university-bsc-accounting-finance",
+  "gb-aston-university-msc-business-analytics",
+  "gb-birmingham-city-university-msc-cyber-security",
+  "gb-brunel-university-of-london-computer-science-bsc",
+  "gb-brunel-university-of-london-finance-and-accounting-msc",
+  "gb-brunel-university-of-london-data-science-and-analytics-msc",
+  "gb-city-st-georges-university-of-london-finance-msc",
+  "gb-city-st-georges-university-of-london-business-analytics-msc",
+  "gb-city-st-georges-university-of-london-management-msc"
+ ],
+ "scholarships": [
+  "gb-bangor-university-vice-chancellor-scholarship",
+  "gb-bangor-university-deans-scholarship-undergraduate",
+  "gb-bangor-university-deans-scholarship-postgraduate",
+  "gb-bangor-university-international-scholarship-undergraduate",
+  "gb-bangor-university-alumni-family-discount",
+  "gb-university-of-sheffield-international-undergraduate-scholarship-2027",
+  "gb-university-of-sheffield-ncuk-merit-scholarship-2027",
+  "gb-university-of-warwick-pgr-scholarships-2027",
+  "gb-university-of-southampton-75th-global-pg-excellence",
+  "gb-university-of-southampton-75th-pakistan-business-school-excellence",
+  "gb-university-of-southampton-feps-global-talent-award",
+  "gb-university-of-york-graduate-loyalty-discount",
+  "gb-aston-university-pg-international-community-scholarship",
+  "gb-aston-university-cadbury-chancellors-scholarship-pg",
+  "gb-aston-university-cadbury-chancellors-scholarship-ug",
+  "gb-brunel-university-of-london-early-payment-discount",
+  "gb-brunel-university-of-london-graduate-discount",
+  "gb-cardiff-metropolitan-university-full-fee-discount",
+  "gb-city-st-georges-university-of-london-msc-deans-scholarships",
+  "gb-city-st-georges-university-of-london-bayes-international-excellence-scholarship",
+  "gb-city-st-georges-university-of-london-presidents-international-scholarship"
+ ],
+ "held_back": {
+  "gb-bangor-university": [
+   "gb-bangor-university-international-scholarship-postgraduate: confidence low",
+   "gb-bangor-university-chevening-partnership-scholarship: confidence low"
+  ],
+  "gb-university-of-warwick": [
+   "gb-university-of-warwick-wmg-pakistan-bursary: check unverifiable, confidence low",
+   "gb-university-of-warwick-wmg-pakistan-excellence-scholarship: check unverifiable, confidence low",
+   "gb-university-of-warwick-undergraduate-global-excellence-scholarship: check fail, confidence low"
+  ],
+  "gb-university-of-southampton": [
+   "gb-university-of-southampton-bsc-computer-science: check unverifiable, fee or fee year",
+   "gb-university-of-southampton-beng-mechanical-engineering: check unverifiable, fee or fee year"
+  ],
+  "gb-university-of-york": [
+   "gb-university-of-york-global-impact-masters-scholarship: check unverifiable, confidence low",
+   "gb-university-of-york-commonwealth-scholarship: confidence low"
+  ],
+  "gb-aston-university": [
+   "gb-aston-university-ug-international-community-scholarship: check unverifiable"
+  ],
+  "gb-birmingham-city-university": [
+   "gb-birmingham-city-university-bsc-computer-science: confidence low",
+   "gb-birmingham-city-university-ba-business-management: confidence low",
+   "gb-birmingham-city-university-international-ug-scholarship: check unverifiable, confidence low",
+   "gb-birmingham-city-university-international-pg-scholarship: check unverifiable, confidence low"
+  ],
+  "gb-brunel-university-of-london": [
+   "gb-brunel-university-of-london-vc-pg-international-excellence-award: check unverifiable",
+   "gb-brunel-university-of-london-beaconhouse-school-discount: check unverifiable"
+  ],
+  "gb-cardiff-metropolitan-university": [
+   "gb-cardiff-metropolitan-university-computer-science-bsc: check unverifiable",
+   "gb-cardiff-metropolitan-university-data-science-msc: check unverifiable",
+   "gb-cardiff-metropolitan-university-mba: check unverifiable",
+   "gb-cardiff-metropolitan-university-undergraduate-scholarship-award: check unverifiable",
+   "gb-cardiff-metropolitan-university-vice-chancellor-scholarship-award: check unverifiable",
+   "gb-cardiff-metropolitan-university-mba-scholarship-award: check unverifiable",
+   "gb-cardiff-metropolitan-university-alumni-scholarship: check unverifiable"
+  ],
+  "gb-city-st-georges-university-of-london": [
+   "gb-city-st-georges-university-of-london-graduate-loyalty-discount: check unverifiable"
+  ]
+ }
+}

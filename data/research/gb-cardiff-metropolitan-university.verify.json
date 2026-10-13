@@ -1,0 +1,100 @@
+{
+  "slug": "gb-cardiff-metropolitan-university",
+  "courses": [
+    {
+      "slug": "gb-cardiff-metropolitan-university-computer-science-bsc",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_basis: the 2027/28 fees page lists 'Undergraduate' 16,000 GBP under 'Full-Time Programmes - International Students (including EU)' but does not state whether it is per year or total, so per_year is not confirmed. Amount, currency and academic year match; the course page itself gives no fee.",
+        "pakistan_entry_note: omits that the country page also accepts 55% in the Pre-Engineering or Pre-Medical stream for the Year 0 / 4-year route. Not wrong, but incomplete.",
+        "pk_min_percent/pk_route: the 60% is stated for Year 1 entry via Pre-Engineering or Pre-Medical (plus IELTS 6.0) and for Year 0; the Science/Humanities/Commerce route has no percentage. Acceptable as stored.",
+        "Title, level, durations, UCAS tariff 104-112, CCC, IB 2 x H5, GCSEs, IELTS 6.0 with 5.5 each component, Sept/Jan intakes and Year 1 modules all match the course page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-metropolitan-university-data-science-msc",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_basis: fees page gives 'Postgraduate Masters (including MRes & DMan)' 17,600 GBP for 2027/28 with no statement of per-year or total, so 'total' is not confirmed. The course page gives no fee, so the link between this course and that category fee is an inference.",
+        "overview lists only some of the eight compulsory modules; accurate as far as it goes (page also lists Big Data Technologies, Geospatial Analysis, Research & Professional Practice).",
+        "Title, award, PgC/PgD exits, 12-18 months full-time, part-time 3 years, 2:2 in a relevant area, IELTS 6.0 (no band minimums), Sept/Jan intakes and Pakistan 60% for 4-year Bachelor's all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-metropolitan-university-mba",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_basis: fees page gives MBA 19,500 GBP for 2027/28 with no per-year or total statement, so 'total' is not confirmed. The course page gives no fee.",
+        "Title, 12 to 16 months, three entry routes (2:2, five years management experience, other qualification), IELTS 6.0 with no band minimums, Sept/Jan/May intakes, five compulsory modules, two options or a pathway, and a final project all match.",
+        "pakistan_entry_note and pk fields match the country page (4-year Bachelor's, 60% for 2:2 equivalent)."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-cardiff-metropolitan-university-undergraduate-scholarship-award",
+      "verdict": "unverifiable",
+      "issues": [
+        "Page title and text cover students 'commencing their studies in academic year 2026/27' only, so applicability to 2027 entry cannot be confirmed (the file itself says this).",
+        "value_basis one_off: the page does not say whether the GBP 2,500 is one-off or annual; this is an assumption.",
+        "Name, GBP 2,500, automatic route, full-time on-campus, full-fee-paying and exclusions match the page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-metropolitan-university-vice-chancellor-scholarship-award",
+      "verdict": "unverifiable",
+      "issues": [
+        "Terms published for 2026/27 only; 2027 entry not confirmed.",
+        "value_basis one_off is not stated on the page.",
+        "Up to GBP 3,500, MA and MSc, evidenced academic and/or professional experience, 'only PG taught courses with GBP 17,600 fee' and automatic route match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-metropolitan-university-mba-scholarship-award",
+      "verdict": "unverifiable",
+      "issues": [
+        "Terms published for 2026/27 only; 2027 entry not confirmed.",
+        "value_basis one_off is not stated on the page.",
+        "Up to GBP 4,000, evidenced academic and/or professional work experience, automatic route match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cardiff-metropolitan-university-full-fee-discount",
+      "verdict": "fail",
+      "issues": [
+        "notes: says the page does not say whether this can be held with another Cardiff Met scholarship. The page's worked example takes a 17,600 fee, subtracts a 3,000 scholarship, then subtracts the 1,000 discount, so combining is shown. The 'one Cardiff Met scholarship only' rule on the page lists the Undergraduate, Alumni, MBA and Vice Chancellor awards, not this discount.",
+        "Terms published for 2026/27 only; 2027 entry not confirmed.",
+        "Up to GBP 1,000, full-time UG/PGT/MBA, full fees on offer letter received by deposit deadline, excludes PGCE and credit-exemption courses: match."
+      ],
+      "corrections": {
+        "notes": "The page's worked example shows the discount applied after a scholarship, so it appears combinable with the other awards; the client should still confirm."
+      }
+    },
+    {
+      "slug": "gb-cardiff-metropolitan-university-alumni-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "Terms published for 2026/27 only; 2027 entry not confirmed.",
+        "value_basis total: the page does not say whether 20% applies for the whole course; assumption.",
+        "The separate Alumni Discount page says it applies 'from September 2026', is automatic, and excludes franchised non-UK partner students studying overseas; the international page includes TNE partner graduates studying a master's in Cardiff. Whether these are one award is not stated, as the file notes.",
+        "Name, 20% fee reduction, Cardiff Met undergraduate degree holders onto taught postgraduate in Cardiff, automatic route match."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "eligibility_note: could not confirm Cardiff Metropolitan University is on the gov.uk student sponsor register; the page was fetched but no institution list or file contents were readable. The page now shows an update on 13 October 2026, not the 2026-10-07 file date cited.",
+      "summary: 'across management, technology and other schools' is not supported by the cited international students page, which names no schools or subject areas (the course pages do show Cardiff School of Technologies). Location in Cardiff, capital of Wales, is confirmed.",
+      "No ranking, award or superlative claims in summaries or overviews. Page mentions a finalist nomination for the support team and survey figures, neither of which the file uses."
+    ],
+    "corrections": {}
+  }
+}

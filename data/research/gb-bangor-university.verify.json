@@ -1,0 +1,131 @@
+{
+  "slug": "gb-bangor-university",
+  "courses": [
+    {
+      "slug": "gb-bangor-university-banking-and-finance-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on course page: Banking and Finance MSc, 1 year full time, September 2026 entry, January and September start months, 2(ii) in a relevant subject or professional qualification plus experience, IELTS 6.0 (5.5), PTE 56 (51), Cambridge Advanced 169 (162), TOEFL not listed, CFA Level 1 pathway with no additional fees, compulsory modules as listed, 60-credit dissertation.",
+        "Fees page: the PGT table has no row named Banking and Finance MSc. Closest row is 'Accounting, Banking & Finance' band B GBP 20,500 for Sept 2026 and Jan 2027; a separate Chartered Banker MSc/MA Banking & Finance row is GBP 22,500. The file's 20,500 is a reasonable match but the course to row mapping is inferred.",
+        "Pakistan page confirmed: 4 year Bachelor, or 2 year Bachelor plus 2 year Master's at 60% or CGPA 2.7; International Incorporated Masters with pre-masters at Bangor University International College. pk_min_* null is correct because the figure is not attached to the 4-year route.",
+        "overview calls the CFA pathway optional; the page says students have 'the opportunity to follow' it, so acceptable."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-bangor-university-international-business-mba",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: International Business MBA, 2026 entry, 1 year full time or 2 years part time, January, May and September, 2:2 or higher or equivalent, non-graduate qualifications may be considered, work experience desirable, IELTS 6.0 (5.5), PTE 56 (51), Cambridge 169 (162), CMI accredited, Level 7 Certificate in Strategic Management and Leadership, 120 taught plus 60 credit dissertation, modules as listed.",
+        "Fees page row 'MBA' band B GBP 20,500 for May 2026, Sept 2026 and Jan 2027 entry; matches.",
+        "Course page carries no year on the start months; file notes disclose this."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-bangor-university-law-llm",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: Law LLM, 1 year full time, 2026 entry, January, May and September, lower second class for LLB graduates, qualification equivalent in level to a UK bachelor's degree, IELTS 6.5 (6.0), PTE 62 (58), Cambridge 176 (169), Legal Research Methods and 60-credit Dissertation compulsory, 180 credits, careers sectors, clinical legal education programme, CYMUNED employability scheme, annual College Employability Fair, contact internationaladmission@bangor.ac.uk.",
+        "Fees page has no row naming the LLM; the file's GBP 19,000 comes from the band A row 'Arts, Humanities, Law & Business' (Sept 2026 and Jan 2027 GBP 19,000). Inferred mapping, plausible.",
+        "Career text mentions the CYMUNED scheme by name; the file says 'an employability scheme', acceptable."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-bangor-university-advanced-computer-science-msc",
+      "verdict": "fail",
+      "issues": [
+        "min_pte 56 and the PTE part of english_requirements: the cited course page gives IELTS 6.0 with no component below 5.5 only and does not mention PTE. The file says PTE came from the English language page, which is not a cited source URL and which this checker could not open (several URL guesses returned fetch errors). Structured min_* must come from cited pages.",
+        "Confirmed: Advanced Computer Science MSc, September 2026 entry, 1 year full time or 2 years part time, January and September, recognised degree in Computer Science or related field at second class minimum or international equivalent, IELTS 6.0 (5.5), topics high-performance computing and augmented/mixed/virtual reality, modules not on page.",
+        "Fees page row 'Computer Science' band B GBP 20,500 for May and Sept 2026 and Jan 2027; matches.",
+        "uk_min_degree_class '2:2' from 'Second class minimum' is an interpretation (second class could mean 2:1 or 2:2 under some readings); page does not say lower or upper.",
+        "career_notes: local IT companies and high number of IT companies and SMEs confirmed; the page also says it is 'regularly ranked amongst the top universities in the UK for employability', which the file correctly leaves out."
+      ],
+      "corrections": {
+        "min_pte": null,
+        "english_requirements": "IELTS 6.0 overall with no individual component below 5.5.",
+        "uk_min_degree_class": null
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-bangor-university-vice-chancellor-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 10,000 in year 1, up to GBP 6,000 per year in subsequent years, UG and PGT full-time on-campus, 10 awards each for Sept 2027, deadlines 11 Dec 2026 (Jan 2027), 9 Apr 2027 (PGT May 2027), 28 May 2027 (Sept 2027), offer required then separate application form, offer conditions 1 Sept 2027, winners told July 2027, exclusions (BUIC, study abroad, fully sponsored), not combinable with other scholarships. Applies to 2027 entry.",
+        "value_text restricts 'later years up to GBP 6,000' to undergraduate; the page states it for subsequent years without limiting to undergraduate. Minor wording."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-bangor-university-deans-scholarship-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 6,000 per year of study, AAB or above achieved or predicted, no separate application (considered automatically, confirmed in offer letter), not open to UK applicants, fully sponsored excluded, no deadline or intake year stated, cannot be combined except with Alumni discount, advanced entry and articulating students excluded.",
+        "Applicability to 2027 entry is not stated on the page; the file discloses this."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-bangor-university-deans-scholarship-postgraduate",
+      "verdict": "fail",
+      "issues": [
+        "value_basis 'one_off': the page gives GBP 6,000 for postgraduate taught and does not say whether it is per year or a one-off amount (the overview page also gives no basis). The basis is unsourced.",
+        "Otherwise confirmed: upper second equivalent achieved or on track, automatic consideration, not open to UK applicants, fully sponsored excluded, no deadline or intake year stated."
+      ],
+      "corrections": {
+        "value_basis": null
+      }
+    },
+    {
+      "slug": "gb-bangor-university-international-scholarship-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 4,000 minimum per year of study, subject to annual progression, UG and PGT covered, no separate application (considered via application portal or UCAS, outcome in offer letter), discretionary, self-funded or partially funded, international fee payers only, fully sponsored excluded, not combinable except with Alumni discount, no deadline or intake year stated."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-bangor-university-international-scholarship-postgraduate",
+      "verdict": "pass",
+      "issues": [
+        "Conflict confirmed: the scholarships overview page gives GBP 4,000 minimum for PGT, the International Scholarship page gives GBP 6,000 and does not say per year or one-off. value_amount null is the right handling.",
+        "value_basis 'one_off' is not stated by either page; harmless while value_amount is null but should be null.",
+        "No deadline or intake year stated; application route automatic confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-bangor-university-alumni-family-discount",
+      "verdict": "fail",
+      "issues": [
+        "application_route 'separate_application': the page says 'No scholarship application is required' and the applicant marks eligibility on the main application form, so the route is automatic (or at most a declaration), not a separate application.",
+        "Confirmed: GBP 1,000 per year of study in addition to any other international scholarship except the Vice-Chancellor scholarship, UG and PGT courses, alumni and spouse, siblings, children, grandchildren, international fee payers only, fully sponsored excluded, no deadline stated. The overview page limits it to non-UK and non-Irish students, noted in the file."
+      ],
+      "corrections": {
+        "application_route": "automatic"
+      }
+    },
+    {
+      "slug": "gb-bangor-university-chevening-partnership-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: full tuition waiver, flights, monthly stipend, arrival and departure allowance, visa fee; postgraduate taught courses starting September 2027; more than 160 countries excluding the USA, Afghanistan and the EU, so Pakistan is not excluded; apply through the Chevening website, no university offer needed, Bangor approached only if invited to interview.",
+        "Deadline conflict confirmed: page says 2027/28 applications are closed and also quotes 7 October 2026 12:00 UTC. Today is 2026-10-14, so that date has passed and the round is closed in practice. The file's null deadline_on is cautious; the finder should not present it as open.",
+        "application_route 'nomination' is a loose fit: the applicant applies directly to Chevening, not through a nomination. Minor."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary confirmed: 'Nearly 2,000 international students from 126 countries' is on the international page; the Pakistan country page and International College (foundation and pre-masters) exist. The summary uses no ranking or award, although the international page carries several (QS Stars, Welsh University of the Year) that were correctly not used.",
+      "is_russell_group false is correct in substance (Bangor is not a Russell Group member) but has no source; the russellgroup.ac.uk list pages do not open, so not failed.",
+      "eligibility_note null: sponsor register not checked by this verifier; consistent with the file's own flag."
+    ],
+    "corrections": {}
+  }
+}

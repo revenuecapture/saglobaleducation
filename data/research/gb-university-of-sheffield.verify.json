@@ -1,0 +1,36 @@
+{
+  "slug": "gb-university-of-sheffield",
+  "courses": [],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-sheffield-international-undergraduate-scholarship-2027",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 2,500 for each year of an undergraduate degree, maximum GBP 10,000 on four-year programmes, tuition fee reduction only, awarded automatically with no separate application, September 2027 start, self-funded and overseas fee status, full-time only, Medicine A100/A101, Dentistry A200, MArch, PGCE and non-USIC foundation year excluded, Sheffield must be firm or insurance choice before 4pm UK time on Wednesday 2 June 2027, later years need 60% weighted average and 120 credits, cannot be deferred or combined with other University awards unless stated.",
+        "requires_offer true is implied (firm or insurance choice) rather than stated, as the file's own note says. Pakistan is not named; eligibility is by overseas fee status, so INTL is a fair reading.",
+        "The page also allows Year 2 or Year 3 entry in some cases; the file omits this, which is acceptable."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-sheffield-ncuk-merit-scholarship-2027",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: up to GBP 17,500 as a tuition fee discount (GBP 10,000 in year one, GBP 2,500 each later year, subject to progression), September 2027 entry, overseas fee-paying students currently on an NCUK International Foundation Year, Sino-British College, Oxbridge Ikeja and Oxbridge Lekki excluded, Medicine and Dentistry excluded, online application form (login sent after a course offer), deadline 1pm UK time Friday 23 April 2027, outcomes 7 May 2027, firm or insurance choice by 4pm UK time on 2 June 2027, 60% and 120 credits to continue, competitive panel selection.",
+        "The page refers to both NCUK International Foundation Year and NCUK International Year One, as the file's note says. Pakistan and NCUK centres are not named; INTL is a fair reading.",
+        "Offer is required (the page says the applicant must hold an offer), so requires_offer true is correct."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "is_russell_group true is supported: the cited russellgroup.ac.uk Sheffield page opened and states 'As a member of the UK's prestigious Russell Group...'.",
+      "summary confirmed: the Pakistan entry requirements page exists and describes the University of Sheffield International College offering International Foundation Year and Pre-Masters programmes. No ranking, award or superlative in the summary (the page's logo images mention Top 100 and Queen's Anniversary Prizes, not used).",
+      "eligibility_note null: sponsor register not checked by this verifier; consistent with the file's own flag.",
+      "courses array is empty by design; no course fees could be sourced, so nothing to verify there."
+    ],
+    "corrections": {}
+  }
+}

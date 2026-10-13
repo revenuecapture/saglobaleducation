@@ -1,0 +1,85 @@
+{
+  "slug": "gb-city-st-georges-university-of-london",
+  "courses": [
+    {
+      "slug": "gb-city-st-georges-university-of-london-finance-msc",
+      "verdict": "pass",
+      "issues": [
+        "tuition_basis: page labels GBP 35,700 the full-time MSc tuition fee for September 2026 entry with a 2,000 deposit and two instalments, but never says 'total'; 'total' is a reasonable inference. Fee applies to 2026/27 entry only, which the file states; 2027 entry fee not confirmed.",
+        "English requirements are not on the course page; they come from the Bayes master's entry requirements page and match it exactly (IELTS Academic 6.5/6.0, PTE 62/60 in-person only, TOEFL iBT 90 with 19/22/20/19).",
+        "Title, 12 months, 2:1, GMAT note, term 1 compulsory modules and term 2/3 structure match. No Pakistan-specific threshold on the pages read."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-city-st-georges-university-of-london-business-analytics-msc",
+      "verdict": "pass",
+      "issues": [
+        "tuition_basis: GBP 31,000 for September 2026 entry, 'Full-time MSc tuition fee', two instalments; 'total' is inferred, not stated. 2027 fee not confirmed.",
+        "English requirements come from the Bayes master's entry requirements page and match; the course page states none.",
+        "Title, 12 months, 2:1, no work experience required, term 1 and 2 compulsory modules, 12-week industry project and three electives match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-city-st-georges-university-of-london-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "tuition_basis: GBP 33,600 for September 2026 entry; page does not say whether it is a total cost; 'total' inferred. 2027 fee not confirmed.",
+        "English requirements come from the Bayes master's entry requirements page and match; the course page states none.",
+        "Title, 12 months, 2:1 or equivalent, no business study or work experience required, term 1 compulsory modules, specialist electives and research project match."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-city-st-georges-university-of-london-msc-deans-scholarships",
+      "verdict": "pass",
+      "issues": [
+        "value_percent 20 is a ceiling ('up to 20%'); value_text says 'Up to' correctly but the numeric field reads as a fixed 20.",
+        "summary says awards are based on academic achievement and the course application; page also lists leadership potential. Minor omission.",
+        "Page states no nationality restriction and no entry year or deadline, as the file says; 2027 applicability is unconfirmed. Deduction from the January (second) instalment matches."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-city-st-georges-university-of-london-graduate-loyalty-discount",
+      "verdict": "unverifiable",
+      "issues": [
+        "application_route 'automatic' and requires_offer are not stated on the Bayes page; the linked alumni benefits page (city.ac.uk/alumni/benefits) could not be opened to check (permission request was not answered), as the file also did not open it.",
+        "Page says alumni can take this discount or a Bayes scholarship, not both, and the larger normally applies; file's 'cannot be combined' is consistent.",
+        "20% off MSc fees at Bayes for all City St George's graduates matches. Entry year not stated."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-city-st-georges-university-of-london-bayes-international-excellence-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Applies to September 2026 entry only; the page says the award is not carried over to September 2027. Round closed (deadline 30 June 2026). The file labels this correctly, but it does not apply to 2027 entry.",
+        "GBP 8,000 first-year reduction, deducted from the second instalment (January 2027), UCAS firm choice, funds requirement, exclusions (foundation routes, Clearing) and non-transferable/non-deferrable all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-city-st-georges-university-of-london-presidents-international-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Applies to September 2026 entry only (up to 30 awards, deadline 4 June 2026 via emailed invitation to those who applied via UCAS by 14 January 2026); 2027 terms not published.",
+        "50% of first-year fee, Clerkenwell only, self-funded overseas fee payer, firm UCAS choice, no other City scholarships and 500-word statement match. Assessment includes academic potential and the statement, as the summary says.",
+        "Timing of discount is described as start of second term applied to second instalment; the file's note about inconsistency is fair."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "eligibility_note: could not confirm City St George's appears on the gov.uk student sponsor register; the page was fetched but shows no institution list (page updated 13 October 2026, later than the 2026-10-07 file date cited).",
+      "summary: says the university teaches from campuses at Clerkenwell and Tooting; the funding page lists Clerkenwell, Moorgate and Tooting. Omits Moorgate.",
+      "summary: 'schools of science, technology and health' matches the six schools listed. No rankings or awards are claimed in the file (the funding page shows award logos and the Bayes pages cite a QS ranking, neither used)."
+    ],
+    "corrections": {}
+  }
+}

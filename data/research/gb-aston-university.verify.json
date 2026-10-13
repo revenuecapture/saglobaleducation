@@ -1,0 +1,89 @@
+{
+  "slug": "gb-aston-university",
+  "courses": [
+    {
+      "slug": "gb-aston-university-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on course page: BSc (Hons), 3 or 4 years, 22,575 GBP first-year international fee labelled 2027/28, September 2027 only, A levels BBB or BBC with one STEM, IB 31 (5,5,5) or 29 (5,5,4 incl. STEM), GCSE English and Maths C/4, ONCAMPUS Aston or NCUK Year 2 route, Year 2 and final-year modules, Year 1 includes Cybersecurity Fundamentals, mathematics and programming modules.",
+        "English page has no Computer Science row and the course page gives no scores, so null min_* is correct.",
+        "Placement fee 2,500 GBP caveat (page says it is the September 2026 figure) is accurately disclosed in notes."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-aston-university-beng-mechanical-engineering",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: BEng (Hons), 3 or 4 years, 22,575 GBP (2027/28), September 2027 only, BBC incl. Maths and one other STEM, IB 29 (5,5,4 HL incl. Maths and another STEM), GCSE C/4, Year 3 entry not considered, modules and careers as listed.",
+        "Course page names School of Engineering and Innovation; English page has an Engineering and Physical Sciences row (IELTS 6.0, 5.5 each band) but the mapping is not stated, so leaving English null is defensible."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-aston-university-bsc-accounting-finance",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 4 years with integrated placement year (compulsory, international students can request opt-out), 23,500 GBP first year (2027/28), September 2027, A levels BBB, IB 31 with SL 5 Maths and English Language, GCSE Maths B/5 and English C/4, CIMA/ACCA/ICAEW exemptions mentioned, modules as listed.",
+        "English page, Aston Business School undergraduate: IELTS 6.5 overall with two bands at 5.5, PTE 67 with two at 59, Duolingo 120 with two at 100. Matches the file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-aston-university-msc-business-analytics",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc, one year full time, 25,500 GBP labelled 2026/27 (no 2027/28 fee published, rises capped at 6%), January, April and September 2027 starts, 2:2 plus 60% in quantitative modules, reference and transcript. Fee year is for 2026/27, not the 2027 entry year; this is disclosed and the academic year field is correct.",
+        "English page, ABS postgraduate: IELTS 6.5 overall one band 5.5, PTE 67 one band 59, Duolingo 120 one band 100, conditional 6.0 route with mandatory in-sessional. Matches.",
+        "Pakistan page tier figures match. Page quirk: Tier 2 2:2 shows 'CGPA of 2.8' with no percentage, so the file's '60% or CGPA 2.8' for Tier 2 2:2 adds a 60% figure the page does not show clearly. Tiers name no universities, so null pk_* is correct."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-aston-university-pg-international-community-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on scholarships page and terms PDF: 5,500 GBP discount for September 2027, automatic, deposit by offer letter deadline, first year only, exclusions as listed, no deferral, tenable at Aston."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-aston-university-ug-international-community-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "application_route: terms PDF says 'There is no application process', automatic and non-competitive; scholarships page says application-based, link emailed to offer-holders, deadlines TBC. The two official sources conflict and cannot be reconciled from the pages.",
+        "Value 9,000 GBP as 3,000 in each of three years, exclusions, placement years excluded and September 2027 scope all confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-aston-university-cadbury-chancellors-scholarship-pg",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 10,000 GBP fee waiver, no cash value, personal link after offer, form plus statement of about 500 words (450 or fewer or 550 or more not assessed), September 2027 deadline TBC, January 2027 round closes 1 November 2026, exclusions as listed.",
+        "Summary calls it competitive; the pages do not use that word, only application-based. Minor wording point."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-aston-university-cadbury-chancellors-scholarship-ug",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: same terms as PG, undergraduate exclusions (nursing, MBChB, MOptom, MPharm, Audiology) correct, September 2027 deadline TBC. Both Cadbury source PDFs cover UG and PG together.",
+        "Summary calls it competitive; pages say application-based only. Minor."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "gov.uk register shows Aston University, Birmingham, Student route, Student Sponsor - Track Record. Confirmed.",
+      "Summary phrase 'campus in the centre of Birmingham' was not seen on a cited page; unsourced but low risk.",
+      "eligibility_note contains ' - ' inside the quoted register status; harmless as a quotation."
+    ],
+    "corrections": {}
+  }
+}

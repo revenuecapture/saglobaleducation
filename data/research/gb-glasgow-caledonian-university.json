@@ -1,0 +1,117 @@
+{
+  "university": {
+    "slug": "gb-glasgow-caledonian-university",
+    "name": "Glasgow Caledonian University",
+    "destination_code": "GB",
+    "city": "Glasgow",
+    "region": null,
+    "website_url": "https://www.gcu.ac.uk/",
+    "international_admissions_url": "https://www.gcu.ac.uk/internationalstudy",
+    "scholarships_url": "https://www.gcu.ac.uk/study/scholarships",
+    "summary": "A university with a campus in Glasgow and a separate GCU London campus, teaching undergraduate and postgraduate courses in business, computing, law and other subjects. It publishes a dedicated Pakistan page for applicants and lists approved recruitment agents.",
+    "is_russell_group": false,
+    "russell_group_source_url": null,
+    "eligibility_note": null,
+    "eligibility_source_url": null,
+    "source_url": "https://www.gcu.ac.uk/internationalstudy/your-region/country-pages/pakistan",
+    "verified_on": "2026-10-13",
+    "confidence": "low"
+  },
+  "courses": [],
+  "scholarships": [
+    {
+      "slug": "gb-glasgow-caledonian-university-postgraduate-ambassador-scholarship",
+      "name": "GCU Postgraduate Ambassador Scholarship (January 2027)",
+      "provider_type": "university",
+      "provider_name": "Glasgow Caledonian University",
+      "destination_codes": ["GB"],
+      "levels": ["postgraduate"],
+      "field_slugs": [],
+      "eligible_countries": ["INTL"],
+      "value_type": "full_tuition",
+      "value_amount": null,
+      "value_percent": 100,
+      "value_currency": "GBP",
+      "value_basis": "one_off",
+      "value_text": "Full tuition fee scholarship covering Year 1 of a Master's programme",
+      "summary": "A full tuition award for one Master's applicant per school starting in January 2027 at the Glasgow or London campus. Applicants must hold an unconditional offer and are assessed on academic profile, contribution to the common good and financial need.",
+      "criteria_text": "Unconditional Master's offer; preference for a 60% or higher undergraduate result; demonstrated contribution to the common good; financial need; agreement to the Ambassadors' Charter. One scholarship is awarded per school.",
+      "min_pk_percent": null,
+      "min_pk_cgpa": null,
+      "min_ielts_overall": null,
+      "need_based": true,
+      "application_route": "separate_application",
+      "requires_offer": true,
+      "opens_on": null,
+      "deadline_on": "2026-11-01",
+      "deadline_note": "1 November 2026, 5pm; no late applications. Outcomes by 23 November 2026.",
+      "intake_label": "January 2027",
+      "official_url": "https://www.gcu.ac.uk/study/scholarships/postgraduate/gcu-postgraduate-ambassador-scholarship",
+      "source_url": "https://www.gcu.ac.uk/study/scholarships/postgraduate/gcu-postgraduate-ambassador-scholarship",
+      "verified_on": "2026-10-13",
+      "confidence": "medium",
+      "notes": "The page states no country restriction but its 'Who can apply' section was collapsed and not readable, so international eligibility is inferred from the UKVI living-cost wording. Confirm Pakistani eligibility with GCU. Applies to January 2027 only; a September 2027 equivalent is not published."
+    },
+    {
+      "slug": "gb-glasgow-caledonian-university-postgraduate-early-payment-discount",
+      "name": "Early Payment Discount (postgraduate)",
+      "provider_type": "university",
+      "provider_name": "Glasgow Caledonian University",
+      "destination_codes": ["GB"],
+      "levels": ["postgraduate"],
+      "field_slugs": [],
+      "eligible_countries": ["INTL"],
+      "value_type": "fee_reduction",
+      "value_amount": null,
+      "value_percent": 5,
+      "value_currency": "GBP",
+      "value_basis": "per_year",
+      "value_text": "5% discount on private fees over GBP 5,000, calculated after any GCU scholarship, if fees are paid in full before the first day of teaching",
+      "summary": "A 5% reduction for fee-paying postgraduate students who pay their full fees before teaching starts. It applies to each later year if that year's fees are also paid in full before teaching begins.",
+      "criteria_text": "Fee-paying students whose private fees exceed GBP 5,000; payment in full before the first day of teaching. Government funding does not count towards the threshold.",
+      "min_pk_percent": null,
+      "min_pk_cgpa": null,
+      "min_ielts_overall": null,
+      "need_based": false,
+      "application_route": "automatic",
+      "requires_offer": null,
+      "opens_on": null,
+      "deadline_on": null,
+      "deadline_note": "Payment before the first day of teaching; no calendar date given.",
+      "intake_label": null,
+      "official_url": "https://www.gcu.ac.uk/study/scholarships/postgraduate/earlypayment",
+      "source_url": "https://www.gcu.ac.uk/study/scholarships/postgraduate/earlypayment",
+      "verified_on": "2026-10-13",
+      "confidence": "medium",
+      "notes": "The page does not state eligibility by nationality; an international fee-paying student appears in its worked example, so international eligibility is inferred. No intake year given. Confirm with GCU."
+    }
+  ],
+  "flags": {
+    "could_not_verify": [
+      "International tuition fees for every course: GCU course pages and the tuition fees pages return an empty 'Fees and funding' section or collapsed tables that could not be read, so no course fee could be verified.",
+      "Pakistan-specific entry requirements on the GCU Pakistan country page: the entry requirements and English sections were collapsed with no content. A table on the GCU London international entry requirements page lists Pakistan as 50% in a four-year bachelor degree, or 50% in both programmes of a two or three-year bachelor plus master's, equivalent to a UK 2:2 (https://www.gcu.ac.uk/london/study/applications-and-enquiries/international-entry-requirements); this is a GCU London page, so it may not apply to Glasgow.",
+      "UK student sponsor licence status was not checked: the gov.uk register page returned no downloadable file in the text.",
+      "Region for Glasgow was not stated on the pages opened, so left null."
+    ],
+    "conflicting_sources": [
+      "LLM International Commercial Law course page (https://www.gcu.ac.uk/study/courses/international-commercial-law) shows international fees of GBP 16,200 (year 1) and 5,400 (year 2), total 21,600, and also 'Total course cost: GBP 10,000', with no academic year stated."
+    ],
+    "blocked_pages": [
+      "https://www.gcu.ac.uk/london/study/tuition-fees (permission request timed out)",
+      "http://www.gcu.ac.uk/study/postgraduate/feesfinance/tuitionfees/ (fetch error)"
+    ],
+    "excluded_and_why": [
+      "All courses excluded because no international fee could be verified. Candidates checked, with details held for later use: MSc International Business Management (Glasgow; January 2027, September 2027 and January 2028 starts; 2:2 any subject; IELTS 6.0 with 5.5 in each element; https://www.gcu.ac.uk/study/courses/pg/msc-international-business-management-glasgow), MSc Computer Science (Glasgow and London; January 2027 and September 2027; 2:2 in a subject not closely related, GCSE Maths B or equivalent; https://www.gcu.ac.uk/study/courses/pg/msc-computer-science-multiple-locations), MSc Project Management (Glasgow; January 2027, September 2027; https://www.gcu.ac.uk/study/courses/pg/msc-project-management-glasgow), MSc International Operations and Supply Chain Management (https://www.gcu.ac.uk/study/courses/pg/msc-international-operations-and-supply-chain-management-glasgow), BA (Hons) Business Management (4 years, September 2027; A Level BCC; https://www.gcu.ac.uk/study/courses/ug/2728/ba-hons-business-management-glasgow).",
+      "GCU standard English requirement (https://www.gcu.ac.uk/internationalstudy/howtoapply/englishlanguagerequirements): IELTS 6.0 overall with 5.5 in each component; PTE 59 overall and each sub-score; TOEFL iBT 78 overall (17 listening, 18 reading, 20 speaking, 17 writing) for tests before 21 January 2026, and 4 overall with no element below 4 for tests from that date. Some courses require more.",
+      "New to GCU Undergraduate (up to GBP 2,500 off per year): terms cover study from September 2026 only; 2027 terms not published.",
+      "New to GCU Postgraduate (India and Nigeria only) and New to GCU Regional Scholarship (listed countries do not include Pakistan): Pakistan not eligible.",
+      "Student Loyalty Discount: terms shown are for 2025/2026 and applicable to returning GCU students only.",
+      "Moffat Scholarship, David MacLennan MA TV Fiction Writing Scholarship, ICAS Bursary, GCU Anniversary Scholarship: subject or circumstance specific, or deadline passed (7 August 2026), and international eligibility unclear."
+    ],
+    "client_should_confirm": [
+      "International fees for the target courses and intakes (GCU shows fees only in interactive sections; the tuition fees page says 2027/28 fees are being finalised). The Pakistan page says tuition fees start from GBP 15,200 with no academic year stated.",
+      "Pakistan entry requirements for Glasgow and the London campus, and whether recruitment from Pakistan is open: no pause notice was seen, but the Pakistan page warns that applications via Bell College/Bell Agency, Jhelum, will not be accepted and says applicants should use only GCU's approved agents (17 listed). Confirm SA Global Education is on the approved agent list before publishing.",
+      "Whether the Postgraduate Ambassador Scholarship and Early Payment Discount are open to Pakistani applicants."
+    ]
+  }
+}

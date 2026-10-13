@@ -1,0 +1,71 @@
+{
+  "slug": "gb-university-college-london",
+  "courses": [
+    {
+      "slug": "gb-university-college-london-msc-data-science",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: course page confirms Level 1; IELTS 6.5/6.0 and PTE 75/67 are from the English language requirements page, which is for September 2026 entry (disclosed in the file). Fee GBP 48,600 for 2027/28, part-time 24,300, duration, September 2027, deadline TBC, modules, 2:1 and Pakistan 70% / 3.3 all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-london-msc-management",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: Level 2 confirmed on course page; IELTS 7.0/6.5 and PTE 76/75 come from the 2026 entry English page (disclosed). Fee GBP 44,400 2027/28, Canary Wharf, 2:1 any subject, September 2027 all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-london-msc-financial-technology",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: Level 3 confirmed; IELTS 7.0/7.0 and PTE 76/76 from the 2026 entry English page (disclosed). Fee GBP 52,600 2027/28, no late applications, 2:1 in quantitative subject, modules all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-london-llm-law",
+      "verdict": "pass",
+      "issues": [
+        "pk_min_percent / pk_min_cgpa: 70 and 3.3 are the Pakistan page's 2:1 equivalence, which is stated for 2027/28. The course asks for a good 2.1 (average of at least 65% across all years, plus a first-class mark), so these structured values are a floor rather than a sufficient mark; the file's notes already say the course wording governs.",
+        "english_requirements: Level 4 confirmed; IELTS 7.5/7.0 and PTE 80/76 from the 2026 entry English page (disclosed). Fee GBP 40,800 overseas full-time (part-time 20,400), 10 months, 135 + 45 credits all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-london-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 48,600 for 2027/28, 3 years, A*A*A with A* in Maths or Further Maths, IB 20 points in three HL including 7 in Maths, contextual A*AB / 38, Level 1, 13 January 2027 6pm, Year 1 modules all match. The pakistan_entry_note correctly reports an undated (published September 2024) page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-london-beng-mechanical-engineering",
+      "verdict": "fail",
+      "issues": [
+        "academic_requirements: the page gives a standard IB offer of 19 points across three Higher Level subjects with 7 and 6 in Mathematics and Physics (either order) and no HL score below 5; the file says the page gives IB figures only for the contextual offer and that standard IB is not stated.",
+        "academic_requirements: the contextual IB offer is 18 points across three HL subjects with the same Maths and Physics requirement; the file states 38 points with 7 and 6. The page shows a standalone 38 that is unclear, so the file's 38 figure is not safely supported.",
+        "notes: 'Standard IB offer not stated on the page' is incorrect for the same reason.",
+        "Fee GBP 44,400 2027/28, H300, 3 years (4 with Year in Industry), A*AA with Maths and Physics, Level 1, 13 January 2027, Year 1 modules match."
+      ],
+      "corrections": {
+        "academic_requirements": "A levels A*AA, with Mathematics and Physics required and an A* in one of them. IB: 19 points across three Higher Level subjects, with 7 and 6 in Mathematics and Physics in either order and no Higher Level score below 5. A contextual offer of A*AB (A levels) or 18 points across three Higher Level subjects (IB) is listed. GCSE English Language and Mathematics at grade C or 4.",
+        "notes": "The duration is four years with the Year in Industry option. The page also shows an unlabelled figure of 38 next to the contextual IB offer, which is unclear."
+      }
+    }
+  ],
+  "scholarships": [],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Summary contains no ranking or superlative claims. London location confirmed; Bloomsbury is not stated on the homepage but Canary Wharf for Management is confirmed on the course page.",
+      "is_russell_group: the UCL homepage does not mention Russell Group membership and the russellgroup.ac.uk list page was not opened, so this cannot be confirmed independently; not failed per instruction.",
+      "scholarships_url: the page exists but lists only 2026/27 schemes and does not mention Pakistan, consistent with the empty scholarships list.",
+      "source_url is the Management MSc course page rather than a university contact page; acceptable."
+    ],
+    "corrections": {}
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "gb-birmingham-city-university",
+  "courses": [
+    {
+      "slug": "gb-birmingham-city-university-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on course page: BSc (Hons), 3 years full time, optional Professional Placement Year (fee 20% of that year's full-time fee, no figure stated), international fee 19,220 GBP labelled 2027/28, September 2027 start, tariff printed as '112-72 UCAS Tariff points', A level/IB sections are headings only, modules and careers as listed.",
+        "Overview says year one covers 'databases'; the year one core list has no database module (database engineering is in year two). Minor wording point.",
+        "english_requirements quotes BCU's English tests page (IELTS 6.0, no band below 5.5 for the majority of courses). That page is not cited in the file and I could not open it, so that sentence is unverifiable; min_* are correctly null."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-birmingham-city-university-ba-business-management",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: BA (Hons), 3 years full time, optional placement year, 19,220 GBP (2027/28) for both September 2027 and January 2028 starts, tariff printed '112-72', modules and careers as listed.",
+        "English sentence cites an uncited page and could not be checked (see Computer Science); min_* null is correct."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-birmingham-city-university-msc-cyber-security",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc, 12 months or 18 months with placement, 19,630 GBP (12-month) and 21,595 GBP (18-month) for 2027/28, September 2027 and January 2028, 2:2 in Computing, Engineering or Information Management, industrial experience alternative, modules and roles as listed.",
+        "English sentence cites an uncited page and could not be checked; min_* null is correct."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-birmingham-city-university-international-ug-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "Page confirms 5,000 GBP (3,000 year one, 2,000 year two), automatic, self-funded, pay 50% of fee before CAS, one BCU scholarship only, exclusions broadly as listed, graduate entry LLB included, no deadline. But the page is explicitly for 2026/27 (September 2026 or January 2027); applicability to 2027 entry cannot be confirmed. File discloses this correctly and must not be shown as a 2027 award."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-birmingham-city-university-international-pg-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "Page confirms 3,000 GBP, automatic, self-funded, 50% of fee before CAS, exclusions as listed, 2026/27 only (September 2026 and January 2027). 2027 entry terms not published, so applicability to 2027 cannot be confirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "fail",
+    "issues": [
+      "summary: 'an embedded international college for pathway study' is not supported. The Pakistan page mentions BCU International College only as a navigation link with no details.",
+      "gov.uk register: Birmingham City University, Birmingham, Student route, Student Sponsor - Track Record. Confirmed. Pakistan page lists authorised agent cities (16) and no entry requirements, as the file says.",
+      "eligibility_note contains ' - ' inside the quoted register status; harmless as a quotation."
+    ],
+    "corrections": {
+      "summary": "A university based in Birmingham that teaches computing, business, law, engineering and other subjects. It has a Pakistan country page with a list of authorised agent cities, and offers an automatic tuition discount to self-funded international students."
+    }
+  }
+}

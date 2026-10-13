@@ -1,0 +1,133 @@
+{
+  "slug": "gb-university-of-warwick",
+  "courses": [
+    {
+      "slug": "gb-university-of-warwick-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on course page: Computer Science BSc, G400, 3 years full time, start 27 September 2027, Band A, A*A*A including A* in Mathematics, contextual A*AA including A in Mathematics, IB 39 with 7,6,6 including 7 in HL Mathematics (Analysis and Approaches only), contextual IB 38 with 6 in HL Mathematics, GCSE English Language and Mathematics no lower than C (4). Fees page: Computer Science (BSc) G400 is Band 2, 2027-28 GBP 37,310.",
+        "Conflict: the course page says 2027-28 overseas fees 'have not been set' (it shows 2026-27 Band 2 GBP 35,530) while the overseas fees page lists 2027-28 figures with no 'subject to confirmation' wording. The file used the fees page and flags the conflict; treat 37,310 as the published figure.",
+        "English scores: the course page gives only 'Band A' with no score table. The values in the file (IELTS 6.0/5.5, PTE 60/59, TOEFL 87, Duolingo 110/100) match Warwick's English language requirements page, but that page is not a cited URL and its tables are labelled 'for September 2026 entry only'. Applicability to 2027 entry is unconfirmed, as the file's own flag says.",
+        "overview: 'theoretical computing' in the early years is not on the page, which lists advanced mathematics, computer architecture and programming in Year 1 and operating systems, networks, databases and software engineering in Year 2. academic_requirements '(or a Science)' for GCSE is also not stated in the page extract. Minor.",
+        "highlights confirmed: individual project in final year; AI, computer graphics and computer security named as subject areas."
+      ],
+      "corrections": {
+        "overview": "Three-year degree covering advanced mathematics, computer architecture and programming in the first year, then operating systems, networks, databases and software engineering, with an individual project in the final year. Applicants need A-level Mathematics or equivalent."
+      }
+    },
+    {
+      "slug": "gb-university-of-warwick-economics-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: Economics BSc, L100, 3 years (4 with study abroad), start 27 September 2027, Band C, A*AA including A in Mathematics, contextual AAB including A in Mathematics, IB 38 including 6 in HL Mathematics, contextual 34 including 6 in HL Mathematics. Fees page: Economics (3 years) is Band 2, 2027-28 GBP 37,310.",
+        "Same fee conflict and English-table caveat as Computer Science: course page says 2027-28 fees not set; Band C scores (IELTS 7.0/6.5, PTE 75/59, TOEFL 100, Duolingo 130/120) match the English requirements page for September 2026 entry only, which is not a cited URL.",
+        "academic_requirements omits the GCSE English Language grade 6/B requirement stated on the course page (incomplete, not wrong).",
+        "Module structure confirmed (year 1 five core, year 2 three core, year 3 optional), module names are not listed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-law-llb",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: Law LLB, M100, 3 years, start 27 September 2027, Band C, typical A*AA, contextual AAB, IB 38 typical and 34 contextual, supervised project in final year, two core modules in year 2. Fees page: Law (3 years) LLB is Band 1, 2027-28 GBP 29,260.",
+        "academic_requirements omits GCSE Mathematics grade 4/C and GCSE English Language grade 6/B (or IB English A grade 5) stated on the course page.",
+        "Same fee conflict and English-table caveat as above (Band C table is for September 2026 entry only and from an uncited page)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-mechanical-engineering-beng",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: Mechanical Engineering BEng, H300, 3 years, start 27 September 2027, Band A, AAA including Mathematics and Physics, contextual AAB, IB 36 including 6 in HL Mathematics and 6 in HL Physics, contextual 34 including 5,5. Fees page: Mechanical Engineering (BEng, MEng) is Band 2, 2027-28 GBP 37,310.",
+        "Same fee conflict and English-table caveat as Computer Science (Band A table is for September 2026 entry only and from an uncited page).",
+        "Page shows module headings only; empty highlights are correct."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: Management MSc, 1 year full time, start 27 September 2027, on-time deadline 2 August 2027, 2.1 UK or overseas equivalent, Band B IELTS 7.0 with two components at 6.0/6.5 and the rest 7.0 or above, six core and four optional modules over three terms, optional examples Entrepreneurship, International Business and Big Data Analytics, Research Paper or self-sourced internship, no formal work placement, arts, social sciences, humanities, engineering and mathematics backgrounds welcome.",
+        "Fee: postgraduate fees page lists Management (MSc) P-N2N3 full time GBP 38,570 for 2026-27; no 2027-28 figure is published yet (page says usually October). The file labels the year 2026/27, so it is accurate, but the amount does not apply to the 2027 intake. tuition_basis 'total' is inferred: the page says fees are 'payable for each year of your course'.",
+        "The course page says some 2027 details may change pending university approval."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-international-commercial-law-llm",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: International Commercial Law LLM, 1 year full time or 2 years part time, start 27 September 2027, deadline 2 August 2027, 2:1 in law or related subject with a law component, Band B IELTS 7.0 with two components at 6.0/6.5 and rest 7.0 or above, Foundations of International Commercial Law, specialist options, Research and Writing Seminar, Dissertation. Modules listed are those running in the current year.",
+        "Fee: GBP 25,340 for 2026-27 (P-M223 full time) matches; no 2027-28 figure published. Year label 2026/27 is correct but the amount is not the 2027 intake fee. Basis 'total' inferred.",
+        "The page states IELTS 'or equivalent' but this checker did not open the separate postgraduate English page, so null min_pte/min_toefl is acceptable."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-cyber-security-engineering-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the WMG page: Cyber Security Engineering MSc, 12 months full time, start 27 September 2027, deadline 31 August 2027 (may close early), overseas fee GBP 39,330 for 2027 entry, UK 2:1 or 2:2 with relevant professional experience, SELT required with IELTS 6.5 and no component below 6.0, core modules Network Security, Applied Cryptography, Digital Forensic Investigation, Ethical Hacking, Proactive Cyber Defence, one elective.",
+        "tuition_academic_year 2027/28 is inferred from the page's '2027 entry' label. The central fees page shows GBP 37,460 for 2026-27, a different year, as the file notes.",
+        "The page carries an NCSC Academic Centre of Excellence recognition and named guest-speaker employers; neither is used in the file."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-warwick-pgr-scholarships-2027",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: call opens 5 October 2026, course application by 7 December 2026, scholarship application by 10 December 2026 (16:59 GMT), references 21 December 2026, offers released 5 March 2027, October 2027 entry in 2027/28, no deferral. Faculty Chancellors and Interdisciplinary Chancellors streams are open to any nationality or fee status; current PGR students are not eligible. Full academic fees, UKRI-rate stipend for 3.5 years, GBP 5,000 RTSG, visa and immigration cost support for eligible international applicants.",
+        "Other streams have narrower rules (China Scholarship Council is for PRC passport holders, Doctoral Access Pathway for applicants of Black heritage, Sanctuary for asylum-related status), so eligible_countries INTL applies to the Chancellors streams and AHRC only. The file's criteria_text and summary say this."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-wmg-pakistan-bursary",
+      "verdict": "unverifiable",
+      "issues": [
+        "Value GBP 3,500 automatic tuition discount, Pakistani nationals, overseas fee payers, full-time WMG MSc offer, self-funded or student loan funded: all confirmed. But the page is for September 2026 entry and does not mention 2027, so applicability to 2027 entry cannot be confirmed (the file says this).",
+        "notes say the page was last revised 25 August 2026; the page-specific footer shows 4 February 2026 and the 25 August 2026 date appears to be a site-wide footer. Revision date is unreliable.",
+        "Course fit: the file lists field_slugs business-management, engineering-technology and computer-technology, whereas the page only says full-time WMG MSc; Cyber Security Engineering MSc is a WMG course, so it can be held there."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-wmg-pakistan-excellence-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "Confirmed: competitive awards of GBP 5,000, 10,000 or 15,000 towards tuition, full-time WMG MSc offer, excellent academic record and/or strong professional profile, mainly self-funded, apply within 4 weeks of receiving an offer, four review rounds, last covering 21 April to 12 June 2026, awardees get both bursary and scholarship. Entry year is September 2026 only; 2027 terms are not on the page.",
+        "eligible_countries PK is not stated by the eligibility list; the page does not restrict the award to Pakistani nationals, though it sits under 'For students from Pakistan'. The file's note discloses this.",
+        "deadline_on null is right for 2027; the 2026 rounds have all passed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-warwick-undergraduate-global-excellence-scholarship",
+      "verdict": "fail",
+      "issues": [
+        "The scholarship page is for the 2026/2027 round: offer holders for 2026 entry starting autumn 2026, applied before 14 January 2026, closed 27 February 2026 at 12:00 (deadline passed). It does not apply to 2027 entry and should not be shown as available; the file's intake_label 'Autumn 2026 (2027 round not yet published)' says as much but the record is still in a 2027 finder file.",
+        "Confirmed otherwise: overseas fee status, self-funded, undergraduate or International Foundation Programme, awards for the duration of the course, 2025 numbers 6 full-fee, 148 half-fee, 103 at 25% and 6 at GBP 2,000 (indicative). The page gives no monetary value for the full, half or 25% awards, so null value_amount is right.",
+        "notes claim that the FAQ page says Warwick offers 20 full tuition scholarships for international undergraduates each year; this checker did not open that FAQ page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "fail",
+    "issues": [
+      "summary: 'has a representative office in Lahore' is not supported. The cited Pakistan page names three representatives in Pakistan, StEPS, StudyIn and IDP (IDP listed for Islamabad), and does not mention Lahore or an office.",
+      "summary: 'one-year International Foundation Programme' - the Pakistan page mentions the Warwick International Foundation Programme and applying Direct for it, but gives no duration, so 'one-year' is unsourced.",
+      "is_russell_group null and eligibility_note null: the cited russellgroup.ac.uk Warwick page opened and does not mention the Russell Group, so null is the correct handling here. Sponsor register not checked by this verifier.",
+      "city and region null: nothing is claimed, acceptable. Summary mentions 'banded overseas tuition fees', which the overseas fees page confirms (Bands 0, 1, 2)."
+    ],
+    "corrections": {
+      "summary": "A university with undergraduate and postgraduate taught courses across business, law, engineering, computing, sciences and social sciences. It publishes banded overseas tuition fees, offers an International Foundation Programme, and lists StEPS, StudyIn and IDP as its representatives in Pakistan."
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "gb-university-of-york",
+  "courses": [
+    {
+      "slug": "gb-university-of-york-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "career_notes: the page lists IT/computing then financial services; the 'further study such as a PhD' clause was not seen in the fetched text and is unconfirmed (minor).",
+        "Fee GBP 33,500 for 2027/28, IELTS 6.5/6.0, AAA incl Maths (AABB with fourth A level), IB 36 with 5 HL Maths or 6 SL Maths AA, September 2027 and modules all match. Page metadata AAB-ABB conflicts with the header AAA, as the file notes."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-york-llb-law",
+      "verdict": "fail",
+      "issues": [
+        "highlights: 'Year 2 optional: Human Rights: Law, Power and Global Challenges' - the page says this module 'was offered in previous years' and that Year 2 options are confirmed after the course begins, so it is not a confirmed module for 2027 entry.",
+        "Fee GBP 28,600 for 2027/28, IELTS 6.5/6.0, AAA, IB 36, foundation route, September 2027, case study choice and Advanced Law Project match."
+      ],
+      "corrections": {
+        "highlights": [
+          "Year 1 core: Legal and Professional Skills",
+          "Year 2: two optional modules chosen, confirmed after the course begins",
+          "Year 3 core: one case study module, for example Corporate Commercial",
+          "Year 3 optional: Advanced Law Project (Dissertation)"
+        ]
+      }
+    },
+    {
+      "slug": "gb-university-of-york-bsc-mathematics",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 28,600 for 2027/28, IELTS 6.0/5.5, AAA incl A in Maths or AAB incl A Maths and A Further Maths, IB 36 with 6 HL Maths, IMA accreditation, roles and modules all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-york-msc-data-science",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: fee table has no year label but the page is for 2027/28 entry. The TOEFL figure published by York (4.5, 5 Listening) looks non-standard and min_toefl is correctly left null.",
+        "Fee GBP 33,900, IELTS 6.5/6.0, PTE 60 (52/53/65/59), Duolingo 120/105, 2:2, September 2027, modules and Pakistan 60% / GPA 2.5 (stated on the Pakistan page) match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-york-llm-law",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 28,200 full-time (part-time 14,100) described by the page as year one fees, 1 or 2 years, English tests, 2:2 in Law or closely related, core module, 12,000 word 60 credit dissertation, and option examples (International Commercial Arbitration, Intellectual Property are among the 18 listed) all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-york-msc-finance-management",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 34,500 (page is for 2027/28 entry, no separate year label), English tests, 2.2 in related subject, three years senior managerial experience or CFA Level 1 / ACCA, five core modules, 8,000 word project over three months of summer all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-york-mpp-global-public-health-policy",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 27,840 full-time (part-time 13,920) stated as year one fees; year of entry September 2027. English tests, 2:2 or equivalent, core modules, no optional modules and applied policy project match. The page itself contains a stray reference to education policy, which the file correctly ignores."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-york-global-impact-masters-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "2027 entry: the scholarship page gives 2026/27 terms only (offer by 31 August 2026, deadline 1 September 2026, GBP 8,000 for Pakistan, first year only, automatic) and says 2027 entry scholarships will open shortly. The York PG international funding page lists it under previous opportunities with no entry year. Whether it applies to 2027 entry cannot be confirmed.",
+        "Value, eligibility (domiciled in or national of Pakistan, full-time PGT, overseas fees, not fully sponsored) and automatic route match the 2026/27 terms. The file's low confidence and intake_label are appropriate."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-york-graduate-loyalty-discount",
+      "verdict": "pass",
+      "issues": [
+        "Page confirms 10% discount, 2027/28, open to international students, automatic as part of the application, no deadline stated, and the listed exclusions. Eligibility is limited to York graduates, visiting students or partner short course alumni from January 2021, and covers PGDip and PGCert as well as MA/MSc; the file's note about relevance only to York graduates is correct."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-york-commonwealth-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "York host page confirms Pakistan eligible, FCDO funded, taught and research levels, amount 'various', applications via cscuk.fcdo.gov.uk, entry year 2027/28, no deadline. UK-held at York, so holdable. External government scheme correctly labelled low confidence."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "The York contact page states 'A member of the Russell Group' and describes the university as 'research-intensive', so is_russell_group and the summary wording are supported. Heslington campus confirmed. Pakistan page is at the stated international_admissions_url.",
+      "scholarships_url exists and lists current and previous international PGT funding as described."
+    ],
+    "corrections": {}
+  }
+}

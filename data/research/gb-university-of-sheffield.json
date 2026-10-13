@@ -1,0 +1,118 @@
+{
+  "university": {
+    "slug": "gb-university-of-sheffield",
+    "name": "University of Sheffield",
+    "destination_code": "GB",
+    "city": "Sheffield",
+    "region": "South Yorkshire",
+    "website_url": "https://www.sheffield.ac.uk",
+    "international_admissions_url": "https://sheffield.ac.uk/international/entry-requirements/pakistan",
+    "scholarships_url": "https://sheffield.ac.uk/international/fees-and-funding/scholarships",
+    "summary": "A public university in Sheffield, South Yorkshire, offering undergraduate, postgraduate taught and research programmes to international students. It runs a Pakistan entry requirements page and an International College that provides foundation and pre-masters routes for applicants who do not meet direct entry requirements.",
+    "is_russell_group": true,
+    "russell_group_source_url": "https://russellgroup.ac.uk/about/our-universities/university-of-sheffield/",
+    "eligibility_note": null,
+    "eligibility_source_url": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-students",
+    "source_url": "https://sheffield.ac.uk/international/entry-requirements/pakistan",
+    "verified_on": "2026-10-13",
+    "confidence": "medium"
+  },
+  "courses": [],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-sheffield-international-undergraduate-scholarship-2027",
+      "name": "International Undergraduate Scholarship 2027",
+      "provider_type": "university",
+      "provider_name": "University of Sheffield",
+      "destination_codes": ["GB"],
+      "levels": ["undergraduate"],
+      "field_slugs": [],
+      "eligible_countries": ["INTL"],
+      "value_type": "fee_reduction",
+      "value_amount": 2500,
+      "value_percent": null,
+      "value_currency": "GBP",
+      "value_basis": "per_year",
+      "value_text": "GBP 2,500 off tuition for each year of study, up to a maximum of GBP 10,000 on four-year programmes",
+      "summary": "A tuition fee discount applied automatically to self-funded overseas fee-paying students starting a full-time undergraduate degree in September 2027. Later years depend on a 60% weighted average and at least 120 credits in the previous year.",
+      "criteria_text": "Self-funded student classified as overseas for tuition fee purposes, starting a full-time undergraduate degree in September 2027 (not Medicine A100/A101 or Dentistry A200, not MArch or PGCE, not a non-USIC foundation year). Choose Sheffield as firm or insurance choice before 4pm UK time on 2 June 2027. Cannot be deferred or combined with other University awards unless stated.",
+      "min_pk_percent": null,
+      "min_pk_cgpa": null,
+      "min_ielts_overall": null,
+      "need_based": false,
+      "application_route": "automatic",
+      "requires_offer": true,
+      "opens_on": null,
+      "deadline_on": "2027-06-02",
+      "deadline_note": "Sheffield must be chosen as firm or insurance choice before 4pm UK time on Wednesday 2 June 2027.",
+      "intake_label": "September 2027",
+      "official_url": "https://sheffield.ac.uk/international/fees-and-funding/scholarships/undergraduate/international-undergraduate-scholarship-2027",
+      "source_url": "https://sheffield.ac.uk/international/fees-and-funding/scholarships/undergraduate/international-undergraduate-scholarship-2027",
+      "verified_on": "2026-10-13",
+      "confidence": "medium",
+      "notes": "The page does not name Pakistan or list countries; eligibility is by overseas fee status. The page does not state explicitly that an offer is needed; the firm or insurance choice step implies one."
+    },
+    {
+      "slug": "gb-university-of-sheffield-ncuk-merit-scholarship-2027",
+      "name": "NCUK Merit Scholarship 2027",
+      "provider_type": "university",
+      "provider_name": "University of Sheffield",
+      "destination_codes": ["GB"],
+      "levels": ["undergraduate"],
+      "field_slugs": [],
+      "eligible_countries": ["INTL"],
+      "value_type": "fee_reduction",
+      "value_amount": 17500,
+      "value_percent": null,
+      "value_currency": "GBP",
+      "value_basis": "total",
+      "value_text": "Up to GBP 17,500 over the course: GBP 10,000 off first-year tuition, then GBP 2,500 off each later year, subject to progression",
+      "summary": "A competitive tuition fee discount for overseas fee-paying students progressing to Sheffield from an NCUK International Foundation Year in September 2027. Selection is by panel, based on achievements, links to the chosen course and academic profile.",
+      "criteria_text": "Self-funded overseas fee-paying student currently studying an NCUK International Foundation Year and joining Sheffield in September 2027 on any undergraduate course except Medicine and Dentistry. Students at Sino-British College and Oxbridge Ikeja and Lekki are excluded. Continuing years need a 60% mark and 120 credits.",
+      "min_pk_percent": null,
+      "min_pk_cgpa": null,
+      "min_ielts_overall": null,
+      "need_based": false,
+      "application_route": "separate_application",
+      "requires_offer": true,
+      "opens_on": null,
+      "deadline_on": "2027-04-23",
+      "deadline_note": "Application deadline 1pm UK time on Friday 23 April 2027; outcomes 7 May 2027; Sheffield must be chosen as firm or insurance choice by 4pm UK time on 2 June 2027.",
+      "intake_label": "September 2027",
+      "official_url": "https://sheffield.ac.uk/international/fees-and-funding/scholarships/undergraduate/ncuk-merit-scholarship-2027",
+      "source_url": "https://sheffield.ac.uk/international/fees-and-funding/scholarships/undergraduate/ncuk-merit-scholarship-2027",
+      "verified_on": "2026-10-13",
+      "confidence": "medium",
+      "notes": "The page does not name Pakistan or list NCUK centres; it is open to overseas fee-paying NCUK Foundation Year students except the two named colleges. The page refers to both a Foundation Year and an International Year One, so confirm which applies."
+    }
+  ],
+  "flags": {
+    "could_not_verify": [
+      "No international tuition fee could be verified for any course. Undergraduate and postgraduate course pages show blank fee fields and point to the fee lookup tools at tools.sheffield.ac.uk, which block automated access (robots disallowed).",
+      "The UK student sponsor licence could not be checked: the gov.uk register file was not reachable, so eligibility_note is null.",
+      "Russell Group membership: the Sheffield page on russellgroup.ac.uk states membership in its text. The Russell Group site's member list page could not be opened."
+    ],
+    "conflicting_sources": [
+      "Undergraduate course pages (for example Computer Science BSc, Mechanical Engineering BEng) still mention international scholarships worth up to GBP 10,000 for September 2026 starters, while the scholarship page for 2027 states GBP 2,500 per year, maximum GBP 10,000 on four-year programmes."
+    ],
+    "blocked_pages": [
+      "https://tools.sheffield.ac.uk/fees/pgt/ (robots disallowed)",
+      "https://tools.sheffield.ac.uk/fees/ug/ (robots disallowed, not opened)",
+      "https://sheffield.ac.uk/international/fees-and-funding/fees (fetch error)"
+    ],
+    "excluded_and_why": [
+      "All courses excluded because no international fee is published on an official page that could be opened. Fee bands only: undergraduate overseas full-time courses 'between GBP 27,650 and GBP 34,670' for 2027/28 (https://sheffield.ac.uk/new-students/tuition-fees/undergraduate-overseas), Medicine GBP 51,380 and Dentistry GBP 55,000 for 2027/28; the page does not say which course falls in which band.",
+      "Candidate courses with 2027 entry pages that were checked, each needing a fee from the lookup tool: Data Science MSc (https://sheffield.ac.uk/postgraduate/taught/courses/2027/data-science-msc, September 2027, 1 year full-time, 2:1 any subject, IELTS 6.5 with 6 in each component); Management MSc (https://sheffield.ac.uk/postgraduate/taught/courses/2027/management-msc, same requirements); Civil and Structural Engineering MSc (https://sheffield.ac.uk/postgraduate/taught/courses/2027/civil-and-structural-engineering-msc, 2:1 in engineering or science); LLM International Law and Global Justice (https://sheffield.ac.uk/postgraduate/taught/courses/2027/llm-international-law-and-global-justice-llm); Computer Science BSc G402 (https://sheffield.ac.uk/undergraduate/courses/2027/computer-science-bsc, AAA or AAB, IELTS 6.5 with 6.0 in each component); Mechanical Engineering BEng H302 (https://sheffield.ac.uk/undergraduate/courses/2027/mechanical-engineering-beng, A*AA).",
+      "International Foundation Year and Pre-Masters (Sheffield International College): fees found only for 2026/27 (https://usic.sheffield.ac.uk/how-to-apply/fees, for example GBP 21,250 to GBP 25,500 for the Foundation Year) and no intake month was visible, so excluded.",
+      "International Postgraduate Scholarship 2027 (selected regions, GBP 7,000 fee reduction): excluded because Pakistan is not in the listed countries (India, Indonesia, Japan, Kenya, Nigeria, South Korea, Taiwan, Thailand, Turkiye, Vietnam).",
+      "Hossein Farmy PhD Scholarships: page says they open in early 2027 for October 2027 entry but gives no terms. China Scholarship Council and University of Sheffield Research Scholarships: no awards for 2027 entry. Chevening and other external funders are not run by the university.",
+      "English Schools Foundation, Oxbridge Tutorial College, GEMS, IDA Sheffield Academic, SABIS Merit and NCUK Sino-British College undergraduate scholarships: partner school or college awards whose terms were not opened and are not aimed at Pakistan."
+    ],
+    "client_should_confirm": [
+      "Supply 2027/28 international fees per course from the Sheffield fee lookup tools or the Student Fees team (+44 114 222 9754 per the undergraduate fees page), then the candidate courses can be added.",
+      "Confirm with the university that Pakistani applicants qualify for the International Undergraduate Scholarship (page uses overseas fee status only) and whether NCUK Pakistan centres qualify for the NCUK Merit Scholarship.",
+      "Pakistan entry page (https://sheffield.ac.uk/international/entry-requirements/pakistan): postgraduate taught 2:1 is stated as 65% or GPA 2.8 out of 4.0, 2:2 as 55% or GPA 2.4, first as 75%+ or GPA 3.3; a 4-year bachelor degree awarded 2016 or later is expected. The page gives no HSC percentage for undergraduate entry.",
+      "Check the gov.uk student sponsor register and add the licence note."
+    ]
+  }
+}

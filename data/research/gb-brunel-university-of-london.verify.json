@@ -1,0 +1,80 @@
+{
+  "slug": "gb-brunel-university-of-london",
+  "courses": [
+    {
+      "slug": "gb-brunel-university-of-london-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 3 years (G402) or 4 with placement (G407), international fee 17,400 GBP labelled 2026/27, placement year 1,955 GBP, ABB / 31 IB, contextual BBB / 30, GCSE Maths 4 and English Language 4 (or Literature 5), IELTS 6.5 (5.5), Pearson 59, BrunELT 6.5, TOEFL '5 (min 4)'. Year 1 modules match.",
+        "Fee is 2026/27, not the 2027 entry year; this is disclosed and the academic year field is correct. Page start-date text is broken placeholder text, so empty intake_labels is correct."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-brunel-university-of-london-finance-and-accounting-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 1 year full time plus longer placement routes, 24,795 GBP international (2026/27), January and September starts, 2:2 in the stated subjects, IELTS 6.5 (6.0), Pearson 59, BrunELT 6.5, TOEFL 5 (4.5), compulsory and optional modules as listed.",
+        "Fee is 2026/27, not the 2027 entry year; disclosed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-brunel-university-of-london-data-science-and-analytics-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 1 year full time plus placement routes, 24,795 GBP full-time international (2026/27), January and September, 2:2 in a scientific, engineering or numerate subject, IELTS 6.5 (6.0), Pearson 59, TOEFL 5 (4.5). Highlights match the compulsory module list.",
+        "overview says the modules are 'followed by a dissertation project'; no dissertation module appears in the compulsory list I retrieved. Could not confirm; consider removing the clause.",
+        "Fee is 2026/27, not the 2027 entry year; disclosed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-brunel-university-of-london-vc-pg-international-excellence-award",
+      "verdict": "unverifiable",
+      "issues": [
+        "Terms confirmed for 2026/27: 6,000 GBP, one year (two for two-year full-time courses), UK 2:1, overseas and self-funded, 5,000 GBP deposit, automatic, deadlines 31 August 2026 and 30 November 2026, exclusions as listed.",
+        "The terms apply to September 2026 and January 2027 starts only and say the award is lost if entry is deferred to 2027/28. Applicability to 2027 entry cannot be confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-brunel-university-of-london-beaconhouse-school-discount",
+      "verdict": "unverifiable",
+      "issues": [
+        "Confirmed: 20% waiver (up to 4,359 GBP on 21,795 GBP fee for September 2026) for up to three years, current Beaconhouse students, undergraduate, MBBS excluded, automatic, not combinable. Page last updated 18 December 2025 and refers to September 2026 entry only, so 2027 entry cannot be confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-brunel-university-of-london-early-payment-discount",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 2% of net course fee, full payment at or before registration, no third-party payer, undergraduate, postgraduate and postgraduate research, no application.",
+        "Page does not say per year or once (file admits value_basis is an assumption) and does not restrict to international students; eligible_countries INTL is not stated on the page. Entry year not stated."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-brunel-university-of-london-graduate-discount",
+      "verdict": "fail",
+      "issues": [
+        "levels: the terms page lists further undergraduate, postgraduate taught, doctoral and postgraduate research, online third-party programmes, PGCE and GDL. The file omits undergraduate.",
+        "eligible_countries INTL is not stated on the page; the discount is for Brunel alumni of any fee status. 15% for every year of study, self-funded, automatic, exclusion of Postgraduate International Bursary and VC Excellence Award holders confirmed. Page last updated 9 December 2024; entry year not stated."
+      ],
+      "corrections": {
+        "levels": ["undergraduate", "postgraduate", "doctoral"]
+      }
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "International page: 'Life on our London campus' confirmed; students from over 140 countries in body text (110 in meta description), so 'over 100 countries' is true but understated; pathway programmes listed and scholarships and discounts for international students confirmed. Uxbridge is not on that page.",
+      "gov.uk register (August 2026 file) lists Brunel University London, Uxbridge, Student route, Student Sponsor - Track Record. The eligibility_source_url is the publication landing page, not the file, and the date 2026-10-07 in the note could not be checked."
+    ],
+    "corrections": {}
+  }
+}

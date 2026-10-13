@@ -1,5 +1,5 @@
 {
- "note": "Rows whose independent check failed and whose checker corrections were applied by hand on the date shown. They are approved on that basis.",
+ "note": "Rows whose independent check failed and whose checker corrections were applied by hand on the date shown. They are approved on that basis. Updated 2026-10-14.",
  "date": "2026-10-13",
  "slugs": [
   "gb-kings-college-london-banking-finance-msc",
@@ -18,6 +18,17 @@
   "gb-university-of-glasgow-data-analytics-msc",
   "gb-university-of-liverpool-mechanical-engineering-beng",
   "gb-university-of-edinburgh-msc-management",
-  "gb-newcastle-university-computer-science-bsc"
+  "gb-newcastle-university-computer-science-bsc",
+  "gb-bangor-university-advanced-computer-science-msc",
+  "gb-bangor-university-deans-scholarship-postgraduate",
+  "gb-bangor-university-alumni-family-discount",
+  "gb-university-of-southampton-75th-pakistan-business-school-excellence",
+  "gb-university-of-southampton",
+  "gb-university-college-london-beng-mechanical-engineering",
+  "gb-university-of-york-llb-law",
+  "gb-brunel-university-of-london-graduate-discount",
+  "gb-cardiff-metropolitan-university-full-fee-discount",
+  "gb-university-of-warwick",
+  "gb-birmingham-city-university"
  ]
 }

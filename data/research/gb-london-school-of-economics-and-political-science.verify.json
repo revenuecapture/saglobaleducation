@@ -1,0 +1,108 @@
+{
+  "slug": "gb-london-school-of-economics-and-political-science",
+  "courses": [
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-economics-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Course page shows only the Home fee (£10,050); the overseas fee of £41,900 for 2027/28 is confirmed on the LSE Table of Fees PDF, which also says overseas undergraduate fees are fixed at the entry year rate.",
+        "Matches page: three years, L101, 27 September 2027, UCAS deadline 13 January 2027, A*AA with A* in Mathematics (contextual A*AB), IB 39 with 766 and 7 in Mathematics, GCSE English Language and Mathematics B (6), first-year courses, career sectors. English scores match the undergraduate English page (IELTS 7.0/7.0, TOEFL 100 with 27/25/24/24, PTE 70/70); that page states no entry year, so 2027 applicability is not confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-laws-llb",
+      "verdict": "pass",
+      "issues": [
+        "Overseas fee £37,500 for 2027/28 confirmed on the Table of Fees PDF only; course page shows Home fee.",
+        "Matches page: three years, M100, 27 September 2027, A*AA (contextual AAB), IB 39 with 766 (contextual 37 with 666), GCSE English Language and Mathematics B (6), first-year courses, career sectors. The page mentions no LNAT or other test, though its 'Additional tests' section holds no content, so absence of a test cannot be confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-accounting-finance-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Overseas fee £39,300 for 2027/28 confirmed on the Table of Fees PDF only.",
+        "Matches page: three years, NN34, 27 September 2027, A*AA with A in Mathematics (contextual AAA), IB 39 with 766 including 6 in HL Mathematics (contextual 38 with 666), first-year courses, career sectors."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-finance-msc",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: 10 months full-time, four-week compulsory pre-sessional from late August, 2:1 in any discipline plus good quantitative skills, work experience not required, rolling admissions, needs-based funding deadline 22 April 2027, courses, career sectors. £53,600 for 2027/28 confirmed (same for all students; Table of Fees). English Standard level matches the 2027/8 graduate English page: IELTS 7.0 with 6.5, TOEFL 100 with 23/22/24/22, PTE 70 with 62.",
+        "Not stated in file: the page says admission is very competitive, most recent accepted students had first-class degrees or equivalent, and A level Mathematics or equivalent is the minimum quantitative requirement. The 2:1 figure alone could mislead.",
+        "academic_requirements says GRE or GMAT is 'listed under entry requirements'; the page only refers to an 'Additional tests' section with no readable content, so this cannot be confirmed. Overview wording 'asset pricing' not seen on the page text I received."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-management-mim",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: 12 months, application code N2UB, 2:1 or international equivalent, any background, rolling admissions, funding deadline 22 April 2027, introductory course in September 2027 after an online module from July 2027, £44,900 for all students (Table of Fees). GMAT/GRE optional and recommended for applicants without a post-16 maths qualification; file wording is consistent.",
+        "English Standard level matches the 2027/8 graduate English page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-data-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: 12 months full-time, 27 September 2027, 2:1 in a relevant discipline with substantial mathematics, compulsory courses, capstone, rolling admissions, funding deadline 22 April 2027. £41,900 same for all students; Table of Fees row for this programme is slightly ambiguous in layout but agrees with the course page.",
+        "English Standard level matches the graduate English page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-international-relations-msc",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: 12 months full-time, 27 September 2027, 2:1 in politics, history, international relations or similar, Higher English level, 10,000-word dissertation, rolling admissions, funding deadline 22 April 2027. £34,200 same for all students. English Higher level matches the graduate English page (IELTS 7.0 with 7.0 reading, 6.5 others; PTE 70 with 70 reading, 62 others).",
+        "Overview says 'core study of international relations theory and research design'; the page has students choose one unit from four half-unit courses (including Critical Perspectives, which is not in highlights), so these are choices, not all compulsory."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-graduate-support-scheme",
+      "verdict": "pass",
+      "issues": [
+        "Matches scheme page: £5,000 to £20,000 depending on need, diploma and taught master's, Home and Overseas, offer required, separate Graduate Financial Support application, financial information not considered in admission, exclusions named (MSc Finance part-time, Health Economics Policy and Management, International Strategy and Diplomacy, fully funded programmes). No country restriction.",
+        "The scheme page covers 2026 entry only (closed, deadline 23 April 2026). The 22 April 2027 deadline comes from course pages (needs-based awards, offer plus Graduate Financial Support application), which supports it; the 2027 award range is unconfirmed. intake_label 'September 2027' is therefore partly inferred."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-undergraduate-support-scheme",
+      "verdict": "unverifiable",
+      "issues": [
+        "Matches scheme page: usually £15,000 to £25,000 per year, renewed annually subject to academic progress, overseas students with an offer, LSE receives far more applications than it can support. How-to-apply page: LSE Undergraduate Scholarship Application Form plus one academic reference; 2026/27 entry only, closed, overseas deadline 30 April 2026 (extended from 23 April).",
+        "No page shows 2027 entry terms or a 2027 deadline, so applicability to 2027 entry cannot be confirmed; the file's intake_label 'September 2027' overstates what is sourced."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-school-of-economics-and-political-science-phd-studentships",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: full fees plus £23,805 stipend, four years, annual renewal, all nationalities, merit-based, department nomination with no separate application, 2026 entry deadlines 10 December 2025, 14 January 2026 and 27 May 2026.",
+        "2026 entry only; 2027 entry not confirmed, which the file states in intake_label."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "is_russell_group: the cited Russell Group LSE page does not mention the Russell Group; it says only that LSE is a constituent college of the University of London. Membership is not confirmed by the cited source.",
+      "eligibility_note: gov.uk sponsor register page shows no institution names in fetched text; LSE listing and the 2026-10-07 date could not be confirmed.",
+      "Pakistan page confirmed: 'The Higher Secondary School Certificate (HSSC) is not acceptable as an entry qualification for LSE.' It gives no graduate equivalences and the funding awards file mentions (Charles Wallace Pakistan Trust, Anne Marie Schimmel) were not visible in the fetched text. The 70 per cent / GPA 3.5 guidance is confirmed on the general graduate entry requirements page.",
+      "summary: 'Specialist social science university' is a descriptor not sourced from a cited page."
+    ],
+    "corrections": {}
+  }
+}

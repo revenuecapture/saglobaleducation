@@ -1,0 +1,128 @@
+{
+  "slug": "gb-university-of-glasgow",
+  "courses": [
+    {
+      "slug": "gb-university-of-glasgow-data-analytics-msc",
+      "verdict": "fail",
+      "issues": [
+        "application_deadline_note: file says 'the international deadline is not stated on the page'. The page lists six international and EU rounds for September 2027 entry (Round 1: 1 Oct to 5 Nov 2026, up to Round 6: 14 May to 8 Jul 2027) as well as the UK deadline of 24 August 2027. The flag in client_should_confirm about the 24 August date applying to international applicants is therefore also wrong.",
+        "Title, award, 12 months full-time, GBP 34,815 for 2027-28, 2.1 with 20% mathematics, IELTS 6.5/6.0, PTE 65 (60/60/65/60), TOEFL 92 (tests from 21 January 2026), Duolingo 120/120/110, September start: all confirmed."
+      ],
+      "corrections": {
+        "application_deadline_note": "International and EU applicants apply in six rounds for September 2027 entry, from 1 October 2026 (Round 1 closes 5 November 2026) to Round 6 closing 8 July 2027. UK applicants: 24 August 2027."
+      }
+    },
+    {
+      "slug": "gb-university-of-glasgow-international-accounting-financial-management-macc",
+      "verdict": "pass",
+      "issues": [
+        "application_deadline_note: null in the file, but the page lists six international rounds (1 Oct 2026 to 8 Jul 2027) and 24 August 2027 for UK applicants. Missing information, not an error.",
+        "Fee GBP 38,670 for 2027-28, 2.1 with five accounting or finance modules, English scores, 12 months, September: confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-glasgow-international-law-llm",
+      "verdict": "pass",
+      "issues": [
+        "application_deadline_note: null in the file, but the page lists six international rounds (1 Oct 2026 to 8 Jul 2027). Missing information, not an error.",
+        "Fee GBP 30,390 for 2027-28, 2.1 in Law, IR or Politics, IELTS 7.0 with Writing 6.5 and 6.0 floor, PTE 70, TOEFL 98 with Writing 5, Duolingo 130, 24-month part-time option, highlights (all three appear in the optional list): confirmed.",
+        "career_notes: page also names the Professional Skills Programme and the International Law as a Profession talk series; file summary is accurate."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-glasgow-mba",
+      "verdict": "pass",
+      "issues": [
+        "application_deadline_note: null in the file, but the page states 31 July 2027 for September 2027 entry for all applicants. Missing information, not an error.",
+        "Fee GBP 41,100 for 2027-28, any-subject honours degree plus three years' professional experience, English scores, September start: confirmed.",
+        "The page makes ranking and accreditation claims (Financial Times Global Top 100, CEO Magazine Tier One, AMBA); the file correctly does not repeat them."
+      ],
+      "corrections": {
+        "application_deadline_note": "The page gives 31 July 2027 as the application deadline for September 2027 entry."
+      }
+    },
+    {
+      "slug": "gb-university-of-glasgow-civil-engineering-msc",
+      "verdict": "pass",
+      "issues": [
+        "application_deadline_note: null in the file, but the page lists six international rounds (1 Oct 2026 to 8 Jul 2027). Missing information, not an error.",
+        "Fee GBP 34,815 for 2027-28, 2.1 in engineering or physical sciences/mathematics, 2.2 with average 2.1 route, extensive work experience clause, GBP 2,000 deposit, employers VINCI, Mott MacDonald, Atkins: confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-glasgow-economics-msc",
+      "verdict": "pass",
+      "issues": [
+        "application_deadline_note: null in the file, but the page lists six international rounds (1 Oct 2026 to 8 Jul 2027). Missing information, not an error.",
+        "overview: 'applying economic theory to public policy, global development and sustainability' stays close to the page's 'apply economic theories to real-world issues of public policy, global development, and sustainability'; consider rewording.",
+        "Fee GBP 33,708 for 2027-28, 2.1 in listed subjects or any 2.1 plus two years' professional experience, English scores, core courses and career roles: confirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-glasgow-world-changers-global-excellence",
+      "verdict": "pass",
+      "issues": [
+        "Value GBP 10,000 (MVLS, Science and Engineering) or GBP 7,000 (Arts, Social Sciences) per year, renewable; 2027 entry; Pakistan on the eligible country list; automatic assessment; no deadline; notification within two weeks of offer; not combinable except with the Alumni Discount: confirmed.",
+        "criteria_text: page thresholds are AAB/36 for most Arts and Social Sciences programmes but A*A*A/40 for Computing Science and A*AA/39 for Law; the 'for example' wording is acceptable. UK residents are not eligible (no International or EU fee status)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-glasgow-world-changers-glasgow-pgt",
+      "verdict": "pass",
+      "issues": [
+        "Value GBP 5,000, Pakistan listed, September 2027 or January 2028 intake, automatic at registration, no deadline, not combinable, withdrawn if fully externally sponsored: confirmed. Data Analytics, International Law, Civil Engineering, Economics and MBA are on the eligible list; the accounting course appears as 'International Accounting & Financial Management'.",
+        "intake_label records September 2027 only; the page also covers January 2028."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-glasgow-global-leadership",
+      "verdict": "pass",
+      "issues": [
+        "GBP 10,000 for one year, 350 awards, first-class equivalent, full-time one-year in-person Masters, September 2027, rolling decisions, Pakistan listed, opening date unstated, closing 'usually late August, to be confirmed': confirmed.",
+        "Page also lists a separate 'Global Leadership Scholarship (January 2027)' on the Pakistan page; correctly not recorded."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-glasgow-great-scholarships-2027",
+      "verdict": "pass",
+      "issues": [
+        "GBP 10,000, 3 awards, closing 30 April 2027 at 11:45 UK time, decisions 14 May 2027, MBA and MSc Research excluded, no other funding allowed, British Council and GREAT Britain Campaign: confirmed. The page lists Bangladesh, Greece, Pakistan, Spain and Vietnam (the introduction names only three), as the file flags.",
+        "Page does not state the entry year explicitly; 'September 2027' is an inference from the award name, as the notes say. The programme list also includes the MBA, which contradicts the exclusion."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-glasgow-alumni-discount",
+      "verdict": "pass",
+      "issues": [
+        "15% for 2027/28, self-funded, Glasgow graduates and Study Abroad, International Summer School or Erasmus participants, PGT Masters and PGR, Pakistan and the four UK nations listed, appeals assessed until 31 January 2028, offer requirement not stated: confirmed.",
+        "intake_label 'September 2027' is narrower than the page's 'academic year 2027/28'.",
+        "Exclusions also include CPD, PGDE, International Master's and Erasmus Mundus programmes; the file's summary of exclusions is a subset."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "is_russell_group: the Glasgow about page states 'a member of the prestigious Russell Group'. russellgroup.ac.uk pages (list and Glasgow page) name no members, so the Russell Group site cannot confirm it. russell_group_source_url is null; https://www.gla.ac.uk/about/ would be the source.",
+      "summary: 'founded in 1451' confirmed on the about page; 'four colleges' confirmed on https://www.gla.ac.uk/colleges/; 'Gilmorehill campus' is not on the about page but appears on the course pages.",
+      "eligibility_note is null, but the gov.uk student sponsor register file dated 2026-09-10 (assets.publishing.service.gov.uk/media/6aa2613b9f95f408139c657b/SP_-_Student_and_Child_Student_Web_Register_-_2026-09-10.csv) lists University of Glasgow as a Student Sponsor.",
+      "No ranking, award or superlative claims and no dashes used as punctuation found in the file."
+    ],
+    "corrections": {
+      "russell_group_source_url": "https://www.gla.ac.uk/about/",
+      "eligibility_note": "Licensed student sponsor (gov.uk register of licensed sponsors: students, file dated 2026-09-10, listed as University of Glasgow)",
+      "eligibility_source_url": "https://assets.publishing.service.gov.uk/media/6aa2613b9f95f408139c657b/SP_-_Student_and_Child_Student_Web_Register_-_2026-09-10.csv"
+    }
+  }
+}

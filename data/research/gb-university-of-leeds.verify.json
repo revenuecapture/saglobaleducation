@@ -1,0 +1,89 @@
+{
+  "slug": "gb-university-of-leeds",
+  "courses": [
+    {
+      "slug": "gb-university-of-leeds-computer-science-bsc",
+      "verdict": "fail",
+      "issues": [
+        "overview/highlights: file says Software Engineering is a first-year topic; the page lists Year 1 compulsory modules as Programming, Computer Systems and Architecture, and Theoretical Foundations of Computer Science I only (40 credits each). Software Engineering is a Year 2 compulsory module.",
+        "tuition_academic_year: page shows 'International: £32,250 (per year)' with no year label next to it; 2025/26 is inferred from the September 2025 start and the UK 2025/26 fee text. Amount, currency and basis match. This is a 2025 entry snapshot, not 2027 entry.",
+        "Matches page: title, BSc, 3 years full time, UCAS G400, AAA including Mathematics, IB 18 HL points with 5 AA HL or 6 AI HL maths, GCSE English C (4), IELTS 6.0 overall with 5.5 in each section, uk_min_alevels AAA. career_notes 'sought after for their technical knowledge' is on the page.",
+        "intake_labels empty: page lists only September 2025, so empty is consistent."
+      ],
+      "corrections": {
+        "highlights": ["Programming", "Computer Systems and Architecture", "Theoretical Foundations of Computer Science I"],
+        "overview": "Three-year degree whose first year covers programming, computer systems and architecture, and the theoretical foundations of computer science. UCAS code G400."
+      }
+    },
+    {
+      "slug": "gb-university-of-leeds-law-llb",
+      "verdict": "pass",
+      "issues": [
+        "Fee £26,250 per year confirmed; page attaches no year to it (nearby heading names 2024/25 and 2025/26), so null academic year is correct. Page is headed 2024 course information with September 2025 start, so not 2027 entry.",
+        "Matches page: LLB, 3 years full time, M100, A*AA with two traditional academic subjects, IB 36 with 6,6,6 HL, IELTS 6.5 with 6.0 in any component.",
+        "Overview lists four of the six Year 1 modules (page also has Constitutional and Administrative Law and PRIME); not wrong, only partial."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leeds-business-analytics-decision-sciences-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee £30,250 total confirmed. Page shows 'Year of entry 2024', September 2024 start, and no year label beside the fee; 2024/25 follows from the stated entry year. This is two years old and not 2027 entry; do not present as a current fee.",
+        "Matches page: MSc, 12 months full time, 2:1 in a related subject with sound grounding in quantitative subjects, IELTS 6.5 with 6.0 in any component. Pakistan page: 2:1 = 70% / GPA 2.8 to 3.0, 4 year Bachelor accepted. pk_route bachelor_16 is an interpretation of '4 year Bachelor' (disclosed in notes).",
+        "Page offers a staged admissions process with selection deadlines throughout the year, no dates; empty intake_labels is consistent."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leeds-management-msc",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_academic_year: file says 2024/25; page has a blank 'Year of entry', a September 2024 start and '£30,250 (Total)' with no year label. The year is inferred, not stated, so it cannot be confirmed.",
+        "Other fields match: MSc, 12 months full time, 2:1 in any subject, IELTS 6.5 with 6.0 in any component, 70% per Pakistan page, compulsory modules as listed. Fee is stale relative to 2027 entry."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leeds-data-science-analytics-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee £31,750 total confirmed; page shows Year of entry 2024, September 2024 start, no year label on the fee. 2024/25 follows from entry year. Stale for 2027 entry.",
+        "Page is internally inconsistent: header says 'high 2:1 in a subject containing a substantial mathematical, statistical and/or computing component'; admissions section says 'first or high 2:1'. uk_min_degree_class '2:1' loses the 'high' qualifier; keep pk_min_percent null as the file has it. Page also says degrees in accountancy or finance are not normally accepted, which the file omits.",
+        "Matches page: MSc, 12 months, IELTS 6.5 with no component below 6.0, 60 credit dissertation, Machine Learning optional."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-leeds-economics-msc",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_academic_year: file says 2026/27; page has an empty 'Year of entry', a September 2026 start and '£29,750 (Total)' with no year label. The year is inferred, not stated.",
+        "Other fields match: MSc, 12 months full time, 2:1 with a background in economics and strong quantitative grounding, IELTS 6.5 with 6.0 in any component, 70% per Pakistan page, compulsory modules, career roles. Still not 2027 entry."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-leeds-ug-international-excellence",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: up to 250 awards, £3,000, £6,000 or £16,000 off first-year tuition; international fee status; self or partly funded; offer held; Year 1 entry; MBChB and BChD excluded; separate application per course; closing Tuesday 31 March 5pm BST; outcomes by Friday 15 May. Terms are for courses starting September 2026.",
+        "Does not apply to 2027 entry as far as the page shows, and the 2026 deadline has passed. Pakistan is not named; eligibility is any international fee-paying student, so eligible_countries INTL is reasonable. Should not be shown as open for 2027 until Leeds publishes new terms.",
+        "Same page lists a separate International Undergraduate Regional Scholarship (£5,000, automatic) with no Pakistan on its list; correctly excluded."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "is_russell_group: the cited Russell Group Leeds page does not mention the Russell Group or membership in its text, so the source does not confirm the claim (the researcher disclosed this).",
+      "eligibility_note: the gov.uk student sponsor register page (shows last updated 13 October 2026) gives no institution names in fetched text, so Leeds listing and the 2026-10-07 register date could not be confirmed.",
+      "Pakistan page confirms the foundation programme route for undergraduates (IELTS 6.0), postgraduate 4 year Bachelor / 2 year Masters rule, and the 80%/70%/60% equivalences. Those equivalences are not labelled by level on the page, whereas the file treats them as postgraduate equivalences.",
+      "summary: 'Large' is an unsourced descriptor."
+    ],
+    "corrections": {}
+  }
+}

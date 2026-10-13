@@ -1,0 +1,135 @@
+{
+  "slug": "gb-kings-college-london",
+  "courses": [
+    {
+      "slug": "gb-kings-college-london-banking-finance-msc",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements / min_ielts_band: King's postgraduate English page (Band B) says IELTS Academic 7.0 overall with at least 6.5 in reading and writing and 6.0 in listening and speaking; PTE Academic 69 overall with 62 in reading and writing and 59 in listening and speaking. The file says 6.5 in each skill and 62 in each communicative skill, which overstates the listening and speaking minimums. min_ielts_band 6.5 should be 6.0 on the file's own 'lowest subtest floor' convention. TOEFL (100 with 25 writing and 23 others before 21 January 2026; 5 overall with 4.5 each after) and 'Duolingo not listed' are correct.",
+        "pakistan_entry_note: legacy page says a four-year Bachelor's completed before 2016 is only considered together with a two-year Master's, and a five-year Bachelor's or a four-year Bachelor's is otherwise accepted; the file omits the pre-2016 condition. 70% for a 2:1 and 75% for competitive high 2:1 programmes are confirmed.",
+        "Fee GBP 45,100 (2026/27, UK and international the same), international deposit GBP 3,000, high 2:1 at 65%, social science related degree, work experience wording, September to September, module list, decisions 'after February, where possible by May': confirmed. The course page lists no 2027 fee, so 2026/27 is correctly labelled.",
+        "The page body does not state a start month or mode; intake 'September 2027' is inferred from 'September to September' and the teaching-and-modules page does not state it either."
+      ],
+      "corrections": {
+        "english_requirements": "English language band B: IELTS Academic 7.0 overall, at least 6.5 in reading and writing and at least 6.0 in listening and speaking. PTE Academic 69 overall, at least 62 in reading and writing and at least 59 in listening and speaking. TOEFL iBT 5 overall, at least 4.5 in each skill (tests from 21 January 2026), or 100 overall with 25 writing and 23 in each other skill (earlier tests). Duolingo is not listed.",
+        "min_ielts_band": 6.0
+      }
+    },
+    {
+      "slug": "gb-kings-college-london-international-management-msc",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements / min_ielts_band: same Band B error as Banking and Finance (listening and speaking minimums are IELTS 6.0 and PTE 59, not 6.5 and 62).",
+        "pakistan_entry_note: omits the pre-2016 four-year Bachelor's condition (needs a two-year Master's as well).",
+        "Fee GBP 40,450 (2026/27), deposit GBP 2,000, 12 months, high 2:1 at 65% in any subject, seven compulsory modules and project options, no start month on any page: confirmed.",
+        "The course page carries a ranking claim ('ranked among the world's top 30 for Management, QS Business Master's Rankings 2026'); the file correctly does not repeat it."
+      ],
+      "corrections": {
+        "english_requirements": "English language band B: IELTS Academic 7.0 overall, at least 6.5 in reading and writing and at least 6.0 in listening and speaking. PTE Academic 69 overall, at least 62 in reading and writing and at least 59 in listening and speaking. TOEFL iBT 5 overall, at least 4.5 in each skill (tests from 21 January 2026), or 100 overall with 25 writing and 23 in each other skill (earlier tests). Duolingo is not listed.",
+        "min_ielts_band": 6.0
+      }
+    },
+    {
+      "slug": "gb-kings-college-london-artificial-intelligence-msc",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements / min_ielts_band: same Band B error as Banking and Finance (listening and speaking minimums are IELTS 6.0 and PTE 59, not 6.5 and 62).",
+        "pakistan_entry_note: omits the pre-2016 four-year Bachelor's condition.",
+        "Fee GBP 40,450 (2026/27), deposit GBP 2,000, one year September to September (teaching-and-modules page), Individual Project 60 credits, at least 30 credits each from AI and ML modules, decisions after February and by May where possible: confirmed.",
+        "highlights: 'Optional topics such as robotics and planning' is supported only loosely (planning is a listed module; robotics appears in the course overview rather than the module list).",
+        "The course page carries ranking claims (QS subject ranking, THE employability); the file correctly does not repeat them."
+      ],
+      "corrections": {
+        "english_requirements": "English language band B: IELTS Academic 7.0 overall, at least 6.5 in reading and writing and at least 6.0 in listening and speaking. PTE Academic 69 overall, at least 62 in reading and writing and at least 59 in listening and speaking. TOEFL iBT 5 overall, at least 4.5 in each skill (tests from 21 January 2026), or 100 overall with 25 writing and 23 in each other skill (earlier tests). Duolingo is not listed.",
+        "min_ielts_band": 6.0
+      }
+    },
+    {
+      "slug": "gb-kings-college-london-master-of-laws-llm",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements / min_ielts_band: same Band B error as Banking and Finance (listening and speaking minimums are IELTS 6.0 and PTE 59, not 6.5 and 62).",
+        "pakistan_entry_note: omits the pre-2016 four-year Bachelor's condition.",
+        "Fee GBP 38,300 full-time and GBP 19,150 part-time (2026/27), deposit GBP 2,000, high 2:1 at 65%, law degree or 70% law content, three years' legal experience with a 2:1 exception, references not taken into account, nine pathways, 45 or 60 credit writing project: confirmed. Duration and start month are not stated on any page, so null is correct.",
+        "The course page claims the law school is 'recognised globally as one of the best law schools in the world'; the file correctly does not repeat it."
+      ],
+      "corrections": {
+        "english_requirements": "English language band B: IELTS Academic 7.0 overall, at least 6.5 in reading and writing and at least 6.0 in listening and speaking. PTE Academic 69 overall, at least 62 in reading and writing and at least 59 in listening and speaking. TOEFL iBT 5 overall, at least 4.5 in each skill (tests from 21 January 2026), or 100 overall with 25 writing and 23 in each other skill (earlier tests). Duolingo is not listed.",
+        "min_ielts_band": 6.0
+      }
+    },
+    {
+      "slug": "gb-kings-college-london-public-health-mph",
+      "verdict": "pass",
+      "issues": [
+        "English Band D confirmed: IELTS 6.5 overall with 6.0 in each skill, PTE 62 overall with 59 in each skill, TOEFL 4.5 overall with 4 in each skill (from 21 January 2026) or 92 overall with 23 writing and 20 others (earlier). Duolingo not listed.",
+        "Fee GBP 38,300 (2026/27), deposit GBP 2,000, minimum 2:1 with no subject named, required modules and 60-credit dissertation: confirmed. Duration and start month are not stated (the 180 credits only imply a year), so null duration is correct.",
+        "pakistan_entry_note: omits the pre-2016 four-year Bachelor's condition; 70% for a 2:1 is confirmed.",
+        "overview: 'emphasis on disease prevention and control' and 'social sciences' were not visible in the page text read; the module list supports the epidemiology, statistics, health economics and global health content."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kings-college-london-international-relations-ma",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements / min_ielts_band: same Band B error as Banking and Finance (listening and speaking minimums are IELTS 6.0 and PTE 59, not 6.5 and 62).",
+        "pakistan_entry_note: omits the pre-2016 four-year Bachelor's condition.",
+        "Fee GBP 38,300 full-time and GBP 19,150 part-time (2026/27), deposit GBP 2,000, high 2:1 at 65%, relevant degrees (the page also lists Political Science, Strategic Studies, Criminology and others; the file's list is a subset that includes Economics, which is on the page), required modules 45 + 60 credits and 75 credits optional from War Studies, career destinations: confirmed.",
+        "overview: 'through politics, philosophy and social theory' was not found in the page text read; the page names globalisation, ethics and human rights, international political economy, war, environmental crises and security."
+      ],
+      "corrections": {
+        "english_requirements": "English language band B: IELTS Academic 7.0 overall, at least 6.5 in reading and writing and at least 6.0 in listening and speaking. PTE Academic 69 overall, at least 62 in reading and writing and at least 59 in listening and speaking. TOEFL iBT 5 overall, at least 4.5 in each skill (tests from 21 January 2026), or 100 overall with 25 writing and 23 in each other skill (earlier tests). Duolingo is not listed.",
+        "min_ielts_band": 6.0
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-kings-college-london-kbs-global-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Up to GBP 10,000, nationals of countries outside Europe, Global South particularly welcomed, automatic after firm acceptance of an offer on a full-time in-person King's Business School postgraduate course, committee meets April and July, notifications end of April 2027 and July 2027: confirmed. Pakistan is not named; eligibility rests on 'outside of Europe'. Number of awards and entry year are not stated (2027 inferred from the dates)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kings-college-london-kbs-future-financial-leaders",
+      "verdict": "pass",
+      "issues": [
+        "Up to GBP 10,000, passion for finance and economics, offer on one of six courses, automatic, no nationality wording: confirmed. The six courses can now be recorded: Accounting, Accountability & Financial Management MSc; Banking & Finance MSc; Economics & Finance MSc; Finance (Asset Pricing) MSc; Finance (Corporate Finance) MSc; Finance Analytics MSc. This links the award to the Banking and Finance MSc in the file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kings-college-london-kbs-future-sustainability-leaders",
+      "verdict": "pass",
+      "issues": [
+        "Up to GBP 10,000, passion for and experience in sustainability and responsible business, automatic consideration, no nationality wording, entry year not stated: confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kings-college-london-kbs-kings-community",
+      "verdict": "pass",
+      "issues": [
+        "50% of fees, two awards, King's alumni or current final-year King's students moving to King's Business School, automatic consideration: confirmed. The page does not state an offer requirement for this award separately; the general rule (offer holders who have firmly accepted) applies, as the file notes."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "is_russell_group: neither the King's about page nor the russellgroup.ac.uk profile page that was fetched mentions the Russell Group (the about page calls King's 'a founding member of the federal University of London'). The flag cannot be verified from the cited sources.",
+      "summary: 'founded in 1829' and 'five campuses across London' are confirmed on https://www.kcl.ac.uk/about; the Strand appears as the postal address. 'Main base on the Strand' is a mild inference.",
+      "summary: 'requires most undergraduate applicants from Pakistan to complete its own International Foundation Programme' is not supported as written. The South Asia page says applicants from other South Asian countries (India has a separate route) must complete an International Foundation Course; Pakistan is not named and 'most' is not stated. Suggest softening to say the South Asia page states an International Foundation Course is required for applicants from South Asian countries other than India.",
+      "eligibility_note is null, but the gov.uk student sponsor register file dated 2026-09-10 lists 'King's College London' as a Student Sponsor.",
+      "No ranking, award or superlative claims and no dashes used as punctuation found in the file."
+    ],
+    "corrections": {
+      "eligibility_note": "Licensed student sponsor (gov.uk register of licensed sponsors: students, file dated 2026-09-10, listed as King's College London)",
+      "eligibility_source_url": "https://assets.publishing.service.gov.uk/media/6aa2613b9f95f408139c657b/SP_-_Student_and_Child_Student_Web_Register_-_2026-09-10.csv"
+    }
+  }
+}

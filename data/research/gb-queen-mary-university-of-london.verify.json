@@ -1,0 +1,135 @@
+{
+  "slug": "gb-queen-mary-university-of-london",
+  "courses": [
+    {
+      "slug": "gb-queen-mary-university-of-london-computer-science-bsc",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements: 'Duolingo is not accepted' is not stated on https://www.qmul.ac.uk/international-students/englishlanguagerequirements/accepted-english-language-tests-and-qualifications/ (Duolingo is not mentioned) or in the English language policy PDF, which refers to a separate alternative tests list. Unsupported negative claim.",
+        "Confirmed: BSc (Hons) G400, 3 years, September 2027, overseas fee GBP 34,750 (entry year 2027), AAA including Maths, Computer Science or Physics, IB 36 with 6,6,6 at HL; EECS undergraduate Band 3 (IELTS 6.0 / 5.5, PTE 65 / 59). Year 1 modules match.",
+        "Page-level fee year label is 'Entry Year 2027' only, so 2027/28 is inferred."
+      ],
+      "corrections": {
+        "english_requirements": "School of Electronic Engineering and Computer Science undergraduate level, Band 3: IELTS Academic 6.0 overall with 5.5 in each component, or PTE Academic 65 overall with 59 in each component. TOEFL iBT accepted at a published level on either scale. (Remove the sentence about Duolingo.)"
+      }
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-law-llb",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: LLB (Hons) M100, 3 years, September 2027, overseas fee GBP 30,950 (entry year 2027, no further year label), A*AA, IB 36 with 6,6,6 at HL, contextual AAA standard and ABB enhanced. First-year modules include Public Law, Land Law, Contract Law I and EU Law.",
+        "English: IELTS 7.0 overall, 6.5 Writing, 5.5 in the other components is confirmed on the non-standard requirements page for 'All Undergraduate programmes' in the School of Law; the LLB is not named. I could not read the last 4,496 characters of that page.",
+        "overview: 'Variants with business, politics and other subjects are listed separately' could not be seen on the page content I received; minor."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-business-management-bsc",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements: 'Duolingo is not accepted' is unsupported (accepted tests page does not mention Duolingo).",
+        "Confirmed: NN12 BSc (Hons), 3 years, September 2027, overseas fee GBP 30,950, AAA, IB 36 with 6,6,6 and at least 4 in SL Maths, contextual ABB / BBB; School of Business and Management undergraduate Band 4 (IELTS 6.5 / 6.0, PTE 71 / 65). Year 1 module names match.",
+        "Fee year is only 'Entry Year 2027' on the page; 2027/28 inferred."
+      ],
+      "corrections": {
+        "english_requirements": "School of Business and Management undergraduate level, Band 4: IELTS Academic 6.5 overall with 6.0 in each component, or PTE Academic 71 overall with 65 in each component. (Remove the sentence about Duolingo.)"
+      }
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-biomedical-sciences-bsc",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements: 'Duolingo is not accepted' is unsupported.",
+        "Confirmed: BSc (Hons) Biomedical Sciences, 3 years, September 2027, overseas fee GBP 34,750, AAB including Biology plus a second science, IB 34 with 6,6,5 at HL with Biology; School of Biological and Behavioural Sciences undergraduate Band 3 (IELTS 6.0 / 5.5, PTE 65 / 59). Year 1 modules match.",
+        "Fee year is only 'Entry Year 2027' on the page; 2027/28 inferred (the file's notes do not say so for this course)."
+      ],
+      "corrections": {
+        "english_requirements": "School of Biological and Behavioural Sciences undergraduate level, Band 3: IELTS Academic 6.0 overall with 5.5 in each component, or PTE Academic 65 overall with 59 in each component. (Remove the sentence about Duolingo.)"
+      }
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-mechanical-engineering-beng",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements: 'Duolingo is not accepted' is unsupported.",
+        "Confirmed: BEng (Hons) H300, 3 years, September 2027, overseas fee GBP 34,750 (entry year 2027), AAB including Maths and Physics or Chemistry, IB 34 with 6,6,5 at HL including Maths and Physics or Chemistry; School of Engineering and Materials Science undergraduate Band 3. Year 1 modules match."
+      ],
+      "corrections": {
+        "english_requirements": "School of Engineering and Materials Science undergraduate level, Band 3: IELTS Academic 6.0 overall with 5.5 in each component, or PTE Academic 65 overall with 59 in each component. (Remove the sentence about Duolingo.)"
+      }
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-advanced-computer-science-msc",
+      "verdict": "fail",
+      "issues": [
+        "english_requirements: 'Duolingo is not accepted' is unsupported. The course page states only 'Band 4: IELTS (Academic) minimum score 6.5 overall with 6.0 in each of Writing, Listening, Reading and Speaking'; PTE 71 / 65 is confirmed on the accepted tests page.",
+        "Confirmed: 1 year full time and 2 years part time, September 2027, overseas GBP 36,950 full time (page labels it per year; a one-year course, so total equals annual), 2:1 in a related discipline with 2:2 (55%+) considered individually. Pakistan page confirms a 4 year bachelor from selected institutions and the 2:1 equivalent GPA band 2.6 to 3.6 out of 4.0, so bachelor_16 is a reasonable reading.",
+        "Core modules match."
+      ],
+      "corrections": {
+        "english_requirements": "Band 4: IELTS Academic 6.5 overall with 6.0 in each of Writing, Listening, Reading and Speaking, or PTE Academic 71 overall with 65 in each component. (Remove the sentence about Duolingo.)"
+      }
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-laws-llm",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: LLM, 1 year full time, 2 years part time, September 2027 full time overseas fee GBP 34,650; SQE preparation September 2027 GBP 39,500; some options start January 2027. 2:1 in law or substantial law content, 2:2 with other legal qualifications or experience.",
+        "The course page states no English requirement. IELTS 7.0 overall, 6.5 Writing, 6.0 other components is confirmed on the non-standard requirements page for 'All Postgraduate Taught programmes' in the School of Law; the LLM is not named.",
+        "overview: 'a choice of specialist areas' is not stated; the page says students choose from a wide range of London-based LLM modules. Minor. Fee year label is not printed beyond the September 2027 start."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-queen-mary-university-of-london-global-talent-ug",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 5,000 per academic year up to GBP 20,000 over a standard four-year degree, renewable with an average of 65% or above, automatic with no application, September 2027, overseas fee status, self-funded full time, must exceed the standard offer by one grade (table), no other QM scholarship or discount, not deferrable, listed exclusions match. Country listed as 'All'; Pakistan not named."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-global-excellence-pgt",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 8,000 deducted from tuition, minimum first class honours or overseas equivalent, overseas fee status, form emailed after offer (one form for Talent, Merit and Excellence), rolling, 'Applications will open in Oct 26' (year ambiguous), unlimited awards until April 2027, September 2027, exclusions include MSc Economics, MRes, PG Dip, PG Cert, distance learning, pre-masters. Country 'All'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-global-talent-pgt",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 6,000 deducted on enrolment, minimum 2:1 or overseas equivalent, overseas status, emailed form, rolling, unlimited until April 2027, exclusions include MSc Economics and MSc Global Public Health and Policy. The page does give inconsistent intake wording (September 2027, 2027/28, 'September 2026/7'), as the file notes."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queen-mary-university-of-london-global-merit-pgt",
+      "verdict": "fail",
+      "issues": [
+        "summary and criteria_text: file says 'at least a 2:2 honours degree' / 'minimum UK 2:2'. The page says a minimum of a high 2:2 ('H2:2' in the criteria, 'UK high 2:2 bachelor's degree' in the terms). The threshold is misstated in a way that could mislead applicants.",
+        "Otherwise confirmed: GBP 5,000 deducted from tuition, overseas status, full time master's, self-funded, emailed form, rolling, unlimited until April 2027, September 2027, exclusions include MSc Economics, MRes, PG Dip and PG Cert."
+      ],
+      "corrections": {
+        "criteria_text": "Offer for an eligible postgraduate taught programme; minimum UK high 2:2 honours degree or overseas equivalent; overseas fee status; full time; self-funded; no other University or full-fee scholarship.",
+        "summary": "A tuition award for international offer holders on eligible full time master's programmes for September 2027 with at least a high 2:2 honours degree or overseas equivalent. Applicants complete a form emailed when applications open."
+      }
+    }
+  ],
+  "university": {
+    "verdict": "fail",
+    "issues": [
+      "summary: 'regional staff in Pakistan' is not supported by the cited Pakistan page, which lists 18 in-country representatives (agents such as IDP Education and UKEC), not Queen Mary staff. https://www.qmul.ac.uk/international-students/ does not mention Pakistan, Malta or 'research-intensive'.",
+      "summary: 'campus in Malta' and 'research-intensive' are unsourced on the cited pages (MBBS Medicine Malta appears on a scholarship page, so a Malta presence is plausible, but not for the summary's wording).",
+      "is_russell_group: cited russellgroup.ac.uk page not confirmed by me; the international page does not state it. Unverifiable from the cited sources.",
+      "eligibility_note null: UK sponsor licence not checked; unverifiable.",
+      "Pakistan page does confirm foundation entry on Higher Secondary School Certificate, direct UG entry on A-levels or IB, and PGT from a 4 year bachelor with GPA bands."
+    ],
+    "corrections": {
+      "summary": "A university in east London with a main campus at Mile End. It offers undergraduate, postgraduate taught and research degrees, has a Pakistan entry requirements page listing in-country representatives, and offers international foundation routes."
+    }
+  }
+}

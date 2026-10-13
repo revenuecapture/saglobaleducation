@@ -1,0 +1,95 @@
+{
+  "slug": "gb-university-of-edinburgh",
+  "courses": [
+    {
+      "slug": "gb-university-of-edinburgh-msc-finance-investment",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the programme page: MSc, 1 year, on campus full-time, September 2027, five rounds for 2027/28 entry (14 October 2026, 9 December 2026, 10 February 2027, 21 April 2027, 9 June 2027), GBP 2,500 deposit within 28 days of an offer, GBP 60 application fee, first-class or 2:1 normally in accounting, finance, business or economics with other honours degrees considered for high ability and motivation, at least one quantitative module or relevant quantitative work experience, work experience not required, CFA Institute CFA Program Partner Initiative.",
+        "Fee page: GBP 38,130 international (including EU) under 'Fees for entry to MSc Finance and Investment in 2027'. Recorded 2027/28 is a reasonable reading.",
+        "English (entry requirements page): IELTS Academic 7.0 with at least 6.0 in each component; TOEFL iBT 100 with at least 20 in each component before 21 January 2026, 5.0 overall with at least 4.0 in each from that date. Tests no more than two years old (IELTS, TOEFL). min_ielts_overall 7.0, min_ielts_band 6.0 and null min_toefl are correct. The page also lists C1 Advanced or C2 Proficiency (185, 169 in each) and Oxford ELLT and Oxford Test of English Advanced as accepted; the file's 'PTE and Duolingo are not listed' is accurate but omits those tests.",
+        "Pakistan page: bachelor's studied over at least 4 years from an HEC recognised university; 2:1 equals 70% or 3.5 on the 4 point scale, first equals 80% or 3.7. pk_min_percent 70, pk_min_cgpa 3.5, pk_route bachelor_16 are supported.",
+        "career_notes: the page says 'junior trader to fund account analyst' (singular); the file writes 'fund accounts analyst'. Alumni panels and the Employability and Careers Expo are on the page. Minor wording fix.",
+        "overview: the page says 'evaluate assets, manage risks, and apply quantitative methods', not 'valuing assets and managing risk' (close paraphrase, acceptable).",
+        "The programme page carries FT and QS ranking claims and accreditation claims; none are used in the file."
+      ],
+      "corrections": {
+        "career_notes": "Roles named on the programme page include junior trader and fund account analyst; the Business School runs alumni panels and an Employability and Careers Expo."
+      }
+    },
+    {
+      "slug": "gb-university-of-edinburgh-msc-management",
+      "verdict": "fail",
+      "issues": [
+        "experience_requirements: the file says 'Work experience is not required but may improve chances.' The entry requirements page says this in the main section, but its international section says 'if you do not have highly relevant work or other experience, we will normally reject your application.' This applies to international applicants and is not mentioned anywhere in the file, so a Pakistani applicant would be misled.",
+        "academic_requirements: the file correctly records the 'any subject' versus 'related subject' conflict (main section: 2:1 in any subject; international section: 'a UK 2:1 honours degree in a related subject'). Because applicants from Pakistan fall under the international section, the related subject wording is the safer one. The programme page itself says 'any subject'.",
+        "Confirmed: MSc, 1 year on campus full-time, September 2027, rounds as for Finance and Investment, GBP 2,500 deposit, GBP 60 application fee (file omits the application fee here, minor), fee GBP 36,540 under 'Fees for entry to MSc Management in 2027', English IELTS 7.0 with 6.0 in each component, TOEFL 100/20 before 21 January 2026 and 5.0/4.0 after, Pakistan 70% or 3.5, career paths 'operations manager to project planner', semester one compulsory courses, options, final semester dissertation, teaching by lectures, case studies, group work and tutorials.",
+        "The programme page makes ranking claims (FT 9th in the UK, QS 32nd, University 35th in QS); none used in the file."
+      ],
+      "corrections": {
+        "experience_requirements": "Relevant work experience is not required on the main entry page, but the international section of the entry requirements page says that without highly relevant work or other experience the application will normally be rejected. Confirm with Edinburgh before advising Pakistani applicants."
+      }
+    },
+    {
+      "slug": "gb-university-of-edinburgh-msc-accounting-financial-management",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc, 1 year on campus full-time, September 2027, rounds and GBP 2,500 deposit as above, fee GBP 38,130 under 'Fees for entry to MSc Accounting and Financial Management in 2027', first-class or 2:1 normally in accounting, finance, financial management or a related discipline, quantitative disciplines (for example economics or maths) or business studies considered with a strong accounting and finance background, 'some evidence of mathematical ability', IELTS 7.0 with 6.0 in each component, TOEFL 100/20 before 21 January 2026 and 5.0/4.0 after, career paths 'auditor to business analyst'. min_* correct.",
+        "overview: 'combining quantitative accounting and financial management' misreads the page, which says organisations 'need more than just quantitative skills'. The technology, data, ethical decision-making and sustainability themes and the industry practical projects are supported. International accounting standards and global financial markets appear in the learning outcomes.",
+        "The page lists accreditation only at Business School level; the programme itself shows 'Available'. Nothing claimed in the file."
+      ],
+      "corrections": {
+        "overview": "One-year taught master's in the Business School that goes beyond quantitative skills, covering accounting and financial management alongside technology, data, ethical decision-making and sustainability, with practical projects involving industry and business professionals."
+      }
+    },
+    {
+      "slug": "gb-university-of-edinburgh-msc-ai-for-business",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc, one academic year on campus full-time, September 2027, five rounds, GBP 2,500 deposit within 28 days of an offer, GBP 60 application fee, fee GBP 33,600 under 'Fees for entry in 2027', English IELTS 7.0 with 6.0 in each component, TOEFL 100/20 before 21 January 2026 and 5.0/4.0 after. Semester one covers sector-specific AI, ethical challenges, AI-driven transformation strategy, basic programming and data-led decisions; semester two options; final semester dissertation. min_* and Pakistan 70% and 3.5 correct.",
+        "Subject: the programme page and the main entry section say 'any subject'; the entry requirements page international section says 'a UK 2:1 honours degree in a related subject'. The file records the conflict correctly. Treat related subject as the cautious reading for Pakistan.",
+        "experience_requirements: the international section adds 'If your degree is not of the required standard and you do not have highly relevant work or other experience, we will normally reject your application.' The file's 'not required but may improve chances' is accurate for the main section but omits this conditional statement. Minor here because the rejection is tied to a degree below standard.",
+        "career_notes: the page lists five paths (managing digital and AI projects, AI transformation consulting, digital and AI business development, advisory roles in start-up accelerators or incubators, digital and AI innovation in government); the file names three. Acceptable."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-edinburgh-doctoral-college-scholarships",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: covers the University tuition fee and a stipend at the UKRI rate (GBP 21,805 for 2026-2027, no 2027-2028 rate stated), three to four years subject to satisfactory progress, for students starting first year research study in 2027-2028, UK and overseas, UK first or 2:1 or international equivalent, nationality not taken into account, generally not for those already holding a PhD, interview expected for shortlisted candidates, outcome notified by the school, selection uses the scholarship form plus reference and academic transcript from the admissions application.",
+        "Deadlines confirmed: Biological Sciences 16 November 2026, Informatics 30 November 2026, Physics and Astronomy 4 January 2027 (Astrophysics) and 22 January 2027 (others), Chemistry 11 January 2027, Engineering 14 January 2027, Geosciences 25 January 2027, Mathematics 1 February 2027, Business School, Divinity, Economics, Edinburgh College of Art, Health in Social Sciences, History Classics and Archaeology, Law, Literatures Languages and Cultures, Moray House, Philosophy Psychology and Language Sciences, Social and Political Science 2 February 2027, Medicine and Veterinary Medicine to be confirmed. Application routes confirmed (EUCLID via MyEd; Informatics and Physics and Astronomy automatic; Biological Sciences direct to school).",
+        "Omitted from the file: awards cannot be held with fully-funded scholarships (partial funding gives reduced pro-rata funding), and applicants may be for full-time or part-time on-campus or distance study (the file says on-campus). Minor.",
+        "value_amount is the 2026/27 stipend only, as the notes say."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-edinburgh-graduate-scholarship-scheme",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: scheme page says it applies to home and overseas students, covers the self-funded part of tuition fees (tuition only, SAAS or Student Finance NI loans count as self-funding), separate online form for each postgraduate programme, no deadline but apply before starting, excluded programmes on a separate page. The parent alumni scholarships page states 10% off postgraduate tuition fees for graduates with an Edinburgh undergraduate degree, and excludes PG Development and CPD courses.",
+        "value_basis per_year is not stated by any source; set to null. The scheme page also states no entry year, which the file represents with a null intake_label (correct).",
+        "Relevance: only for Edinburgh undergraduate graduates, so of no use to a new Pakistani applicant. The file's summary and criteria_text say so."
+      ],
+      "corrections": {
+        "value_basis": null
+      }
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "eligibility_note: the cited register file (2026-09-10) has 'University of Edinburgh,Edinburgh, ,Higher Education Institution (HEI),Student Sponsor - Track Record,Student,'; the 2026-10-07 register has the same row. Confirmed.",
+      "is_russell_group: the cited russellgroup.ac.uk page for Edinburgh does not mention the Russell Group (the researcher says its text does not state membership). The value true cannot be shown from the cited source; cite a page that names members.",
+      "summary: 'International postgraduate applicants from Pakistan need a four-year bachelor's degree from an HEC recognised university' is confirmed on the Pakistan page. 'Undergraduate degrees normally last four years' is not stated on the Pakistan page or the international page, and 'in the centre of Edinburgh' and the three-college description could not be confirmed on the pages opened (only the College of Arts, Humanities and Social Sciences appears, on the Business School programme pages). Remove or source these.",
+      "No ranking, award or superlative in the summary. The programme pages carry QS and FT ranking claims; none are used.",
+      "No dash punctuation found in the file text."
+    ],
+    "corrections": {
+      "summary": "Public research university in Edinburgh, Scotland. International postgraduate applicants from Pakistan need a four-year bachelor's degree from an HEC recognised university; a 2:1 is treated as 70% or 3.5 on the 4 point scale and a first as 80% or 3.7."
+    }
+  }
+}

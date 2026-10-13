@@ -1,0 +1,23 @@
+{
+ "note": "Rows whose independent check failed and whose checker corrections were applied by hand on the date shown. They are approved on that basis.",
+ "date": "2026-10-13",
+ "slugs": [
+  "gb-kings-college-london-banking-finance-msc",
+  "gb-kings-college-london-international-management-msc",
+  "gb-kings-college-london-artificial-intelligence-msc",
+  "gb-kings-college-london-master-of-laws-llm",
+  "gb-kings-college-london-international-relations-ma",
+  "gb-queen-mary-university-of-london-computer-science-bsc",
+  "gb-queen-mary-university-of-london-business-management-bsc",
+  "gb-queen-mary-university-of-london-biomedical-sciences-bsc",
+  "gb-queen-mary-university-of-london-mechanical-engineering-beng",
+  "gb-queen-mary-university-of-london-advanced-computer-science-msc",
+  "gb-queen-mary-university-of-london-global-merit-pgt",
+  "gb-queen-mary-university-of-london",
+  "gb-university-of-bristol-law-llb",
+  "gb-university-of-glasgow-data-analytics-msc",
+  "gb-university-of-liverpool-mechanical-engineering-beng",
+  "gb-university-of-edinburgh-msc-management",
+  "gb-newcastle-university-computer-science-bsc"
+ ]
+}

@@ -1,0 +1,121 @@
+{
+  "slug": "gb-university-of-exeter",
+  "courses": [
+    {
+      "slug": "gb-university-of-exeter-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: Profile B1 page gives TOEFL iBT 90 with minimum 20 in speaking and 18 in writing, listening and reading; the file omits these sub-minimums. The page also gives no date for the 90 scale, so '(tests before 21 January 2026)' is an inference, not page text.",
+        "overview: 'theory, design, development, testing and application' follows the page's 'theory, design, develop, test and apply' very closely; consider rewording.",
+        "intake_labels: course page states no start month; 'September 2027' rests on the fees page saying autumn 2027 entry. Acceptable."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-llb-law",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: same TOEFL point as Computer Science (sub-minimums 20/18 omitted; date label not on the page).",
+        "overview: 'legal principles in theoretical and social contexts, including regional and global developments' is a close paraphrase of the page's 'law in different theoretical and social contexts with a constant eye on regional and global developments'; consider rewording.",
+        "academic_requirements: page also lists T-Level Distinction as accepted for Law; file omits it. Not an error."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-bsc-accounting-and-finance",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: same TOEFL point (sub-minimums omitted; date label inferred).",
+        "career_notes: page lists trainee stockbroker, actuary, insurance associate, trainee accountant, auditor, actuarial pricing trainee. Matches."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-beng-mechanical-engineering",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: same TOEFL point (sub-minimums omitted; date label inferred).",
+        "overview and notes: UCAS H300 (3 years) and H304 (4 years) both confirmed; IMechE accreditation, MSc Mechanical Engineering as further study, project-based and paid placement all confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-msc-finance",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: page shows GBP 32,600 international full-time under 2027 entry with no academic year label; '2027/28' is an inference for September 2027 entry (already flagged by the researcher). Amount verified.",
+        "intake_labels: page offers both September 2027 and January 2027 applications; file records September 2027 only. The page's date selector shows September 2027 only, so acceptable.",
+        "english_requirements: same TOEFL point (sub-minimums omitted; date label inferred).",
+        "overview: 'CFA-aligned content' is loose. The page says CFA University Affiliation Program status and that the Sustainable Finance pathway recognises topics from the CFA ESG certificate. Not a ranking claim, but 'CFA-aligned' is a mild paraphrase."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-llm-commercial-law",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: page shows GBP 26,300 full-time (GBP 13,150 part-time) for 2027 entry with no academic year label; '2027/28' is an inference. Amount verified.",
+        "intake_labels: page also lists a January 2027 application option; file records September 2027 only (the note mentions both).",
+        "english_requirements: same TOEFL point (sub-minimums omitted; date label inferred).",
+        "highlights: 'tax law', 'data protection' appear in the page's course-content sentence ('international arbitration; tax law; artificial intelligence; data protection and privacy') though not as titled modules in the module table. Supported."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-msc-data-science",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements: same TOEFL point (sub-minimums omitted; date label inferred).",
+        "tuition: GBP 30,100 full-time September 2027 confirmed; January 2027 is GBP 30,300 as the note says."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-exeter-excellence-ug-2027",
+      "verdict": "pass",
+      "issues": [
+        "eligible_countries: page names no countries, only International fee status (including EU students charged International fees). 'INTL' is a fair reading.",
+        "Value, 150 awards, deadline 4 March 2027 23:59 GMT, outcome by 6 April 2027, ISC International Foundation progression excluded, no combining with other Exeter awards: all confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-excellence-pgt-2027",
+      "verdict": "pass",
+      "issues": [
+        "deadline_note: page does print the time as 'II:59 GMT' (typo for 23:59), as the file says. Deadline 28 January 2027 and outcome 25 February 2027 confirmed.",
+        "Value GBP 15,000 off first-year fees only, 150 awards, UK 2:1 equivalent, September 2027 only: confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-pgt-scholarship-pakistan-2027",
+      "verdict": "pass",
+      "issues": [
+        "intake_label: page body says September 2027 entry but the page's meta description also mentions January 2028; the intake should be confirmed with the university. Minor.",
+        "Value GBP 10,000 first year only, Pakistan citizens or passport holders with International fee status, automatic, allocated until 31 August 2027, deposit required, not combinable: all confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-exeter-alumni-scholarship-2027",
+      "verdict": "pass",
+      "issues": [
+        "Page says most standalone taught Masters (including PGCert and PGDip) and research degrees are eligible, plus the PGCE; file's 'postgraduate, doctoral' levels are a fair summary.",
+        "20% first-year fee reduction, enrolment 1 September 2027 to 31 August 2028, automatic, exclusions: confirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'main teaching based at the Streatham Campus' is not stated by any page read; the courses checked are Streatham Campus, but 'main' is an inference. Consider dropping 'main'.",
+      "Russell Group membership confirmed on russellgroup.ac.uk; sponsor register row 'University of Exeter' confirmed in the 2026-09-10 file; International Study Centre foundation, International Year One and Pre-Masters confirmed on the international students page.",
+      "No ranking, award or superlative claims and no dashes used as punctuation found in the file."
+    ],
+    "corrections": {}
+  }
+}

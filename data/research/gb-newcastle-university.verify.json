@@ -1,0 +1,95 @@
+{
+  "slug": "gb-newcastle-university",
+  "courses": [
+    {
+      "slug": "gb-newcastle-university-computer-science-bsc",
+      "verdict": "fail",
+      "issues": [
+        "intake_labels: the course page (g400) says only '2026 entry' and gives no start month or year; the file says 'September 2027', which the page does not support. The fee (GBP 31,500, 2026-27) and AAB / IB 34 (2026 entry) match the page, so the intake is inconsistent with the fee year and entry requirements recorded.",
+        "english_requirements: the course page has an English heading with no figures. The IELTS 6.5 overall with 5.5 per skill, PTE 70 and Duolingo 125 (no skill below 100) figures are confirmed on https://www.ncl.ac.uk/international/language/, which also says some courses require higher and to check the course page. The file's source URLs do not cite that page.",
+        "min_toefl: the language page states TOEFL iBT overall 90 (before 21 January 2026) with a new scale of 4.5 overall after that date; file has null. Optional."
+      ],
+      "corrections": {
+        "intake_labels": "Not stated on page (page says '2026 entry' only); remove 'September 2027' or re-source from a 2027 course summary"
+      }
+    },
+    {
+      "slug": "gb-newcastle-university-law-llb",
+      "verdict": "pass",
+      "issues": [
+        "fees_source_url PDF (m101.pdf) confirms Law LLB Honours, 3 years (4 with placement or study abroad), start September 2027, FT International GBP 26,000 under 'Tuition fees (Year 1)', AAA / IB 36. No academic year label is printed, so '2027/28' is an inference (already disclosed in notes).",
+        "official_url (m101 web page) still shows 2024 entry data (GBP 21,600, September 2024) and so contradicts the file; already disclosed in flags.conflicting_sources.",
+        "English figures are university-wide, confirmed on the international language page; the course sources print none."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-newcastle-university-business-management-ba",
+      "verdict": "pass",
+      "issues": [
+        "fees_source_url PDF (n200.pdf) confirms Business Management BA Honours, 3 years, start September 2027, FT International GBP 25,750 (Tuition fees Year 1, no year label), AAB / IB 34. 2027/28 is inferred.",
+        "official_url (n200 web page) shows 2024 entry data (GBP 23,500, September 2024), which contradicts the file; not disclosed in flags.",
+        "English figures are university-wide, confirmed on the international language page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-newcastle-university-mechanical-engineering-meng",
+      "verdict": "pass",
+      "issues": [
+        "fees_source_url PDF (h301.pdf) confirms MEng Honours, 4 years, start September 2027, FT International GBP 30,700, ABB / IB 32.",
+        "official_url (h301 web page) states 2026 entry, GBP 30,700 for 2026-27 and A-level AAB / IB 34, which differs from the file's ABB / 32 (taken from the 2027 PDF). The fee is identical across both years, so the '2027/28' label is inferred only from the PDF start date. Worth a client check.",
+        "English figures are university-wide, confirmed on the international language page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-newcastle-university-biomedical-sciences-bsc",
+      "verdict": "pass",
+      "issues": [
+        "official_url and fees_source_url (b940.pdf) confirm BSc Honours, 3 years, start September 2027, FT International GBP 31,950 (Tuition fees Year 1, no year label), AAB / IB 34. 2027/28 is inferred.",
+        "English figures are university-wide, confirmed on the international language page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-newcastle-university-vc-international-scholarship-ug",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the scholarship page and the 2026-27 regulations PDF: GBP 7,000 credited to the tuition fee account, Pakistan on the country list (predominantly resident for the last three years), UCAS route, automatic, Newcastle as firm choice, not fully sponsored, excludes MBBS, BDS, Dental Therapy BSc, INTO pathway progressors and Clearing, renewable annually subject to progression, no deadline stated.",
+        "Applies to 2026/27 entry only and the regulations say awards cannot be deferred, so it is not confirmed for 2027 entry; the file labels it as latest published terms."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-newcastle-university-vc-excellence-scholarship-pgt",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2026-27 regulations PDF: up to 50% of tuition fees, full-time master's or MRes at the city centre campus, international fee status, UK 2:1 or equivalent, one application after offer, deadlines 26 February and 26 May 2026, January starters excluded, number of awards not stated.",
+        "Regulations say awards cannot be deferred to 2027/28, so no confirmation for 2027 entry. Note several programmes are excluded (e.g. online, MSc Drug Chemistry FT); the file's summary does not mention this."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-newcastle-university-early-payment-discount",
+      "verdict": "pass",
+      "issues": [
+        "https://www.ncl.ac.uk/tuition-fees/funding/ confirms 2% off annual fees for international fee-paying students (and home-fee postgraduates) paying in full on or before 25 September 2026; excludes students fully paid by a tuition fee loan; part-sponsored students get it only on their own share.",
+        "The page does not state levels, so 'undergraduate, postgraduate' and requires_offer are inferred. The 2026 date has passed (today is 2026-10-13) and the page does not confirm the discount for 2027/28. It is a payment discount, not a competitive scholarship."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'research-intensive' is not stated on https://www.ncl.ac.uk/ (it says 'one of the UK's top rated research universities'); 'in the centre of Newcastle upon Tyne' is not stated either (page says 'heart of one of the UK's favourite student cities'). '120 countries' matches 'over 120 different countries' on the undergraduate international page. Minor unsourced wording.",
+      "is_russell_group: the cited russellgroup.ac.uk page failed to open for me, but a search returns that page and the Newcastle homepage says it is a Russell Group member.",
+      "eligibility_note null: UK sponsor licence status was not verified (register not checked); unverifiable.",
+      "Pakistan page confirms IELTS 6.5 generally and gives no Pakistani qualification requirements, consistent with pk_* nulls."
+    ],
+    "corrections": {}
+  }
+}

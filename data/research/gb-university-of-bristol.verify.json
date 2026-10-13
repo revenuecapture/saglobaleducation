@@ -1,0 +1,156 @@
+{
+  "slug": "gb-university-of-bristol",
+  "courses": [
+    {
+      "slug": "gb-university-of-bristol-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 course page: title BSc Computer Science (G400), 3 years full-time, international GBP 34,700 'for the first year', A*AA including A* in Mathematics, contextual AAB including A in Mathematics, IB 38 with 18 at HL including 7 in Mathematics, IELTS 6.5 with 6.0 in all skills (Profile E). Profile E page confirmed PTE 67 (64 in each skill) and TOEFL 88 (R20 L19 S22 W22) up to 20 January 2026 and 4.5/4.5 on the new scale. min_* values correct.",
+        "intake_labels: the course page says only '2027 entry' and gives no start month, so 'September 2027' is an inference (usual start, but not stated on the page).",
+        "tuition_academic_year 2027/28 is inferred from '2027 entry'; the page labels the fee 'for the first year' and says fees are subject to annual review. The file's notes disclose first year only.",
+        "overview: 'combining programming and theory' is not stated on the page. The topics (high performance computing, machine learning, cryptography, artificial intelligence, algorithms, human factors) are stated as topics explored 'over the course of your degree', not as later-year options; the file's 'later options in areas such as' is a slight reframing. Acceptable."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bristol-law-llb",
+      "verdict": "fail",
+      "issues": [
+        "overview: 'A three year qualifying law degree' is not on the page. The page says the degree 'prepares you, in part, for the Solicitors Qualifying Examination (SQE)' and progression to the Bar Practice Course. Qualifying law degree status is an unsourced claim (and an outdated term).",
+        "overview: 'covering the core areas of English law' is not supported: the page does not itemise year one units. The specialist units named (Corporate Governance, International Law, Commercial Law, Environmental Law) are confirmed, as are Intellectual Property Law and Human Rights Law.",
+        "Confirmed: title LLB Law (M100), 3 years full-time, international GBP 26,500 'for the first year', A*AA (or A*A*B), IB 38 with 18 at HL, LNAT required, Profile B undergraduate IELTS 7.0 with 7.0 Writing and 6.5 other, PTE 71 (Writing 71, others 67), TOEFL 95 (R22 L21 S23 W24) and new scale 5 overall, 5 Writing, 4.5 other. min_ielts_band 6.5 (lowest component) is consistent with the note.",
+        "academic_requirements omits the contextual offer (AAB) and the A*A*B alternative; incomplete rather than wrong.",
+        "intake_labels 'September 2027': page says only '2027 entry'; month is inferred."
+      ],
+      "corrections": {
+        "overview": "A three year law degree, UCAS code M100, with specialist units such as corporate governance, international law, commercial law and environmental law. The University states it prepares students in part for the Solicitors Qualifying Examination. Applicants must sit the LNAT."
+      }
+    },
+    {
+      "slug": "gb-university-of-bristol-mechanical-engineering-meng",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 page: title MEng Mechanical Engineering (H300), 4 years full-time, international GBP 33,600 'for the first year', A*AA including A*A (any order) in Mathematics and one of Further Mathematics, Physics, Chemistry, Biology or Computer Science, IB 38 with 18 at HL including 7, 6 (any order) in Mathematics and one of Physics, Chemistry or Computer Science, IELTS 6.5 with 6.0 in all skills (Profile E). PTE 67/64 confirmed on Profile E page.",
+        "academic_requirements: the IB second subject is Physics, Chemistry or Computer Science (not Further Mathematics or Biology as at A-level). The file says only 'a second required subject'; the notes admit this was not read in full. Incomplete rather than wrong.",
+        "intake_labels 'September 2027': page says only '2027 entry'; month inferred. Fee year 2027/28 inferred from 2027 entry (page says 'first year', subject to annual review).",
+        "Themes in overview (design and manufacture, dynamics and control, materials, energy and fluid flow) confirmed."
+      ],
+      "corrections": {
+        "academic_requirements": "A-level standard offer A*AA, including A*A (in any order) in Mathematics and one of Further Mathematics, Physics, Chemistry, Biology or Computer Science. IB: 38 points overall with 18 at Higher Level, including 7 and 6 (in any order) at Higher Level in Mathematics and one of Physics, Chemistry or Computer Science."
+      }
+    },
+    {
+      "slug": "gb-university-of-bristol-economics-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the 2027 page: title BSc Economics (L100), 3 years full-time, international GBP 29,300 'for the first year', A*AA with Mathematics, contextual AAB, IB 38 with 18 at HL including Mathematics (6 at HL, or 7 at SL Analysis and Approaches), Profile G IELTS 6.5 with 7.0 in reading and listening and no score below 6.0. Summary text mentions behavioural economics, machine learning, health economics and international trade; confirmed.",
+        "Profile G page was opened by this checker: PTE Academic 67 overall with 71 in reading and listening and 64 in other skills; TOEFL 88 (R24 L22 S22 W22) up to 20 January 2026, or 4.5 overall with 5 in reading and listening and 4.5 in speaking and writing. min_pte is stated by the page, so null is incomplete rather than wrong.",
+        "english_requirements omits the PTE and TOEFL detail (incomplete).",
+        "intake_labels 'September 2027': page says only '2027 entry'; month inferred. Fee year inferred from 2027 entry."
+      ],
+      "corrections": {
+        "min_pte": 67,
+        "english_requirements": "Profile level G: IELTS 6.5 overall with 7.0 in reading and listening, and no score below 6.0; PTE Academic 67 overall with at least 71 in reading and listening and 64 in other skills; TOEFL iBT 88 overall (Reading 24, Listening 22, Speaking 22, Writing 22) for tests taken up to 20 January 2026, or 4.5 overall with 5 in reading and listening and 4.5 in speaking and writing on the new scale."
+      }
+    },
+    {
+      "slug": "gb-university-of-bristol-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc Management, one year full-time, September 2027, international GBP 34,500 per year (page gives no separate fee year label; 2027/28 inferred from 2027 entry), overseas deadline 12 August 2027, upper second-class or international equivalent in any discipline, five years minimum relevant experience or a relevant postgraduate qualification with a CV as the alternative route, Profile B postgraduate IELTS 7.0 with 6.5 in all skills, PTE 71 (67 in all skills), TOEFL 95 (R22 L21 S23 W22) and new scale 5/4.5. min_* correct.",
+        "Pakistan page confirmed: 4 year bachelor's from accepted universities, 3+1, 2+2, 4 year before 2016 + 1, CGPA at least 3.7 for UK 2.1 programmes, scale not stated, selected institutions only, Qualification Check required. The page also lists a 5/6 year bachelor's, which the note omits (minor). pk_route bachelor_16 and null pk_min_cgpa are reasonable.",
+        "highlights/overview: core units Management and organisation, Finance and accounting for management, Strategy and decision making, Operations and marketing management, and Leadership, Strategy and Change confirmed. The file's 'Leadership, strategy and change' matches the page title.",
+        "application_deadline_note: 'Places are allocated on a continuous basis and programmes may close early' was not seen in the extract of this page (the Public Health page has a rolling allocation statement); minor, not material."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bristol-data-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc Data Science, one year full-time, September 2027, international GBP 37,900 per year (no fee year label; inferred), overseas deadline 12 August 2027, 'strong upper second-class honours degree' (65% or higher) or equivalent in numerate science, computer science or engineering with other listed subjects, Profile C IELTS 6.5 with 6.5 in all skills, PTE 67 (67 in all skills), TOEFL 88 (R22 L21 S23 W22) and 4.5/4.5 on the new scale. min_* correct.",
+        "Pakistan page confirms the 3.7 CGPA applies to UK 2.1 programmes and that 'Grade requirements will be higher for entry to programmes with a higher UK grade requirement'. The file's 'may be above 3.7' is a reasonable inference and is labelled as such; no CGPA scale is stated.",
+        "highlights confirmed (Large-Scale Data Engineering, Introduction to Artificial Intelligence and Text analytics, Visual Analytics, Technology, Innovation, Business and Society)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bristol-public-health-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc Public Health, one year full-time (two years part-time also offered), September 2027, overseas full-time GBP 31,200 per year (no fee year label; inferred), deadline 12 August 2027 with rolling allocation, upper second-class or equivalent in a listed subject, Profile C scores as for Data Science. min_* correct.",
+        "academic_requirements omits the quantitative requirement: a quantitative unit or module at a minimum of 55%, or A-level Mathematics grade C (AS grade B, GCSE grade B per the extract). Material for applicants, so the field is incomplete.",
+        "academic_requirements subject list: the page also lists environmental health, health or social policy, health services management, occupational therapy, other allied health professionals and physiology; the file says 'including', so acceptable.",
+        "experience_requirements confirmed in substance: minimum one year in a paid role, relevant roles include information or data analyst, public health practitioner, research associate or research assistant.",
+        "overview 'for graduates in health, life science and social science subjects' is a paraphrase of the subject list; acceptable. The page's own THE and QS ranking claims are not used in the file."
+      ],
+      "corrections": {
+        "academic_requirements": "Upper second-class honours degree or an international equivalent in a listed subject, including anthropology, biology, biomedical science, dentistry, epidemiology, geography, global health, health economics, medicine, nursing, pharmacology, physiotherapy, psychology, sociology, statistics or veterinary science. A quantitative unit or module at a minimum of 55% is also needed (or A-level Mathematics grade C or above)."
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-bristol-think-big-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the scholarships page: GBP 6,500 or GBP 13,000 for up to four years, overseas fee status, Dental and Medical School courses excluded, application ID needed, no offer needed, opened 21 October 2025, closed 10:00 UK time 10 April 2026, September 2026 entry. Subject versions confirmed (Business 6,500, Economics 6,500, Policy Studies 13,000, Chemistry and Physics BSc 6,500, Veterinary Science 6,500 for three years only).",
+        "Pakistan is not named; eligibility is by overseas fee status, so eligible_countries INTL is a fair reading.",
+        "2027 applicability: none. Round closed and no 2027 terms published, as the file says. Do not list as open for 2027 entry.",
+        "The general Think Big page says 'Applications are now closed' alongside the 10 April 2026 deadline; consistent."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bristol-think-big-postgraduate",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 6,500, 13,000 or 26,000 for one year of an eligible master's including MRes, overseas fee status, application ID needed, no offer needed, closed 10 April 2026 (Career Accelerator early consideration 14 January 2026), September 2026 entry. Subject versions in the file all appear on the page.",
+        "notes: 'with values of GBP 6,500 or GBP 13,000' is slightly loose; Conflict Resolution, International Development, International Relations, Nutrition and Sociology are GBP 13,000 only, Education and Law and Justice are GBP 6,500 only. Minor.",
+        "2027 applicability: none yet; round closed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bristol-think-big-career-accelerator",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 3,000 towards tuition fees, overseas fee status, all one-year master's programmes including MRes eligible in 2026, closed 10 April 2026, cannot be used together with a Think Big postgraduate scholarship, one online form covers all international scholarships.",
+        "The page lists additional awards for named subject areas (Business School, Faculty of Science and Engineering, School of Modern Languages, School of Economics, Centre for Innovation and Entrepreneurship); the file's 'additional places reserved' is a fair paraphrase.",
+        "2027 applicability: none yet."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bristol-michael-wong-pakshong-bursary",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: one GBP 3,000 bursary, overseas fee status, full-time one-year taught master's starting September 2026 in the School of Economics, School of Education, School for Policy Studies, School of Sociology, Politics and International Studies, Business School or Law School, no offer needed, closed 10:00 UK time 10 April 2026, same process as other international scholarships.",
+        "The page describes it as a living cost bursary for selected schools in the Faculty of Arts, Law and Social Sciences; value_type stipend is a reasonable mapping.",
+        "2027 applicability: none yet; round closed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bristol-alumni-discount",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 25% reduction in tuition fees 'for the duration of the programme', Bristol undergraduate or integrated master's graduates starting taught or research postgraduate programmes (taught postgraduate graduates for research degrees), must pay fees directly and be at least partly self-funded, discount applies to the self-funded balance, PGCert, PGDip, PGCE, modular programmes excluded, 2027/28 start, no application, cannot be combined with the Staff Discount.",
+        "requires_offer true: the page lists no offer requirement (it says the discount is not mentioned on the offer letter). The flag is an inference; harmless but not sourced.",
+        "eligible_countries INTL and GB: the body text does not mention nationality or fee status; only metadata tags list UK, International and EU. Reasonable but not stated.",
+        "The scheme only helps existing Bristol graduates, so it is of little use to a new Pakistani applicant; the file's note says so."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "is_russell_group: the cited russellgroup.ac.uk profile page does not mention the Russell Group or describe Bristol as a member, and the 'Our universities' index names no members. The value true cannot be shown from the cited source; cite a page that names the members (the Wikipedia fetch was blocked for this checker).",
+      "eligibility_note: the sponsor register row was confirmed ('University of Bristol,Bristol, ,Higher Education Institution (HEI),Student Sponsor - Track Record,Student,'). The note uses a spaced hyphen inside the register label 'Student Sponsor - Track Record'; rewrite without the dash if house style forbids it.",
+      "summary: no ranking, award or superlative; Pakistan country page and International Foundation Programme confirmed on the Pakistan page.",
+      "Bristol's own pages carry THE and QS ranking claims (for example Public Health); none were copied into the file."
+    ],
+    "corrections": {}
+  }
+}

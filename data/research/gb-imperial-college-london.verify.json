@@ -1,0 +1,146 @@
+{
+  "slug": "gb-imperial-college-london",
+  "courses": [
+    {
+      "slug": "gb-imperial-college-london-finance-msc",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: Business School page shows GBP 54,000 beside the August 2027 start with no year label and no statement that it is a total; '2027/28' and 'total' are inferences (the 2026 entry study page shows GBP 51,000 for 12 months). Amount verified.",
+        "min_toefl is null although the Business School page gives TOEFL iBT 100 overall (22 per element) for tests before 21 January 2026 and 5.0 overall (5.0 per element) after. The english_requirements text carries both, so the structured field is inconsistent with the text. Which scale to store is a judgement call.",
+        "min_pte null: the Business School English page lists IELTS, TOEFL and Duolingo only, so null is correct. IELTS 7.0/6.5 and Duolingo 125/115 confirmed.",
+        "Entry (First preferred, 2:1 considered, quantitative subject), rounds (6 Jan, 10 Mar, 28 Apr 2027; round 1 closed 29 Sep 2026), August 2027 start, 16-month extended term, 75% Pakistan minimum (four-year HEC bachelor's awarded 2016 or later): confirmed.",
+        "The programme page carries rankings and accreditation claims (QS, Times, FT 17th, CFA affiliation); the file correctly repeats none."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 51,000 labelled 2027 on the fees and funding page, GBP 7,000 deposit, same fee for UK and international, 12 or 16 months, August 2027, IELTS/TOEFL/Duolingo, first or 2:1 in any discipline: confirmed.",
+        "career_notes: the 94% figure is the Class of 2025 'accepted an offer within six months' for the combined MSc International Management and MSc Management cohorts, as the file says. It is a promotional statistic from the page, not a ranking.",
+        "PTE: Business School English page does not list PTE, so min_pte null is correct. min_toefl null has the same inconsistency as MSc Finance."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-business-analytics-ai-msc",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: GBP 51,000 appears beside the August 2027 start with no year label (already flagged by the researcher). Amount verified.",
+        "Entry (First or 2:1 in a quantitative subject, GMAT/GRE not required), no work experience requirement, typically up to three years, IELTS 7.0/6.5, Duolingo 125/115, rounds and August 2027 start: confirmed.",
+        "career_notes figures (97% accepted an offer, 35% finance, 22% technology, Class of 2025) match the page. min_toefl null has the same inconsistency as MSc Finance."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-computing-msc",
+      "verdict": "pass",
+      "issues": [
+        "tuition: the 2027 overseas fee is 'Not set'; GBP 46,000 is the 'guide' fee for 2026-27 and is recorded with tuition_academic_year 2026/27. The label is accurate, but the amount is not the target-year fee and should not be shown as the 2027 price.",
+        "Title, one year, October 2027 start, first-class degree outside Computing, A in A-level Mathematics for non-STEM applicants (Department of Computing page), rounds 2 to 4 with dates, no English level stated on the study or department page: confirmed. Admissions for September 2027 'open in October' on the department page conflicts with the October 2027 start, as the file notes.",
+        "English: Imperial's general English page gives a standard level (IELTS 6.5/6.0, TOEFL 92/20, PTE 62/56, Duolingo 115/105) and a higher level (IELTS 7.0/6.5, TOEFL 100/22, PTE 69/62, Duolingo 125/115) but says to check course pages; leaving the structured fields null is defensible."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-mechanical-engineering-meng",
+      "verdict": "pass",
+      "issues": [
+        "tuition: the 2027 overseas fee is 'Not set'; GBP 45,500 is the 2026-27 guide figure, recorded with tuition_academic_year 2026/27. Accurate label, but not the target-year fee.",
+        "Entry A*A*A or A*AAA / IB 40, ESAT required for 2027, ATAS unless exempt, UCAS deadline 13 January 2027 18:00, October 2027, 4 or 5 years: confirmed. Page gives UCAS code H301 (not in the file).",
+        "Pakistan: Imperial's undergraduate accepted-qualifications page does not list Pakistan, so null pakistan fields are correct.",
+        "career_notes: page names employers (Rolls-Royce, Jaguar Land Rover, Mercedes AMG Petronas F1) and roles; the file's summary is accurate."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-aeronautical-engineering-meng",
+      "verdict": "pass",
+      "issues": [
+        "tuition: the 2027 overseas fee is 'Not set'; GBP 45,500 is the 2026-27 guide figure, recorded with tuition_academic_year 2026/27. Accurate label, but not the target-year fee.",
+        "Entry A*A*A or A*AAA / IB 40, ESAT, UCAS deadline 13 January 2027, October 2027, 4 years (integrated year abroad) or 5 years with a year in industry: confirmed. Page gives UCAS code H401 (not in the file).",
+        "career_notes: '98% in highly skilled work or further study (2023-24 data)' matches the page, which also states 98% in work or further study. A promotional statistic, sourced to HESA on the page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-imperial-college-london-imperial-inspires-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "GBP 15,000 per year of the course, 150 awards, Overseas fee status, four faculties, invitation after UCAS application, scholarship deadline 5 February 2027 23:59 UK, outcome by 30 April 2027, applications open October 2026 (date TBC), no nationality list, offer requirement unstated: confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-imperial-inspires-postgraduate-taught",
+      "verdict": "pass",
+      "issues": [
+        "GBP 15,000, 200 awards, Overseas fee status, full-time new entrants in listed departments (PGT and Master's research), invitation then two weeks to apply, no written task, deadline varies by department: confirmed. The page's introduction mentions students 'from the UK and around the globe', which conflicts with the Overseas-only criterion; the file follows the criterion."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-aeronautics-msc-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Full tuition fees, 2 awards, three named MSc programmes, no separate form, deadline 1 March 2027, 2027/28, new entrants, Home and Overseas fee status with no nationality restriction: confirmed. The long programme names in criteria_text are abbreviated slightly (MSc Composites)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-alex-fortescue-phd",
+      "verdict": "pass",
+      "issues": [
+        "Full tuition at Home or Overseas rate plus UKRI London rate stipend for 3.5 years, 1 award, supervisor nomination after a PhD offer, any nationality, deadline 1 March 2027 (PhD application deadline), 2027/28: confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-mim-deans-impact",
+      "verdict": "pass",
+      "issues": [
+        "GBP 25,000 off MSc Management tuition, written assessment after applying, no scholarship deadline stated, no nationality restriction, larger award replaces smaller, awards may not be given in every round: confirmed on the Business School fees and funding page. August 2027 intake is taken from the programme pages (the fees page itself states no start date)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-mim-future-leaders",
+      "verdict": "pass",
+      "issues": [
+        "GBP 20,000 for MiM applicants with leadership qualities and a clear career plan, written assessment after applying, no nationality restriction: confirmed. The page lists four Future Leaders variants; only the MiM variant is recorded, which is appropriate because the others are restricted by gender, region or background."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-mim-imperial-excellence",
+      "verdict": "pass",
+      "issues": [
+        "Up to GBP 15,000, assessed through application and interview, automatic for eligible applicants who receive an offer: confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-imperial-college-london-mim-alumni-discount",
+      "verdict": "pass",
+      "issues": [
+        "10% of tuition (GBP 5,100 on a GBP 51,000 fee), Imperial alumni, applied automatically with an offer: confirmed. The GBP 5,100 figure is a calculation, which the page itself flags in the same way."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "is_russell_group: the Imperial about page does not mention the Russell Group and the russellgroup.ac.uk profile page that was fetched states no membership. The flag rests on the URL path alone, so it is unverifiable from the cited sources.",
+      "eligibility_note is null, but the gov.uk student sponsor register file dated 2026-09-10 lists 'Imperial College London' as a Student Sponsor.",
+      "summary: South Kensington campus confirmed on the about page ('Founded in South Kensington in 1907, Imperial now includes nine campuses'); Imperial Business School confirmed. No ranking or superlative claims and no dashes used as punctuation in the file."
+    ],
+    "corrections": {
+      "eligibility_note": "Licensed student sponsor (gov.uk register of licensed sponsors: students, file dated 2026-09-10, listed as Imperial College London)",
+      "eligibility_source_url": "https://assets.publishing.service.gov.uk/media/6aa2613b9f95f408139c657b/SP_-_Student_and_Child_Student_Web_Register_-_2026-09-10.csv"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "gb-university-of-liverpool",
+  "courses": [
+    {
+      "slug": "gb-university-of-liverpool-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: BSc (Hons), 3 years full-time, G400, September 2027 start (27 September 2027), £33,000 per year for 2027/28, AAB incl Maths or Computer Science (ABB with A in EPQ), IB 34 or 6,6,5 HL, GCSE 4/C English and Maths, IELTS 6.0 with no component below 5.5, international deadline 30 June 2027, UK deadline 13 January 2027. Year 1 modules and career roles/employers confirmed.",
+        "min_pte and min_duolingo are null although the page states PTE Academic 59 overall with no component below 59 and Duolingo 115 overall (speaking, reading, writing at least 105, listening at least 100). Omission, not an error."
+      ],
+      "corrections": { "min_pte": 59, "min_duolingo": 115 }
+    },
+    {
+      "slug": "gb-university-of-liverpool-law-llb",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: LLB (Hons), 3 years full-time, M100, 27 September 2027 start, £28,000 per year for 2027/28, AAA (AAB with A in EPQ), IB 36 with no score below 4 or Diploma plus 6,6,6 HL, GCSE 4/C, IELTS 6.5 with no component below 5.5, international deadline 30 June 2027. Year 1 modules and 'majority of our graduates enter the legal profession' confirmed. No admissions test mentioned.",
+        "Page also notes contextual offers can reduce requirements by up to two grades; not recorded, acceptable."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-liverpool-mechanical-engineering-beng",
+      "verdict": "fail",
+      "issues": [
+        "overview/highlights: the four 'first year' items (Professional Engineering: A Skills Toolkit, Introduction to Engineering Materials, Energy Science, Solids and Structures 1) are listed on the page as Year 1 OPTIONAL modules to choose from. The compulsory Year 1 modules are ENGG195 Engineering, Mathematics and Computing and MECH103 Electro-Mechanical Systems. The file presents the optional ones as what the first year covers.",
+        "Matches page: BEng (Hons), 3 years full-time, H300, 27 September 2027, £33,000 per year for 2027/28, AAB incl Mathematics and a second science (ABB with A in EPQ), GCSE 4/C, IELTS 6.0 with no component below 5.5, deadline 30 June 2027, 'sought after' career sentence.",
+        "career_notes closely follows the page's own sentence ('sought after in engineering fields and a wide range of other sectors'); consider rewording to avoid near-copying."
+      ],
+      "corrections": {
+        "highlights": ["Engineering, Mathematics and Computing", "Electro-Mechanical Systems"],
+        "overview": "Three-year engineering degree. First-year compulsory modules cover engineering mathematics and computing and electro-mechanical systems, with options such as engineering materials, energy science and solids and structures. UCAS code H300."
+      }
+    },
+    {
+      "slug": "gb-university-of-liverpool-computer-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: MSc, 12 months full-time (24 part-time), September 2027 start, £34,000 per year full-time for 2027/28, 2:2 in a science or engineering subject not Computer Science, IELTS 6.5 with no component below 5.5, PTE 61 with no component below 59, TOEFL split by 20 January 2026 as stated, international deadline 23 August 2027. Semester 1 modules confirmed. min_toefl null is sensible.",
+        "career_notes mentions 'foundation for PhD research'; I did not see that on the fetched text (page lists database administrator, information systems manager, applications developer, IT consultant, network engineer, systems designer). Minor, unconfirmed.",
+        "Module list reflects 2026 intake; page says it will be updated by 30 April 2027."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-liverpool-finance-msc",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: MSc, 12 months full-time, September 2027 (27 September), £31,000 per year for 2027/28, 2:2 in Finance, Accounting or Economics (exceptional others with significant finance), IELTS 6.5 with no component below 6.0, PTE 61/59, deadline 23 August 2027. Modules (2026 intake) confirmed.",
+        "'Career Accelerator project' in career_notes not seen in fetched text; minor, unconfirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-liverpool-economics-msc",
+      "verdict": "pass",
+      "issues": [
+        "Page itself labels the £31,000 international fee as 2026/27 and says it 'will be updated shortly', so tuition_academic_year 2026/27 is accurate but this is not the 2027/28 fee; do not present as the 2027 entry fee.",
+        "Matches page: MSc, 12 months full-time, September 2027 (27 September), 2:2 in Economics or closely related quantitative discipline, A level Maths/Statistics competency, IELTS 6.5 with no component below 6.0, PTE 61/59, deadline 23 August 2027. Modules and Bank of England employer confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-liverpool-master-in-management-mim",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: 12 months full-time, £31,000 per year for 2027/28, 2:2 in any subject, IELTS 6.5 with no component below 6.0, PTE 61/59, deadline 23 August 2027. Modules (illustrative, to be updated by 30 April 2027) and employers KPMG, Deloitte, EY, Amazon confirmed.",
+        "Page lists two intakes: January 2027 (teaching from 1 February 2027) and September 2027. intake_labels has only September 2027; January is mentioned in application_deadline_note only. Not an error but incomplete."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-liverpool-excellence-postgraduate",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: £7,000 fee discount, 2026/27, First Class or equivalent, self-funded international rate, taught master's incl MRes at Liverpool campus, no application, excluded: sponsored students, PGCert, professional doctorates, MPhil, MArch, PhD, International College pre-master's. Cannot combine with Advancement, Achievement or Attainment (India), Graduate Loyalty.",
+        "Terms are 2026/27 only; 2027 entry not confirmed. No Pakistan equivalence given on the page. Held at Liverpool, so no portability issue."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-liverpool-excellence-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "Matches page: £7,500 discount on first-year fees, new undergraduate start in 2026/27 at the Liverpool campus, AAA at A level or equivalent, international fee rate, not sponsored, not online, MBChB and BDS excluded, no application, cannot combine with other scholarships.",
+        "requires_offer true is an assumption: the page describes no offer step. The scholarships finder lists this award without an academic year; the individual page states 2026/27. 2027 entry not confirmed.",
+        "The URL path says 'global-advancement' but the page heading is Liverpool Excellence Scholarship for Undergraduates; consistent with the file's note."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-liverpool-postgraduate-advancement-country",
+      "verdict": "unverifiable",
+      "issues": [
+        "Cited country page is stale and self-contradictory: £2,500, 'only available for master's courses starting in January 2026', eligibility from September 2025, September 2026 awards 'to be announced'. It does list Pakistan under Asia, and states no application, deposit deadline in offer letter, and a 50 per cent cap on combined awards.",
+        "The scholarships finder instead lists a 'Liverpool Advancement Scholarship' at £5,000, countries Indonesia, Malaysia, Nigeria, Pakistan, South Korea, Thailand, Turkey and Vietnam, for master's courses starting 2026/27. Value cannot be settled from the cited page, and nothing shows it applies to 2027 entry. value_amount null is appropriate.",
+        "Name in the file differs from the finder's name; confirm the correct current scheme name."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "is_russell_group: the cited Russell Group Liverpool page does not mention the Russell Group or membership in its text, so the claim is not confirmed by the source (researcher disclosed this).",
+      "eligibility_note: gov.uk sponsor register page shows no institution names in fetched text, so Liverpool's listing and the 2026-10-07 register date could not be confirmed.",
+      "summary: International College foundation and pre-master's routes confirmed on the entry requirements page. The statement that applicants 'select their country on the course pages' is true of course pages (country selector seen) but not stated on the cited admissions URL, which says country pages show whether overseas qualifications meet requirements."
+    ],
+    "corrections": {}
+  }
+}

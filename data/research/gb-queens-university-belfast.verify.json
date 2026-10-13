@@ -1,0 +1,121 @@
+{
+  "slug": "gb-queens-university-belfast",
+  "courses": [
+    {
+      "slug": "gb-queens-university-belfast-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on course page and fees page: 1 year full time, GBP 27,800 international for 2027/28 (fees page says fees relate to one year of study), 2.2 Honours in any discipline, IELTS 6.0 with 5.5 in each component within 2 years, late September start, ideally apply by 13 August 2027, GBP 10,000 scholarship for September 2027 mentioned without terms.",
+        "PTE 64 (59 each) and Duolingo 110 (100 each) confirmed on https://www.qub.ac.uk/Study/international-students/applying/english-language-requirements/ (IELTS 6.0 category); that page is not cited in the file's source URLs.",
+        "min_toefl is null but the English page states TOEFL iBT 80 (tests before 21 January 2026) and 4 per component after; optional."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-human-resource-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fees page confirms GBP 27,800 for 2027/28; course page confirms 1 year full time (2 years part time), 2.2 in any discipline with case-by-case route for lower degree plus relevant experience, IELTS 6.0/5.5, late September start, 13 August 2027 apply-by guidance. The course page fee table was not readable for me either (page truncated before fees), so the fee rests on the fees page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-financial-analytics-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fees page confirms GBP 27,800 for 2027/28; course page confirms 1 year full time, IELTS 6.0/5.5, 13 August 2027 apply-by guidance, late September start.",
+        "academic_requirements: page lists relevant quantitative subjects as Finance, Economics, Mathematics, Statistics or Computer Science; the file omits Computer Science. The page says other disciplines are considered with 'strong quantitative performance'; the file's '2:2-level performance in quantitative modules' is more specific than what I could read.",
+        "Course page carries a ranking claim ('third in the UK for Graduate Prospects in Accounting and Finance', Times Good University Guide 2024); the file's overview does not repeat it, which is correct."
+      ],
+      "corrections": {
+        "academic_requirements": "Normally a 2.2 Honours degree or equivalent in a relevant quantitative subject such as finance, economics, mathematics, statistics or computer science. Other disciplines may be considered case by case with strong quantitative performance."
+      }
+    },
+    {
+      "slug": "gb-queens-university-belfast-data-analytics-msc",
+      "verdict": "pass",
+      "issues": [
+        "Course page confirms 1 year full time (2 years part time), international fee GBP 29,000 for one year (2027/28 entry page), 2.2 in mathematics, statistics, computer science, computer applications or closely related subject, IELTS 6.0/5.5, mid to late September start, 30 June closing date for September 2027 with later applications only if places remain."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-software-development-ai-msc",
+      "verdict": "pass",
+      "issues": [
+        "Course page confirms 1 year full time, GBP 29,000 for a single year (2027/28 entry), 2.2 or above in any discipline except computing, experience route for those without a degree, IELTS 6.0/5.5, late September start, deadline exists but no date given.",
+        "The page's 'highest-rated Computing Master's course in the UK for overall student experience in 2023' claim is correctly not repeated in the file."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-queens-university-belfast-international-office-ug-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Pakistan scholarships page confirms GBP 3,500 or GBP 4,000 depending on fee rate (including advanced entry), new full time undergraduates, automatic on enrolment, exclusions apply but not listed, no deadline. Applies to 2026/27; no 2027/28 confirmation. 'One_off' basis is not stated on the page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-international-office-pgt-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 2,000 to 5,000, new full time PGT, excludes Queen's Business School PGT programmes, automatic on enrolment. Note Management, HRM and (probably) Financial Analytics in this file are Business School programmes and so would not receive it. 2026/27 only."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-early-confirmation-award",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 1,500 reduction in Year 1 fees, UG, PGT and PGR, unconditional offer, no form, proof of payment emailed, 18 September 2026 deadline for UG and PGT, research students pay by offer-letter start date. Stray 'January 2026' line confirmed. Scope is 2026/27 starters, so not confirmed for 2027 entry."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-vc-international-attainment-ug",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 50% of tuition for up to four years, 4 awards, listed programmes, offer held and Queen's as UCAS firm choice, video plus online application, 2026 deadline 4 June 2026 15:00 BST. The file's 'about 20' programmes count could not be confirmed from the page text I received (it lists examples only).",
+        "2026 round only; 2027 terms not published."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-vc-international-attainment-pgt",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 50% of tuition for all years up to a maximum of two, 4 awards, listed full time PGT programmes, video plus online application, 2026 deadline 7 May 2026 15:00 BST. The file's 'about 35' programmes count could not be confirmed from the page text.",
+        "2026 round only; 2027 terms not published."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-pakistan-academic-excellence-award",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: GBP 7,500 reduction in Year 1 tuition, 5 awards, secondary school in Pakistan, predicted AAB or IB 34 (6,6,5 at HL), essay up to 750 words, deadline 17 July 2026 15:00 BST, September 2026 start. Page is titled 'Pakistan Academic Excellence Award 2026', so not confirmed for 2027 entry."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-queens-university-belfast-family-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 20% fee reduction Year 1 only, UG, PGT and PGR, children, grandchildren or siblings of alumni or current students, step relatives may qualify, linked form, no deadline. Page does not state the year of the terms; the file's 'September 2026' label is an assumption from the page date."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'research-intensive' is not stated on the QUB international page (it says 'research-led' and 'world-class'); minor unsourced wording. 'a Pakistan country page' is not linked from the international students page (country links cover China, India, USA, MENA, South East Asia, Sub Saharan Africa), though a Pakistan scholarships page exists.",
+      "is_russell_group: the cited russellgroup.ac.uk page did not open for me, but https://www.qub.ac.uk/Study/international-students/ states 'we are proud to be a member of the Russell Group'.",
+      "eligibility_note null: UK sponsor licence not checked; unverifiable."
+    ],
+    "corrections": {}
+  }
+}

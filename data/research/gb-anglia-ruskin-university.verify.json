@@ -1,0 +1,99 @@
+{
+  "slug": "gb-anglia-ruskin-university",
+  "courses": [
+    {
+      "slug": "gb-anglia-ruskin-university-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed on the course page: BSc (Hons) Computer Science, Cambridge campus, 3 years or 4 years with placement, September 2027 start, international fee GBP 19,750 for 2027/28 (GBP 18,400 for 2026/27), with-placement GBP 18,825 for 2027/28, placement year fee GBP 1,700 (2026-27). Year 1 modules Introduction to Programming, Computer Systems, Software Principles, Operating Systems confirmed.",
+        "English: course page shows no scores. Entry requirements page confirms undergraduate IELTS 6.0 with 5.5 each, TOEFL 80 (W17 L17 R18 S20), PTE 60 with 59 each, Duolingo 110 with 100 each (alternative where in-person tests are unavailable). min_* values correct.",
+        "Pakistan page confirms 'Minimum 70% in grade 12 or 50% in a 2-year bachelor's degree', recognised foundation programme, IB Diploma and International A Levels, and the strong recommendation to apply via an approved agent. pk_route intermediate and pk_min_percent 70 are supported.",
+        "Page lists no UCAS tariff for the course (UCAS codes I106 and I107), so uk_min_alevels null is right.",
+        "The page also makes ranking and award claims (THE University of the Year 2023, TEF Gold, '1st in the region' for senior roles). None are used in the file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-anglia-ruskin-university-llb-law",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: LLB (Hons) Law, Cambridge, Chelmsford and Peterborough, 3 years or 4 years with a foundation year, January 2027 and September 2027 starts, international GBP 18,825 for 2027/28 (GBP 17,500 for 2026/27) for every route, Year 1 modules Constitutional and Administrative Law, English Legal System and Skills, Contract Law and Criminal Law (Cambridge and Chelmsford), optional Legal Work Experience module, law clinics with volunteering under qualified solicitors, distance learning mentioned, foundation route 5 GCSEs at D or 3 plus two years of Level 3 study, foundation English IELTS 5.5.",
+        "overview: 'Qualifying law degree route' is not the university's wording. The page says the course 'meets the requirements of the Solicitors Regulation Authority and the Bar Standards Board'. Substance is supported, but use the page's wording to avoid an unsourced status term.",
+        "Standard undergraduate English scores and Pakistan 70% grade 12 or 50% 2-year bachelor's confirmed on the entry requirements and South Asia pages. The foundation route general requirement is IELTS 5.5, TOEFL 72, PTE 59 overall; the file gives only IELTS 5.5 for it (fine).",
+        "duration_months 36 is the 3 year route; acceptable."
+      ],
+      "corrections": {
+        "overview": "Three year law degree taught at Cambridge, Chelmsford and Peterborough, covering constitutional, contract and criminal law and the English legal system in the first year, with an optional legal work experience module and law clinic volunteering. ARU states the course meets the requirements of the Solicitors Regulation Authority and the Bar Standards Board."
+      }
+    },
+    {
+      "slug": "gb-anglia-ruskin-university-msc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc Computer Science, Cambridge, 12 months (September) or 20 months (January), 2 years with Professional Experience, starts September 2027 and January 2027, international GBP 20,925 'starting 2027/28', Professional Experience modules GBP 4,600 (2027-28), GBP 4,000 deposit or sponsorship letter, modules Machine Learning for Imaging, Semantic Data Technologies, Advanced Web Solutions, Postgraduate Major Project, programming and database knowledge (Java, C# or Python) strongly recommended.",
+        "intake_labels / tuition_academic_year: a January 2027 start falls in the 2026/27 year, but the page gives only a fee 'starting 2027/28'. The GBP 20,925 figure cannot be asserted for the January 2027 intake (the researcher flagged this). Show the fee against September 2027 only.",
+        "English (entry requirements page): IELTS 6.5 with 5.5 each, TOEFL 88 (W17 L17 R18 S20), PTE 61 with 59 each, Duolingo 120 with 100 each. Degree class: 'typically a UK honours degree with lower second class honours (2:2)', and individual course pages may differ. min_* and uk_min_degree_class correct.",
+        "Pakistan page confirms 4-year bachelor's with overall average 55% or GPA 2.5 (50% from University of Punjab), 2-year Master's after a 2-year bachelor's on the same terms, and recognised pre-Master's course. pk_min_percent 55 supported; GPA scale not stated (pk_min_cgpa null is right). The page also lists a 5-year LLB and 3-year LLB routes, not relevant here.",
+        "The page lists a Machine Learning in Finance and Cyber Security and AI Case Studies module; the overview's 'cyber security' is supported."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-anglia-ruskin-university-msc-international-business",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: MSc International Business, Cambridge and Chelmsford, 12 months September, 16 months January, 20 months May, 2 years with Professional Experience, starts September 2027, January 2027 and May 2027, international GBP 20,925 for 2027/28, Professional Experience modules GBP 4,600 (2027-28), GBP 4,000 deposit or sponsorship letter, May start for the Professional Experience option in Chelmsford only. Modules named in the file (Contemporary Issues in International Management, Supply Chain Strategy and Practice, International Marketing and Brand Management, Leadership and Change, Finance for Decision Making) confirmed.",
+        "intake_labels: January 2027 and May 2027 starts fall in 2026/27, so the 2027/28 fee label does not strictly apply to them. Show the fee against September 2027 only.",
+        "The page does not say whether the standard MSc May start is Chelmsford only; the file correctly limits that statement to the Professional Experience route.",
+        "English and 2:2 requirement as for MSc Computer Science (entry requirements page); Pakistan 55% or GPA 2.5 confirmed on the South Asia page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-anglia-ruskin-university-international-undergraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: Lower award up to GBP 5,000 (GBP 2,000 in year 1 then GBP 1,000 a year), Higher award up to GBP 7,000 (GBP 4,000 then GBP 1,000 a year), deducted from tuition fees, international fee payers new to ARU, taught undergraduate at Cambridge, Chelmsford, Peterborough or Writtle, full-time, no separate application, subsequent years need successful completion, year 2 or 3 entrants GBP 1,000 a year, Writtle Lower award GBP 2,000, cannot be combined with other scholarships, exclusions for ARU College, foundation degrees, online and distance learning, apprenticeships, placements, Study Abroad, and possible ineligibility for sponsored students.",
+        "intake_label 'September 2027': the page states no intake or academic year. Treat as a standing scheme, not a confirmed 2027 offer.",
+        "Higher award criterion on the page is that the application 'should exceed minimum requirements, including entry qualifications'; the file's wording matches in substance."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-anglia-ruskin-university-international-postgraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 'Up to GBP 4,000, depending on qualifications', eligibility is 'be studying for an MBA or be an ARU graduate' plus exceeding the minimum entry requirements, automatic, no application, conditions of registration must be met, sponsored students may be ineligible. The page does not state entry year or fee status.",
+        "Relevance: the eligibility list excludes new MSc applicants who are not ARU graduates, so this award cannot be held with the two researched MSc courses by a new Pakistani applicant. Do not attach it to those courses. MBA is not among the researched rows.",
+        "intake_label 'September 2027' is not on the page. value_basis null is correct (page gives no basis)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-anglia-ruskin-university-full-payment-discount",
+      "verdict": "unverifiable",
+      "issues": [
+        "Confirmed on the important dates page and the scholarships page: GBP 1,000 off first year tuition when paid in full by the Friday before teaching starts, new full-time taught undergraduate or postgraduate students, deadline 'Friday 18 September 2026'. The page gives no September 2027 date or terms.",
+        "intake_label 'September 2027' is not supported: the only published terms are for September 2026, which has now passed (today is 2026-10-13). Applicability to 2027 entry cannot be verified; the file's own notes say so.",
+        "Combination: the important dates page says it can be combined with scholarships (pay the fee minus the discount and the scholarship); the International Undergraduate Scholarship page says that scholarship cannot be combined with other scholarships but a Full Payment Discount in year 1 may be available. These do not actually conflict, because the discount is described as separate from a scholarship. The conflict flag in the file is overstated.",
+        "eligible_countries INTL: the page does not state fee status. It sits on the international section, so acceptable."
+      ],
+      "corrections": {
+        "intake_label": "September 2026"
+      }
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Sponsor register (2026-10-07) row confirmed: 'Anglia Ruskin University,Chelmsford,Cambridge Ruskin International College (Embedded College),Higher Education Institution (HEI),Student Sponsor - Track Record,Student,'. The embedded college is supported by the register row; the ARU international page does not mention it. The register lists the town as Chelmsford while the file gives Cambridge; the university has campuses in both, so acceptable.",
+      "summary: the ARU international page names Cambridge, Chelmsford, Peterborough and Writtle but not London. The 'separate ARU London campus' was not confirmed on any page this checker opened; the researcher's source for it (an MBA International ARU London fee) was not independently confirmed.",
+      "region 'East of England' not on any opened official page (the researcher says so). is_russell_group null is acceptable; the cited index page names no members.",
+      "No ranking, award or superlative in the summary. The ARU international page itself carries QS and Graduate Outcomes ranking claims; none were used.",
+      "No dash punctuation found in the file text."
+    ],
+    "corrections": {}
+  }
+}

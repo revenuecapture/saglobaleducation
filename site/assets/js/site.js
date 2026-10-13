@@ -1013,36 +1013,44 @@
     }); });
   })();
 
-  /* First-visit awareness notice ---------------------------------------- */
+  /* #StudentAwareness popup ---------------------------------------------- */
   (function () {
     var KEY = 'sag-aware';
     var seen = null;
     try { seen = localStorage.getItem(KEY); } catch (e) { return; }
-    if (seen || /^\/student-rights\//.test(location.pathname)) return;
+    if (seen || /^\/student-rights\//.test(location.pathname) || typeof HTMLDialogElement !== 'function') return;
     var cookie = document.getElementById('cookieBar');
-    var note;
-    function close() {
-      try { localStorage.setItem(KEY, '1'); } catch (e) {}
-      if (!note) return;
-      note.classList.remove('is-in');
-      setTimeout(function () { if (note && note.parentNode) note.parentNode.removeChild(note); }, 400);
-    }
+    var dlg;
+    function remember() { try { localStorage.setItem(KEY, '1'); } catch (e) {} }
+    function close() { remember(); if (dlg && dlg.open) dlg.close(); }
+    var TICK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.2 4.2L19 7"/></svg>';
+    var ARR = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.2 4.6 11.8 6l5 5H3v2h13.8l-5 5 1.4 1.4L21 12l-7.8-7.4Z"/></svg>';
     function show() {
-      if (note) return;
-      note = document.createElement('aside');
-      note.className = 'aware-note';
-      note.setAttribute('aria-label', 'Our commitment to students');
-      note.innerHTML = '<button class="aware-x" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>' +
-        '<h2>Our commitment to students</h2>' +
-        '<p>SA Global Education is committed to raising awareness of student rights and compliance in the education industry. We stand against all fraud and deception. We never take cash, and we do not charge students fees.</p>' +
-        '<div class="aware-actions"><a class="btn btn-mint" href="/student-rights/"><span>Learn more</span></a><button class="btn btn-ghost" type="button" data-aware-ok><span>Got it</span></button></div>';
-      document.body.appendChild(note);
-      note.querySelector('.aware-x').addEventListener('click', close);
-      note.querySelector('[data-aware-ok]').addEventListener('click', close);
-      note.querySelector('a').addEventListener('click', function () { try { localStorage.setItem(KEY, '1'); } catch (e) {} });
-      requestAnimationFrame(function () { requestAnimationFrame(function () { note.classList.add('is-in'); }); });
+      if (dlg) return;
+      dlg = document.createElement('dialog');
+      dlg.className = 'aware-pop';
+      dlg.setAttribute('aria-labelledby', 'awareTitle');
+      dlg.setAttribute('aria-describedby', 'awareText');
+      var mark = document.querySelector('.site-footer .brandmark-bg svg');
+      dlg.innerHTML = '<div class="aware-pop-mark" aria-hidden="true">' + (mark ? mark.outerHTML : '') + '</div>' +
+        '<button class="aware-x" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>' +
+        '<h2 id="awareTitle" class="aware-pop-tag"><span>#</span>StudentAwareness</h2>' +
+        '<p class="aware-pop-sub">Know your rights before you pay anyone.</p>' +
+        '<p id="awareText" class="aware-pop-text">SA Global Education is committed to raising awareness of student rights and compliance in the education industry. We stand against all fraud and deception.</p>' +
+        '<ul class="aware-pop-list"><li>' + TICK + '<span>We never take cash</span></li><li>' + TICK + '<span>No fees for students</span></li><li>' + TICK + '<span>You pay universities directly</span></li></ul>' +
+        '<div class="aware-pop-actions"><a class="btn btn-mint" href="/student-rights/"><span>Know your rights</span>' + ARR + '</a><button class="btn btn-ghost" type="button" data-aware-ok><span>Not now</span></button></div>';
+      document.body.appendChild(dlg);
+      dlg.querySelector('.aware-x').addEventListener('click', close);
+      dlg.querySelector('[data-aware-ok]').addEventListener('click', close);
+      dlg.querySelector('a').addEventListener('click', remember);
+      dlg.addEventListener('cancel', remember);
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
+      dlg.addEventListener('close', function () { document.documentElement.classList.remove('aware-lock'); });
+      document.documentElement.classList.add('aware-lock');
+      dlg.showModal();
+      if (window.gtag) gtag('event', 'student_awareness_view');
     }
-    function whenReady() { setTimeout(show, 1200); }
+    function whenReady() { setTimeout(show, 2500); }
     if (cookie && !cookie.hidden && 'MutationObserver' in window) {
       var mo = new MutationObserver(function () { if (cookie.hidden) { mo.disconnect(); whenReady(); } });
       mo.observe(cookie, { attributes: true, attributeFilter: ['hidden'] });

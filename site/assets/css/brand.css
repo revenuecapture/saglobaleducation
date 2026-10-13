@@ -2429,25 +2429,44 @@ dialog.offer-view .ask-x { position: sticky; top: .75rem; float: right; margin: 
 .post-cta p { margin: 0; }
 .back-link { color: var(--azure-7); font-weight: 500; }
 
-/* --- First-visit awareness notice ------------------------------------------------------------ */
-.aware-note { position: fixed; left: 1rem; bottom: 1rem; z-index: 60; width: min(23rem, calc(100% - 2rem));
-  padding: 1.15rem 1.2rem 1.1rem; background: var(--surface-chocolate-dark); color: var(--surface-cloud);
-  border-radius: 0 1.25rem 0 1.25rem; box-shadow: 0 14px 40px rgba(30, 15, 5, .3);
-  opacity: 0; transform: translateY(12px); transition: opacity .35s ease, transform .35s ease; }
-.aware-note.is-in { opacity: 1; transform: none; }
-.aware-note h2 { font-size: 1.35rem; margin: 0 2rem .4rem 0; color: var(--mint); }
-.aware-note p { margin: 0 0 .9rem; font-size: .92rem; line-height: 1.55; }
-.aware-note .aware-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
-.aware-note .btn { padding: .6rem 1rem; font-size: .95rem; }
-.aware-x { position: absolute; top: .55rem; right: .55rem; width: 2rem; height: 2rem; display: grid; place-items: center;
-  background: transparent; border: 0; color: inherit; border-radius: 50%; cursor: pointer; opacity: .75; }
-.aware-x:hover, .aware-x:focus-visible { opacity: 1; background: rgba(255,255,255,.1); }
-.aware-x svg { width: 1.1rem; height: 1.1rem; }
-@media (max-width: 640px) { .aware-note { bottom: 5.5rem; } }
-@media (prefers-reduced-motion: reduce) { .aware-note { transition: none; } }
+
 /* About timeline: the student awareness mission panel */
 .tl-panel--mission { width: min(80vw, 25rem); padding: 1.75rem 1.75rem 2rem; background: var(--surface-chocolate-dark); color: var(--surface-cloud); border-top: 0; border-radius: 0 2rem 0 2rem; }
 .tl-panel--mission .tl-panel-dot { display: none; }
 .tl-panel--mission .tl-panel-year { color: var(--mint); }
 .tl-panel--mission h3 { color: #fff; font-size: clamp(1.5rem, 2.3vw, 1.9rem); margin-bottom: .5rem; }
-.aware-note .aware-actions .btn { flex: 1 1 0; width: auto; justify-content: center; }
+
+/* --- #StudentAwareness popup ----------------------------------------------------------------- */
+html.aware-lock { overflow: hidden; }
+dialog.aware-pop { position: fixed; inset: 0; margin: auto; width: min(31rem, calc(100% - 2rem)); max-height: calc(100% - 2rem); overflow: auto;
+  padding: clamp(1.6rem, 4vw, 2.25rem); border: 0; border-radius: 0 2rem 0 2rem;
+  background: var(--surface-chocolate-dark); color: var(--surface-cloud); box-shadow: 0 30px 80px rgba(20, 10, 3, .45); }
+dialog.aware-pop::backdrop { background: rgba(30, 15, 5, .62); backdrop-filter: blur(3px); }
+dialog.aware-pop[open] { animation: aware-in .45s cubic-bezier(.2, .8, .2, 1); }
+dialog.aware-pop[open]::backdrop { animation: aware-fade .45s ease; }
+@keyframes aware-in { from { opacity: 0; transform: translateY(18px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes aware-fade { from { opacity: 0; } to { opacity: 1; } }
+.aware-pop-mark { position: absolute; right: -2rem; bottom: -2rem; width: 10rem; color: var(--mint); opacity: .06; pointer-events: none; }
+.aware-pop-mark svg { width: 100%; height: auto; display: block; }
+.aware-pop > *:not(.aware-pop-mark) { position: relative; }
+.aware-pop .aware-x { position: absolute; top: .9rem; right: .9rem; z-index: 2; }
+.aware-pop-tag { margin: 0 2.25rem .35rem 0; font-size: clamp(2.3rem, 7vw, 3.1rem); line-height: 1; color: #fff; letter-spacing: -.01em; overflow-wrap: anywhere; }
+.aware-pop-tag span { color: var(--mint); }
+.aware-pop-sub { margin: 0 0 1rem; font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 1.35rem; color: var(--mint); }
+.aware-pop-text { margin: 0 0 1.25rem; font-size: .98rem; line-height: 1.6; opacity: .92; }
+.aware-pop-list { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; gap: .55rem; }
+.aware-pop-list li { display: flex; align-items: center; gap: .7rem; font-weight: 500; }
+.aware-pop-list svg { flex: none; width: 1.6rem; height: 1.6rem; padding: .3rem; border-radius: 50%; background: var(--mint); color: var(--surface-chocolate-dark); }
+.aware-pop-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.aware-pop-actions .btn { flex: 1 1 auto; justify-content: center; }
+@media (max-width: 560px) {
+  dialog.aware-pop { margin: auto auto 0; width: 100%; max-width: none; max-height: 92%; border-radius: 1.75rem 1.75rem 0 0; padding-bottom: calc(1.6rem + env(safe-area-inset-bottom)); }
+  @keyframes aware-in { from { transform: translateY(100%); } to { transform: none; } }
+}
+@media (prefers-reduced-motion: reduce) { dialog.aware-pop[open], dialog.aware-pop[open]::backdrop { animation: none; } }
+.aware-tag { display: inline-block; margin: 1.25rem 0 0; padding: .35rem .9rem; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.15rem;
+  background: var(--surface-chocolate-dark); color: #fff; border-radius: 0 .8rem 0 .8rem; }
+.aware-tag span { color: var(--mint); }
+.aware-x { width: 2.25rem; height: 2.25rem; display: grid; place-items: center; background: transparent; border: 0; color: inherit; border-radius: 50%; cursor: pointer; opacity: .8; }
+.aware-x:hover, .aware-x:focus-visible { opacity: 1; background: rgba(255,255,255,.12); }
+.aware-x svg { width: 1.15rem; height: 1.15rem; }

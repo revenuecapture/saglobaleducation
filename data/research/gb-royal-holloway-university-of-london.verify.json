@@ -1,0 +1,64 @@
+{
+  "slug": "gb-royal-holloway-university-of-london",
+  "courses": [
+    {
+      "slug": "gb-royal-holloway-university-of-london-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Fee 27,900 for 2027/28, 3 years, AAB-ABB with Computer Science/Maths/Physics, GCSE Maths 6 and English 4, IB HL 665 or 34, IELTS 6.5/5.5, PTE 67/59, TOEFL 88 (18/17/20/17), Duolingo 120/100, year 1 all core, year 2 and 3 core and optional modules all confirmed. No start month on the page, so empty intake_labels is correct."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-royal-holloway-university-of-london-business-and-management-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Fee 24,600 for 2027/28, 3 years (Year in Business 4 years, Accelerated 2 years), ABB-BBB, IB HL 655 or 32, GCSE English and Maths 4, IELTS 6.5 with 6.0 Writing and 5.5 elsewhere, PTE 67/63 Writing/59, TOEFL 88 (18/17/20/19), Duolingo 120/115/115/100, year 1 and year 3 core modules all confirmed. min_ielts_band 5.5 as lowest component is correctly noted."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-royal-holloway-university-of-london-finance-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee 28,100 for 2027/28, 1 year, 2:2 in Economics/Maths/maths-based discipline, IELTS 6.5 with no subscore below 6.0, PTE 67/64, TOEFL 88 (22/20/22/24), Duolingo 120/115, Trinity ISE III, Cambridge CAE C, core modules and 27 June 2027 deadline all confirmed.",
+        "academic_requirements omits that management or MBA graduates with enough maths modules, and professional qualifications or experience, are also considered (minor omission). Pakistan range of 2.8 to 3.5 GPA or 58 to 68% is general across departments, so null pk_min fields are correct."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-royal-holloway-university-of-london-applied-data-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee 25,500 for 2027/28, 1 year, UK 2:2 in a STEM subject plus quantitative skills or A level Maths, IELTS 6.5/5.5, PTE 67/59, TOEFL 88 (18/17/20/17), Duolingo 120/100, core modules, deadlines and the six-versus-eight module inconsistency all confirmed. No start month on the page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-royal-holloway-university-of-london-pakistan-masters-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 6,000 first year only, residence in Pakistan not nationality, self-funded, full-time masters, automatic, no deadline, combination rule all confirmed. Both Royal Holloway master's courses in the file are full-time, so the award can be held on them.",
+        "intake_label shows only September 2027; the page covers September 2026, January 2027 and September 2027 and says 2027 terms will be published soon (minor)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-royal-holloway-university-of-london-international-undergraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 3,000 per year, BBB or IB 30 or 5,5,5 HL, September 2027 offer, automatic, no deadline, terms linked are for 2026 and will be updated: confirmed. The page lists no countries, only international fee status, so INTL is reasonable. Pakistani HSC applicants must complete a foundation year first, and equivalences are in a separate PDF not opened, so Pakistani eligibility is unconfirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Egham Hill, Egham, Surrey, 40 minutes by train from central London and seven miles from Heathrow all confirmed on the how-to-find-us page; the summary echoes the page wording closely ('seven miles from Heathrow'). Postcode TW20 0EX is on the page but not in the file. The Pakistan page does mention the 1 to 13 February 2026 recruitment visit. No rankings or dash punctuation in the file."
+    ],
+    "corrections": {}
+  }
+}

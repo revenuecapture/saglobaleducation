@@ -1,0 +1,70 @@
+{
+  "slug": "gb-teesside-university",
+  "courses": [
+    {
+      "slug": "gb-teesside-university-msc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "tuition_basis: course page says GBP 17,000 a year (2026-27 entry); fees page (2026-27) calls the one-year MSc figure 'the full cost of the programme'. Consistent for a 12 month course, but the 16 month January start is not separately priced. Fee is 2026-27 only, as the file states.",
+        "pk_route bachelor_16 / pk_min_percent 60: the Pakistan page's 60% or GPA 3.0 option carries a qualifier listing professional four-year degrees (architecture, medicine, agriculture, engineering, home economics, design diploma). Whether it applies to a general computing graduate is unclear; the alternative route is 55% or GPA 2.5 plus a two-year master's. Treat 60% with caution.",
+        "english_requirements: course page IELTS 6.0 or equivalent; English page confirms postgraduate computing IELTS 6.0 overall with 5.5 each band, PTE 59, TOEFL components 17/18/17/20 with no overall. min_toefl null is correct. The English page URL (tees.ac.uk/sections/international/english.cfm) is not cited in any URL field.",
+        "Verified OK: title, MSc, 12 months Sept/May, 16 months Jan, 2.2 minimum and accepted subjects, seven core modules (AI Foundations, Big Data and Business Intelligence, Computing Masters Project, Machine Learning, Mobile App Development, Object Oriented Development, Research Methods), no intake given beyond 2026-27 so intake_labels empty is correct. No rankings or copied sentences found in the file text."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-teesside-university-msc-international-business-management",
+      "verdict": "pass",
+      "issues": [
+        "Same 60% route caveat as above for pk_min_percent (professional-subject qualifier on the Pakistan page).",
+        "Fee GBP 17,000 a year, 2026-27 entry; no international part-time fee stated. 12 to 16 months full time confirmed. Five core modules confirmed: Business Project, Contemporary Management in Operations and Finance, Critical Business Inquiry, Reimagining Sustainable Management in Global Markets, The Responsible Leader.",
+        "English: course page 'IELTS of 6'; English page business (except HRM) IELTS 6.0 overall, 5.5 per band, PTE 59, TOEFL components only. Matches.",
+        "Entry: honours degree at least 2:2, post-experience or professional qualification, or equivalent. Matches."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-teesside-university-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "academic_requirements: 'International applicants are directed to country-specific pages' is not stated in the course page extract; the page only links to English scores and asks for an English qualification upload. Remove or source it.",
+        "tuition_basis: fees page lists UG standard GBP 17,000 as 'full cost of the programme' without saying per year or total; the course page gives GBP 17,000 a year for 2026-27 entry. per_year rests on the course page.",
+        "Verified OK: BSc (Hons), 3 years or 4 with placement, September start, 2027 entry via UCAS, 96 to 112 UCAS points plus maths GCSE 4 (2027-28 entry requirements), English UG IELTS 5.5 overall and 5.5 each band, PTE 59, TOEFL components only, four year 1 core modules, Pakistan UG routes (two-year bachelor 60%, three-year 60% for second year, four-year 60% for third year). pk fields null is reasonable. Course page also lists ranking claims (Sunday Times, Complete University Guide, Guardian) but none appear in the file."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-teesside-university-vice-chancellors-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Values match: GBP 7,000 first year fee waiver, up to 30 awards, personal statement up to 500 words, on campus Middlesbrough or Darlington, UG and PG taught, Level 3 and Level 8 excluded, not combinable with other Teesside or Alumni scholarships. Applies to September 2026 starters and is closed: it does not apply to 2027 entry. No deadline date on the page. No country named."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-teesside-university-global-excellence-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Values match: GBP 2,000 first full year, automatic, offer by 30 April 2026, September 2026 intake only, so not applicable to 2027 entry. Foundation contradiction on the page confirmed (Level 3 excluded in eligibility but foundation named in About). No countries named."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-teesside-university-alumni-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Values match: GBP 1,000 fee waiver, PG only, direct applicant (no agent), full-time on campus Middlesbrough or Darlington, London and Online excluded, Level 8 excluded, combinable with one other scholarship, no separate application. Only open to current Teesside international undergraduates progressing to PG or master's completers progressing to a new PG programme (file summary says this), so it is not available to new applicants from Pakistan. No entry year stated; applicability to 2027 entry unconfirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Address Tees Valley, Middlesbrough TS1 3BX and Teesside University London at Queen Elizabeth Olympic Park confirmed. 2026-27 international fees page and Pakistan country page exist. No recruitment pause notice on the Pakistan page (it lists in-country agents). Sponsor licence status not verified."
+    ],
+    "corrections": {}
+  }
+}

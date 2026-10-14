@@ -1,0 +1,110 @@
+{
+ "approved_by": "Claude for Badr (SA Global consultant), per the finder plan",
+ "date": "2026-10-14",
+ "basis": "checker verdict pass, confidence high or medium, international fee for 2026/27 or 2027/28",
+ "universities": [
+  "gb-lancaster-university",
+  "gb-london-metropolitan-university",
+  "gb-london-south-bank-university",
+  "gb-loughborough-university",
+  "gb-oxford-brookes-university",
+  "gb-robert-gordon-university",
+  "gb-royal-holloway-university-of-london",
+  "gb-soas-university-of-london",
+  "gb-st-mary-s-university-twickenham",
+  "gb-teesside-university",
+  "gb-ulster-university"
+ ],
+ "courses": [
+  "gb-london-south-bank-university-msc-project-management",
+  "gb-london-south-bank-university-bsc-computer-science",
+  "gb-london-south-bank-university-msc-construction-project-management",
+  "gb-loughborough-university-computer-science-msc",
+  "gb-loughborough-university-finance-management-msc",
+  "gb-oxford-brookes-university-project-management-msc",
+  "gb-oxford-brookes-university-business-and-management-ba",
+  "gb-oxford-brookes-university-computer-science-bsc",
+  "gb-oxford-brookes-university-international-foundation-business-technology",
+  "gb-robert-gordon-university-data-science-msc",
+  "gb-robert-gordon-university-computer-science-bsc",
+  "gb-robert-gordon-university-business-and-management-ba",
+  "gb-royal-holloway-university-of-london-computer-science-bsc",
+  "gb-royal-holloway-university-of-london-business-and-management-bsc",
+  "gb-royal-holloway-university-of-london-finance-msc",
+  "gb-royal-holloway-university-of-london-applied-data-science-msc",
+  "gb-soas-university-of-london-bsc-economics",
+  "gb-st-mary-s-university-twickenham-bsc-psychology",
+  "gb-st-mary-s-university-twickenham-bsc-business-management-marketing",
+  "gb-teesside-university-msc-computer-science",
+  "gb-teesside-university-msc-international-business-management",
+  "gb-teesside-university-bsc-computer-science",
+  "gb-ulster-university-msc-computing-science-conversion",
+  "gb-ulster-university-bsc-computer-science",
+  "gb-ulster-university-bsc-business-economics"
+ ],
+ "scholarships": [
+  "gb-lancaster-university-ug-international-regional-scholarship",
+  "gb-lancaster-university-pg-international-regional-scholarship",
+  "gb-lancaster-university-ug-excellence-scholarship-international",
+  "gb-london-metropolitan-university-south-asia-bright-futures",
+  "gb-london-metropolitan-university-international-bright-futures",
+  "gb-london-metropolitan-university-early-payment-discount",
+  "gb-london-south-bank-university-global-success-scholarship",
+  "gb-london-south-bank-university-vc-international-merit-award",
+  "gb-london-south-bank-university-early-settlement-discount",
+  "gb-loughborough-university-pg-excellence-scholarship",
+  "gb-loughborough-university-future-leaders-scholarship",
+  "gb-oxford-brookes-university-international-student-scholarship-jan-2027",
+  "gb-oxford-brookes-university-business-school-international-scholarship-jan-2027",
+  "gb-robert-gordon-university-international-merit-masters-scholarship",
+  "gb-robert-gordon-university-vice-chancellors-undergraduate-scholarship",
+  "gb-robert-gordon-university-international-student-discount-masters",
+  "gb-robert-gordon-university-international-student-discount-undergraduate",
+  "gb-royal-holloway-university-of-london-pakistan-masters-scholarship",
+  "gb-royal-holloway-university-of-london-international-undergraduate-scholarship",
+  "gb-st-mary-s-university-twickenham-country-scholarship-ug",
+  "gb-st-mary-s-university-twickenham-country-scholarship-pg",
+  "gb-st-mary-s-university-twickenham-mba-scholarship",
+  "gb-teesside-university-vice-chancellors-scholarship",
+  "gb-ulster-university-global-excellence-pg",
+  "gb-ulster-university-global-excellence-ug",
+  "gb-ulster-university-country-scholarship-pg",
+  "gb-ulster-university-country-scholarship-ug",
+  "gb-ulster-university-international-postgraduate-scholarship",
+  "gb-ulster-university-international-undergraduate-scholarship"
+ ],
+ "held_back": {
+  "gb-london-metropolitan-university": [
+   "gb-london-metropolitan-university-international-foundation-programme: fee or fee year",
+   "gb-london-metropolitan-university-international-year-one: fee or fee year",
+   "gb-london-metropolitan-university-pre-masters-programme: fee or fee year",
+   "gb-london-metropolitan-university-pg-alumni-discount: check fail, confidence low"
+  ],
+  "gb-london-south-bank-university": [
+   "gb-london-south-bank-university-pathway-progression-scholarship: check fail, confidence low"
+  ],
+  "gb-loughborough-university": [
+   "gb-loughborough-university-computer-science-bsc: check fail"
+  ],
+  "gb-robert-gordon-university": [
+   "gb-robert-gordon-university-oil-and-gas-engineering-msc: check fail"
+  ],
+  "gb-soas-university-of-london": [
+   "gb-soas-university-of-london-msc-international-business: check fail, confidence low",
+   "gb-soas-university-of-london-ma-international-studies-diplomacy: confidence low",
+   "gb-soas-university-of-london-masters-scholarship-international: deadline passed 2026-06-30",
+   "gb-soas-university-of-london-international-academic-excellence: deadline passed 2026-05-29",
+   "gb-soas-university-of-london-great-pakistan: deadline passed 2026-05-24"
+  ],
+  "gb-st-mary-s-university-twickenham": [
+   "gb-st-mary-s-university-twickenham-msc-international-business-management: check fail",
+   "gb-st-mary-s-university-twickenham-msc-international-finance-accounting: check fail",
+   "gb-st-mary-s-university-twickenham-excellence-scholarship-ug: check unverifiable",
+   "gb-st-mary-s-university-twickenham-excellence-scholarship-pg: check unverifiable"
+  ],
+  "gb-teesside-university": [
+   "gb-teesside-university-global-excellence-scholarship: deadline passed 2026-04-30",
+   "gb-teesside-university-alumni-scholarship: excluded: Open only to current Teesside students, and its terms say applicants must not use an agent."
+  ]
+ }
+}

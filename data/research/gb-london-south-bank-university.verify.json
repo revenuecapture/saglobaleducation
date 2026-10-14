@@ -1,0 +1,82 @@
+{
+  "slug": "gb-london-south-bank-university",
+  "courses": [
+    {
+      "slug": "gb-london-south-bank-university-msc-project-management",
+      "verdict": "pass",
+      "issues": [
+        "title, 12 month duration with placement variants, GBP 18,900 (2026/27, standard variants), 2:2 entry, IELTS 6.5 with 5.5 in each component, APM accreditation, 60 credit capstone, Pakistan routes (four-year bachelor 55%) all match",
+        "application_deadline_note: 'May described as new for 2026' not seen on the fetched page"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-south-bank-university-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "GBP 17,880 per year 2026/27 (GBP 53,640 total), 112 UCAS points, GCSE Maths grade 4, pathways, BCS accreditation match; IELTS 6.0/5.5, PTE 59, TOEFL 80 confirmed on the undergraduate entry requirements page",
+        "page shows duration '3-4 years full-time'; file's '3 years; 4 with placement' is consistent",
+        "pk_min_percent 70 (HSC) is one of several alternative routes, as the file notes"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-south-bank-university-msc-construction-project-management",
+      "verdict": "pass",
+      "issues": [
+        "GBP 18,360 cognate full-time (2026/27), non-cognate GBP 22,440, 2:2 entry, written English IELTS 6.5 only, January and September starts, CIOB and RICS accreditation all match; null min_ielts fields are correct",
+        "page header shows duration 9 to 24 months; file's 12 months full-time matches body text"
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-london-south-bank-university-global-success-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "values by school confirmed; Arts and Social Sciences is GBP 2,000 for both levels and the National Bakery School is grouped with it; no entry year or deadline date on the page"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-south-bank-university-vc-international-merit-award",
+      "verdict": "pass",
+      "issues": [
+        "award page does not state level (metadata suggests undergraduate law); overview page confirms undergraduate, GBP 2,000 per academic year, AAB or about 75%",
+        "criteria_text 'Cannot be combined with another LSBU award': overview says students must not be receiving any other LSBU award"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-south-bank-university-early-settlement-discount",
+      "verdict": "pass",
+      "issues": [
+        "deadline_note: page gives full payment dates for September 2026 starts (10 August 2026 for CAS applicants), January to March 2027 starts (14 December 2026) and April to June 2027 starts (22 March 2027); file mentions only September 2026 and January 2027",
+        "eligible_countries INTL: page is for self-funding students enrolling for a whole year and excludes full-time home-fee undergraduates, so INTL is an inference"
+      ],
+      "corrections": {
+        "deadline_note": "Full-payment dates on the page: September 2026 starts by enrolment (10 August 2026 for CAS applicants), January to March 2027 starts by 14 December 2026, April to June 2027 starts by 22 March 2027. 2027/28 dates are not stated."
+      }
+    },
+    {
+      "slug": "gb-london-south-bank-university-pathway-progression-scholarship",
+      "verdict": "fail",
+      "issues": [
+        "application_route 'nomination' is not supported: the page does not describe an application step and the file's own notes call it a guess",
+        "criteria_text: overview page names eligible pathway providers (NCC Education, INTO Study, David Game College, Kaplan, Study Group, OIEG, NCUK) plus articulation partners; the file's wording about 'Ofqual-regulated Level 3 Foundation' and 'approved Level 4 International Year One' was not seen in the fetch",
+        "amount GBP 5,000 off first year gross tuition, self-funded, no combining with other scholarships confirmed"
+      ],
+      "corrections": {
+        "application_route": null
+      }
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Southwark campus, business, computing and construction courses and Pakistan entry routes confirmed; Pakistan page says only 'a wide variety of scholarships with a total value of GBP 1 million' and gives no amounts"
+    ],
+    "corrections": {}
+  }
+}

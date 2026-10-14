@@ -1,0 +1,43 @@
+{
+  "slug": "gb-lancaster-university",
+  "courses": [],
+  "scholarships": [
+    {
+      "slug": "gb-lancaster-university-ug-international-regional-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "deadline/entry: page confirms 2026 entry only, no deadline; file correctly flags 2027 terms as unconfirmed"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-lancaster-university-pg-international-regional-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "entry year: page confirms 2026 entry only; file correctly flags 2027 terms as unconfirmed"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-lancaster-university-ug-excellence-scholarship-international",
+      "verdict": "pass",
+      "issues": [
+        "eligible_countries INTL: page names no countries, only international fee-paying status, so INTL is consistent",
+        "entry year: page confirms 2026 entry only; file correctly flags 2027 terms as unconfirmed"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "fail",
+    "issues": [
+      "summary: cited source_url (conferences getting-here page) says the campus lies about three miles south of the City of Lancaster and does not mention Bailrigg; the file says 'main campus at Bailrigg in the City of Lancaster', which contradicts the page (Bailrigg is named only on the scholarship pages)",
+      "summary: 'International Study Centre run with INTO' is not stated on any cited page; the scholarship pages mention only the Lancaster University International Study Centre. Search results indicate INTO but no cited source supports it",
+      "source_url: conferences page is a weak source for the summary",
+      "courses array is empty, so no courses were checked"
+    ],
+    "corrections": {
+      "summary": "Lancaster University has its main campus at Bailrigg, about three miles south of the City of Lancaster. It teaches undergraduate and postgraduate courses and publishes international scholarships, including regional awards that name Pakistan."
+    }
+  }
+}

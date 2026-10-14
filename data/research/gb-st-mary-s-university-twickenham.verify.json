@@ -1,0 +1,101 @@
+{
+  "slug": "gb-st-mary-s-university-twickenham",
+  "courses": [
+    {
+      "slug": "gb-st-mary-s-university-twickenham-msc-international-business-management",
+      "verdict": "fail",
+      "issues": [
+        "academic_requirements: first clause 'Expected to have at least a second class honours degree from a UK or overseas university (or equivalent)' is copied from the page sentence 'You are expected to have at least a second class honours degree from a UK or overseas university (or equivalent)'",
+        "intake_labels / tuition_academic_year: intakes recorded are January 2027 and September 2027 (both listed under Apply now), but the only fees shown are for January 2027 and September 2026 (GBP 18,990 both, home GBP 12,150). 2026/27 fits January 2027 only; September 2027 has no published fee. Already disclosed in notes.",
+        "award: page H1 says MSc, title tag says MA; unresolved by the page. Already disclosed in notes.",
+        "english_requirements: the course page states no English requirement; figures (IELTS 6.5/6.0, PTE 61/59, TOEFL 88 with 20/19/21/20, two-year validity, Duolingo not mentioned) match https://www.stmarys.ac.uk/international/english-language/overview.aspx, which is not cited in any URL field of the file. min_* values are correct.",
+        "Verified OK: duration 1 year full time, fee GBP 18,990 international, uk_min_degree_class 2:2, pk_min_percent 65 and pk_min_cgpa 2.6 (Pakistan page 2:2 equivalence), modules in overview and highlights, no dashes used as punctuation, no rankings or superlatives."
+      ],
+      "corrections": {
+        "academic_requirements": "A previous degree at 2:2 level (second class honours) from a UK or overseas university, or equivalent. Reword rather than quote the page."
+      }
+    },
+    {
+      "slug": "gb-st-mary-s-university-twickenham-msc-international-finance-accounting",
+      "verdict": "fail",
+      "issues": [
+        "academic_requirements: first clause is copied from the page sentence 'You are expected to have at least a second class honours degree from a UK or overseas university (or equivalent)'",
+        "intake_labels / tuition_academic_year: Apply now lists January 2027 and September 2027, fees shown are January 2027 and September 2026 at GBP 18,990. No September 2027 fee published. Already disclosed in notes.",
+        "english_requirements: not on the course page; values match the St Mary's English language page, which is not cited in a URL field.",
+        "Verified OK: title, MSc, 1 year full time, GBP 18,990, 2:2, pk 65% / 2.6, module list (Management Accounting, Principles and Practice of Financial Accounting, Investment Markets, Economics and International Finance, International Strategy, Independent Project, Responsible and Ethical Leadership), English min_* numbers."
+      ],
+      "corrections": {
+        "academic_requirements": "A previous degree at 2:2 level (second class honours) from a UK or overseas university, or equivalent. Reword rather than quote the page."
+      }
+    },
+    {
+      "slug": "gb-st-mary-s-university-twickenham-bsc-psychology",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 17,445 is for September 2026 only; page says September 2027 fees to be published shortly. tuition_academic_year 2026/27 is correct for the figure, but it is not the target 2027 entry fee. Already disclosed.",
+        "Year 1 module grouping is inferred from a flattened page layout (also disclosed). Page lists Research Methods and Statistics 1 and 2 as Core Optional, Introduction to Social and Developmental Psychology and Introduction to Cognitive and Biological Psychology as Core, Psychology in Action as Optional: matches the file.",
+        "Verified OK: BSc (Hons), 3 years, 120 UCAS standard, 96 contextual (2026 to 2028 entries), international requirements section empty, English UG IELTS 6.0/5.5, PTE 59, TOEFL 80 (18/17/20/17), Pakistan HSC routes and tariff table, pk fields correctly null."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-st-mary-s-university-twickenham-bsc-business-management-marketing",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 17,445 is September 2026 only; 2027 fee not published. Already disclosed.",
+        "Overview says first year modules cover 'marketing, organisational behaviour, digital business, financial management and professional skills'; page lists Understanding Marketing, Studying Business Management, Organisational Behaviour, Digital Business, Financial Management, Ethics Communication and Professionalism, Working in Marketing, so this is supported.",
+        "Verified OK: BSc (Hons), 3 years, 112 UCAS standard, 96 contextual, English UG values, Pakistan routes and tariff."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-st-mary-s-university-twickenham-country-scholarship-ug",
+      "verdict": "pass",
+      "issues": [
+        "Applies to September 2026 or January 2027 starts only; 2027/28 terms not published. January 2027 entry is covered, September 2027 is not stated. No deadline stated, automatic after offer. Pakistan is named as a qualifying country. Values GBP 1,500 per year, GBP 1,000 reduced (Psychology included) match. Can only hold one of Country or Excellence. Tenable at St Mary's."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-st-mary-s-university-twickenham-country-scholarship-pg",
+      "verdict": "pass",
+      "issues": [
+        "GBP 1,500 standard, GBP 1,000 reduced (listed subjects, MRes Sport Health and Applied Science, PGCE without bursary) match; first year only on courses over one year matches; automatic. Terms are for September 2026 and January 2027 starts only."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-st-mary-s-university-twickenham-excellence-scholarship-ug",
+      "verdict": "unverifiable",
+      "issues": [
+        "eligible_countries ['INTL']: page says only 'prior academic achievement and Country of domicile' and does not state which countries qualify, so open-to-all-international is not confirmed (the file notes this). Value GBP 4,000 per year and GBP 3,000 reduced match. Terms for September 2026 and January 2027 starts only."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-st-mary-s-university-twickenham-excellence-scholarship-pg",
+      "verdict": "unverifiable",
+      "issues": [
+        "eligible_countries ['INTL'] not confirmed, as above. Value GBP 4,000 first year only and GBP 2,000 reduced match. The page contradicts itself on MPhil and PhD (general line excludes research degrees, yet MPhil and PhD listed at GBP 2,000), as the file says. The 'Postgraduate level' only covers taught courses per the general PG criteria."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-st-mary-s-university-twickenham-mba-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 2,500 for all full-time MBA applicants paying international fees, GBP 4,000 for a limited number with higher academic achievement: matches. No separate application, no deadline or intake stated on the MBA entry; the file's intake label is inherited from the general PG terms."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Campus address Waldegrave Road, Strawberry Hill, Twickenham (TW1 4SX) confirmed on the contact page; 'London' appears only in the page meta description, not the address. Pakistan country page and scholarships page exist as described. Pakistan page mentions 'a number if GBP 3,000 scholarships' with no terms (excluded correctly). No notice of Pakistan recruitment pause on the Pakistan page. Sponsor licence status and September 2027 fees remain unverified."
+    ],
+    "corrections": {}
+  }
+}

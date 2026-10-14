@@ -1,0 +1,94 @@
+{
+  "slug": "gb-ulster-university",
+  "courses": [
+    {
+      "slug": "gb-ulster-university-msc-computing-science-conversion",
+      "verdict": "pass",
+      "issues": [
+        "tuition_amount 18880: the course page says 2027/28 fees 'will be announced in due course'. The 2027/28 international fees page lists Masters (general) at GBP 18,880 per year and the selected-course GBP 21,130 list does not include this course, so the figure is a reasonable inference, not a course-specific published fee. confidence 'high' overstates this.",
+        "english_requirements: course page IELTS 6.0 with no band below 5.5 confirmed; PTE 59 (59 each part, Online not accepted), TOEFL iBT 80 (L17 R18 S20 W17, before 21 January 2026), Duolingo 110 (no subscore below 100, taken after July 2024) confirmed on https://www.ulster.ac.uk/global/apply/english-language-requirements, which is not cited in any URL field. Tests after 21 January 2026 use a 4.0 scale that is not recorded.",
+        "Verified OK: MSc, 12 months, three semesters, Derry~Londonderry, September 2027, international applicants only, 2:2 or better (page says second class honours or better), 50% equivalent, max 50% computing content, GCSE C in English and Maths, core modules include Professional Software Development I, Software Architecture and Design, Database Systems, Project; Introduction to Data Science optional. Pakistan 4-year Bachelor 65% for 2:1 or 55% for 2:2, so pk_min_percent 55 matches. Course page lists QS Stars and award claims but none are repeated in the file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ulster-university-bsc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "overview: 'with the third year as a work placement' is not clean. The page says Year 3 is work experience but also lists Professional Practice - Computing as optional and the careers text says placement is normal; the page itself flags this for the course team to confirm.",
+        "tuition: course page says 2027/28 fees to be announced; fees page UG GBP 18,030 per year (2027/28), placement year GBP 4,900, subject to annual increase. Matches the file notes.",
+        "Verified OK: BSc (Hons), 4 years including placement, Derry~Londonderry, September 2027, A Levels BBC (two-grade drop for listed subjects), international CCC or higher, GCSE C/4 Maths and English, IELTS 6.0 with no band below 5.5, Year 1 core modules (Mathematics for Computing, Software Development I, Software Development II, Database Systems, Computer Hardware and Operating Systems, Systems Analysis and Design), Pakistan HSSC/Intermediate 75% for pk_route intermediate. English alternative-test values match the English page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ulster-university-bsc-business-economics",
+      "verdict": "pass",
+      "issues": [
+        "academic_requirements: file says 'GCSE Maths grade C*/5 or above'; the page says Maths at grade C or 5 or above. 'C*' is not on the page.",
+        "Course page says the tuition fees page lists 2026/27 fees, while the linked fees page is the 2027/28 page with GBP 18,030 per year. Figure used is the fees page, noted in the file.",
+        "Verified OK: BSc (Hons), 3 years or 4 with placement, Belfast, September 2027, BBC (BCC with Maths, Further Maths, Physics, Economics or Accounting), international BCC or higher, IELTS 6.0 with no band below 5.5, core modules Economics in Practice, Microeconomic Principles, Macroeconomic Principles, Mathematics and Statistics for Economics and Business, Skills for Economists, Principles of Marketing optional. Pakistan Intermediate 75% matches."
+      ],
+      "corrections": {
+        "academic_requirements": "GCSE Maths grade C or 5 or above and English Language grade C or 4 or above, or equivalent."
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-ulster-university-global-excellence-pg",
+      "verdict": "pass",
+      "issues": [
+        "GBP 5,000, equivalent of UK 2:1 or above, passport from relevant country, full-time taught on Belfast, Coleraine or Derry~Londonderry, branch campuses excluded, not cumulative, automatic, no deadline: all confirmed. Programmes commencing January or September 2027 stated on the general page. min_pk_percent 65 is the Pakistan page's 2:1 figure. Pakistan is not named on the general page, only on the Pakistan page (which gives the same value)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ulster-university-global-excellence-ug",
+      "verdict": "pass",
+      "issues": [
+        "GBP 5,000 Year 1 and GBP 3,000 per year Years 2 to 4, A-level BBB equivalent, confirmed on both the general and Pakistan pages. The Pakistan percentage for BBB is not stated (correctly null). The general page does not say placement years are excluded for Global Excellence UG; the file's 'Not applicable to the placement year' comes from the Country UG row, so it may be misattributed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ulster-university-country-scholarship-pg",
+      "verdict": "pass",
+      "issues": [
+        "Pakistan page: Standard Country PG GBP 4,000; general page: up to GBP 4,000. Entry requirements must be met, automatic, January or September 2027 starts. Matches."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ulster-university-country-scholarship-ug",
+      "verdict": "pass",
+      "issues": [
+        "Pakistan page: GBP 4,000 Year 1 and GBP 2,000 Years 2 to 4, not applicable to placement year; general page: up to GBP 4,000 Year 1 and GBP 2,000 per year after. Matches."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ulster-university-international-postgraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 2,000 discount, self-funding international, full-time PG, September start, Belfast, Coleraine or Derry~Londonderry, automatic, no deadline, no entry year stated: all match. The file's 'likely not stackable' with other awards is an inference from the Global Excellence page, not stated on this page. Whether it applies to 2027 entry is unconfirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ulster-university-international-undergraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 2,000 per year discount, not during placement year, self-funding international, full-time UG, September start, Northern Ireland campuses, automatic: all match. No entry year stated; stacking claim is an inference."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Campuses Belfast, Coleraine, Derry~Londonderry and branch campuses London, Birmingham, Manchester confirmed on the scholarship page. The 2027/28 international fees page, Pakistan country page and scholarships exist. Pakistan page: agents only, KP and AJK not accepted, MSc Management and MSc International Business variants not accepted, pre-deposit interview, study gaps 2 years UG and 5 years PG, UK Master's holders not processed: all match the client_should_confirm flags. Sponsor licence status not verified. source_url points at the Global Excellence page, which supports the campus list."
+    ],
+    "corrections": {}
+  }
+}

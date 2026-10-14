@@ -1,0 +1,81 @@
+{
+  "slug": "gb-london-metropolitan-university",
+  "courses": [
+    {
+      "slug": "gb-london-metropolitan-university-international-foundation-programme",
+      "verdict": "pass",
+      "issues": [
+        "overview: 'Later years are charged at the standard international rate for the chosen degree' is not stated on the cited page (page only says Bright Futures GBP 5,000 per year of degree study); remove or source it",
+        "pakistan fields: Pakistan page states 'Second division (65% plus)' in Intermediate/FSC or DAE 75% for four-year degrees with a foundation year; file leaves pk_* null because the link to this programme is unconfirmed, which is acceptable"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-metropolitan-university-international-year-one",
+      "verdict": "pass",
+      "issues": [
+        "title, fee GBP 19,500, no academic year stated, IELTS 5.5/5.5, entry, age and intakes January, May, September 2027 all match the page"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-metropolitan-university-pre-masters-programme",
+      "verdict": "pass",
+      "issues": [
+        "overview: 'leads into a listed London Met Master's in business, computing, health and other areas' not confirmed on the fetched page content (progression list not returned); fees, terms, intakes, IELTS and age match"
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-london-metropolitan-university-south-asia-bright-futures",
+      "verdict": "pass",
+      "issues": [
+        "Pakistan page confirms GBP 5,000 reduction, length of studies, January 2027 or May 2027 starts, automatic, UG and PG, Pakistani overseas fee status",
+        "scholarships overview page gives no amount and lists citizens of Bangladesh, India, Nepal, Pakistan, Sri Lanka; file notes already flag this"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-metropolitan-university-international-bright-futures",
+      "verdict": "pass",
+      "issues": [
+        "notes: file says 'for one course the award is split GBP 2,500 per year over two years, which is why value_basis is total'; the page lists that course (MSc Counselling and Psychotherapy) as excluded and is itself contradictory, so the stated reason for value_basis is weak. Page says GBP 5,000 for the duration of studies",
+        "terms are 2026/27 only (September 2026, January 2027, May 2027); no 2027/28 terms, so September 2027 entry is unconfirmed, as the file says"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-metropolitan-university-early-payment-discount",
+      "verdict": "pass",
+      "issues": [
+        "page does not state an application route; 'automatic' is not directly confirmed",
+        "deadline 6 August 2026 has already passed as of 2026-10-13, so the discount cannot practically be obtained for 2026/27 starts; consider noting this"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-london-metropolitan-university-pg-alumni-discount",
+      "verdict": "fail",
+      "issues": [
+        "value_text / value_percent: page says 'Graduates of London Met can save 20% on their postgraduate studies'; file says 'up to 20%'",
+        "summary: file says 'A course page notes exclusions'; the cited page lists no exclusions and no such course page was cited",
+        "eligible_countries INTL: page says home, EU and international graduates all qualify, so INTL does not capture it (applies regardless of fee status)"
+      ],
+      "corrections": {
+        "value_text": "20% off postgraduate tuition for London Met graduates",
+        "summary": "A 20% discount on postgraduate study for London Met graduates, stated to apply to home, EU and international graduates."
+      }
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "campuses Aldgate, Holloway, Shoreditch confirmed; ISC pathway programmes (Foundation, International Year One, Pre-Master's) confirmed",
+      "summary: Pakistan page confirms the South Asia scholarship and foundation year entry routes; fees there are 'from' prices for 2026-27 (UG GBP 19,500, PG GBP 20,000), which the file correctly does not record as course fees",
+      "courses are ISC pathway programmes only; no degree courses recorded"
+    ],
+    "corrections": {}
+  }
+}

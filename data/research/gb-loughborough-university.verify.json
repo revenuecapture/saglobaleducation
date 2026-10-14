@@ -1,0 +1,63 @@
+{
+  "slug": "gb-loughborough-university",
+  "courses": [
+    {
+      "slug": "gb-loughborough-university-computer-science-bsc",
+      "verdict": "fail",
+      "issues": [
+        "min_pte 65 and english_requirements: the undergraduate English page gives PTE 65 with 61 in each sub-test only as the figure for its higher-level courses and no standard UG PTE; the general English page (international/apply/english-language-requirements) gives PTE 67 with 63 in each sub-test for the university standard. The two lboro pages conflict, so 65/61 is not reliably the standard for Computer Science",
+        "min_duolingo 120: confirmed as 120 overall on the general page; UG page figure is truncated (110 in Speaking), sub-test minimums unconfirmed",
+        "English page (study/apply/english-language-requirements) returned errors, so the cited source for the English scores could not be reopened; course page itself gives no English score",
+        "title, BSc (Hons), 3 or 4 years, GBP 30,700 per year 2026/27, October 2026 start, AAA incl Maths, IB 37, BTEC, GCSE, IELTS 6.5 with 6.0 each, Computer Science not on the higher-level list, Pakistan HSSC needs Foundation Year via ONCAMPUS: all match",
+        "course page does not state placement-year fee precisely; the 20 per cent note matches the page"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-loughborough-university-computer-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "title, 1 year full-time, GBP 30,900 2026/27, September 2026 start, 2:2 any subject, modules and project options match; Pakistan four-year degree lower second C+ or GPA 2.6 confirmed on the PG entry page",
+        "english: IELTS 6.5/6.0, PTE 67/63, TOEFL 88/21, Duolingo 120/105 match the general English page, but the UG English page says TOEFL 88 is replaced for tests taken from 21 January 2026 (4.5 overall scale); min_toefl 88 is therefore possibly outdated for 2027 entry, and is inconsistent with the BSc row, which leaves TOEFL null for this reason",
+        "pk_min_cgpa 2.6 is a GPA as published, as the file notes"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-loughborough-university-finance-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "title, 1 year, GBP 30,400 for 2026/27 (GBP 29,500 for 2025/26), October 2025 and October 2026 starts, 2:2 (55%) headline requirement, modules, aimed at non-finance graduates all match; the course page states no English score and the general page confirms PGT standard applies to all departments",
+        "TOEFL 88 possibly superseded for tests from 21 January 2026 (see Computer Science MSc)",
+        "page text 'combining management and corporate finance modules' is a fair paraphrase, not copied"
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-loughborough-university-pg-excellence-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 6,000 for international September 2026 starts, 20 per cent for January 2026, first class, self-funding, automatic, no deadline, exclusions and Alumni Bursary exception all confirmed; page does not cover 2027 entry, as the file states",
+        "GBP 3,000 UK student figure in value_text was not seen in the page extract"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-loughborough-university-future-leaders-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 10,000 first year, UG and PGT, international self-funded with prior offer, 2026 deadlines 15 April, 6 May, 1 June confirmed; reserved places for China, Hong Kong, India, USA, Nigeria with a global option open to any international applicant, so Pakistan applicants are eligible via the global route; page does not name an entry year"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "location page confirms a market town in the East Midlands with address in Loughborough, Leicestershire; Pakistan country page shows no recruitment notices and no Pakistan scholarships; eligibility_source_url is null which is acceptable"
+    ],
+    "corrections": {}
+  }
+}

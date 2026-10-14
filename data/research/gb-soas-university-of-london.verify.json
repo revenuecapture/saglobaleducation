@@ -1,0 +1,82 @@
+{
+  "slug": "gb-soas-university-of-london",
+  "courses": [
+    {
+      "slug": "gb-soas-university-of-london-msc-international-business",
+      "verdict": "fail",
+      "issues": [
+        "academic_requirements: file says 'business related work experience are also considered'; the page says only 'Work experience is welcome but not necessary' and that references can help if you fall below the 2:2 requirement. The 'business related' qualifier is not on the page.",
+        "highlights: all four are labelled 'Core', but the page lists only Multinationals and Global Business as core; International Management, International Human Resource Management and International Business Strategy are compulsory (Research Methods is also compulsory).",
+        "english_requirements and min_toefl: the SOAS English page gives TOEFL iBT 95 overall with 23 writing and 20 other (old scoring) or 5.0 overall (tests under the new scoring); the file gives 95 only and does not mention the scoring change.",
+        "Confirmed: 1 year, September start with no year, international fee 26,000 with no year on the course page (matches the 2026/27 Finance and Management band; no 2027/28 figure published), 2:2 or international equivalent, Pakistan 2:ii equivalent CGPA 2.7 or 55%, IELTS 6.5/6.0, PTE 65/60, Duolingo 120/110. The Pakistan country page does give the higher thresholds (First Division or CGPA 3.0 or 60%, or 3.3 or 65%), so null pk fields are reasonable."
+      ],
+      "corrections": {
+        "academic_requirements": "We will consider all applications with 2:2 (or international equivalent) or higher. A supporting statement is also considered. Work experience is welcome but not necessary. References are optional.",
+        "highlights": [
+          "Core: Multinationals and Global Business",
+          "Compulsory: International Business Strategy",
+          "Compulsory: International Human Resource Management",
+          "Compulsory: International Management"
+        ]
+      }
+    },
+    {
+      "slug": "gb-soas-university-of-london-ma-international-studies-diplomacy",
+      "verdict": "pass",
+      "issues": [
+        "Fee 29,990 is the 2027/28 Band 4 figure on the fees page (course page shows 28,840 without a year, which is the 2026/27 figure); annual fee for a one-year programme so total basis is fine. 1 year, September start, 2:2, Pakistan 2:ii CGPA 2.7 or 55%, Diplomatic Practice and General Diplomatic Studies compulsory, Foundations of International Law optional all confirmed.",
+        "english_requirements and min_toefl: same TOEFL scoring change point as above (95 is the old scale, 5.0 under new scoring).",
+        "academic_requirements mention of the supporting statement was not visible in my read of this page (it is on the MSc page); minor. Dissertation module title in highlights not confirmed word for word (page shows 'Dissertation', 60 credits, compulsory)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-soas-university-of-london-bsc-economics",
+      "verdict": "pass",
+      "issues": [
+        "International fee 23,780 for 2026/27 (annual, single overseas rate on the undergraduate fees page, up to 5% rises in later years); no 2027/28 figure published, as the file states. ABB, contextual BBB, A Level maths B, 3 or 4 years, September start, year 1 core and compulsory modules all confirmed.",
+        "overview: 'UCAS code L100' - the page labels L100 as 'Course code', not UCAS code (minor).",
+        "Same TOEFL scoring change point (95 is the old scale). Pakistan note (high school certificate not sufficient, IFCELS year, BA or BComm at Division I 60%) confirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-soas-university-of-london-masters-scholarship-international",
+      "verdict": "pass",
+      "issues": [
+        "GBP 8,000 fee waiver, over 150 awards, 2:1 or equivalent, full-time on-campus, overseas fee payer, rounds closing 28 Feb, 30 Apr and 30 Jun 2026, GBP 4,000 CAS deposit, first year only for two-year programmes: all confirmed. Application is via the admissions portal.",
+        "This is for 2026/27 entry and is closed (listing shows closed). It does not apply to 2027 entry and should not be shown as available for 2027 until SOAS publishes new terms. Tenable on both master's courses in the file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-soas-university-of-london-international-academic-excellence",
+      "verdict": "pass",
+      "issues": [
+        "Up to 25 full waivers and up to 8 waivers of 20,000 (33 in total), 2:1 or equivalent, deadline 12 noon UK time on 29 May 2026, no country restriction, separate application via the portal after an offer: confirmed.",
+        "Closed and 2026 dates only, no entry year stated; does not apply to 2027 entry yet."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-soas-university-of-london-great-pakistan",
+      "verdict": "pass",
+      "issues": [
+        "GBP 10,000 (page says a minimum of 10,000), two awards shared between Indonesia and Pakistan, Pakistani passport, one-year full-time on-campus taught master's, September 2026, deadline 11:59pm BST on 24 May 2026, GBP 4,000 CAS deposit, separate form after an offer: confirmed. The URL says 2025 entry but the content is 2026.",
+        "Closed and for September 2026 entry only; does not apply to 2027 entry. The country page also mentions an International Postgraduate Scholarship open to all full-time master's students from Pakistan, which could not be fetched (error) and is not on the PGT listing, so it remains unchecked."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Address 10 Thornhaugh Street, Russell Square, London (postcode WC1H 0XG) confirmed in the footer of the cited source_url. No rankings or dash punctuation in the file.",
+      "summary: the pre-master's programme is not mentioned on the cited source_url, but SOAS does publish a Foundation Diploma for Postgraduate Studies (pre-masters) page, so the claim is true though the cited source does not support it. 'Lists master's scholarships open to overseas fee-paying students' is true, but nearly all are currently closed; only Marshall (USA) and SOAS Online scholarships are listed as open.",
+      "region left null and sponsor licence not checked, as flagged by the researcher."
+    ],
+    "corrections": {}
+  }
+}

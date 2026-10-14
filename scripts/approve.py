@@ -14,6 +14,8 @@ out = {'approved_by': 'Claude for Badr (SA Global consultant), per the finder pl
        'universities': [], 'courses': [], 'scholarships': [], 'held_back': {}}
 try: CORRECTED = set(json.load(open(os.path.join(R, '_corrected.json')))['slugs'])
 except Exception: CORRECTED = set()
+try: EXCLUDED = json.load(open(os.path.join(R, '_exclusions.json'))).get('scholarships', {})
+except Exception: EXCLUDED = {}
 try: HOLDS = json.load(open(os.path.join(R, '_holds.json')))['holds']
 except Exception: HOLDS = {}
 for slug in sys.argv[1:]:
@@ -36,6 +38,8 @@ for slug in sys.argv[1:]:
         why = []
         if verdict('scholarships', s['slug']) != 'pass' and s['slug'] not in CORRECTED: why.append('check ' + str(verdict('scholarships', s['slug'])))
         if s.get('confidence') not in ('high', 'medium'): why.append('confidence ' + str(s.get('confidence')))
+        if s.get('deadline_on') and s['deadline_on'] < out['date']: why.append('deadline passed ' + s['deadline_on'])
+        if s['slug'] in EXCLUDED: why.append('excluded: ' + EXCLUDED[s['slug']])
         (held.append(s['slug'] + ': ' + ', '.join(why)) if why else ok_s.append(s['slug']))
     uv = (v.get('university') or {}).get('verdict')
     if (ok_c or ok_s) and (uv != 'fail' or slug in CORRECTED):

@@ -1,0 +1,84 @@
+{
+  "slug": "gb-robert-gordon-university",
+  "courses": [
+    {
+      "slug": "gb-robert-gordon-university-data-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee 21,090 (2026/27, full time, Year 1), 12 months Sep and 17 months Jan, 2:2 in analytical discipline, IELTS 6.0 with no component below 5.5 and Jan/Sep 2027 deadline note all confirmed.",
+        "english_requirements: the Pakistan page says most postgraduate courses need IELTS 6.5 with 5.5 in each area, conflicting with the course page 6.0. The file discloses this; min_ielts_overall 6.0 follows the course page and should be confirmed with RGU."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-robert-gordon-university-oil-and-gas-engineering-msc",
+      "verdict": "fail",
+      "issues": [
+        "academic_requirements: file says 2:2 'in Engineering'; the page says Engineering or a relevant discipline such as Geology, Physics, Chemistry or Mathematics, so the file is narrower than the page.",
+        "english_requirements: same unresolved conflict with the Pakistan page (6.5 for most postgraduate courses) as the Data Science course; disclosed in the file.",
+        "Fee 20,210 (2026/27), 12/16 months, Jan/Sep starts and Term 2 and 3 modules confirmed."
+      ],
+      "corrections": {
+        "academic_requirements": "Normally a 2:2 undergraduate honours degree or equivalent in Engineering or a relevant discipline such as Geology, Physics, Chemistry or Mathematics. Lower classifications and relevant work experience are considered case by case."
+      }
+    },
+    {
+      "slug": "gb-robert-gordon-university-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Fee 18,940 per year (2026/27), 4 years or 4 plus 1 placement, SQA BBCC, A Level CCC, IB 26, Year 2 BBC, IELTS 6.0/5.5, Jan (via International College) and Sep starts without a year, year 1 common Foundation Year, year 2 and year 4 content all confirmed.",
+        "Page also lists 2025/26 fee 18,300; 2027/28 fee not published, as the file states."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-robert-gordon-university-business-and-management-ba",
+      "verdict": "pass",
+      "issues": [
+        "Fee 18,940 per year (2026/27), 4 years, SQA BBBC, A Level BCC, ILC H2H3H3H3, IB 27, Year 2 A Level BBB, IELTS 6.0/5.5, year 2 modules and Business Strategy in year 4 confirmed. Pakistan 59.5% for a 2 or 3 year bachelor's confirmed on the Pakistan page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-robert-gordon-university-international-merit-masters-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 8,000, 3 awards, first class equivalent, self-funding, September 2027, deadline 1 June 2027, online application, all countries eligible and listed on the Pakistan page: all confirmed. Tenable on both Master's courses in the file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-robert-gordon-university-vice-chancellors-undergraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Full first year's tuition, September 2027, closes 1 June 2027, year 1 or 2 direct entry, selection criteria and ambassador role confirmed. Page says international or European fee payers; file says INTL, acceptable. January-start shorter programme students are not eligible, which the file omits (minor)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-robert-gordon-university-international-student-discount-masters",
+      "verdict": "pass",
+      "issues": [
+        "GBP 3,000 to 4,000 (Kenya, Indonesia and Nepal at 4,000), automatic, award at university discretion, no deadline or year stated: confirmed. Pakistan not named, so null value_amount is correct."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-robert-gordon-university-international-student-discount-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "GBP 2,000 per year, year one September start, automatic, discretionary, no deadline: confirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Postal address Garthdee House, Garthdee Road, Aberdeen, AB10 7QB confirmed on the postal addresses page. No rankings, superlatives or dash punctuation in the file. Agent advisory in client_should_confirm confirmed on the Pakistan page."
+    ],
+    "corrections": {}
+  }
+}

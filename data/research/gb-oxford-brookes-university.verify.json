@@ -1,0 +1,67 @@
+{
+  "slug": "gb-oxford-brookes-university",
+  "courses": [
+    {
+      "slug": "gb-oxford-brookes-university-project-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "academic_requirements: wording is very close to the course page sentence (2:2 in any academic discipline, extensive professional experience); consider rephrasing. Facts match.",
+        "highlights: lists four of eight compulsory modules; accurate but partial."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-oxford-brookes-university-business-and-management-ba",
+      "verdict": "pass",
+      "issues": [
+        "Course page gives no English scores; values match the university English page band for all other undergraduate courses (6.0 overall, 6.0 R/W, 5.5 L/S, PTE 65, Duolingo 110). Fee 20,800 for 2027/28, tariff 112/BBC/IB 27/DMM, contextual offers and intakes (Sep 2026, Jan 2027, Sep 2027) all confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-oxford-brookes-university-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Course page lists September 2026 only, so empty intake_labels is correct. Fee 19,300 (2027/28), entry requirements, 12-month placement and BCS accreditation confirmed. English values come from the university band, not the course page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-oxford-brookes-university-international-foundation-business-technology",
+      "verdict": "pass",
+      "issues": [
+        "tuition_basis per_year: page lists the 2027/28 fee 18,500 as 'international full time' without stating a period; the course is 24 weeks. Basis is an assumption.",
+        "Everything else confirmed: IELTS 5.5 all skills, PTE 59, Duolingo 100, 48 tariff points, GCSE Maths 4, Sep 2026 and Jan 2027 starts, 40% progression, module count inconsistency."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-oxford-brookes-university-international-student-scholarship-jan-2027",
+      "verdict": "pass",
+      "issues": [
+        "Value 2,000 off second semester, deadline 4 Dec 2026, automatic via deposit, January 2027 and the 2026 typo in T&C 2 all confirmed.",
+        "Eligible course list (46 courses counted, file says about 47) includes Business and Management BA and International Foundation Business and Technology, but NOT Project Management MSc (only Project Management in the Built Environment is listed) and NOT Computer Science BSc. So this award cannot be held on two of the four courses in this file."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-oxford-brookes-university-business-school-international-scholarship-jan-2027",
+      "verdict": "pass",
+      "issues": [
+        "13 undergraduate courses, 2,000 per academic year, 4 Dec 2026 deposit deadline and exclusions (foundation progression students, sponsored, placement years) confirmed. Marketing Management and Economics are on the list, so the note is correct.",
+        "Applies to Business and Management BA only among the file's courses; not available to students progressing from the Brookes foundation course."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'situated in the city of Oxford' closely echoes the university's 'situated in the historical city of Oxford'; address Headington Campus, Oxford, OX3 0BP confirmed in footer. No rankings or superlatives in the file. No dashes used as punctuation in the file.",
+      "region and sponsor licence left null and flagged by the researcher; not independently checked."
+    ],
+    "corrections": {}
+  }
+}

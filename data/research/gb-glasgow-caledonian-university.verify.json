@@ -1,0 +1,34 @@
+{
+  "slug": "gb-glasgow-caledonian-university",
+  "courses": [],
+  "scholarships": [
+    {
+      "slug": "gb-glasgow-caledonian-university-postgraduate-ambassador-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "Confirmed: full Year 1 tuition, Master's at Glasgow or London campus, January 2027 start, unconditional offer, 60 percent or above preferred, one per school, financial need, online form, deadline 1 November 2026 5pm with no late applications, outcomes by 23 November 2026, Ambassador's Charter.",
+        "eligible_countries INTL: the page states no country restriction and does not say it is open to international applicants beyond a UKVI living-cost requirement; international and Pakistani eligibility is an inference, as the file's notes admit. Page also says 'strong academic profile and/or contribution to the common good', whereas the summary lists them as joint criteria.",
+        "Applies to January 2027 only; no September 2027 equivalent published. Deadline is 18 days away so only suitable for January 2027 applicants."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-glasgow-caledonian-university-postgraduate-early-payment-discount",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 5 percent, private fees over GBP 5,000, paid in full before first teaching date, applied after any GCU scholarship, repeats in later years on the same condition, SAAS/SLC funding does not count. The page's worked example uses an international student, so INTL is reasonable but not stated outright.",
+        "No academic year or intake is stated on the page, so it cannot be tied to 2027 entry specifically; deadline_note is accurate."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "summary: the cited source_url (Pakistan page) does not list subjects. The GCU homepage names only individual courses in business, computing and law, so 'courses in business, computing, law and other subjects' is only loosely supported. Glasgow main campus, GCU London link, 17 approved Pakistan agents and the Bell College/Bell Agency warning are confirmed.",
+      "Pakistan page entry requirements and English sections are collapsed and unreadable, so no Pakistan entry requirement can be confirmed from it; the file leaves courses empty accordingly. The tuition 'from GBP 15,200' figure on the Pakistan page has no academic year.",
+      "Homepage carries self-promotional claims (Scotland's first university to win Merit Status from Student Minds, 'innovative teaching'); the file correctly omits them. Sponsor licence not checked (file flags this)."
+    ],
+    "corrections": {}
+  }
+}

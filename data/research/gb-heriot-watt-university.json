@@ -1,0 +1,108 @@
+{
+  "university": {
+    "slug": "gb-heriot-watt-university", "name": "Heriot-Watt University", "destination_code": "GB", "city": "Edinburgh", "region": "Scotland",
+    "website_url": "https://www.hw.ac.uk/",
+    "international_admissions_url": "https://www.hw.ac.uk/study/international/uk/pakistan.htm",
+    "scholarships_url": "https://www.hw.ac.uk/scholarships",
+    "summary": "Heriot-Watt University's UK main campus is the Edinburgh Campus, set in 380 acres of parkland with the postcode EH14 4AS. The university publishes entry requirements for Pakistan and runs an International Merit Scholarship and an alumni discount for postgraduate taught study.",
+    "is_russell_group": false, "russell_group_source_url": null,
+    "eligibility_note": null, "eligibility_source_url": null,
+    "source_url": "https://www.hw.ac.uk/campuses/edinburgh", "verified_on": "2026-10-13", "confidence": "medium"
+  },
+  "courses": [
+    {
+      "slug": "gb-heriot-watt-university-msc-artificial-intelligence", "title": "MSc Artificial Intelligence", "award": "MSc", "level": "postgraduate",
+      "field_slug": "computer-technology", "mode": "full_time", "duration_text": "1 year (full time)", "duration_months": 12,
+      "tuition_amount": 27080, "tuition_currency": "GBP", "tuition_basis": "total",
+      "tuition_academic_year": "2027/28", "fees_source_url": "https://www.hw.ac.uk/study/postgraduate/artificial-intelligence",
+      "overview": "One-year on-campus taught master's in Artificial Intelligence at Heriot-Watt's Edinburgh campus. The September intake includes mandatory modules in machine learning and biologically inspired computation, a research methods module and a dissertation, plus optional modules.",
+      "highlights": ["Data Mining and Machine Learning (mandatory)", "Biologically Inspired Computation (mandatory)", "Research Methods and Project Planning (mandatory)", "Masters Project and Dissertation (mandatory)"],
+      "academic_requirements": "A minimum of a 2:2 honours degree or non-UK equivalent, with evidence of understanding subjects such as design, creative digital skills, or computing and programming skills. Work or project experience in a related role is considered, and a CV should be included with the application.",
+      "english_requirements": "The course page's English section is blank. The university English requirements page lists, for postgraduate Design and STEM (excluding actuarial) and non-STEM programmes: IELTS Academic 6.0 overall, no score below 5.5 (non-STEM also Writing 6.0); PTE Academic 63 (minimum 59); TOEFL iBT 79 before 21 January 2026, and a new scale from 21 January 2026 (overall 4, no score below 4, Writing 4.5); Duolingo 120 overall, 110 each component (non-STEM Writing 115). Results must be within two years of the start date.",
+      "experience_requirements": "Work or project experience in a related role is considered; CV required.",
+      "pakistan_entry_note": "Postgraduate: a four-year bachelor's degree in a relevant subject from an HEC-recognised Pakistani institution with 60% or above will be considered. Page gives no CGPA.",
+      "pakistan_source_url": "https://www.hw.ac.uk/study/international/uk/pakistan.htm",
+      "career_notes": "Page lists roles such as Machine Learning Engineer, Data Scientist, AI Research Scientist, Computer Vision Engineer and AI Product Manager.",
+      "min_ielts_overall": 6.0, "min_ielts_band": 5.5, "min_pte": 63, "min_toefl": null, "min_duolingo": 120,
+      "pk_route": "bachelor_16", "pk_min_percent": 60, "pk_min_cgpa": null, "uk_min_alevels": null, "uk_min_degree_class": "2:2",
+      "official_url": "https://www.hw.ac.uk/study/postgraduate/artificial-intelligence", "intake_labels": ["September 2027", "January 2027"], "application_deadline_note": "No deadline shown on the course page.",
+      "featured": true, "source_url": "https://www.hw.ac.uk/study/postgraduate/artificial-intelligence", "verified_on": "2026-10-13", "confidence": "medium",
+      "notes": "Fee shown is the September 2027 or later full-time international fee (January 2027 intake fee is GBP 26,296). The English page does not state which column applies to this programme, but overall and band scores are the same in both postgraduate columns."
+    },
+    {
+      "slug": "gb-heriot-watt-university-msc-international-business-management", "title": "MSc International Business Management", "award": "MSc", "level": "postgraduate",
+      "field_slug": "business-management", "mode": "full_time", "duration_text": "1 year (full time)", "duration_months": 12,
+      "tuition_amount": 25704, "tuition_currency": "GBP", "tuition_basis": "total",
+      "tuition_academic_year": "2027/28", "fees_source_url": "https://www.hw.ac.uk/study/postgraduate/international-business-management",
+      "overview": "One-year on-campus taught master's in Edinburgh for graduates of any academic subject. The September intake covers strategy, international business context and HR in the first semester, then research methods, economics and marketing, and a company consultancy project.",
+      "highlights": ["Competitive Strategy (mandatory)", "International Business Context (mandatory)", "International Marketing (mandatory)", "Strategic Innovation Management (optional)"],
+      "academic_requirements": "A minimum of an honours degree at 2:2 or a non-UK equivalent in any academic subject, provided it includes evidence of essay writing and critical thinking.",
+      "english_requirements": "The course page's English section is blank. The university English requirements page lists, for postgraduate non-STEM programmes: IELTS Academic 6.0 overall, no score below 5.5, Writing 6.0; PTE Academic 63 (minimum 59, Writing 63); TOEFL iBT 79 before 21 January 2026, and a new scale from 21 January 2026 (overall 4, no score below 4, Writing 4.5); Duolingo 120 overall, Writing 115, other components 110. Results must be within two years of the start date.",
+      "experience_requirements": null,
+      "pakistan_entry_note": "Postgraduate: a four-year bachelor's degree in a relevant subject from an HEC-recognised Pakistani institution with 60% or above will be considered. Page gives no CGPA.",
+      "pakistan_source_url": "https://www.hw.ac.uk/study/international/uk/pakistan.htm",
+      "career_notes": "Page says the programme prepares graduates for professional and managerial roles in private, public and third-sector organisations, and cites Graduate Outcomes Survey 2024 for almost 90% in employment or further education.",
+      "min_ielts_overall": 6.0, "min_ielts_band": 5.5, "min_pte": 63, "min_toefl": null, "min_duolingo": 120,
+      "pk_route": "bachelor_16", "pk_min_percent": 60, "pk_min_cgpa": null, "uk_min_alevels": null, "uk_min_degree_class": "2:2",
+      "official_url": "https://www.hw.ac.uk/study/postgraduate/international-business-management", "intake_labels": ["September 2027", "January 2027"], "application_deadline_note": "No deadline shown on the course page.",
+      "featured": false, "source_url": "https://www.hw.ac.uk/study/postgraduate/international-business-management", "verified_on": "2026-10-13", "confidence": "medium",
+      "notes": "Fee shown is the September 2027/January 2028 full-time international fee (January 2027 intake fee is GBP 24,952). The English page does not name business programmes, so the non-STEM column is assumed from the subject and should be confirmed."
+    },
+    {
+      "slug": "gb-heriot-watt-university-bsc-computer-science", "title": "BSc (Hons) Computer Science", "award": "BSc (Hons)", "level": "undergraduate",
+      "field_slug": "computer-technology", "mode": "full_time", "duration_text": "3 to 4 years (full time)", "duration_months": 36,
+      "tuition_amount": 26840, "tuition_currency": "GBP", "tuition_basis": "per_year",
+      "tuition_academic_year": "2027/28", "fees_source_url": "https://www.hw.ac.uk/study/undergraduate/computer-science-bsc",
+      "overview": "Full-time on-campus honours degree in Computer Science, starting in September. The page lists first-year modules in logic, interaction design, software development and, for the January intake, computer systems, discrete mathematics and web design.",
+      "highlights": ["Software Development 1 (mandatory, September intake)", "Logic and Proof (mandatory, September intake)", "Introduction to Interaction Design (mandatory, September intake)", "Praxis (mandatory, September intake)"],
+      "academic_requirements": "Standard 2027 entry: A-Levels BBC including Maths at B; Highers ABBB including Maths at B; IB 28 points including Maths at Higher Level 5; BTEC Extended Diploma DDM; HNC or HND with sufficient Maths. Minimum under Fair Access Policy: A-Levels BCC.",
+      "english_requirements": "The course page's English section is blank. The university English requirements page lists standard undergraduate: IELTS Academic 6.0 overall, no score below 5.5; PTE Academic 63 (minimum 59); TOEFL iBT 79 before 21 January 2026, and a new scale from 21 January 2026 (overall 4, no score below 4, Writing 4.5); Duolingo 120 overall, 110 each component.",
+      "experience_requirements": null,
+      "pakistan_entry_note": "Undergraduate: Higher Secondary Certificate with an overall minimum of 75%, plus 75% in subjects with a specific requirement; or successful completion of Year 1 at a recognised university. Page gives no CGPA.",
+      "pakistan_source_url": "https://www.hw.ac.uk/study/international/uk/pakistan.htm",
+      "career_notes": "Page lists roles such as Developer, Data Scientist, Software Engineer, Cyber Security Analyst and Games Developer.",
+      "min_ielts_overall": 6.0, "min_ielts_band": 5.5, "min_pte": 63, "min_toefl": null, "min_duolingo": 120,
+      "pk_route": "intermediate", "pk_min_percent": 75, "pk_min_cgpa": null, "uk_min_alevels": "BBC", "uk_min_degree_class": null,
+      "official_url": "https://www.hw.ac.uk/study/undergraduate/computer-science-bsc", "intake_labels": ["September 2027"], "application_deadline_note": null,
+      "featured": true, "source_url": "https://www.hw.ac.uk/study/undergraduate/computer-science-bsc", "verified_on": "2026-10-13", "confidence": "medium",
+      "notes": "Page gives duration as 3 to 4 years; 36 months is the shorter figure. Fee is stated for the September 2027 intake; whether it is charged annually is not stated, so per_year is an assumption to confirm. Page does not say whether Maths is required of Pakistani applicants beyond the 75% subject requirement."
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-heriot-watt-university-international-merit-scholarship", "name": "International Merit Scholarship", "provider_type": "university",
+      "provider_name": "Heriot-Watt University", "destination_codes": ["GB"], "levels": ["undergraduate", "postgraduate"], "field_slugs": [],
+      "eligible_countries": ["INTL"], "value_type": "partial_tuition", "value_amount": null,
+      "value_percent": null, "value_currency": "GBP", "value_basis": "one_off",
+      "value_text": "Value varies by region; usually a partial fee abatement for the first year only, unless the offer letter states otherwise",
+      "summary": "Merit award for full-time overseas fee-status undergraduate and postgraduate taught students on UK campus programmes, who live overseas. Value and eligibility vary by region, and applicants from Pakistan are directed to a regional contact.",
+      "criteria_text": "Overseas fee status, living overseas (UK-resident overseas fee-status students are not eligible); full-time UK campus; online and postgraduate research programmes excluded. Only one Heriot-Watt funded scholarship can be held.",
+      "min_pk_percent": null, "min_pk_cgpa": null, "min_ielts_overall": null, "need_based": false,
+      "application_route": "separate_application", "requires_offer": true,
+      "opens_on": null, "deadline_on": null, "deadline_note": "No deadline listed; page states the scholarship is open.", "intake_label": "September 2027",
+      "official_url": "https://www.hw.ac.uk/study/fees-and-funding/scholarships-and-bursaries/international-merit-scholarship", "source_url": "https://www.hw.ac.uk/study/fees-and-funding/scholarships-and-bursaries/international-merit-scholarship", "verified_on": "2026-10-13", "confidence": "medium",
+      "notes": "Page lists entry year as January or September 2027. Regional contact for Pakistan is given on the page. Whether an offer is required to apply is not stated on the page; requires_offer is an assumption to confirm."
+    },
+    {
+      "slug": "gb-heriot-watt-university-alumni-discount-scheme", "name": "Alumni Discount Scheme", "provider_type": "university",
+      "provider_name": "Heriot-Watt University", "destination_codes": ["GB"], "levels": ["postgraduate"], "field_slugs": [],
+      "eligible_countries": ["INTL"], "value_type": "fee_reduction", "value_amount": null,
+      "value_percent": 20, "value_currency": "GBP", "value_basis": "total",
+      "value_text": "20% fee discount (10% for MSc Imaging, Vision and High Performance Computing and MSc Biomedical Engineering)",
+      "summary": "Fee discount for Heriot-Watt alumni who were registered for a year or more on an on-campus degree, applied to postgraduate taught study. It is applied automatically and shown in the offer letter.",
+      "criteria_text": "Heriot-Watt alumni registered for one year or more on an on-campus degree, or former visiting students who completed one or more semesters.",
+      "min_pk_percent": null, "min_pk_cgpa": null, "min_ielts_overall": null, "need_based": false,
+      "application_route": "automatic", "requires_offer": true,
+      "opens_on": null, "deadline_on": null, "deadline_note": "No deadline stated; page says open for applications.", "intake_label": "September 2027",
+      "official_url": "https://www.hw.ac.uk/study/fees-and-funding/scholarships-and-bursaries/alumni-discount-scheme", "source_url": "https://www.hw.ac.uk/study/fees-and-funding/scholarships-and-bursaries/alumni-discount-scheme", "verified_on": "2026-10-13", "confidence": "medium",
+      "notes": "Entry year not stated on the page. Page does not mention Pakistan; eligibility depends on alumni status. The International Merit Scholarship page says only one Heriot-Watt funded scholarship can be held, so the two cannot be combined."
+    }
+  ],
+  "flags": {
+    "could_not_verify": ["UK sponsor licence: the gov.uk register file could not be read through the fetch tool, so eligibility_note is null", "Programme-level English requirements: course pages have blank English sections; scores taken from the general English requirements page", "Application deadlines not shown on course pages", "Scholarship search page returned no results, so other international awards may exist"],
+    "conflicting_sources": [],
+    "blocked_pages": ["gov.uk register of licensed student sponsors (file content not returned)"],
+    "excluded_and_why": ["Free accommodation for first semester: Rest of UK fee status only, entry year September 2026, closed", "Americas and Europe (Non-EU) Scholarship, Heriot-Watt University Bursary, Widening Access Bursary, Foundation Bursary, Expenses Bursary: not for Pakistani applicants or home students (not opened in full)"],
+    "client_should_confirm": ["Sponsor licence status on the gov.uk register", "No notice of paused recruitment from Pakistan found on the Pakistan page or the country information page", "Which English column (STEM or non-STEM) applies to each programme", "Whether UG fee is charged per year", "Merit scholarship value for Pakistan via the regional manager"]
+  }
+}

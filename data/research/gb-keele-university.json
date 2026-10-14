@@ -1,0 +1,108 @@
+{
+  "university": {
+    "slug": "gb-keele-university", "name": "Keele University", "destination_code": "GB", "city": null, "region": "Staffordshire",
+    "website_url": "https://www.keele.ac.uk/",
+    "international_admissions_url": "https://www.keele.ac.uk/study/internationalstudents/yourcountry/asia/pakistan/",
+    "scholarships_url": "https://www.keele.ac.uk/study/postgraduatestudy/tuitionfeesandfunding/postgraduatefunding/postgraduatebursariesandscholarshipsinternational/",
+    "summary": "Keele University has a campus in the Staffordshire countryside, a few minutes from Newcastle-under-Lyme. It publishes a Pakistan country page with entry requirements by institution tier, and offers an International Foundation Year through Keele University International College on its campus.",
+    "is_russell_group": false, "russell_group_source_url": null,
+    "eligibility_note": null, "eligibility_source_url": null,
+    "source_url": "https://www.keele.ac.uk/study/whereiskeele/", "verified_on": "2026-10-13", "confidence": "low"
+  },
+  "courses": [
+    {
+      "slug": "gb-keele-university-msc-computer-science", "title": "Computer Science", "award": "MSc", "level": "postgraduate",
+      "field_slug": "computer-technology", "mode": "full_time", "duration_text": "1 year full-time, or up to 2 years with Placement", "duration_months": 12,
+      "tuition_amount": 18200, "tuition_currency": "GBP", "tuition_basis": "per_year",
+      "tuition_academic_year": "2026/27", "fees_source_url": "https://www.keele.ac.uk/study/postgraduatestudy/tuitionfeesandfunding/postgraduatetuitionfees/postgraduatetuitionfeesinternationalstudents/",
+      "overview": "Taught master's in Computer Science. The page mentions data management, cloud technologies, user experience design and web development, and a 6 to 12 month placement option after the taught element.",
+      "highlights": [],
+      "academic_requirements": "General postgraduate rule on the Keele apply page: the equivalent of a UK honours degree at second-class standard or higher; at least one academic or employment reference. Course-specific requirements are not shown on the course page.",
+      "english_requirements": null,
+      "experience_requirements": null,
+      "pakistan_entry_note": "Pakistan page: postgraduate applicants use the Bachelor (Honours) equivalence table by institution tier. For a 4-year bachelor (post-2015) the 2:2 equivalent is 55% (Tier 1), 60% (Tier 2) or 65% (Tier 3); the 2:1 equivalent is 65%, 70% or 75%. Institutions not on the Tier 1 or Tier 2 lists are Tier 3. The page gives no CGPA.",
+      "pakistan_source_url": "https://www.keele.ac.uk/study/internationalstudents/yourcountry/asia/pakistan/",
+      "career_notes": null,
+      "min_ielts_overall": null, "min_ielts_band": null, "min_pte": null, "min_toefl": null, "min_duolingo": null,
+      "pk_route": "bachelor_16", "pk_min_percent": null, "pk_min_cgpa": null, "uk_min_alevels": null, "uk_min_degree_class": null,
+      "official_url": "https://www.keele.ac.uk/study/postgraduatestudy/postgraduatecourses/computerscience/", "intake_labels": ["September", "January"], "application_deadline_note": "No deadline on the course page. The apply page states international applications for September 2026 are no longer accepted; it says nothing on 2027.",
+      "featured": false, "source_url": "https://www.keele.ac.uk/study/postgraduatestudy/postgraduatecourses/computerscience/", "verified_on": "2026-10-13", "confidence": "low",
+      "notes": "Fee is 2026/27; 2027/28 fee not yet published. Course page shows September and January starts without a year. Course-specific English test and score not visible on the page. No modules listed."
+    },
+    {
+      "slug": "gb-keele-university-msc-international-business", "title": "International Business", "award": "MSc", "level": "postgraduate",
+      "field_slug": "business-management", "mode": "full_time", "duration_text": "1 year full-time, or up to 2 years with Placement", "duration_months": 12,
+      "tuition_amount": 18200, "tuition_currency": "GBP", "tuition_basis": "per_year",
+      "tuition_academic_year": "2026/27", "fees_source_url": "https://www.keele.ac.uk/study/postgraduatestudy/tuitionfeesandfunding/postgraduatetuitionfees/postgraduatetuitionfeesinternationalstudents/",
+      "overview": "Taught master's in International Business. The page refers to global business strategy, operations and leadership, with a placement option extending study to up to 2 years.",
+      "highlights": [],
+      "academic_requirements": "General postgraduate rule on the Keele apply page: the equivalent of a UK honours degree at second-class standard or higher; at least one academic or employment reference. Course-specific requirements are not shown on the course page.",
+      "english_requirements": null,
+      "experience_requirements": null,
+      "pakistan_entry_note": "Pakistan page: postgraduate applicants use the Bachelor (Honours) equivalence table by institution tier. For a 4-year bachelor (post-2015) the 2:2 equivalent is 55% (Tier 1), 60% (Tier 2) or 65% (Tier 3); the 2:1 equivalent is 65%, 70% or 75%. Institutions not on the Tier 1 or Tier 2 lists are Tier 3. The page gives no CGPA.",
+      "pakistan_source_url": "https://www.keele.ac.uk/study/internationalstudents/yourcountry/asia/pakistan/",
+      "career_notes": null,
+      "min_ielts_overall": null, "min_ielts_band": null, "min_pte": null, "min_toefl": null, "min_duolingo": null,
+      "pk_route": "bachelor_16", "pk_min_percent": null, "pk_min_cgpa": null, "uk_min_alevels": null, "uk_min_degree_class": null,
+      "official_url": "https://www.keele.ac.uk/study/postgraduatestudy/postgraduatecourses/internationalbusiness/", "intake_labels": ["September", "January"], "application_deadline_note": "No deadline on the course page. The apply page states international applications for September 2026 are no longer accepted; it says nothing on 2027.",
+      "featured": false, "source_url": "https://www.keele.ac.uk/study/postgraduatestudy/postgraduatecourses/internationalbusiness/", "verified_on": "2026-10-13", "confidence": "low",
+      "notes": "Fee is 2026/27; 2027/28 fee not yet published. The fees page lists this course as International Business MA while the course page title reads MSc, so the award should be confirmed. Course page shows September and January without a year. Course-specific English test and score not visible. No modules listed."
+    },
+    {
+      "slug": "gb-keele-university-kuic-foundation-business", "title": "Foundation in Business (Keele University International College)", "award": "Foundation", "level": "foundation_pathway",
+      "field_slug": "business-management", "mode": "full_time", "duration_text": null, "duration_months": null,
+      "tuition_amount": 16500, "tuition_currency": "GBP", "tuition_basis": "total",
+      "tuition_academic_year": "2026/27", "fees_source_url": "https://kuic.keele.ac.uk/admission/fees/",
+      "overview": "Foundation programme in Business delivered on the Keele campus through Keele University International College, for international applicants who do not meet direct Year 1 entry. A one-semester option is also listed at GBP 8,000.",
+      "highlights": [],
+      "academic_requirements": "Pakistan: SSC (Year 10) with 60%, or HSC with 50%, plus O Level passes at grades A to E in 5 subjects. Maximum study gap of 2 years if there is no HSC result.",
+      "english_requirements": null,
+      "experience_requirements": null,
+      "pakistan_entry_note": "Pakistan: SSC (Year 10) with 60%, or HSC with 50%, plus O Level passes at grades A to E in 5 subjects. International Year One (separate programme) needs HSC with a 55% average.",
+      "pakistan_source_url": "https://kuic.keele.ac.uk/admission/academic-requirements/",
+      "career_notes": null,
+      "min_ielts_overall": null, "min_ielts_band": null, "min_pte": null, "min_toefl": null, "min_duolingo": null,
+      "pk_route": "intermediate", "pk_min_percent": 50, "pk_min_cgpa": null, "uk_min_alevels": null, "uk_min_degree_class": null,
+      "official_url": "https://kuic.keele.ac.uk/admission/academic-requirements/", "intake_labels": [], "application_deadline_note": null,
+      "featured": false, "source_url": "https://kuic.keele.ac.uk/admission/academic-requirements/", "verified_on": "2026-10-13", "confidence": "low",
+      "notes": "Fee is 2026/27 and the fees page does not say whether it is per year or total for the full programme. Duration, start months and English requirement not on the pages opened. Delivered by KUIC, a Keele pathway partner."
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-keele-university-postgraduate-global-scholarship", "name": "Postgraduate Global Scholarship", "provider_type": "university",
+      "provider_name": "Keele University", "destination_codes": ["GB"], "levels": ["postgraduate"], "field_slugs": [],
+      "eligible_countries": ["INTL"], "value_type": "fee_reduction", "value_amount": null,
+      "value_percent": null, "value_currency": "GBP", "value_basis": "one_off",
+      "value_text": "One-off tuition discount of GBP 3,000 to 5,000 (funding page); the Pakistan page says up to GBP 6,000",
+      "summary": "Tuition fee discount for international postgraduate taught students, awarded on academic achievement and considered automatically. Medicine and online programmes are excluded according to the Pakistan page.",
+      "criteria_text": "Awarded on academic achievement; considered automatically with no separate application; excludes medicine and online programmes.",
+      "min_pk_percent": null, "min_pk_cgpa": null, "min_ielts_overall": null, "need_based": false,
+      "application_route": "automatic", "requires_offer": true,
+      "opens_on": null, "deadline_on": null, "deadline_note": null, "intake_label": "2026/27",
+      "official_url": "https://www.keele.ac.uk/study/postgraduatestudy/tuitionfeesandfunding/postgraduatefunding/postgraduatebursariesandscholarshipsinternational/", "source_url": "https://www.keele.ac.uk/study/postgraduatestudy/tuitionfeesandfunding/postgraduatefunding/postgraduatebursariesandscholarshipsinternational/", "verified_on": "2026-10-13", "confidence": "low",
+      "notes": "Listed for 2025/26 and 2026/27 entry only; 2027/28 terms not published. The individual award page returned a server error twice, so exact tiers and criteria could not be read. Values conflict between the two pages."
+    },
+    {
+      "slug": "gb-keele-university-alumni-discount", "name": "Keele Alumni Discount (postgraduate)", "provider_type": "university",
+      "provider_name": "Keele University", "destination_codes": ["GB"], "levels": ["postgraduate"], "field_slugs": [],
+      "eligible_countries": ["INTL"], "value_type": "fee_reduction", "value_amount": null,
+      "value_percent": 20, "value_currency": "GBP", "value_basis": "total",
+      "value_text": "20% tuition discount (10% for online courses)",
+      "summary": "Tuition discount for Keele alumni starting an international postgraduate course, applied automatically according to the funding page.",
+      "criteria_text": "Keele alumni.",
+      "min_pk_percent": null, "min_pk_cgpa": null, "min_ielts_overall": null, "need_based": false,
+      "application_route": "automatic", "requires_offer": true,
+      "opens_on": null, "deadline_on": null, "deadline_note": null, "intake_label": "2026/27",
+      "official_url": "https://www.keele.ac.uk/study/postgraduatestudy/tuitionfeesandfunding/postgraduatefunding/postgraduatebursariesandscholarshipsinternational/", "source_url": "https://www.keele.ac.uk/study/postgraduatestudy/tuitionfeesandfunding/postgraduatefunding/postgraduatebursariesandscholarshipsinternational/", "verified_on": "2026-10-13", "confidence": "low",
+      "notes": "Listed for 2025/26 and 2026/27 only; 2027/28 terms not published. Detailed eligibility (for example length of study) not read."
+    }
+  ],
+  "flags": {
+    "could_not_verify": ["City or village name of the campus (page says Staffordshire countryside, minutes from Newcastle-under-Lyme)", "UK sponsor licence: gov.uk register file could not be read", "Postgraduate course entry and English requirements: course pages show no such text through the fetch tool (likely in tabs)", "Undergraduate international fees per course: course pages and fees page give bands only, no course-to-band mapping, so UG courses were excluded", "2027/28 fees", "2027 intake for any course"],
+    "conflicting_sources": ["Postgraduate Global Scholarship: funding page says GBP 3,000 to 5,000, Pakistan page says up to GBP 6,000", "Fees page names International Business as MA, course page as MSc"],
+    "blocked_pages": ["Keele Postgraduate Global Scholarship 2026 page and GREAT Scholarships 2026 page: server error on repeated fetches", "gov.uk register of licensed student sponsors (file content not returned)"],
+    "excluded_and_why": ["Undergraduate courses (Computer Science, Business Management): international fee not found", "Undergraduate Global Scholarship: page states September 2026 entry only", "GREAT Scholarships (GBP 10,000, country-specific): page unreadable, Pakistan eligibility unverified", "Chevening, Marshall, Commonwealth, Truman and other country or subject awards: terms not read or 2025/26 only"],
+    "client_should_confirm": ["Keele apply page states it is no longer accepting international applications for September 2026; confirm whether September 2027 applications from Pakistan are open", "Course-level English requirements and degree class for each postgraduate course", "2027/28 international fees", "Whether GREAT Scholarships cover Pakistan for 2027 entry", "Sponsor licence on gov.uk register"]
+  }
+}

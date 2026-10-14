@@ -1,0 +1,79 @@
+{
+  "slug": "gb-kingston-university",
+  "courses": [
+    {
+      "slug": "gb-kingston-university-data-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements / min_*: the course page gives no scores (only 'IELTS or TOEFL generally'); the figures match Kingston's separate English language entry requirements page (https://www.kingston.ac.uk/study/international-students/english-language-entry-requirements), which is not cited in the file. Values are correct (IELTS 6.5/6.0, PTE 59/59, TOEFL iBT new scale 4.5, Duolingo not accepted).",
+        "Fee 23,300 GBP full-time 2027/28 confirmed. Duration not stated on page (null is correct). No intake stated (empty is correct)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kingston-university-business-analytics-msc",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements / min_*: course page gives no scores; figures match the uncited English language entry requirements page and are correct.",
+        "Fee 22,900 GBP full-time 2027/28, one year plus optional 12-month placement (page says 10 to 12 months for the placement module), interview/portfolio wording all confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kingston-university-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "english_requirements / min_*: course page links to a separate page and gives no scores; figures match the uncited English language entry requirements page (IELTS 6.0/5.5, PTE 59/59, TOEFL 4 with two at 4.5 and two at 4, Duolingo not accepted).",
+        "Fee 20,500 GBP Year 1 2027/28 confirmed (Year 2 21,300, Year 3 22,100, Year 4 22,900), so tuition_basis per_year is Year 1 only. Pakistan HSSC 65 percent and SSC/foundation route confirmed on the country page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-kingston-university-international-merit-based",
+      "verdict": "pass",
+      "issues": [
+        "Page: September 2026 closed, January 2027 applications open in October, form usually opens March and October. 2027 September window genuinely not published; file's deadline_note is accurate. Value 5,000 one year, route and criteria confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kingston-university-international-success-support",
+      "verdict": "pass",
+      "issues": [
+        "Page lists January 2027 (six named MSc courses incl. Data Science) and September 2027 or January 2028 (three named faculties/schools, MBA excluded); FAQ says '2026 entry only on selected courses'. The file records the conflict correctly. Consider noting that Data Science MSc is listed for January 2027, not September 2027, so the course page statement of September 2026 only conflicts further."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-kingston-university-postgraduate-progression",
+      "verdict": "fail",
+      "issues": [
+        "Does not apply to 2027 entry: the dedicated page (https://www.kingston.ac.uk/study/fees-and-funding/postgraduate-progression-scholarship) says it is for Kingston undergraduates graduating in 2025/26 with an offer for 2026/27 postgraduate study, and that students deferring to 2027/28 or later are not eligible. The file's notes say the dedicated page was not opened.",
+        "eligible_countries INTL: dedicated page does not say it is limited to or open to international students; only the overview page says international students. Page also says the discount may not continue in later years.",
+        "official_url points to the dedicated page but the file content was taken from the overview page, so the cited official_url contradicts the file."
+      ],
+      "corrections": {
+        "intake_label": "2026/27 only",
+        "deadline_note": "Dedicated page limits it to 2025/26 Kingston graduates progressing to 2026/27 postgraduate study; deferral to 2027/28 not eligible. Do not publish as available for 2027 entry."
+      }
+    },
+    {
+      "slug": "gb-kingston-university-family-bursary",
+      "verdict": "pass",
+      "issues": [
+        "10 percent each year, apply through My Kingston after full enrolment, applications open in September: confirmed. Page also says it does not apply to placement year fees and may be combined with an International Scholarship."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "eligibility_note: gov.uk sponsor register page shows latest register dated 13 October 2026; file says register dated 2026-10-07. Kingston's listing and track record rating could not be confirmed because the register file could not be fetched.",
+      "Summary, Russell Group false, country-specific guidance and direct application statements are supported. No rankings or superlatives found."
+    ],
+    "corrections": {}
+  }
+}

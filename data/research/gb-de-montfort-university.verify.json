@@ -1,0 +1,61 @@
+{
+  "slug": "gb-de-montfort-university",
+  "courses": [
+    {
+      "slug": "gb-de-montfort-university-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 3 years or 4 with placement, GBP 18,600 for 2027/28, September, 112 points, BBC, DMM, T Level Merit, Access 30 credits at Merit, IB 26, five GCSEs, IELTS 6.0 with 5.5. Pakistan HSC 70 percent plus 1 or 2 years of a degree at 60 percent confirmed on the entry requirements page; null pk fields are appropriate.",
+        "Year 1 module list matches the page (four modules)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-de-montfort-university-cyber-security-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: one year full-time, GBP 19,600 for 2027/28 (18,600 for 2026/27), 2:2 in a relevant subject (page says the subject list is not exhaustive), IELTS 6.0 with 5.5, January and September, NCSC fully certified, placement with country restrictions. Pakistan 55 percent or 2.5/4 for 2:2 courses confirmed.",
+        "Fee for 2027/28 is on the page but Pakistan percentage and GPA are from the entry requirements page, which is cited as pakistan_source_url (acceptable)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-de-montfort-university-international-business-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee is GBP 19,000 for 2026/27 (page shows 2025/26 and 2026/27 only), so the 2027/28 target is not published; file labels academic year 2026/27 correctly. Treat as indicative only, not a 2027 entry fee.",
+        "Confirmed: 12 months (October), 16 months (February and April), programme codes labelled September and January, 2:2 any subject, IELTS 6.0 with 5.5, compulsory/choose-one module structure. Pakistan 55 percent or 2.5/4 confirmed.",
+        "career_notes repeat the page claim of 'guaranteed work experience opportunities'; it is a university marketing claim, consider softening."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-de-montfort-university-global-access-scholarship-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "Value GBP 2,000 per year, automatic on deposit paid before the deadline, 2026/27 entry only (body text October 2026 and February 2027, header says September 2026): all confirmed. It does NOT apply to 2027 entry on published terms, so it must not be shown as available for 2027 entry.",
+        "Self-funded and three-year maximum come from the terms and conditions page, not the scholarship page; confirmed there (sponsored students and third-party funding excluded)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-de-montfort-university-global-access-scholarship-postgraduate",
+      "verdict": "pass",
+      "issues": [
+        "Value GBP 3,000 one year, Global MBA GBP 3,500, automatic: confirmed. 2026/27 entry only; not published for 2027 entry. PhD, MPhil, DBA and pathway progressors excluded per terms page: confirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "unverifiable",
+    "issues": [
+      "summary: the cited source_url (international page) does not list technology, business, law, arts and health as subject areas nor the September, October, January, February and April intake pattern; intakes are supported only by individual course pages (September, October, January, February, April all seen). Subject-area claim is not supported by the cited page.",
+      "The international page carries ranking claims (1st in world in International Student Barometer 2024, TEF Silver) which the file correctly does not repeat.",
+      "Pakistan entry page shows no Pakistan-specific notice. Sponsor licence status not checked (file flags this)."
+    ],
+    "corrections": {}
+  }
+}

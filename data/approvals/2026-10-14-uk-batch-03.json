@@ -1,0 +1,45 @@
+{
+ "approved_by": "Claude for Badr (SA Global consultant), per the finder plan",
+ "date": "2026-10-14",
+ "basis": "checker verdict pass, confidence high or medium, international fee for 2026/27 or 2027/28",
+ "universities": [
+  "gb-kingston-university",
+  "gb-cranfield-university",
+  "gb-de-montfort-university",
+  "gb-goldsmiths-university-of-london",
+  "gb-glasgow-caledonian-university"
+ ],
+ "courses": [
+  "gb-kingston-university-data-science-msc",
+  "gb-kingston-university-business-analytics-msc",
+  "gb-kingston-university-computer-science-bsc",
+  "gb-cranfield-university-business-data-analytics-msc",
+  "gb-cranfield-university-advanced-mechanical-engineering-msc",
+  "gb-de-montfort-university-computer-science-bsc",
+  "gb-de-montfort-university-cyber-security-msc",
+  "gb-de-montfort-university-international-business-management-msc",
+  "gb-goldsmiths-university-of-london-computer-science-bsc",
+  "gb-goldsmiths-university-of-london-data-science-ai-msc",
+  "gb-goldsmiths-university-of-london-business-management-msc",
+  "gb-goldsmiths-university-of-london-journalism-ma-msc"
+ ],
+ "scholarships": [
+  "gb-kingston-university-international-merit-based",
+  "gb-kingston-university-international-success-support",
+  "gb-kingston-university-family-bursary",
+  "gb-de-montfort-university-global-access-scholarship-undergraduate",
+  "gb-de-montfort-university-global-access-scholarship-postgraduate",
+  "gb-glasgow-caledonian-university-postgraduate-early-payment-discount"
+ ],
+ "held_back": {
+  "gb-kingston-university": [
+   "gb-kingston-university-postgraduate-progression: check fail"
+  ],
+  "gb-cranfield-university": [
+   "gb-cranfield-university-data-science-ai-sustainability-msc: check fail"
+  ],
+  "gb-glasgow-caledonian-university": [
+   "gb-glasgow-caledonian-university-postgraduate-ambassador-scholarship: check unverifiable"
+  ]
+ }
+}

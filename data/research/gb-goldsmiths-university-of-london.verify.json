@@ -1,0 +1,50 @@
+{
+  "slug": "gb-goldsmiths-university-of-london",
+  "courses": [
+    {
+      "slug": "gb-goldsmiths-university-of-london-computer-science-bsc",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 23,000 is for students starting 2026/27 (confirmed); the 2027/28 fee is not published, so do not present it as a 2027 entry fee.",
+        "Confirmed: 3 years or 4 with placement, CCC, DMM, IB 27 with 555, IELTS 6.0 with 5.5, no intake stated, UCAS route. Year 1 modules are all compulsory (eight modules); the four highlights listed are among them."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-goldsmiths-university-of-london-data-science-ai-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 21,000 is for 2026/27 only, 2027/28 not published.",
+        "Confirmed: 1 year, 2:2 in a relevant or quantitative subject, IELTS 6.5 with no element below 6.0, no intake stated, part-time not possible on a student visa, three optional modules of 45 credits, optional placement, Industry Advisory Board. Page lists Data Programming and Big Data Analysis as compulsory too; highlights show a subset only."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-goldsmiths-university-of-london-business-management-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 23,000 is for 2026/27 only. Confirmed: January and September, chosen at application, IELTS 6.5 with 6.0 in writing (min_ielts_band null is correct), 150 compulsory credits, 30 optional credits, three years of management, marketing or entrepreneurial roles route.",
+        "uk_min_degree_class 2:2: page says only 'at least second class standard', so 2:2 is an inference the notes already disclose."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-goldsmiths-university-of-london-journalism-ma-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 21,000 is for 2026/27 only. Confirmed: MA or MSc by final project focus, 1 year, IELTS 7.0 with 7.5 in writing and no element below 6.5, some journalism experience evidence, no deadline, no start date stated, 30+30+60 compulsory credits and 60 credits of options.",
+        "career_notes name outlets such as the Guardian, Reuters, BBC and Financial Times; all appear on the alumni list on the page. uk_min_degree_class 2:2 is an inference from 'second-class standard'."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Single campus in south-east London confirmed on the homepage. The cited source_url (Pakistan page) does not itself list subjects such as computing, management and media or carry the campus statement; these are supported by course pages and the homepage. The Pakistan page does mention a scholarships finder.",
+      "Homepage makes a 'top 10 university in London' claim; the file correctly does not repeat it. Pakistan page lists no Pakistan-specific requirements (all pk_* null is correct). Sponsor licence status not checked (file flags this)."
+    ],
+    "corrections": {}
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "gb-cranfield-university",
+  "courses": [
+    {
+      "slug": "gb-cranfield-university-data-science-ai-sustainability-msc",
+      "verdict": "fail",
+      "issues": [
+        "academic_requirements: the course page states 'ATAS clearance is required', which the file omits (the Advanced Mechanical Engineering entry mentions ATAS, this one does not). Material for Pakistani visa applicants.",
+        "Confirmed: MSc 12 months full-time, GBP 19,500 for 2027-28 (registrations 1 August 2027 to 31 July 2028), October start, IELTS 6.5 with 5.5, PTE 65 with 59, TOEFL scale change, first or second class honours. Page lists six compulsory modules; the four highlights shown are all compulsory.",
+        "Page title is 'Data Science and Artificial Intelligence for Sustainability MSc'; file title omits MSc but award field carries it (fine)."
+      ],
+      "corrections": {
+        "academic_requirements": "A UK first or second class undergraduate degree with honours, as a minimum, or equivalent international qualification. A related science or engineering background is preferred. ATAS clearance is required for visa applicants."
+      }
+    },
+    {
+      "slug": "gb-cranfield-university-business-data-analytics-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 1 year full-time, GBP 31,000 for 2027-28, start 28 September 2026 only shown (empty intake_labels is correct), IELTS 6.5/5.5, PTE 65/59, TOEFL scale change, GBP 2,000 deposit, 70/30 split, early to mid-career wording, careers list. Page does not state ATAS for this course."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-cranfield-university-advanced-mechanical-engineering-msc",
+      "verdict": "pass",
+      "issues": [
+        "Confirmed: 1 year full-time, GBP 30,800 for 2027-28, October, eight compulsory taught modules plus 40-credit group project and 60-credit individual project, ATAS required, English scores, careers (Airbus, Jaguar Land Rover, Siemens, GKN Land Systems all listed)."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'works with businesses on research, postgraduate education and professional development' closely follows the site meta description ('partner with business to deliver research, postgraduate education and professional development'). Suggest rewording to avoid near-copy.",
+      "Pakistan note confirmed on the entry requirements A to Z page: four-year Bachelor, Second division (high) for 2:1, Second division (low) for 2:2, First division for first class scholarships, Qualification Check required, no percentages.",
+      "Sponsor licence status not checked (file already flags this). No rankings or superlatives."
+    ],
+    "corrections": {}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "gb-university-of-dundee",
+  "courses": [
+    { "slug": "gb-university-of-dundee-computer-science-bsc", "verdict": "unverifiable",
+      "issues": [
+        "highlights: the four 'Core' modules (Introduction to Generative AI, Software Engineering, Industrial Team Project, Honours Project) are not on the course page, which states core modules are not listed. The modules page was blocked (PROVENANCE_REQUIRED) and web search was not available, so core status could not be confirmed. The file's own notes say levels were inferred from module codes and page order.",
+        "overview: the claim of core modules in software development, artificial intelligence and a final year Honours Project depends on the same unconfirmed module list.",
+        "Title, award, duration (4 or 3 years, industrial placement variant), September 2027 entry, GBP 19,450 per year of study for September 2027 entry, Highers BBBB/BBCC with STEM Higher, and IELTS/PTE/TOEFL figures all match. Page gives no academic year label, so 2027/28 is an inference from the September 2027 entry date."
+      ], "corrections": {} },
+    { "slug": "gb-university-of-dundee-business-management-bsc", "verdict": "pass",
+      "issues": ["tuition_academic_year 2027/28 is inferred from the September 2027 entry date; the page gives no academic year label."], "corrections": {} },
+    { "slug": "gb-university-of-dundee-computer-science-msc", "verdict": "pass",
+      "issues": ["Page gives one fee, GBP 23,700 per year of study, for entry dates January 2027, September 2027 and January 2028 with no academic year label, as the file states."], "corrections": {} },
+    { "slug": "gb-university-of-dundee-management-msc", "verdict": "pass",
+      "issues": ["Page gives one fee, GBP 23,700 per year of study, for the three listed entry dates with no academic year label, as the file states."], "corrections": {} }
+  ],
+  "scholarships": [
+    { "slug": "gb-university-of-dundee-vc-south-asia-postgraduate-sep-2027", "verdict": "pass",
+      "issues": ["Page confirms GBP 2,000, Pakistan eligible, fee threshold GBP 19,900, automatic, deadline 11 October 2027, start 11 September 2027, 2026-27 key facts reference, and does not say once or yearly. Management MSc and Computer Science MSc at GBP 23,700 meet the fee threshold."], "corrections": {} },
+    { "slug": "gb-university-of-dundee-vc-south-asia-undergraduate-jan-2027", "verdict": "pass",
+      "issues": ["Page confirms GBP 6,500 entry year, GBP 4,000 per later year for up to 5 years, maximum GBP 22,500, Pakistan eligible, fee threshold GBP 21,800, Medicine and Dentistry excluded, deadline 30 January 2027, start 11 January 2027. January 2027 start only, not September 2027."], "corrections": {} }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": ["Pakistan page confirms agreements with local recruitment agents registered with the British Council and does not say agents are required; scholarships page states all awards are partial fee reductions and none are fully funded."],
+    "corrections": {}
+  }
+}

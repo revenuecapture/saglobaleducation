@@ -108,7 +108,7 @@
       "source_url": "https://www.brighton.ac.uk/courses/study/international-business-management-bsc-hons.aspx",
       "verified_on": "2026-10-13",
       "confidence": "medium",
-      "notes": "Page shows 2027 entry requirements but no start month. Fee shown is the 2026/27 international fee; target year fee not yet published. Page does not say which Year 1 modules are optional. No international placement year fee shown."
+      "notes": "Page shows 2027 entry requirements but no start month. Fee shown is the 2026/27 international fee; target year fee not yet published. Page does not say which Year 1 modules are optional. Placement year fee for 2026/27 starters is GBP 1,958."
     },
     {
       "slug": "gb-university-of-brighton-management-msc",
@@ -148,7 +148,9 @@
       "uk_min_alevels": null,
       "uk_min_degree_class": "2:2",
       "official_url": "https://www.brighton.ac.uk/courses/study/management-msc-pgcert-pgdip.aspx",
-      "intake_labels": ["January 2027"],
+      "intake_labels": [
+        "January 2027"
+      ],
       "application_deadline_note": null,
       "featured": true,
       "source_url": "https://www.brighton.ac.uk/courses/study/management-msc-pgcert-pgdip.aspx",
@@ -194,7 +196,9 @@
       "uk_min_alevels": null,
       "uk_min_degree_class": null,
       "official_url": "https://www.brighton.ac.uk/courses/study/computer-science-msc.aspx",
-      "intake_labels": ["January 2027"],
+      "intake_labels": [
+        "January 2027"
+      ],
       "application_deadline_note": null,
       "featured": false,
       "source_url": "https://www.brighton.ac.uk/courses/study/computer-science-msc.aspx",
@@ -209,10 +213,16 @@
       "name": "Vice-Chancellor International Undergraduate Scholarship",
       "provider_type": "university",
       "provider_name": "University of Brighton",
-      "destination_codes": ["GB"],
-      "levels": ["undergraduate"],
+      "destination_codes": [
+        "GB"
+      ],
+      "levels": [
+        "undergraduate"
+      ],
       "field_slugs": [],
-      "eligible_countries": ["INTL"],
+      "eligible_countries": [
+        "INTL"
+      ],
       "value_type": "fee_reduction",
       "value_amount": 4000,
       "value_percent": null,
@@ -242,10 +252,16 @@
       "name": "Vice-Chancellor International Postgraduate Scholarship",
       "provider_type": "university",
       "provider_name": "University of Brighton",
-      "destination_codes": ["GB"],
-      "levels": ["postgraduate"],
+      "destination_codes": [
+        "GB"
+      ],
+      "levels": [
+        "postgraduate"
+      ],
       "field_slugs": [],
-      "eligible_countries": ["INTL"],
+      "eligible_countries": [
+        "INTL"
+      ],
       "value_type": "fee_reduction",
       "value_amount": 2000,
       "value_percent": null,
@@ -275,10 +291,16 @@
       "name": "Deans' Global Talent Award (Postgraduate)",
       "provider_type": "university",
       "provider_name": "University of Brighton",
-      "destination_codes": ["GB"],
-      "levels": ["postgraduate"],
+      "destination_codes": [
+        "GB"
+      ],
+      "levels": [
+        "postgraduate"
+      ],
       "field_slugs": [],
-      "eligible_countries": ["INTL"],
+      "eligible_countries": [
+        "INTL"
+      ],
       "value_type": "fee_reduction",
       "value_amount": null,
       "value_percent": null,
@@ -308,10 +330,19 @@
       "name": "Future STEM Scholars' Award (Postgraduate)",
       "provider_type": "university",
       "provider_name": "University of Brighton",
-      "destination_codes": ["GB"],
-      "levels": ["postgraduate"],
-      "field_slugs": ["computer-technology", "engineering-technology"],
-      "eligible_countries": ["INTL"],
+      "destination_codes": [
+        "GB"
+      ],
+      "levels": [
+        "postgraduate"
+      ],
+      "field_slugs": [
+        "computer-technology",
+        "engineering-technology"
+      ],
+      "eligible_countries": [
+        "INTL"
+      ],
       "value_type": "fee_reduction",
       "value_amount": 2500,
       "value_percent": null,

@@ -1,0 +1,23 @@
+{
+  "slug": "gb-university-of-central-lancashire",
+  "courses": [
+    { "slug": "gb-university-of-central-lancashire-artificial-intelligence-msc", "verdict": "pass", "issues": [], "corrections": {} },
+    { "slug": "gb-university-of-central-lancashire-business-management-ba", "verdict": "pass", "issues": [], "corrections": {} },
+    { "slug": "gb-university-of-central-lancashire-artificial-intelligence-data-science-bsc", "verdict": "pass", "issues": [], "corrections": {} }
+  ],
+  "scholarships": [
+    { "slug": "gb-university-of-central-lancashire-excellence-scholarship", "verdict": "pass",
+      "issues": [
+        "Page confirms GBP 3,500 first year, APM above 60% for later years, Pakistan listed, automatic, combinable up to GBP 5,500 per year, no deadline, 2026/27 and 2025/26 entry only (2027 entry not covered, as the file notes).",
+        "Page also carries an unheaded list of programmes and modes (MBBS, Dentistry, BVMS, online, part-time, work-based and others) that may be exclusions; the file does not mention it. The three courses in the file are not on that list.",
+        "requires_offer is not stated on the page; the file already flags it as inferred."
+      ], "corrections": {} }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Over 27,000 students and staff at Preston and North West England confirmed on the international page; Pakistan agent requirement confirmed on the Pakistan page."
+    ],
+    "corrections": {}
+  }
+}

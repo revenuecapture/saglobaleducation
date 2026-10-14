@@ -1,0 +1,149 @@
+{
+  "slug": "gb-university-of-bedfordshire",
+  "courses": [
+    {
+      "slug": "gb-university-of-bedfordshire-computer-science-msc",
+      "verdict": "fail",
+      "issues": [
+        "min_pte: file has 59 and the english_requirements text lists PTE 59 and TOEFL iBT 17/18/20/17 as requirements. On the international entry requirements page these scores appear only under 'English language exemptions' (exemption from needing a formal English qualification), not as the entry requirement. The page's stated tests for Master's entry are IELTS UKVI Academic 6.0 with 5.5 in each element and Duolingo 110 (no sub-score below 100). min_pte should be null.",
+        "intake_labels: left empty because the apply links carry numeric codes. The codes (202609 to 202707) read as year and month, and the page says it has year-round entry, so months could be derived but the page names no months; leaving empty is acceptable but should be confirmed.",
+        "Checked and correct: title, MSc, GBP 18,250 for 2027/28 (course page and fee schedule, taught Masters up to 15 months, total), 2.2 Honours in a related area, Pakistan four-year Bachelor's at 55% or 2+2 at 55% (pk_route bachelor_16, 55), IELTS 6.0/5.5, Duolingo 110, BCS accreditation, units, career roles, duration not stated."
+      ],
+      "corrections": {
+        "min_pte": null,
+        "english_requirements": "UKVI Academic IELTS overall 6.0 with minimum 5.5 in each element (general Master's requirement; the page says some courses may require higher levels). Duolingo 110 overall with no sub-score below 100 for courses requiring IELTS 6.0, for tests after 1 July 2024. PTE Academic and TOEFL iBT scores on the page are listed only as exemptions from the formal English requirement, not as entry requirements."
+      }
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-international-business-msc",
+      "verdict": "fail",
+      "issues": [
+        "min_pte: same problem. PTE Academic 59 per skill and the TOEFL iBT section scores appear only in the 'English language exemptions' list on the entry requirements page; they are not stated as the Master's English requirement. min_pte should be null.",
+        "intake_labels empty: apply links carry codes for September 2026, November 2026, January 2027, March 2027, May 2027 and July 2027 and the page mentions year-round entry; no months are stated in words.",
+        "Checked and correct: title, MSc, GBP 18,250 for 2027/28, 2.2 Honours in a related area, Pakistan 55% routes, IELTS 6.0/5.5, Duolingo 110, six-week block delivery, modules, career roles, duration not stated."
+      ],
+      "corrections": {
+        "min_pte": null,
+        "english_requirements": "UKVI Academic IELTS overall 6.0 with minimum 5.5 in each element (general Master's requirement; the page says some courses may require higher levels). Duolingo 110 overall with no sub-score below 100 for courses requiring IELTS 6.0, for tests after 1 July 2024. PTE Academic and TOEFL iBT scores on the page are listed only as exemptions from the formal English requirement, not as entry requirements."
+      }
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-business-management-with-international-business-bsc",
+      "verdict": "fail",
+      "issues": [
+        "min_pte: PTE 59 and the TOEFL component scores are exemption-list entries only on the entry requirements page, not the Bachelor's English requirement. min_pte should be null. The Pakistan page gives English as IELTS 6.0 overall with 5.5 in each section.",
+        "Checked and correct: title, BSc (Hons), GBP 18,150 per year for 2027/28, 96 UCAS points (80 from at least 3 A-levels) and a separate 48 points entry that probably relates to the foundation route, Pakistan Year 12 at 60% (pk_route intermediate, 60), two-year Bachelor's 55%, 2 A levels C and D, IB 24, modules by year, career roles, placement year only for UK/EU students. Duration and intake months not stated."
+      ],
+      "corrections": {
+        "min_pte": null,
+        "english_requirements": "UKVI Academic IELTS overall 6.0 with minimum 5.5 in each element (general Bachelor's requirement; the page says some courses may require higher levels). Duolingo 110 overall with no sub-score below 100 for courses requiring IELTS 6.0, for tests after 1 July 2024. PTE Academic and TOEFL iBT scores on the page are listed only as exemptions from the formal English requirement, not as entry requirements."
+      }
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-international-foundation-year-engineering",
+      "verdict": "pass",
+      "issues": [
+        "Checked and correct: title, one year over two semesters, GBP 18,150 for 2027/28 (page gives no separate foundation fee; fee schedule lists foundation options at GBP 18,150), IELTS at least 4.5 in all skills via a SELT with the course aiming at IELTS 6.0, modules, five progression routes. Mode and intake months are not stated directly, as the file says."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-bedfordshire-high-achievers-pakistan",
+      "verdict": "unverifiable",
+      "issues": [
+        "Value GBP 3,000 per year, Level 4 entry, not for International Foundation Year, cannot be combined with other scholarships but prompt payment discount still allowed: all match.",
+        "The threshold conflicts between pages: fees and scholarships page says 75% or more in Pakistani Year 12 exams, Pakistan page says 900 out of 1,100. The page is headed 'Scholarships for the 2026/27 Academic Year' and no 2027/28 terms exist, so applicability to 2027 entry cannot be confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-international-undergraduate-subject-specific",
+      "verdict": "fail",
+      "issues": [
+        "value_text: the page says 'up to GBP 5,000 per year', the file says 'GBP 5,000 per year of study' and value_amount 5000 as if fixed. 'Up to' is lost.",
+        "Also eligible for progression from the International Foundation Year; online interview may be required; list of eligible courses is on a linked page that was not opened. Terms are for 2026/27 only, so 2027 entry is unconfirmed."
+      ],
+      "corrections": {
+        "value_text": "Up to GBP 5,000 per year of study"
+      }
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-a-level-ib-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "GBP 5,000 per year, IB Diploma 33+ or A levels ABB or higher, listed boards (CIE, Oxford AQA, Edexcel, LRN, Singapore-Cambridge, all UK A levels), Level 4 entry: all match.",
+        "Only 2026/27 terms are published, so applicability to 2027 entry cannot be confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-international-foundation-year-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "GBP 5,000 for the first year only, Level 3 foundation year starting 2026/27, international fee payers: matches. No 2027/28 terms published, so 2027 entry is unconfirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-postgraduate-global-merit",
+      "verdict": "unverifiable",
+      "issues": [
+        "GBP 3,000 off total fees, 75% GPA or equivalent, University of Bedfordshire progressers eligible, cannot be combined with other scholarships or bursaries including the Alumni Scholarship: matches the fees page.",
+        "The Pakistan page says applications are open for courses starting between September 2024 and July 2025, which looks closed, while the fees page lists it for 2026/27. Current status and 2027 entry cannot be confirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-postgraduate-subject-specific-merit",
+      "verdict": "unverifiable",
+      "issues": [
+        "Up to GBP 4,000, 75% GPA or equivalent, offer on an eligible level 7 course: matches. The eligible course list was not opened and only 2026/27 terms are published, so eligibility of the listed courses and 2027 entry are unconfirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-vice-chancellors-scholarship-undergraduate",
+      "verdict": "unverifiable",
+      "issues": [
+        "GBP 1,000 off first-year fees, all bachelor's courses, only if no other scholarship, International Foundation Year progressers included: matches. Only 2026/27 terms are published."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-vice-chancellors-scholarship-postgraduate",
+      "verdict": "unverifiable",
+      "issues": [
+        "GBP 1,000 off first-year fees, Master's including MBA, not for University of Bedfordshire undergraduate progressers: matches. Only 2026/27 terms are published."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-prompt-payment-discount",
+      "verdict": "unverifiable",
+      "issues": [
+        "GBP 1,000 per year for paying in full before or at registration, undergraduate, postgraduate and research, 65% pre-payment calculated on full published fees with scholarships applied to the balance: matches. It sits on a page headed for 2026/27 and the Tuition Fees Policy was not opened, so 2027 entry is unconfirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-bedfordshire-alumni-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "20% of first-year fees, full-time on-campus postgraduate (taught Master's, research Master's, PhD), honours degree from the University of Bedfordshire (including overseas partners), DMU's Bedford campus or the University of Luton: matches. The linked terms page was not opened and only 2026/27 is stated, so 2027 entry is unconfirmed."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "fail",
+    "issues": [
+      "summary: it says the international foundation year page states the university has delivered international foundation courses since 1980. The page says 'CEFL has a proven track record of International Foundation Course delivery since 1980'; CEFL is not defined on the page (possibly the Centre for English as a Foreign Language), so the claim is not clearly the university's and is a track-record claim from the university's own marketing. It should be dropped or attributed.",
+      "Fee schedule claim (international fees for 2027/28 published) is correct. City and region null is acceptable; the facilities described are at Luton but the pages do not name the campus. No Pakistan pause notice found. No dashes used as punctuation."
+    ],
+    "corrections": {
+      "summary": "The University of Bedfordshire offers undergraduate, taught postgraduate and foundation year courses to international students, and its fee schedule publishes international fees for 2027/28."
+    }
+  }
+}

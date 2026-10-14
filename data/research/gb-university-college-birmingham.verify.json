@@ -1,0 +1,86 @@
+{
+  "slug": "gb-university-college-birmingham",
+  "courses": [
+    {
+      "slug": "gb-university-college-birmingham-international-business-management-msc",
+      "verdict": "fail",
+      "issues": [
+        "pakistan_entry_note: file says the Pakistan page lists two unlabelled sets of postgraduate criteria. The page labels them: 'PG Dip/Pre-masters' (first-class four-year degree at 50 to 59%) and 'MA/MSc' (first-class four-year degree from a good recognised university at 60%). The MSc set is therefore identifiable.",
+        "pk_route / pk_min_percent: file has null for both, but the Pakistan page states an MA/MSc route of a four-year degree at 60%.",
+        "english_requirements / min_* fields: the course page and the Pakistan page state no scores and the UCB English language table page could not be opened (PROVENANCE_REQUIRED, and the web search budget was exhausted), so IELTS 6.0/5.5, PTE 59, TOEFL 4.0 and Duolingo 105 could not be confirmed. The TOEFL iBT figure of 4.0 overall looks like the new-scale value and should be checked against the table.",
+        "Checked and correct: title, award MSc/PGDip, 1 year September and 15 months February, GBP 18,000 for 2027/28 (Band 1, per academic year), 2:2 with no subject prerequisites, five-year managerial route, September and February intakes, modules, career roles, '2-3 days a week' timetable."
+      ],
+      "corrections": {
+        "pk_route": "bachelor_16",
+        "pk_min_percent": 60,
+        "pakistan_entry_note": "Pakistan page: the MA/MSc criteria are a first-class four-year degree from a good recognised university at 60%, or a three-year degree at 55% plus a master's at 55%. The PG Dip/Pre-masters criteria are listed separately at 50 to 59%."
+      }
+    },
+    {
+      "slug": "gb-university-college-birmingham-data-analytics-msc",
+      "verdict": "fail",
+      "issues": [
+        "pakistan_entry_note: file says the two postgraduate criteria sets are unlabelled. The Pakistan page labels them 'PG Dip/Pre-masters' and 'MA/MSc'; the MSc set is a four-year degree at 60%.",
+        "pk_route / pk_min_percent: null in the file, but the page states the MA/MSc four-year route at 60%.",
+        "english_requirements / min_* fields: not stated on the course page; the UCB English language table could not be opened, so the IELTS, PTE, TOEFL and Duolingo figures are unconfirmed.",
+        "Checked and correct: title, MSc, 1.5 years full-time, GBP 18,000 per academic year for 2027/28 (page does not give a total cost), 2:2 in a relevant degree and the listed subjects, five-year managerial route, September and February intakes, core modules, optional placement (3 or 6 months, GBP 500 or 250 admin fee), career roles."
+      ],
+      "corrections": {
+        "pk_route": "bachelor_16",
+        "pk_min_percent": 60,
+        "pakistan_entry_note": "Pakistan page: the MA/MSc criteria are a first-class four-year degree from a good recognised university at 60%, or a three-year degree at 55% plus a master's at 55%. The PG Dip/Pre-masters criteria are listed separately at 50 to 59%."
+      }
+    },
+    {
+      "slug": "gb-university-college-birmingham-mechanical-engineering-beng",
+      "verdict": "unverifiable",
+      "issues": [
+        "english_requirements / min_* fields: the course page gives no scores and links to a table that could not be opened (PROVENANCE_REQUIRED, search budget exhausted), so IELTS 6.0/5.5, PTE 59, TOEFL 4.0 and Duolingo 105 are unconfirmed.",
+        "Checked and correct: title, BEng (Hons), 3 years full-time and 4.5 part-time, optional 48-week placement, 104 UCAS Tariff points for 2027/28 (88 points CCD for 2026/27), GCSE Maths, September and February intakes, Band 1 undergraduate fee GBP 17,000 for 2027/28 on the fees page (course page gives only GBP 16,500 for 2026/27 and says 2027/28 may change), Pakistan HSSC/FA/FSC 70% and A Level 112 points or BBC, two on-campus days in Year 1, accreditation 'being sought'."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-birmingham-international-foundation-diploma",
+      "verdict": "pass",
+      "issues": [
+        "Minor: course page shows GBP 10,500 labelled '2025/2025'; the fees page gives GBP 11,500 for 2027/28, which the file uses and correctly flags."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-college-birmingham-great-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "eligible_countries: the award page body lists 14 countries (Bangladesh, China, Egypt, Ghana, India, Indonesia, Kenya, Malaysia, Mexico, Nigeria, Pakistan, Thailand, Turkey, Vietnam) while only the meta description names Pakistan. PK is eligible, so the value is not wrong, but the file's summary phrase 'for Pakistani students' is narrower than the body text.",
+        "Checked and correct: GBP 10,000, full-time one-year postgraduate, September 2027, overseas fee status, deadline 31 May 2027, opens October 2026, 500-word personal statement, GBP 1,000 deposit within 14 days, applies to 2027 entry."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-birmingham-alumni-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "official_url (individual award page) could not be opened (PROVENANCE_REQUIRED, search budget exhausted). Value (25% or 20%), eligibility, route via the award's own page (not automatic) and 'starting September 2025 or later' all match the international scholarships page, which is the source_url. Deadline remains unseen, as the file states."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-college-birmingham-continuation-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "official_url (individual award page) could not be opened. GBP 2,000 for each of years 2 and 3, returning international undergraduates, automatic, starting September 2025 or later all match the international scholarships page (source_url)."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Summary figures match the international page (1,400+ students, over 60 countries, accommodation for more than 1,000, 100+ merit scholarships). No ranking or superlative claims; no dashes used as punctuation. The page itself gives conflicting intake wording (September 2026 and February 2027 versus a banner for Feb/Sep 2027 and Feb 2028), as the file flags."
+    ],
+    "corrections": {}
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "gb-university-of-derby",
+  "courses": [
+    { "slug": "gb-university-of-derby-computer-science-bsc", "verdict": "pass", "issues": [], "corrections": {} },
+    { "slug": "gb-university-of-derby-business-management-ba", "verdict": "pass", "issues": [], "corrections": {} },
+    { "slug": "gb-university-of-derby-management-msc", "verdict": "pass",
+      "issues": [
+        "pakistan_entry_note: Pakistan page says the bachelor's must be equivalent to at least a UK 2:1 or 2:2; the file says at least a UK 2:2 (consistent with the course page).",
+        "notes: 'the page notes fees may rise after one year' was not seen on the opened page text."
+      ], "corrections": {} },
+    { "slug": "gb-university-of-derby-advanced-data-science-msc", "verdict": "fail",
+      "issues": [
+        "duration_text: file lists 'part-time 2 years', but the course page states part-time is not offered to international students (the part-time fee shown is the UK fee)"
+      ],
+      "corrections": { "duration_text": "1 year full-time with a September start, 18 months with a January start" } }
+  ],
+  "scholarships": [
+    { "slug": "gb-university-of-derby-vice-chancellors-scholarship", "verdict": "pass",
+      "issues": ["Page lists April 2026, September 2026 and January 2027 intakes only; 2027 entry is not covered, as the file notes."], "corrections": {} },
+    { "slug": "gb-university-of-derby-biomedical-science-excellence", "verdict": "pass",
+      "issues": ["Page lists no countries, so eligible_countries INTL is an assumption that the award is open to international students; page does not state it."], "corrections": {} },
+    { "slug": "gb-university-of-derby-opm-alumni-business-social-impact", "verdict": "pass",
+      "issues": ["Page lists no countries, so eligible_countries INTL is an assumption; the award is open only to Derby graduates."], "corrections": {} }
+  ],
+  "university": {
+    "verdict": "fail",
+    "issues": [
+      "summary and client_should_confirm: file says the Pakistan page 'states that applying through an agent is optional'. The page only says applicants 'can contact any of our agents and apply through them' and does not mention a direct route or say agents are optional."
+    ],
+    "corrections": {
+      "summary": "The University of Derby teaches from a Derby campus, with course pages naming Markeaton Street and the Cavendish Building. Its Pakistan page says applicants can apply through any of its listed agents, and its scholarships page lists self-funded international awards that are applied automatically."
+    }
+  }
+}

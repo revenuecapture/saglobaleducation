@@ -8,7 +8,7 @@
     "website_url": "https://www.derby.ac.uk/",
     "international_admissions_url": "https://www.derby.ac.uk/undergraduate/apply/entry-requirements/international/",
     "scholarships_url": "https://www.derby.ac.uk/study/fees-finance/scholarships/",
-    "summary": "The University of Derby teaches from a Derby campus, with course pages naming Markeaton Street and the Cavendish Building. Its Pakistan page states that applying through an agent is optional, and its scholarships page lists self-funded international awards that are applied automatically.",
+    "summary": "The University of Derby teaches from a Derby campus, with course pages naming Markeaton Street and the Cavendish Building. Its Pakistan page says applicants can apply through any of its listed agents, and its scholarships page lists self-funded international awards that are applied automatically.",
     "is_russell_group": false,
     "russell_group_source_url": null,
     "eligibility_note": null,
@@ -152,7 +152,7 @@
       "level": "postgraduate",
       "field_slug": "computer-technology",
       "mode": "full_time",
-      "duration_text": "1 year full-time with a September start, 18 months with a January start; part-time 2 years",
+      "duration_text": "1 year full-time with a September start, 18 months with a January start",
       "duration_months": 12,
       "tuition_amount": 17500,
       "tuition_currency": "GBP",
@@ -334,7 +334,7 @@
     ],
     "client_should_confirm": [
       "The Pakistan page states: we will not be accepting Medium of Instruction evidence for English language.",
-      "No notice that applications from Pakistan are paused or closed was found; the Pakistan page states agents are optional.",
+      "No notice that applications from Pakistan are paused or closed was found; the Pakistan page says applicants can apply through any of its listed agents and does not mention a direct route.",
       "Confirm 2027 terms for the Vice-Chancellor's Scholarship, whose listed intakes are April 2026, September 2026 and January 2027.",
       "Confirm September 2027 availability and fees for the two master's courses.",
       "The page states overseas offers are initially conditional on either an 8,000 GBP deposit or a sponsor letter."

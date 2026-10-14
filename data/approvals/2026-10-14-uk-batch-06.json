@@ -1,0 +1,88 @@
+{
+ "approved_by": "Claude for Badr (SA Global consultant), per the finder plan",
+ "date": "2026-10-14",
+ "basis": "checker verdict pass, confidence high or medium, international fee for 2026/27 or 2027/28",
+ "universities": [
+  "gb-university-of-brighton",
+  "gb-university-of-central-lancashire",
+  "gb-university-of-derby",
+  "gb-university-of-dundee",
+  "gb-university-college-birmingham",
+  "gb-university-for-the-creative-arts",
+  "gb-university-of-aberdeen"
+ ],
+ "courses": [
+  "gb-university-of-brighton-computer-science-bsc",
+  "gb-university-of-brighton-international-business-management-bsc",
+  "gb-university-of-brighton-management-msc",
+  "gb-university-of-brighton-computer-science-msc",
+  "gb-university-of-central-lancashire-artificial-intelligence-msc",
+  "gb-university-of-central-lancashire-business-management-ba",
+  "gb-university-of-central-lancashire-artificial-intelligence-data-science-bsc",
+  "gb-university-of-derby-computer-science-bsc",
+  "gb-university-of-derby-business-management-ba",
+  "gb-university-of-derby-management-msc",
+  "gb-university-of-derby-advanced-data-science-msc",
+  "gb-university-of-dundee-business-management-bsc",
+  "gb-university-college-birmingham-international-foundation-diploma",
+  "gb-university-for-the-creative-arts-ba-fashion-design",
+  "gb-university-for-the-creative-arts-ba-film-production",
+  "gb-university-for-the-creative-arts-ma-fashion-business-management",
+  "gb-university-for-the-creative-arts-ma-graphic-design",
+  "gb-university-of-aberdeen-finance-ma",
+  "gb-university-of-aberdeen-data-science-msc",
+  "gb-university-of-aberdeen-petroleum-engineering-msc"
+ ],
+ "scholarships": [
+  "gb-university-of-brighton-vc-international-undergraduate",
+  "gb-university-of-brighton-vc-international-postgraduate",
+  "gb-university-of-brighton-deans-global-talent-postgraduate",
+  "gb-university-of-brighton-future-stem-scholars-postgraduate",
+  "gb-university-of-central-lancashire-excellence-scholarship",
+  "gb-university-of-derby-vice-chancellors-scholarship",
+  "gb-university-of-derby-biomedical-science-excellence",
+  "gb-university-of-derby-opm-alumni-business-social-impact",
+  "gb-university-of-dundee-vc-south-asia-postgraduate-sep-2027",
+  "gb-university-of-dundee-vc-south-asia-undergraduate-jan-2027",
+  "gb-university-college-birmingham-great-scholarship",
+  "gb-university-college-birmingham-alumni-scholarship",
+  "gb-university-college-birmingham-continuation-scholarship",
+  "gb-university-for-the-creative-arts-creative-development-scholarship",
+  "gb-university-for-the-creative-arts-full-fee-payment-discount",
+  "gb-university-for-the-creative-arts-international-phd-scholarship",
+  "gb-university-of-aberdeen-global-scholarship-postgraduate",
+  "gb-university-of-aberdeen-global-scholarship-undergraduate",
+  "gb-university-of-aberdeen-alumni-discount"
+ ],
+ "held_back": {
+  "gb-university-of-dundee": [
+   "gb-university-of-dundee-computer-science-bsc: check unverifiable",
+   "gb-university-of-dundee-computer-science-msc: fee or fee year",
+   "gb-university-of-dundee-management-msc: fee or fee year"
+  ],
+  "gb-university-college-birmingham": [
+   "gb-university-college-birmingham-international-business-management-msc: check fail",
+   "gb-university-college-birmingham-data-analytics-msc: check fail",
+   "gb-university-college-birmingham-mechanical-engineering-beng: check unverifiable"
+  ],
+  "gb-university-for-the-creative-arts": [
+   "gb-university-for-the-creative-arts-merit-scholarship: check fail"
+  ],
+  "gb-university-of-bedfordshire": [
+   "gb-university-of-bedfordshire-computer-science-msc: check fail",
+   "gb-university-of-bedfordshire-international-business-msc: check fail",
+   "gb-university-of-bedfordshire-business-management-with-international-business-bsc: check fail",
+   "gb-university-of-bedfordshire-high-achievers-pakistan: check unverifiable, confidence low",
+   "gb-university-of-bedfordshire-international-undergraduate-subject-specific: check fail",
+   "gb-university-of-bedfordshire-a-level-ib-scholarship: check unverifiable",
+   "gb-university-of-bedfordshire-international-foundation-year-scholarship: check unverifiable",
+   "gb-university-of-bedfordshire-postgraduate-global-merit: check unverifiable, confidence low",
+   "gb-university-of-bedfordshire-postgraduate-subject-specific-merit: check unverifiable",
+   "gb-university-of-bedfordshire-vice-chancellors-scholarship-undergraduate: check unverifiable",
+   "gb-university-of-bedfordshire-vice-chancellors-scholarship-postgraduate: check unverifiable",
+   "gb-university-of-bedfordshire-prompt-payment-discount: check unverifiable",
+   "gb-university-of-bedfordshire-alumni-scholarship: check unverifiable",
+   "university record failed the check: summary: it says the international foundation year page states the university has delivered international foundation courses since 1980. The page says 'CEFL has a proven track record of International Foundation Course delivery since 1980'; CEFL is not defined on the page (possibly the Centre for Eng"
+  ]
+ }
+}

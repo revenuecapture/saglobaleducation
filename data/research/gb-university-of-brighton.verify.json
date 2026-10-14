@@ -1,0 +1,30 @@
+{
+  "slug": "gb-university-of-brighton",
+  "courses": [
+    { "slug": "gb-university-of-brighton-computer-science-bsc", "verdict": "pass", "issues": [], "corrections": {} },
+    { "slug": "gb-university-of-brighton-international-business-management-bsc", "verdict": "fail",
+      "issues": [
+        "notes: file says 'No international placement year fee shown', but the course page states the placement year fee for 2026-27 starters is GBP 1,958"
+      ],
+      "corrections": { "notes": "Page shows 2027 entry requirements but no start month. Fee shown is the 2026/27 international fee; target year fee not yet published. Page does not say which Year 1 modules are optional. Placement year fee for 2026/27 starters is GBP 1,958." } },
+    { "slug": "gb-university-of-brighton-management-msc", "verdict": "pass", "issues": [], "corrections": {} },
+    { "slug": "gb-university-of-brighton-computer-science-msc", "verdict": "pass", "issues": [], "corrections": {} }
+  ],
+  "scholarships": [
+    { "slug": "gb-university-of-brighton-vc-international-undergraduate", "verdict": "pass",
+      "issues": ["Page states September 2026 starts only, so it does not yet apply to 2027 entry; the file already labels this correctly."], "corrections": {} },
+    { "slug": "gb-university-of-brighton-vc-international-postgraduate", "verdict": "pass",
+      "issues": ["Page states September 2026 and January 2027 starts only; September 2027 not covered, as the file already notes."], "corrections": {} },
+    { "slug": "gb-university-of-brighton-deans-global-talent-postgraduate", "verdict": "pass",
+      "issues": ["Page states September 2026 and January 2027 starts only."], "corrections": {} },
+    { "slug": "gb-university-of-brighton-future-stem-scholars-postgraduate", "verdict": "pass",
+      "issues": ["Page states September 2026 and January 2027 starts only."], "corrections": {} }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'about one hour from central London' is confirmed on the international page; the automatic fee reduction claim is confirmed on the funding page (scholarships_url), not on the cited source_url index page, and applies to some awards only."
+    ],
+    "corrections": {}
+  }
+}

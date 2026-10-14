@@ -1,0 +1,68 @@
+{
+  "slug": "gb-university-of-aberdeen",
+  "courses": [
+    {
+      "slug": "gb-university-of-aberdeen-finance-ma",
+      "verdict": "pass",
+      "issues": [
+        "Fee is the 2026/27 EU/International figure (GBP 20,800 on the course page and fees PDF); no 2027/28 fee is published, so the 2026/27 label is accurate. The fees PDF says to budget for 3% to 9% a year increases, as the file notes.",
+        "Checked and correct: title, MA (UCAS N300), 48 months full-time on campus, September start, HSSC average of 75% with 75% in Maths for Finance (Pakistan page), undergraduate English table (IELTS 6.0 with 5.5/5.5/5.5/6.0, PTE 59, Duolingo 105 with 95/95/95/105, TOEFL new-scale 4 to 4.5 and 78 before 21 January 2026), compulsory modules by year, ICAS accreditation (the page also states CFA), career roles (named in the programme overview), over 130 nationalities.",
+        "The course page entry requirements are only a summary, so the Highers or A-level requirement is genuinely absent, as the file states."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-aberdeen-data-science-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 26,250 is the 2026/27 EU/International fee (course page and postgraduate fees PDF, which advises budgeting 5% to 9% a year); 2027/28 not published. Correctly labelled 2026/27.",
+        "Checked and correct: title, MSc, 12 months (September) or 16 months (January), January and September starts, 2:2 in any subject, documents list, postgraduate English table (IELTS 6.5 overall; PTE 62/59; Duolingo 120; TOEFL new scale 4.5 with 4 each), Pakistan four-year Bachelor's with GPA 2.6 comparable to a UK 2.2 (around 65% depending on scale, so pk_min_percent and pk_min_cgpa are rightly null), modules, career roles.",
+        "The postgraduate English page does not list this programme or its tier (Natural and Computing Sciences sits under Standard), so the file's 'tier not stated' is accurate."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-aberdeen-petroleum-engineering-msc",
+      "verdict": "pass",
+      "issues": [
+        "Fee GBP 26,250 is the 2026/27 EU/International fee for the on-campus MSc in the postgraduate fees PDF; 2027/28 not published.",
+        "Intake: the page headline and intro give 'January 2027'; September has no year, so ['January 2027', 'September'] matches the page.",
+        "Checked and correct: title, MSc, 12 months full-time on campus, 2:2 in Engineering or Applied Mathematics with the Geology/Physics/Chemistry work-experience route, key subjects Maths and Physics, Energy Institute and IMechE accreditation, ATAS CAH10-01-09, career roles, modules, English table values (tier not stated on the programme page; School of Engineering is under Standard)."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-of-aberdeen-global-scholarship-postgraduate",
+      "verdict": "pass",
+      "issues": [
+        "Checked and correct: GBP 8,000 tuition waiver, self-funded full-time on-campus Masters (taught and research), international fee status, 2026/27 and 2027/28 starts, automatic and shown on the CAS, available until further notice, exclusions (fully sponsored or funded, other University scholarships except Development Trust, DPLP, PGDE, Dentistry). Applies to 2027 entry. Not restricted by country."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-aberdeen-global-scholarship-undergraduate",
+      "verdict": "pass",
+      "issues": [
+        "Checked and correct: GBP 6,000 per year partial tuition waiver, self-funded full-time on-campus undergraduates with international fee status, new students 2026/27 or 2027/28, automatic, Aberdeen campus only, not for DPLP, Dentistry or Medicine. The page title mentions PGDE but no PGDE terms appear, as the file flags."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-of-aberdeen-alumni-discount",
+      "verdict": "pass",
+      "issues": [
+        "Checked and correct: 20% discount for Aberdeen graduates (or exchange, study abroad, Erasmus students) who are self-funded new students, Home, RUK or international fee status, online form, available until further notice. Eligible programmes (MBA excluding the International Business Management pathway, Physician Associate Studies, online taught postgraduate programmes, first year of full-time research degrees, first year of accelerated LLB) exclude the on-campus MSc courses in this file, as the file notes. Levels listed as postgraduate omit the accelerated LLB, a minor point."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Summary is paraphrased and supported (over 130 nationalities on the Finance page; Global Scholarship automatic for self-funded international students). The Finance page itself carries ranking and award claims (Guardian 2026, NSS, EQUIS), but none are repeated in the file. No dashes used as punctuation. The Pakistan entry and funding pages show no pause notice."
+    ],
+    "corrections": {}
+  }
+}

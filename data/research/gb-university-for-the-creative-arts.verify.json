@@ -1,0 +1,91 @@
+{
+  "slug": "gb-university-for-the-creative-arts",
+  "courses": [
+    {
+      "slug": "gb-university-for-the-creative-arts-ba-fashion-design",
+      "verdict": "pass",
+      "issues": [
+        "Checked and correct: title, BA (Hons), Epsom, 3 years full-time with optional foundation year and professional practice year, September 2027 start, 112 UCAS points and alternatives, four GCSEs, portfolio, IELTS 6.0/5.5 (5.5/5.5 with foundation year), GBP 19,800 Year 1 fee for 2027/28 with 4% rise in later years (fees page), modules, career roles.",
+        "Note: the Pakistan page lists an Associate Degree or two to three years of a Bachelor's at 55% or GPA 2.5 under 'Bachelor's' without saying which UCA entry point it maps to, so leaving pk_* null is defensible.",
+        "The final 3,000 characters of the course page contain only other-country entry text; nothing there changes the record."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-for-the-creative-arts-ba-film-production",
+      "verdict": "pass",
+      "issues": [
+        "source_url: the file's source_url carries a query string (?select_subject=/international-study/international-country-entry-requirements/usa/) that points at a USA country view; it should be the plain course URL.",
+        "The course page also says its details apply to 2026 entry and may change, although the start date reads September 2027; the file's September 2027 and 2027/28 fee are supported by the header and the fees page, but intake year is worth a client check.",
+        "Checked and correct: title, BA (Hons), Farnham, 3 years full-time with optional foundation and professional practice years, 112 UCAS points and alternatives, IELTS 6.0/5.5, GBP 19,800 for 2027/28, modules, career roles."
+      ],
+      "corrections": {
+        "source_url": "https://www.uca.ac.uk/study/courses/ba-film-production/"
+      }
+    },
+    {
+      "slug": "gb-university-for-the-creative-arts-ma-fashion-business-management",
+      "verdict": "pass",
+      "issues": [
+        "Checked and correct: title, MA, Epsom, 1 year full-time, September 2027, no portfolio, good honours degree or work experience, IELTS 6.5 with 5.5 in each section (Pakistan page), Pakistan four-year Bachelor's at 50% or GPA 2.6 (pk_route bachelor_16, pk_min_percent 50), GBP 20,600 first-year fee for 2027/28 (MA/MSc/Global MBM), CMI dual accreditation, modules, no career outcomes listed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-for-the-creative-arts-ma-graphic-design",
+      "verdict": "pass",
+      "issues": [
+        "Checked and correct: title, MA, Farnham, 1 year full-time with optional Integrated Pre-Masters, September 2027, portfolio required, IELTS 6.5/5.5, Pakistan 50% or GPA 2.6 four-year Bachelor's, GBP 20,600 for 2027/28, Integrated Pre-Masters GBP 18,950 (not recorded, as the file says), modules."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-university-for-the-creative-arts-merit-scholarship",
+      "verdict": "fail",
+      "issues": [
+        "criteria_text / summary: the scholarships page says the award goes to applicants who exceed the required academic level, follow UCA deposit payment policies and have 'been nominated by an academic', that there is a limited number, and that they are awarded first come first served. The file omits the academic nomination and deposit condition and describes it as simply automatic with no form.",
+        "Value (GBP 4,500 first-year fee deduction), 2027/28, full-time courses including PhD, all international applicants, no application needed: correct."
+      ],
+      "corrections": {
+        "criteria_text": "All international applicants who achieve above and beyond the required academic level in their entry qualifications, follow UCA deposit payment policies and have been nominated by an academic, for 2027/28 entry on full-time courses. Limited number available, first come first served. Only one UCA fee discount applies; the highest-value one is given.",
+        "deadline_note": "No deadline stated; limited number of awards, first come first served."
+      }
+    },
+    {
+      "slug": "gb-university-for-the-creative-arts-creative-development-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "Value GBP 3,000 first-year deduction, all full-time courses (PhD not named, so levels undergraduate and postgraduate is reasonable), automatic, no application: correct.",
+        "The page's shared terms for this group of awards say places are limited, first come first served, and tied to an academic nomination; the file's deadline_note ('No deadline stated') does not mention this. Worth adding as a caveat."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-for-the-creative-arts-full-fee-payment-discount",
+      "verdict": "pass",
+      "issues": [
+        "GBP 1,000 reduction for non-EU international students paying full fees after scholarships before or at CAS issuance, all full-time courses including PhD, 2027/28: correct. The page states no application route; automatic is the file's own inference and is flagged as such.",
+        "The shared terms on the page (limited numbers, first come first served, academic nomination) appear to sit under the same group; unclear whether they apply to a payment discount."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-university-for-the-creative-arts-international-phd-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 5,000 in year one and GBP 3,000 in years two and three, full-time PhD, 2027/28, automatic with no application form: correct. It is a fee reduction, not a stipend, as the file says.",
+        "The page's shared terms (limited places, first come first served, academic nomination) may also apply; not reflected in the file."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Summary is paraphrased and supported (Epsom and Farnham campuses on course pages; Pakistan page with entry and English requirements; 2027/28 fee discounts on scholarships page). No rankings, superlatives or dashes used as punctuation. The Pakistan page carries no notice of paused applications."
+    ],
+    "corrections": {}
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "gb-manchester-metropolitan-university",
+  "courses": [
+    {
+      "slug": "gb-manchester-metropolitan-university-msc-management",
+      "verdict": "unverifiable",
+      "issues": [
+        "duration_months 12 / duration_text: the course page shows a blank 'Course length' field and no 'one year of study' sentence was found on re-fetch; 12 months cannot be confirmed from the cited page",
+        "tuition_academic_year null is honest: page gives GBP 21,000 per year full-time international with no fee year",
+        "Title, MSc, full-time, 2:2 typical offer, IELTS 6.5 on course page, start dates January 2027, September 2027, January 2028, and the module list behind the overview confirmed",
+        "Sub-band 5.5, PTE 65/59, TOEFL 89 (L17 R18 S20 W17), Duolingo 120/100 confirmed on https://www.mmu.ac.uk/study/international/before-you-apply/english-language-requirements (general MA/MSc column, MBA not named). Pakistan page confirms postgraduate IELTS 6.5 with no section below 5.5",
+        "Pakistan GPA ranges (4-year 2.7 to 3.0, or 2.5 to 2.8 with 2 years' work; 2+2 route 2.7 to 3.0 or 55% to 60%, HEC recognised) confirmed; pk_min_* null is correct"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-manchester-metropolitan-university-msc-business-analytics",
+      "verdict": "pass",
+      "issues": [
+        "Title, MSc, full-time, GBP 21,000 per year (no fee year on page), 2:2, IELTS 6.5, intakes January 2027 / September 2027 / January 2028, core and optional modules confirmed; duration blank on page and file correctly leaves it null",
+        "English sub-scores and Pakistan ranges as for MSc Management, confirmed on the general English page and Pakistan page",
+        "Fee year unknown, so GBP 21,000 should not be presented as the 2027/28 fee"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-manchester-metropolitan-university-mba",
+      "verdict": "pass",
+      "issues": [
+        "Title, MBA, full-time GBP 31,000 per year and part-time GBP 31,000 total (GBP 15,500 per year) listed for September 2027 start, 2:2 plus 3 years' experience, September 2027 only, ten Year 1 modules all confirmed",
+        "Course length blank on page and English score not stated (page links to general page, which does not name the MBA): file leaves these null, which is correct",
+        "Fee year not stated on the page; tuition_academic_year null is correct"
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-manchester-metropolitan-university-international-undergraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 2,000 per year (listing page, September 2027 entry only), automatic at admission, new self-funding overseas-fee students, 120 credits per year, 3 years (4 for integrated master's or foundation route), Architecture and UAL Foundation Diploma excluded, no combining, no carry-over on deferral: confirmed",
+        "Terms page: heading reads 2027/28 while title and breadcrumb read 2026/27; entry dates covered are September 2027, January 2028 and March 2028. Terms page itself states no amount (file notes this)"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-manchester-metropolitan-university-international-postgraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 5,000 first year for most taught master's, GBP 3,000 for MBA and some others, 180 credits, automatic, exclusions (diplomas, certificates, PGCE, LLM Legal Practice, MSc Place Management and Leadership), no combining: confirmed",
+        "Listing page shows January 2027 entry only; terms page covers September 2026 and January 2027. The file's January 2027 label is correct and there is no September 2027 award on the listing, so it does not apply to the MBA September 2027 intake or to Management / Business Analytics September 2027 starts"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-manchester-metropolitan-university-business-school-international-postgraduate-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 5,000 first year, 180-credit Business School taught master's, automatic, MBA and diplomas excluded, no combining: confirmed",
+        "Entry dates: listing page shows January 2027 and September 2027; terms page names only September 2026 and January 2027. January 2027 label is supported; September 2027 coverage remains unconfirmed (file flags this). Note MSc Management and MSc Business Analytics are Business School-style courses but the delivering school was not checked, and the field_slugs include accounting-finance without a source"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "eligibility_note: gov.uk student sponsor register 2026-09-18 row for Manchester Metropolitan University confirmed (Higher Education Institution, Student Sponsor - Track Record, action plan column blank)",
+      "Pakistan page confirmed to cover entry requirements and postgraduate English IELTS 6.5; the page itself does not give Pakistan-specific scholarship details, but the summary only says scholarships are assessed automatically, which the scholarships page supports",
+      "is_russell_group false has no source cited; region null; no recruitment pause notice found on the Pakistan page"
+    ],
+    "corrections": {}
+  }
+}

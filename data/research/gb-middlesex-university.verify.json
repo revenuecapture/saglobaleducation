@@ -1,0 +1,74 @@
+{
+  "slug": "gb-middlesex-university",
+  "courses": [
+    {
+      "slug": "gb-middlesex-university-msc-digital-marketing",
+      "verdict": "pass",
+      "issues": [
+        "No discrepancy found. Fee GBP 20,600 for 2027/28, duration, IELTS 6.5 with 6.0 per component, 2:2 entry, September 2027 intake, GBP 3,000 placement fee and compulsory module list all match the course page. The page carries ranking claims (Complete University Guide) which the file correctly does not repeat."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-middlesex-university-msc-international-business-management",
+      "verdict": "pass",
+      "issues": [
+        "No discrepancy found. Fee GBP 19,800 for 2027/28, durations, 2:2 plus two years business experience, and intakes September 2027, January 2028, April 2028 all match. Course page gives no English scores, so null min_ielts_* is correct. The general English page confirms the Business and Law versus other postgraduate split quoted in english_requirements."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-middlesex-university-bsc-ai-and-data-science",
+      "verdict": "pass",
+      "issues": [
+        "min_ielts_overall 6.0, min_ielts_band 5.5 and min_pte 59 come from the general English requirements page (undergraduate column), not the course page; they match that page. Course page itself states no scores.",
+        "Fee GBP 18,300 per year 2027/28, durations, 80 to 112 UCAS points, A levels BB to BBC, BTEC MMP to DMM and September 2027 intake all match. Pakistan Year 1 entry at 65% after one year of a bachelor's degree matches the Pakistan page."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-middlesex-university-pakistan-regional-award",
+      "verdict": "fail",
+      "issues": [
+        "application_route: file says separate_application; the Pakistan page states no application route (it only points to the scholarships page) and the international scholarships page says contact your International Office. Not supported.",
+        "requires_offer: file says true; no page states an offer requirement.",
+        "value_basis: file says one_off; Pakistan page gives only 'a GBP 1,000 award' with no basis, while the international page says around GBP 2,000 toward first year tuition. Conflict is flagged in notes but the structured basis is unsupported.",
+        "Entry year (2027) is not stated on any page, so applicability to 2027 entry is unverified.",
+        "levels: Pakistan page does not name levels; the international scholarships page says either level of study."
+      ],
+      "corrections": {
+        "application_route": null,
+        "requires_offer": null,
+        "value_basis": null
+      }
+    },
+    {
+      "slug": "gb-middlesex-university-regional-and-international-merit-award",
+      "verdict": "pass",
+      "issues": [
+        "Name, up to GBP 2,000, academic merit or promise criteria, no deadline and the one-scholarship-at-a-time rule match the scholarships and bursaries page. The international scholarships page says around GBP 2,000 toward first year tuition, which supports the summary.",
+        "value_basis one_off and application_route separate_application are inferred: the page says to contact the nearest International Office. Entry year (2027) is not stated, so applicability to 2027 entry is unverified; confidence low is appropriate."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-middlesex-university-alumni-postgraduate-award",
+      "verdict": "pass",
+      "issues": [
+        "Up to 20 percent off (40 percent for most Arts and Creative MA, 10 percent for Academic Partner Institution courses), no separate application (state alumnus or final-stage status when applying) and exclusions all match.",
+        "requires_offer true is not stated on the page. Entry year not stated; full terms are on a separate alumni awards page that neither the researcher nor this check opened."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Summary says campuses in London, Dubai and Mauritius; the campuses page also lists a fourth, the Minzu joint campus (2023). Not wrong, but incomplete.",
+      "Pakistan page, GBP 1,000 Regional Award, representative contact and absence of any recruitment pause notice confirmed. gov.uk register 2026-09-18 lists Middlesex University (London), Higher Education Institution, Student Sponsor - Track Record, Student route, with no action plan flag."
+    ],
+    "corrections": {}
+  }
+}

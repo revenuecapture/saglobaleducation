@@ -1,0 +1,68 @@
+{
+  "slug": "gb-keele-university",
+  "courses": [
+    {
+      "slug": "gb-keele-university-msc-computer-science",
+      "verdict": "pass",
+      "issues": [
+        "Title, MSc, 1 year or up to 2 with 6 to 12 month placement, September and January starts, GBP 18,200 per annum for 2026/27 international (fees page says 'All prices are per annum'), content areas (data management, cloud, UX design, web development): all confirmed",
+        "Fee is 2026/27 only, so it is not a 2027 entry fee; the file labels this correctly",
+        "English and academic entry are not stated on the course page; the file correctly leaves min_* null. Pakistan page gives tier-based 2:2/2:1 percentages and only 'IELTS or equivalent required' with no score",
+        "application_deadline_note: the course page itself says international applications are no longer accepted for 2025/26; the file cites an apply page statement about September 2026 which was not re-checked here"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-keele-university-msc-international-business",
+      "verdict": "pass",
+      "issues": [
+        "award: course page title is 'International Business - MSc' but the fees page lists 'International Business - MA'; conflict unresolved, file already flags it",
+        "Duration, placement, September and January starts, GBP 18,200 per annum 2026/27, global business strategy / operations / leadership wording confirmed; fee is 2026/27 only",
+        "English and academic entry not stated on the course page; Pakistan tier table confirmed (4-year bachelor: 2:2 = 55/60/65%, 2:1 = 65/70/75% by tier)"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-keele-university-kuic-foundation-business",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_basis: kuic fees page lists Foundation in Business (full) GBP 16,500 for 2026/27 and a 1 Semester option at GBP 8,000 but does not say per year or total; 'total' is an assumption",
+        "Duration, start months and English requirement are not on the pages: unverifiable",
+        "pk_min_percent 50: page says SSC 60% or HSC 50%; only the HSC route is encoded and the file's pk_route 'intermediate' is a simplification. Also the page labels these as 'Foundation entry' for Pakistan, not specifically 'Foundation in Business'",
+        "The same page lists 'International Year One in Business' at GBP 16,500, a different programme; make sure the two are not mixed (file does note this separately)",
+        "official_url points to the academic requirements page, not a programme page"
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-keele-university-postgraduate-global-scholarship",
+      "verdict": "unverifiable",
+      "issues": [
+        "intake_label 2026/27: funding page lists 2025/26 and 2026/27 entry only; nothing states it applies to 2027 entry",
+        "value: funding page says one-off GBP 3,000 to 5,000; Pakistan page says up to GBP 6,000 off tuition; conflict is unresolved and recorded in value_text",
+        "Automatic, academic achievement, no separate application (funding page) and excludes medicine and online (Pakistan page): confirmed. Can be held at Keele."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-keele-university-alumni-discount",
+      "verdict": "unverifiable",
+      "issues": [
+        "intake_label 2026/27: page lists 2025/26 and 2026/27 only; 2027 entry not confirmed",
+        "20% (10% for online), alumni of Keele, automatic: confirmed on the funding page. Eligibility depends on alumni status, so INTL eligible_countries is a simplification"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'a few minutes from Newcastle-under-Lyme' closely follows the university wording ('just minutes from the university town of Newcastle-under-Lyme'); rephrase. Staffordshire countryside wording confirmed on https://www.keele.ac.uk/study/whereiskeele/",
+      "International Foundation Year delivered on campus through Keele University International College confirmed on the Pakistan page",
+      "is_russell_group false has no source cited; not contradicted. Sponsor licence not checked."
+    ],
+    "corrections": {}
+  }
+}

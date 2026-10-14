@@ -1,0 +1,68 @@
+{
+  "slug": "gb-heriot-watt-university",
+  "courses": [
+    {
+      "slug": "gb-heriot-watt-university-msc-artificial-intelligence",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: page labels fees by intake (September 2027 / January 2028 GBP 27,080; January 2027 GBP 26,296) and never says 2027/28; the label is an inference",
+        "english_requirements: course page English section is blank, so scores come from https://www.hw.ac.uk/study/entry/english-language-requirements.htm (matches: IELTS 6.0/5.5, PTE 63/59, Duolingo 120/110, TOEFL new scale); page does not say which column applies to this programme but STEM and non-STEM overall/band are identical",
+        "Title, level, duration, 2:2 requirement, Pakistan 60% four-year bachelor route (hw.ac.uk Pakistan page), September and January intakes, modules and career roles all confirmed"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-heriot-watt-university-msc-international-business-management",
+      "verdict": "pass",
+      "issues": [
+        "tuition_academic_year: page labels fees by intake (September 2027 / January 2028 GBP 25,704; January 2027 GBP 24,952), not by academic year; 2027/28 is an inference",
+        "english_requirements: course page English section is blank; non-STEM column assumed (IELTS 6.0/5.5 with Writing 6.0, PTE 63/59, Duolingo 120/110) and matches the general English page; programme category is not stated anywhere",
+        "Title, level, duration, 2:2 any-subject requirement, Pakistan 60% route, intakes, modules and career statement confirmed; the 'almost 90%' outcome figure on the page is university-wide, not programme-specific, so the file's career_notes wording should not imply it is for this course"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-heriot-watt-university-bsc-computer-science",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_basis: page gives GBP 26,840 for September 2027 but does not say whether it is per year or total; 'per_year' is unsupported (file notes already admit this)",
+        "tuition_academic_year: page labels by September 2027 intake only; 2027/28 is an inference",
+        "Title, award, 3 to 4 year duration, BBC A-levels / ABBB Highers / IB 28 / DDM entry, Fair Access minimum BCC, Pakistan HSC 75% route, UG English (IELTS 6.0/5.5, PTE 63/59, Duolingo 120/110), September intake and year 1 modules confirmed",
+        "intake_labels: page lists September only; no separate January intake described, file matches"
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-heriot-watt-university-international-merit-scholarship",
+      "verdict": "fail",
+      "issues": [
+        "application_route: file says 'separate_application' but page describes no formal application; students contact the regional team manager (Pakistan contact is named on the page)",
+        "requires_offer: page does not state whether an offer is needed; file notes admit this is an assumption",
+        "intake_label: page says entry year is January 2027 and September 2027; file shows September 2027 only (not wrong, but incomplete)",
+        "Value varies by region, partial reduction usually first year only, UG and PGT full-time UK campus, overseas residents only, one Heriot-Watt scholarship only, 'Open' with no deadline: all confirmed. Can be held at Heriot-Watt."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-heriot-watt-university-alumni-discount-scheme",
+      "verdict": "unverifiable",
+      "issues": [
+        "intake_label: page states no entry year, yet file sets 'September 2027'; whether it applies to 2027 entry cannot be confirmed from the page",
+        "Value 20% (10% for MSc Imaging, Vision and High Performance Computing and MSc Biomedical Engineering), PGT only, alumni with one year or more on-campus (or visiting students one semester or more), automatic via the course application and shown in the offer letter, 'Open for applications': all confirmed",
+        "Eligibility is by alumni status for any fee status, so 'INTL' as eligible_countries is a simplification; usable by a Pakistani applicant only if they are a Heriot-Watt alumnus"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: '380 acres of parkland' is a close lift of the university sentence 'Set in 380 acres of beautiful parkland'; rephrase or drop. Postcode EH14 4AS confirmed on https://www.hw.ac.uk/campuses/edinburgh",
+      "is_russell_group false has no source cited (null); not contradicted by anything fetched",
+      "sponsor licence status not checked (flagged by researcher)"
+    ],
+    "corrections": {}
+  }
+}

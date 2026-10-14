@@ -1,0 +1,58 @@
+{
+  "slug": "gb-liverpool-john-moores-university",
+  "courses": [
+    {
+      "slug": "gb-liverpool-john-moores-university-international-foundation-year-business-law-social-studies",
+      "verdict": "unverifiable",
+      "issues": [
+        "tuition_basis: fees page lists GBP 16,500 for 2026/27 with 2 semesters but does not label it total; 'total' is inferred",
+        "intake_labels: programme page lists October, November, January and May entry points and no September; semester dates page lists 20/9/2027 for Semester 1. The two ISC pages conflict and September 2027 cannot be confirmed (file already notes this)",
+        "tuition_academic_year: fee valid for programmes starting on or after 26 August 2026; applying it to a September 2027 start is not supported",
+        "Title, 2 semesters (27 to 30 weeks), core and elective modules, IELTS UKVI 4.5/4.0 and SELT list, 24 month validity, age rule, Pakistan SSC 60% (or 65%), Intermediate Part I 55%, HSC/Polytechnic 50% confirmed",
+        "pakistan_entry_note: the LJMU Pakistan page does say 'The university will not be accepting applications from Pakistan for the academic year 2026/27' and says nothing on 2027/28; whether this covers ISC pathways is not stated. Programme page also says the English AES test must be passed at the end of the programme (not in file)",
+        "official_url / pakistan_source_url are ISC (Study Group) pages, not ljmu.ac.uk"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-liverpool-john-moores-university-pre-masters-business-management-law",
+      "verdict": "pass",
+      "issues": [
+        "Title, 1 semester, GBP 8,900 for 2026/27, April 2027 start (12/4/2027; no 2027 September start), modules, IELTS UKVI 5.5/5.5, Duolingo 105 not accepted for Pakistan (SELT mandatory), 24 month validity, age 20+, recognised first degree, Pakistan bachelor routes (4-year any 45%, 3-year 45%, 2-year pass 55% plus 1 year work, 3-year diploma 55%, associate not eligible) all confirmed",
+        "tuition_basis 'total' is not labelled on the fees page but is reasonable for a single-semester programme",
+        "Fee is 2026/27; 2027/28 not published. Progression degree table on the programme page is empty, so progression to specific LJMU postgraduate degrees cannot be confirmed",
+        "Same caveat as the foundation year: LJMU says no applications from Pakistan for 2026/27, silent on 2027/28"
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-liverpool-john-moores-university-isc-international-achievement-undergraduate",
+      "verdict": "unverifiable",
+      "issues": [
+        "Value GBP 3,000 per year of undergraduate study at LJMU, automatic on progression, self-funded, required progression grades, offer letter conditions: confirmed on https://www.ljmuisc.com/how-to-apply/scholarships",
+        "eligible_countries INTL and 2027 entry applicability: page states no countries or years, so Pakistan eligibility and 2027 entry cannot be confirmed. Awarded only after completing the ISC pathway, which is itself subject to the LJMU Pakistan applications notice"
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-liverpool-john-moores-university-isc-international-achievement-postgraduate",
+      "verdict": "unverifiable",
+      "issues": [
+        "Value GBP 3,000 per year of postgraduate study at LJMU, automatic on progression, same conditions: confirmed",
+        "eligible_countries INTL and 2027 entry applicability: not stated on the page. Awarded after the Pre-Masters route"
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'delivered with Study Group at the LJMU International Study Centre' is a slight stretch; the pathways page says only 'Pathways to LJMU are delivered by Study Group pathway' and names the ISC separately",
+      "Pakistan notice (no applications from Pakistan for 2026/27) confirmed on https://www.ljmu.ac.uk/study/courses/international-entry-requirements/pakistan; nothing on 2027/28",
+      "is_russell_group false has no source cited; sponsor licence not checked; city taken from name only"
+    ],
+    "corrections": {}
+  }
+}

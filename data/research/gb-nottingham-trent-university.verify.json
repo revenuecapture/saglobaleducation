@@ -1,0 +1,92 @@
+{
+  "slug": "gb-nottingham-trent-university",
+  "courses": [
+    {
+      "slug": "gb-nottingham-trent-university-msc-management-international-business",
+      "verdict": "pass",
+      "issues": [
+        "The ?year=2027 course page returned a server error on three attempts, so the 2027 intakes (September 2027, January 2028) could not be read from it directly. The 2026/27 version of the page matches title, one-year or two-year placement routes, 2.2 and 2.1 entry, modules and the consultancy or research project choice. The 2027/28 international fees page confirms GBP 21,600 for MSc Management and International Business and a GBP 2,010 placement fee for September 2027 and January 2028 entry.",
+        "English: NBS 1-year Masters IELTS 6.5 with 5.5 each, 2-year 6.5 with 6.0 speaking and listening, PTE 62 with 59, Duolingo not accepted all match. The TOEFL component figure of 4.0 was not confirmed (page says 4.5 overall for tests after 21 January 2026)."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-nottingham-trent-university-msc-digital-finance-and-data-analytics",
+      "verdict": "pass",
+      "issues": [
+        "GBP 21,150, one year full-time, City Campus, 2.2 entry, module list and absence of an English score on the course page all match. The ?year=2027 version still shows a September 2026 start only, so empty intake_labels is correct.",
+        "Fee year is not stated on the course page (header 2026/27); the 2027/28 fees page lists GBP 21,150 for Finance and Marketing courses but does not name this course, so 2027/28 fee remains unconfirmed. File correctly records 2026/27."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-nottingham-trent-university-msc-computer-science",
+      "verdict": "fail",
+      "issues": [
+        "tuition_amount and tuition_academic_year: the ?year=2027 version of the course page exists and shows International full-time GBP 20,400, September 2027 start and a GBP 2,010 placement fee for 2027/28. File uses the 2026/27 GBP 19,900 and says no 2027 fee is published; that is wrong.",
+        "intake_labels: file is empty; the 2027 page shows September 2027. application_deadline_note ('September 2026 start only') applies only to the 2026/27 page.",
+        "fees_source_url and official_url should point to the ?year=2027 page. The 2027/28 international fees page also lists GBP 20,400 for most Computing and Engineering courses.",
+        "Entry (2.2 in computing), durations, GBP 19,900 and GBP 1,905 placement for 2026/27, and the blank School of Science and Technology English row all match the 2026/27 page. The ?year=2027 page's entry requirements and modules were not re-read."
+      ],
+      "corrections": {
+        "tuition_amount": 20400,
+        "tuition_academic_year": "2027/28",
+        "intake_labels": ["September 2027"],
+        "application_deadline_note": null,
+        "fees_source_url": "https://www.ntu.ac.uk/course/science-and-technology/pg/msc-computer-science?year=2027",
+        "official_url": "https://www.ntu.ac.uk/course/science-and-technology/pg/msc-computer-science?year=2027",
+        "source_url": "https://www.ntu.ac.uk/course/science-and-technology/pg/msc-computer-science?year=2027"
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-nottingham-trent-university-pakistan-country-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 5,000 postgraduate (Masters) award, deadlines 30 September and 31 October 2026 16:00 GMT, January 2027 intake, offer required, overseas fee status, not already at NTU and not sponsored all match the scholarships page. The scholarships page says an offer for a full-time Bachelors or Masters is needed to apply; the Pakistan page ties this award to postgraduates. September 2027 scheme is stated as opening later."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-nottingham-trent-university-prestigious-university-award-pakistan",
+      "verdict": "pass",
+      "issues": [
+        "GBP 4,000 for a first and GBP 3,000 for a 2:1, 14 Pakistani institutions, new from September 2027, standard application form with no scholarship statement needed, no deadline, and no level stated all match the Pakistan page."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-nottingham-trent-university-international-merit-scholarship-masters",
+      "verdict": "pass",
+      "issues": [
+        "GBP 3,000 Masters merit award and GBP 2,000 NTU International Scholarship (Masters), January 2027 intake and the same deadlines match. Page says open to all students; offer, overseas fee status, not-enrolled and not-sponsored terms match the general eligibility text."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-nottingham-trent-university-excellence-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "50 percent (GBP 9,150 to 12,500) and 25 percent (GBP 4,525 to 6,250) of first-year fee, plus GBP 3,000 off each later year for undergraduates, January 2027 deadlines and application form route all match. Levels are not explicit on the page for the first-year reduction; the page-wide offer rule covers Bachelors or Masters, so the file's levels are an inference."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-nottingham-trent-university-sibling-loyalty-reward",
+      "verdict": "pass",
+      "issues": [
+        "20 percent off first-year fees, shared parent rule, claimed by email to international@ntu.ac.uk with birth certificates and NTU IDs, 18 December 2026 deadline for January 2027 entry all match. The page does not restrict by level, so levels is an inference."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "Pakistan page confirms the 4-year bachelor's CGPA guidance (2.5 and 2.9; NUST, QAU, LUMS 2.3 and 2.7; Punjab 50 and 55 percent), the NTIC foundation route for HSSC holders, the GBP 5,000 Pakistan postgraduate award and no recruitment pause notice.",
+      "Sponsor licence could not be checked: the gov.uk register preview is truncated before the letter N, so eligibility_note null stands as unverified."
+    ],
+    "corrections": {}
+  }
+}

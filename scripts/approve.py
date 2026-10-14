@@ -14,7 +14,11 @@ out = {'approved_by': 'Claude for Badr (SA Global consultant), per the finder pl
        'universities': [], 'courses': [], 'scholarships': [], 'held_back': {}}
 try: CORRECTED = set(json.load(open(os.path.join(R, '_corrected.json')))['slugs'])
 except Exception: CORRECTED = set()
+try: HOLDS = json.load(open(os.path.join(R, '_holds.json')))['holds']
+except Exception: HOLDS = {}
 for slug in sys.argv[1:]:
+    if slug in HOLDS:
+        out['held_back'][slug] = ['institution on hold: ' + HOLDS[slug]]; continue
     d = json.load(open(os.path.join(R, slug + '.json')))
     vp = os.path.join(R, slug + '.verify.json')
     v = json.load(open(vp)) if os.path.exists(vp) else {}

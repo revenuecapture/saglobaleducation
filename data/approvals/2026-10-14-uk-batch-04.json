@@ -1,0 +1,78 @@
+{
+ "approved_by": "Claude for Badr (SA Global consultant), per the finder plan",
+ "date": "2026-10-14",
+ "basis": "checker verdict pass, confidence high or medium, international fee for 2026/27 or 2027/28",
+ "universities": [
+  "gb-heriot-watt-university",
+  "gb-manchester-metropolitan-university",
+  "gb-middlesex-university",
+  "gb-nottingham-trent-university",
+  "gb-ravensbourne-university-london",
+  "gb-regent-s-university-london"
+ ],
+ "courses": [
+  "gb-heriot-watt-university-msc-artificial-intelligence",
+  "gb-heriot-watt-university-msc-international-business-management",
+  "gb-middlesex-university-msc-digital-marketing",
+  "gb-middlesex-university-msc-international-business-management",
+  "gb-middlesex-university-bsc-ai-and-data-science",
+  "gb-nottingham-trent-university-msc-management-international-business",
+  "gb-nottingham-trent-university-msc-digital-finance-and-data-analytics",
+  "gb-ravensbourne-university-london-bsc-computer-science-iy1",
+  "gb-ravensbourne-university-london-bsc-business-management-iy1",
+  "gb-ravensbourne-university-london-msc-international-finance",
+  "gb-regent-s-university-london-ba-business-and-management",
+  "gb-regent-s-university-london-llb-law",
+  "gb-regent-s-university-london-msc-project-management",
+  "gb-regent-s-university-london-msc-finance-and-financial-technology"
+ ],
+ "scholarships": [
+  "gb-manchester-metropolitan-university-international-undergraduate-scholarship",
+  "gb-manchester-metropolitan-university-international-postgraduate-scholarship",
+  "gb-manchester-metropolitan-university-business-school-international-postgraduate-scholarship",
+  "gb-middlesex-university-alumni-postgraduate-award",
+  "gb-nottingham-trent-university-pakistan-country-scholarship",
+  "gb-nottingham-trent-university-international-merit-scholarship-masters",
+  "gb-nottingham-trent-university-excellence-scholarship",
+  "gb-nottingham-trent-university-sibling-loyalty-reward",
+  "gb-ravensbourne-university-london-ug-international-scholarship",
+  "gb-ravensbourne-university-london-pg-international-scholarship",
+  "gb-ravensbourne-university-london-early-payment-discount",
+  "gb-regent-s-university-london-ug-global-scholarship-jan-2027",
+  "gb-regent-s-university-london-pg-global-scholarship-jan-2027",
+  "gb-regent-s-university-london-alumni-advantage-award"
+ ],
+ "held_back": {
+  "gb-heriot-watt-university": [
+   "gb-heriot-watt-university-bsc-computer-science: check unverifiable",
+   "gb-heriot-watt-university-international-merit-scholarship: check fail",
+   "gb-heriot-watt-university-alumni-discount-scheme: check unverifiable"
+  ],
+  "gb-keele-university": [
+   "gb-keele-university-msc-computer-science: confidence low",
+   "gb-keele-university-msc-international-business: confidence low",
+   "gb-keele-university-kuic-foundation-business: check unverifiable, confidence low",
+   "gb-keele-university-postgraduate-global-scholarship: check unverifiable, confidence low",
+   "gb-keele-university-alumni-discount: check unverifiable, confidence low"
+  ],
+  "gb-liverpool-john-moores-university": [
+   "institution on hold: Pakistan page says no applications from Pakistan for 2026/27 and says nothing about 2027/28 (checked 2026-10-14)."
+  ],
+  "gb-manchester-metropolitan-university": [
+   "gb-manchester-metropolitan-university-msc-management: check unverifiable, fee or fee year",
+   "gb-manchester-metropolitan-university-msc-business-analytics: fee or fee year",
+   "gb-manchester-metropolitan-university-mba: confidence low, fee or fee year"
+  ],
+  "gb-middlesex-university": [
+   "gb-middlesex-university-pakistan-regional-award: check fail, confidence low",
+   "gb-middlesex-university-regional-and-international-merit-award: confidence low"
+  ],
+  "gb-nottingham-trent-university": [
+   "gb-nottingham-trent-university-msc-computer-science: check fail, confidence low",
+   "gb-nottingham-trent-university-prestigious-university-award-pakistan: confidence low"
+  ],
+  "gb-ravensbourne-university-london": [
+   "gb-ravensbourne-university-london-ba-graphic-design: check fail"
+  ]
+ }
+}

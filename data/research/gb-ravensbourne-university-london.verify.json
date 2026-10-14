@@ -1,0 +1,78 @@
+{
+  "slug": "gb-ravensbourne-university-london",
+  "courses": [
+    {
+      "slug": "gb-ravensbourne-university-london-ba-graphic-design",
+      "verdict": "fail",
+      "issues": [
+        "academic_requirements: page says GCSE English grade 4 plus one of three A Levels at BBC or above, BTEC Extended Diploma DMM, UAL Level 3 Extended Diploma, T Level pass, Access diploma, IB 25 or above, or 112 UCAS Tariff points. File says two A Levels at CC, BTEC MPP, IB 24 and 64 Tariff points, which appears on neither the BA nor the Integrated Foundation Year entry (that route is two A Levels at DD, BTEC PPP, IB 24, 48 points).",
+        "uk_min_alevels: file CC; page says BBC for the three-year BA.",
+        "Fee GBP 17,500 (2026/27 entry only, may change for 2027/28), duration, September 2027 start, portfolio or showreel requirement, no IELTS on the page and module titles match."
+      ],
+      "corrections": {
+        "academic_requirements": "GCSE Grade 4 or above in English, plus one of: three A Levels at BBC or above; BTEC Extended Diploma at DMM; UAL Level 3 Extended Diploma; T Level (pass or above); Access to Higher Education Diploma; International Baccalaureate at 25 or above; or other qualifications equivalent to 112 UCAS Tariff points. Admission subject to successful completion of a portfolio (or showreel). Integrated Foundation Year route: two A Levels at DD, BTEC Extended Diploma PPP, IB 24 or above, or 48 Tariff points, with no portfolio.",
+        "uk_min_alevels": "BBC"
+      }
+    },
+    {
+      "slug": "gb-ravensbourne-university-london-bsc-computer-science-iy1",
+      "verdict": "pass",
+      "issues": [
+        "GBP 17,500 (2026/27 entry only), 3 years, January 2027 and September 2027 starts, GCSE English and Maths 4, STEM Level 3, BC or MMP or 72 Tariff points, IELTS 5.5 with 5.5 each (or CEFR B2), no interview or portfolio, and module titles all match. Target-year 2027/28 fee not published, as the file states."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ravensbourne-university-london-bsc-business-management-iy1",
+      "verdict": "pass",
+      "issues": [
+        "GBP 18,950 (2026-27 entry only), 3 years, January 2027 and September 2027 starts, GCSE English 4 plus two A Levels CC, BTEC MPP, IB 24 or 64 Tariff points, IELTS 5.5 with no component below 5.5, and indicative module list all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ravensbourne-university-london-msc-international-finance",
+      "verdict": "pass",
+      "issues": [
+        "International GBP 18,500 for 2026-27 entry (confirmed on both the course page and the international postgraduate fees page), 1 year, IELTS 6.0 with 5.5 each or CEFR B2 for Student visa, CV required, CMI Level 7 accreditation and start dates September 2026 and January 2027 match. File records only January 2027 because September 2026 has passed; no September 2027 start is shown. 2027/28 fee not published."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-ravensbourne-university-london-ug-international-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "All amounts match the 2026/27 table: GBP 5,000 off GBP 17,500 for other creative undergraduate courses, GBP 4,950 then 3,000 for Business Management IY1, GBP 3,500, 4,500 and 5,500 for Computer Science IY1, GBP 3,850 for Business Management with Fashion, Cyber Security, Digital Marketing and IT Management. Eligibility (accepted offer, enrolled, overseas fee status) and no separate application match. Terms are 2026/27 only; 2027 entry applicability is unconfirmed, as the file says.",
+        "Graphic Design falls under the 'all other undergraduate creative courses' row (GBP 5,000), but the page does not list it by name."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ravensbourne-university-london-pg-international-scholarship",
+      "verdict": "pass",
+      "issues": [
+        "GBP 6,000 for MSc International Finance, International Fashion Marketing, IT Management, Engineering Management, Events Management, Software Engineering, MA Luxury Brand Management and MA Digital Photography; GBP 4,500 for the listed MSc courses; GBP 4,000 MBA; GBP 3,500 per year MFA all match the 2026/27 table. Year 2 industry-year fee must be paid in full before re-enrolment.",
+        "MSc International Fashion Marketing is named in the criteria although the researcher found that course closed; minor. 2027 entry applicability unconfirmed."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-ravensbourne-university-london-early-payment-discount",
+      "verdict": "pass",
+      "issues": [
+        "GBP 1,000 off for full payment 60 days before Semester 1, or GBP 500 (at least GBP 2,000 paid 60 days before Welcome Week) plus GBP 400 before travel, GBP 900 in total, all match. The page does not state the academic year for the discount. The older 28-day wording and the BSc Business Management IY1 exclusion were not re-checked; the file correctly flags the conflict."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "International students page confirms the Home Office sponsor licence statement, individual consideration and portfolio or showreel for creative subjects; no rankings or awards claimed. Campus at Greenwich Peninsula confirmed on the course page.",
+      "Country-specific page names Pakistan in the OIEG exclusivity agreement for South Asia and lists no Pakistan entry requirements, as the file says. Sponsor register could not be checked because the gov.uk preview is truncated before the letter R."
+    ],
+    "corrections": {}
+  }
+}

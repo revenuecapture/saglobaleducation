@@ -1,0 +1,73 @@
+{
+  "slug": "gb-regent-s-university-london",
+  "courses": [
+    {
+      "slug": "gb-regent-s-university-london-ba-business-and-management",
+      "verdict": "pass",
+      "issues": [
+        "GBP 27,750 per year for September 2026 or January 2027 start, 3 years, three A-levels A to C, IB 24, US HSD GPA 2.5, IELTS 6.0 with 5.5 each, core modules, optional Year 2 study abroad, GBP 5,000 non-UK deposit and Graduate visa wording all match. PTE 64 (no skill below 59) confirmed on the overseas entry requirements page.",
+        "intake_labels omits January 2028, which the course page also lists; September 2027 and January 2028 fees are 'under review'. Pakistan undergraduate row 'Two-year Bachelor's degree with minimum 40%' is correctly left out of the structured pk_* fields."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-regent-s-university-london-llb-law",
+      "verdict": "pass",
+      "issues": [
+        "GBP 27,750, 3 years, BCC, IB 26, US HSD GPA 2.7, IELTS 6.0 with 5.5 each, modules and career roles match. The page's own overview says only September 2026 Year 1 entry, conflicting with the listed January 2027 and September 2027 starts, as the file already notes; treat the intakes as unconfirmed.",
+        "The LLB page says the course is designed around the Bar Standards Board academic stage and is not SQE preparation; the file wisely makes no legal-practice claim."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-regent-s-university-london-msc-project-management",
+      "verdict": "pass",
+      "issues": [
+        "GBP 28,750 for September 2026 or January 2027 start, 12 months (September) or about 16 months (January), second-class entry, IELTS 6.5 with 5.5 each, modules, final major project, January 2027 and September 2027 starts all match. Pakistan page confirms four-year bachelor's with minimum First division (60%, grade A/B, CGPA 2.75), so pk_route bachelor_16 and pk_min_percent 60 are supported and pk_min_cgpa null is right as the scale is not stated. PTE 67 confirmed on the overseas entry requirements page, though the component text is truncated there."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-regent-s-university-london-msc-finance-and-financial-technology",
+      "verdict": "pass",
+      "issues": [
+        "GBP 28,750, 12 or 16 months, second-class entry, IELTS 6.5 with 5.5 each, nine core modules including Dissertation, optional CQF and CMI qualifications, and September 2026, January 2027 and September 2027 starts match. Pakistan fields and PTE 67 supported as for Project Management."
+      ],
+      "corrections": {}
+    }
+  ],
+  "scholarships": [
+    {
+      "slug": "gb-regent-s-university-london-ug-global-scholarship-jan-2027",
+      "verdict": "pass",
+      "issues": [
+        "GBP 1,000 to 4,000 off first-year tuition, all nationalities, full-time undergraduate offer including with foundation, January 2027 only, automatic review with no separate application, deposit within 14 days, no deferral, not combinable and no fixed closing date all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-regent-s-university-london-pg-global-scholarship-jan-2027",
+      "verdict": "pass",
+      "issues": [
+        "GBP 1,000 to 4,000, full-time postgraduate offer for January 2027, automatic review, 14-day deposit, new students only, the four excluded course groups and the absence of a first-year-only statement all match."
+      ],
+      "corrections": {}
+    },
+    {
+      "slug": "gb-regent-s-university-london-alumni-advantage-award",
+      "verdict": "pass",
+      "issues": [
+        "20 percent off, postgraduate, all nationalities, alumni including Study Abroad students, September 2026 or January 2027 starts only, scholarship application form with degree details and student number, two psychotherapy exclusions and no closing date all match. Applicability to 2027 entry beyond January 2027 is not stated."
+      ],
+      "corrections": {}
+    }
+  ],
+  "university": {
+    "verdict": "pass",
+    "issues": [
+      "summary: 'all students pay the same tuition fees regardless of nationality' closely mirrors the university's own sentence ('All students pay the same tuition fees – regardless of their nationality'). It is attributed, but consider rewording.",
+      "The international students page carries an unsourced superlative ('London's best university for international students'); the file does not repeat it. The page does not mention a sponsor licence, so eligibility_note correctly says none was found; the gov.uk register preview is truncated before the letter R, so licence status could not be checked."
+    ],
+    "corrections": {}
+  }
+}
